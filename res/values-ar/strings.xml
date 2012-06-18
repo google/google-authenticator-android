@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2011 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+  <string name="app_name_short" msgid="6268465073167241020">"أداة المصادقة"</string>
+  <string name="enter_key_title" msgid="3762128630776563361">"إدخال الحساب يدويًا"</string>
+  <string name="enter_key_menu_item" msgid="6734462024545949337">"إضافة حساب يدويًا"</string>
+  <string name="enter_account_label" msgid="1488259241384211529">"أدخل اسم الحساب"</string>
+  <string name="enter_key_hint" msgid="480564521423532185">"إدخال المفتاح"</string>
+  <string name="enter_key_too_short" msgid="1883571748860519725">"قيمة المفتاح أقصر مما ينبغي"</string>
+  <string name="enter_key_illegal_char" msgid="5667180343359002748">"قيمة المفتاح بها حرف مخالف"</string>
+  <string name="error_title" msgid="1784361744549854479">"الخطأ"</string>
+  <string name="error_uri" msgid="8889749448317216536">"لم يتم التعرف على المفتاح."</string>
+  <string name="error_qr" msgid="1076904454315180481">"لا يمكن تفسير رمز QR."</string>
+  <string name="secret_saved" msgid="2201025202465443226">"تم حفظ السر"</string>
+  <string name="save_key_message" msgid="7326861247411778537">"حفظ المفتاح الذي تم مسحه ضوئيًا لـ"</string>
+  <string name="error_empty_secret" msgid="1889970426144134666">"لا يمكنك حفظ سر فارغ"</string>
+  <string name="enter_pin" msgid="2238539410253130912">"أدخل رمز التحقق هذا إذا طُلب منك ذلك أثناء تسجيل الدخول إلى الحساب:"</string>
+  <string name="not_initialized" msgid="4029306154380409711">"وسوف يولد Google Authenticator رموز التحقق التي يمكن استخدامها لتوفير حماية إضافية عند تسجيل الدخول. &lt;br/&gt; &lt;br/&gt; يجب استخدام Google Authenticator بالإضافة إلى ميزة التحقق بخطوتين لحساب Google الخاص بك."</string>
+  <string name="check_code_title" msgid="6308604727562833139">"قيمة التحقق من السلامة"</string>
+  <string name="check_code_menu_item" msgid="6851230890695316742">"تحقق من قيمة المفتاح"</string>
+  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"مسح رمز شريطي ضوئيًا"</string>
+  <string name="install_dialog_title" msgid="6389833865110438047">"هل تريد تثبيت ماسحة ضوئية للرموز الشريطية؟"</string>
+  <string name="install_dialog_message" msgid="4701150232869547399">"لمسح الرموز الشريطية المشتملة على مفاتيح ضوئيًا، يجب تثبيت الماسحة الضوئية للرموز الشريطية من ZXing."</string>
+  <string name="install_button" msgid="5395462228740377795">"تثبيت"</string>
+  <string name="about_menu_item" msgid="1863412306277669105">"حول"</string>
+  <string name="about_preference_screen_title" msgid="8056864904503664711">"حول"</string>
+  <string name="version_preference_title" msgid="5388130414499892219">"الإصدار"</string>
+  <string name="opensource_preference_title" msgid="9222719496327822081">"مشروع مفتوح المصدر"</string>
+  <string name="terms_preference_title" msgid="2016562579825643136">"بنود الخدمة"</string>
+  <string name="privacy_preference_title" msgid="5170441521661957179">"سياسة الخصوصية"</string>
+  <string name="check_code" msgid="8970489904648838257">"للتحقق من أنك تمتلك قيمة المفتاح الصحيحة لـ <xliff:g id="ACCOUNT">%1$s</xliff:g> تأكد من تطابق القيمة هنا مع قيمة التحقق من السلامة التي يقدمها الخادم:&lt;br/&gt;"</string>
+  <string name="general_security_exception" msgid="2356961798953009046">"استثناء الأمان العام"</string>
+  <string name="decoding_exception" msgid="7778970130063776199">"استثناء فك التشفير"</string>
+  <string name="submit" msgid="1518558163262431303">"حفظ"</string>
+  <string name="cancel" msgid="5705561042616477184">"إلغاء"</string>
+  <string name="delete" msgid="2463438384745656241">"حذف"</string>
+  <string name="delete_message" msgid="7101401126932957358">"هل تريد حذف هذا المفتاح؟"</string>
+  <string name="rename" msgid="4407492613148938173">"إعادة تسمية"</string>
+  <string name="rename_message" msgid="5929955206098259018">"إعادة تسمية <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
+  <string name="error_exists" msgid="9037595140877350695">"عذرًا، هذا الاسم مستخدم فعلاً."</string>
+  <string name="copy_to_clipboard" msgid="9220543434521756454">"نسخ إلى الحافظة"</string>
+  <string name="counter_pin" msgid="6520222181829297474">"الحصول على الرمز"</string>
+  <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+  <string name="ok" msgid="6406800116409689723">"موافق"</string>
+  <string name="type_prompt" msgid="5595994960218859859">"نوع المفتاح"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"وفقًا للوقت"</item>
+    <item msgid="5212912099902129712">"وفقًا للعداد"</item>
+  </string-array>
+  <string name="dataexport_service_name" msgid="8245583929925055560">"أداة التصدير"</string>
+  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. لديك الإصدار الجديد من هذا التطبيق فعلاً على جهازك. &lt;a href=&gt;إزالة هذا التطبيق&lt;/a&gt;"</string>
+  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. &lt;a href=&gt;إطلاق التطبيق الجديد&lt;/a&gt; لاستيراد حساباتك."</string>
+  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. &lt;a href=&gt;مزيد من المعلومات&lt;/a&gt;"</string>
+  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. &lt;p&gt; لإعداد الإصدار الجديد، الرجاء &lt;a href=&gt;تثبيت تطبيق أداة مصادقة Google الجديد&lt;/a&gt; من Market، ثم سيجري استيراد حساباتك تلقائيًا."</string>
+  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. &lt;p&gt; لإعداد الإصدار الجديد، الرجاء تثبيت تطبيق أداة مصادقة Google الجديد، ثم سيجري استيراد حساباتك تلقائيًا."</string>
+</resources>

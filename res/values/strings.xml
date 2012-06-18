@@ -1,75 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Google Authenticator</string>
-    <string name="app_name_short">Authenticator</string>
-    <string name="enter_key_title">Manual account entry</string>
-    <string name="enter_key_menu_item">Manually add account</string>
-    <string name="enter_account_label">Enter account name</string>
-    <string name="enter_account_hint">user@example.com</string>
-    <string name="enter_key_label">Enter key</string>
-    <string name="enter_key_hint">Enter your key</string>
-    <string name="enter_key_hint_edit">Keep existing value</string>
-    <string name="enter_key_too_short">Key value is too short</string>
-    <string name="enter_key_check">Integrity check value: </string>
-    <string name="enter_key_problem">Unexpected problem</string>
-    <string name="account_deleted">Account deleted</string>
-    <string name="status_hint">Press Menu for more options.</string>
-    <string name="error_title">Error</string>
-    <string name="error_uri">Key not recognized.</string>
-    <string name="secret_saved">Secret saved</string>
-    <string name="enter_pin">Enter this verification code if prompted during
-    account sign-in:</string>
-    <string name="not_initialized">
-      <![CDATA[
-        Google Authenticator will generate verification codes that 
-        can be used to provide additional security when signing in.
-        <br/>
-        <br/>
-        Google Authenticator must be used along with the
-        2-step verification
-        feature for your Google Account.
-      ]]>
-    </string>
-    <string name="check_code_title">Integrity check value</string>
-    <string name="check_code_menu_item">Check key value</string>
-    <string name="scan_barcode_menu_item">Scan account barcode</string>
-    <string name="install_dialog_title">Install barcode scanner?</string>
-    <string name="install_dialog_message">To scan barcodes containing keys, you must install the ZXing barcode scanner.</string>
-    <string name="install_button">Install</string>
-    <string name="refresh_menu_item">Refresh</string>
-    <string name="more_menu_item">More</string>
-    <string name="about_menu_item">About</string>
-    <string name="about_text">Google Authenticator&lt;br>
-    Version %1$s</string>
-    <string name="opensource_menu_item">Open Source Project</string>
-    <string name="terms_menu_item">Terms of Service</string>
-    <string name="privacy_menu_item">Privacy Policy</string>
-    <string name="check_code">
-    To check that you have the correct key value for %1$s
-    verify that the value here matches the integrity check value provided
-    by the server:&lt;br/>
-    </string>
-    <string name="general_security_exception">General security exception</string>
-    <string name="decoding_exception">Decoding exception</string>
-    <string name="submit">Save</string>
-    <string name="cancel">Cancel</string>
-    <string name="delete">Delete</string>
-    <string name="delete_message">Delete this key?</string>
-    <string name="rename">Rename</string>
-    <string name="rename_message">Rename %1$s</string>
-    <string name="error_exists">Sorry, that name is already in use.</string>
-    <string name="copy_to_clipboard">Copy to clipboard</string>
-    <string name="counter_pin">Get code</string>
-    <string name="empty_pin">_ _ _ _ _ _</string>
-    <string name="ok">OK</string>
-    <string name="type_prompt">Type of key</string>
+<!-- Copyright 2009 Google Inc. All Rights Reserved.
 
-    <!-- NOTE: order matters here and must be the same as AccountDb.TYPE_*
-         TODO(adhintz): make order not matter by using something like enums -->
-    <string-array name="type">
-      <item>Time based</item>
-      <item>Counter based</item>
-    </string-array>
-<string name="uninitialized_widget_user">please click the icon to configure</string>
-<string name="hotp_widget_text">open app for pin</string>
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <!-- Name of the application -->
+  <string name="app_name">Google Authenticator</string>
+
+  <!-- Shortened version of the application name, without Google branding -->
+  <string name="app_name_short">Authenticator</string>
+
+  <!-- Title displayed at the top when adding new OTP account manually -->
+  <string name="enter_key_title">Manual account entry</string>
+
+  <!-- Label for menu option: user selects this to enter new OTP account manually -->
+  <string name="enter_key_menu_item">Manually add account</string>
+
+  <!-- Form field to enter account name (part of the form used for manually adding account) -->
+  <string name="enter_account_label">Enter account name</string>
+
+  <!-- Example displayed in the secret key field before user starts typing there -->
+  <string name="enter_key_hint">Enter your key</string>
+
+  <!-- Error message displayed if user enters a key that is shorter than allowed minimum -->
+  <string name="enter_key_too_short">Key value is too short</string>
+
+  <!-- Error message displayed if user enters a key with an illegal character -->
+  <string name="enter_key_illegal_char">Key value has illegal character</string>
+
+  <!-- Title for the error message dialog displayed after scanning invalid QR code -->
+  <string name="error_title">Error</string>
+
+  <!-- Error message displayed when scanned QR code is not recognized as valid format -->
+  <string name="error_uri">Key not recognized.</string>
+
+  <!-- Alternative message displayed when scanned QR code is not recognized as valid key -->
+  <string name="error_qr">Cannot interpret QR code.</string>
+
+  <!-- Confirmation message displayed in a toast after adding new account -->
+  <string name="secret_saved">Secret saved</string>
+
+  <!-- Question asking user to confirm adding a new account, after scanning QR code -->
+  <string name="save_key_message">Save scanned key for</string>
+
+  <!-- Error message displayed if the scanned QR code contains an empty key -->
+  <string name="error_empty_secret">Cannot save empty secret</string>
+
+  <!-- Instruction message displayed on the main screen -->
+  <string name="enter_pin">
+    Enter this verification code if prompted during account sign-in:
+  </string>
+
+  <!-- Informational message displayed when user runs the application first time,
+       or anytime with no accounts configured. -->
+  <string name="not_initialized">
+      Google Authenticator will generate verification codes that
+      can be used to provide additional security when signing in.
+      &lt;br/&gt;
+      &lt;br/&gt;
+      Google Authenticator must be used along with the
+      2-step verification
+      feature for your Google Account.
+  </string>
+
+  <!-- Label displayed before the integrity check, used to verify key was entered correctly -->
+  <string name="check_code_title">Integrity check value</string>
+
+  <!-- Menu item user selects to view the key integrity check for a particular account -->
+  <string name="check_code_menu_item">Check key value</string>
+
+  <!-- Label for menu item, used to launch the barcode scanning application. -->
+  <string name="scan_barcode_menu_item">Scan a barcode</string>
+
+  <!-- Title for error message dialog when user attempts to scan a barcode but does not
+       have the barcode scanner application installed. -->
+  <string name="install_dialog_title">Install barcode scanner?</string>
+
+  <!-- Error message displayed when user attempts to scan a barcode without a scanner app. -->
+  <string name="install_dialog_message">
+    To scan barcodes containing keys, you must install the ZXing barcode scanner.
+   </string>
+
+  <!-- Text on button user clicks to start installation of barcode scanning app -->
+  <string name="install_button">Install</string>
+
+  <!-- Menu item, used to display more information about this application -->
+  <string name="about_menu_item">About</string>
+
+  <!-- Preference screen title that displays information about the application. -->
+  <string name="about_preference_screen_title">About</string>
+
+  <!-- Preference title for displaying the version of this app -->
+  <string name="version_preference_title">Version</string>
+
+  <!-- Preference title, used to get more information about the open-source project for this app -->
+  <string name="opensource_preference_title">Open-source project</string>
+
+  <!-- DO NOT TRANSLATE. URL of the Open-Source project's page. -->
+  <string name="opensource_page_url">http://code.google.com/p/google-authenticator/</string>
+
+  <!-- Preference title, used to view the terms of service from Google web page -->
+  <string name="terms_preference_title">Terms of service</string>
+
+  <!-- DO NOT TRANSLATE. URL of the Terms of Service page. -->
+  <string name="terms_page_url">http://m.google.com/tospage</string>
+
+  <!-- Preference title, used to view the privacy policy from Google web page -->
+  <string name="privacy_preference_title">Privacy policy</string>
+
+  <!-- DO NOT TRANSLATE. URL of the Privacy Policy page. -->
+  <string name="privacy_page_url">http://m.google.com/privacy</string>
+
+  <!-- Information displayed on the check-key screen, explaining use of the integrity check -->
+  <string name="check_code">
+  To check that you have the correct key value for <xliff:g id="account" example="mallory@gmail.com">%1$s</xliff:g>
+  verify that the value here matches the integrity check value provided
+  by the server:&lt;br/>
+  </string>
+
+  <!-- Error message displayed on check-integrity code page,
+       if there is an error computing the integrity code for the key. -->
+  <string name="general_security_exception">General security exception</string>
+
+  <!-- Error message displayed on check-integrity code page, if key is corrupted. -->
+  <string name="decoding_exception">Decoding exception</string>
+
+  <!-- Button on manual account entry page, adds the account -->
+  <string name="submit">Save</string>
+
+  <!-- Button on manual account entry page, cancels adding account, returns to main page -->
+  <string name="cancel">Cancel</string>
+
+  <!-- Menu item when long-pressing on account, used to delete OTP account -->
+  <string name="delete">Delete</string>
+
+  <!-- Confirmation message displayed when user selects "Delete" menu item -->
+  <string name="delete_message">Delete this key?</string>
+
+  <!-- Long-press menu item for an account, used to rename that account -->
+  <string name="rename">Rename</string>
+
+  <!-- Text in dialog shown when user selects "Rename" menu item for a given
+       account, with the parameter indicating existing account name -->
+  <string name="rename_message">Rename <xliff:g id="account" example="mallory@gmail.com">%1$s</xliff:g></string>
+
+  <!-- Error message displayed when user tries to rename one account to the same
+       name as another existing account -->
+  <string name="error_exists">Sorry, that name is already in use.</string>
+
+  <!-- Long-press menu item for an account, copies current OTP code for that account
+       to the phone clipboard -->
+  <string name="copy_to_clipboard">Copy to clipboard</string>
+
+  <!-- Text reported to the accessibility system (e.g., on screen reader)
+       when the user selects a counter-based account (from the account list)
+       for which no code is currently displayed/generated.
+       Pressing on the account row will generate the next verification
+       code. -->
+  <string name="counter_pin">Get code</string>
+
+  <!-- Placeholder value displayed for OTP before any codes have been generated -->
+  <string name="empty_pin">_ _ _ _ _ _</string>
+
+  <!-- Text on OK button for confirmation dialogs -->
+  <string name="ok">OK</string>
+
+  <!-- Label for the dropdown menu when adding new account manually.
+       Asking user to specify one of the two key types (counter vs. time) -->
+  <string name="type_prompt">Type of key</string>
+
+  <!-- NOTE: order matters here and must be the same as AccountDb.TYPE_*
+       TODO(adhintz): make order not matter by using something like enums -->
+  <!-- Different type of OTP accounts, displayed in drop-down menu when manually adding accounts.
+       Codes can be generated either based on time or based on an incrementing counter. -->
+  <string-array name="type">
+    <item>Time based</item>
+    <item>Counter based</item>
+  </string-array>
+
+  <!-- Name of the Service for exporting the application's data
+       to the new version of the application (signed with a different key). -->
+  <string name="dataexport_service_name">Exporter</string>
+
+  <!--  Short notice (HTML) displayed at the top of the main screen that says that this app is
+        deprecated and should be uninstalled. The notice contains a link that will the system UI
+        for uninstalling this app. -->
+  <string name="deprecation_notice_in_main_screen_uninstall_self">
+    <![CDATA[
+    This version of Google Authenticator will no longer be supported.
+    You already have the new version of the app on your device.
+    <a href="">Uninstall this app</a>
+    ]]>
+  </string>
+
+  <!--  Short notice (HTML) displayed at the top of the main screen that says that this app is
+        deprecated, that the new app is already installed. The notice contains a link that
+        launches the new app. -->
+  <string name="deprecation_notice_in_main_screen_launch_new_app">
+    <![CDATA[
+    This version of Google Authenticator will no longer be supported.
+    <a href="">Launch the new app</a> to import your accounts.
+    ]]>
+  </string>
+
+  <!--  Short notice (HTML) displayed at the top of the main screen that says that this app is
+        deprecated and that the new app should be intalled. The notice contains a link that
+        that opens a page that provides more details (see deprecated_notice_page_text). -->
+  <string name="deprecation_notice_in_main_screen_install_new_app">
+    <![CDATA[
+    This version of Google Authenticator will no longer be supported. <a href="">Learn more</a>
+    ]]>
+  </string>
+
+  <!-- Text (HTML) of the page that has the full details on the deprecation of this app and provides
+       a link to install the new app from the Android Market.
+       The link will open the Android Market app to install the new app. -->
+  <string name="deprecation_notice_page_text_install_via_market">
+    <![CDATA[
+    This version of Google Authenticator will no longer be supported.
+
+    <p>
+    To set up the new version, please <a href="">install the new Google Authenticator app</a>
+    from Market, then it will automatically import your accounts.
+    ]]>
+  </string>
+
+  <!-- Text (HTML) of the page that has the full details on the deprecation of this app. The text
+       is displayed when we don't know how to install the new app. -->
+  <string name="deprecation_notice_page_text_install_path_unknown">
+    <![CDATA[
+    This version of Google Authenticator will no longer be supported.
+
+    <p>
+    To set up the new version, please install the new Google Authenticator app,
+    then it will automatically import your accounts.
+    ]]>
+  </string>
+
 </resources>

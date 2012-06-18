@@ -1,21 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical" android:layout_width="fill_parent"
-  android:layout_height="wrap_content">
+<!-- Copyright 2009 Google Inc. All Rights Reserved.
 
-  <TextView android:id="@+id/enter_pin" android:layout_width="fill_parent"
-    android:layout_height="wrap_content" android:layout_marginLeft="20dip"
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_height="fill_parent" android:layout_width="fill_parent"
+  android:clipToPadding="true">
+
+  <LinearLayout android:id="@+id/deprecation_notice"
+    android:orientation="horizontal"
+    android:background="#4d0000"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:visibility="gone">
+    <ImageView android:src="@drawable/ic_deprecation_notice"
+      android:layout_width="40dip"
+      android:layout_height="40dip"
+      android:layout_gravity="center_vertical"
+      android:gravity="center_vertical"
+      android:adjustViewBounds="true">
+    </ImageView>
+    <TextView android:id="@+id/deprecation_notice_text"
+      android:layout_width="fill_parent" android:layout_height="wrap_content"
+      android:paddingLeft="10dip"
+      android:textColor="@android:color/white"
+      android:textColorLink="@android:color/white"
+      android:linksClickable="true"
+      android:focusable="true"
+      android:focusableInTouchMode="true" />
+  </LinearLayout>
+
+  <TextView android:id="@+id/enter_pin"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
     android:layout_marginTop="10dip" android:text="@string/enter_pin"
     android:textColor="@android:color/white"
     style="?android:attr/textAppearanceMedium" android:visibility="gone" />
     <!-- textColor is set so that when clicked the text is still white. -->
 
-  <LinearLayout android:id="@+id/main_buttons" 
+  <LinearLayout android:id="@+id/main_buttons"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" android:paddingTop="10dip"
-    android:gravity="bottom|center_horizontal"
-    android:visibility="gone">
+    android:gravity="bottom|center_horizontal" android:visibility="gone">
     <Button android:id="@+id/scan_barcode_button"
       android:text="@string/scan_barcode_menu_item"
       android:layout_height="wrap_content" android:layout_width="wrap_content"
@@ -27,21 +71,9 @@
   </LinearLayout>
 
   <!-- Unused view to prevent user_list from starting with focus. -->
-  <View android:focusable="true" android:focusableInTouchMode="true"
-    android:layout_width="0px" android:layout_height="0px"/>
 
   <ListView android:id="@+id/user_list"
-    android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
     android:divider="#36c" android:dividerHeight="1dip"/>
-
-  <View android:layout_width="wrap_content" android:layout_height="0dip"
-    android:layout_weight="1" android:visibility="invisible" />
-
-  <TextView android:id="@+id/status_text" android:layout_width="fill_parent"
-    android:layout_height="wrap_content" android:layout_marginLeft="10dip"
-    android:layout_marginBottom="5dip"
-    android:hint="@string/status_hint"
-    android:gravity="bottom|center_horizontal"
-    style="?android:attr/textAppearanceSmall" />
 
 </LinearLayout>

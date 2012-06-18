@@ -1,23 +1,47 @@
+/*
+ * Copyright 2009 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.google.android.apps.authenticator;
 
 import java.util.HashMap;
+import java.util.Locale;
 
 /**
- * Encodes arbitrary byte arrays as case-insensitive base-32 strings  
- * 
+ * Encodes arbitrary byte arrays as case-insensitive base-32 strings.
+ * <p>
+ * The implementation is slightly different than in RFC 4648. During encoding,
+ * padding is not added, and during decoding the last incomplete chunk is not
+ * taken into account. The result is that multiple strings decode to the same
+ * byte array, for example, string of sixteen 7s ("7...7") and seventeen 7s both
+ * decode to the same byte array.
+ * TODO(sarvar): Revisit this encoding and whether this ambiguity needs fixing.
+ *
  * @author sweis@google.com (Steve Weis)
  * @author Neal Gafter
  */
 public class Base32String {
   // singleton
-  
-  private static final Base32String INSTANCE = 
-    new Base32String("ABCDEFGHIJKLMNOPQRSTUVWXYZ234567"); // RFC 4668/3548
 
-  static Base32String getInstance() { 
+  private static final Base32String INSTANCE =
+    new Base32String("ABCDEFGHIJKLMNOPQRSTUVWXYZ234567"); // RFC 4648/3548
+
+  static Base32String getInstance() {
     return INSTANCE;
   }
-  
+
   // 32 alpha-numeric characters.
   private String ALPHABET;
   private char[] DIGITS;
@@ -45,8 +69,14 @@ public class Base32String {
   protected byte[] decodeInternal(String encoded) throws DecodingException {
     // Remove whitespace and separators
     encoded = encoded.trim().replaceAll(SEPARATOR, "").replaceAll(" ", "");
+
+    // Remove padding. Note: the padding is used as hint to determine how many
+    // bits to decode from the last incomplete chunk (which is commented out
+    // below, so this may have been wrong to start with).
+    encoded = encoded.replaceFirst("[=]*$", "");
+
     // Canonicalize to all upper case
-    encoded = encoded.toUpperCase();
+    encoded = encoded.toUpperCase(Locale.US);
     if (encoded.length() == 0) {
       return new byte[0];
     }
@@ -68,8 +98,8 @@ public class Base32String {
         bitsLeft -= 8;
       }
     }
-    // We'll ignore leftover bits for now. 
-    // 
+    // We'll ignore leftover bits for now.
+    //
     // if (next != outLength || bitsLeft >= SHIFT) {
     //  throw new DecodingException("Bits left: " + bitsLeft);
     // }
@@ -116,14 +146,14 @@ public class Base32String {
     }
     return result.toString();
   }
-  
+
   @Override
   // enforce that this class is a singleton
   public Object clone() throws CloneNotSupportedException {
     throw new CloneNotSupportedException();
   }
 
-  static class DecodingException extends Exception {
+  public static class DecodingException extends Exception {
     public DecodingException(String message) {
       super(message);
     }

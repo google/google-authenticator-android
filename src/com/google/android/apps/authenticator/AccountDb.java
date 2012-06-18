@@ -1,85 +1,127 @@
-// Copyright (C) 2010 Google Inc.
+/*
+ * Copyright 2010 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package com.google.android.apps.authenticator;
+
+import com.google.android.apps.authenticator.Base32String.DecodingException;
+import com.google.android.apps.authenticator.PasscodeGenerator.Signer;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.util.Log;
+
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.Collection;
+
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
 
 /**
  * A database of email addresses and secret values
- * 
+ *
  * @author sweis@google.com (Steve Weis)
  */
 public class AccountDb {
-  public static final Integer DEFAULT_COUNTER = 0;  // for hotp type
+  public static final Integer DEFAULT_HOTP_COUNTER = 0;
+
+  private static final String ID_COLUMN = "_id";
+  private static final String EMAIL_COLUMN = "email";
+  private static final String SECRET_COLUMN = "secret";
+  private static final String COUNTER_COLUMN = "counter";
+  private static final String TYPE_COLUMN = "type";
   private static final String TABLE_NAME = "accounts";
-  static final String ID_COLUMN = "_id";
-  static final String EMAIL_COLUMN = "email";
-  static final String SECRET_COLUMN = "secret";
-  static final String COUNTER_COLUMN = "counter";
-  static final String TYPE_COLUMN = "type";
   private static final String PATH = "databases";
-  private static SQLiteDatabase DATABASE = null;
-  
+
+  private SQLiteDatabase mDatabase;
+
+  private static final String LOCAL_TAG = "GoogleAuthenticator.AccountDb";
+
   /**
-   * Types of secret keys. 
+   * Types of secret keys.
    */
   public enum OtpType {  // must be the same as in res/values/strings.xml:type
     TOTP (0),  // time based
     HOTP (1);  // counter based
-    
+
     public final Integer value;  // value as stored in SQLite database
     OtpType(Integer value) {
       this.value = value;
     }
-    
+
     public static OtpType getEnum(Integer i) {
       for (OtpType type : OtpType.values()) {
         if (type.value.equals(i)) {
           return type;
         }
       }
-      
+
       return null;
     }
-    
-  }
-  
-  private AccountDb() {
-    // Don't new me
+
   }
 
-  /*
-   * initialize() must be called before any other AccountDb methods can be used.
-   */
-  static void initialize(Context context) {
-    if (DATABASE != null) {
-      return;
-    }
-    
-    DATABASE = context.openOrCreateDatabase(PATH, Context.MODE_PRIVATE, null);
+  public AccountDb(Context context) {
+    mDatabase = openDatabase(context);
     String createTableIfNeeded = String.format(
         "CREATE TABLE IF NOT EXISTS %s" +
         " (%s INTEGER PRIMARY KEY, %s TEXT NOT NULL, %s TEXT NOT NULL, " +
         " %s INTEGER DEFAULT %s, %s INTEGER)",
-        TABLE_NAME, ID_COLUMN, EMAIL_COLUMN, SECRET_COLUMN, COUNTER_COLUMN, 
-        DEFAULT_COUNTER, TYPE_COLUMN);
-    DATABASE.execSQL(createTableIfNeeded);
+        TABLE_NAME, ID_COLUMN, EMAIL_COLUMN, SECRET_COLUMN, COUNTER_COLUMN,
+        DEFAULT_HOTP_COUNTER, TYPE_COLUMN);
+    mDatabase.execSQL(createTableIfNeeded);
   }
-  
-  static Cursor getNames() {
-    return DATABASE.query(TABLE_NAME, null, null, null, null, null, null, null);
+
+  /*
+   * Tries three times to open database before throwing AccountDbOpenException.
+   */
+  private SQLiteDatabase openDatabase(Context context) {
+    for (int count = 0; true; count++) {
+      try {
+        return context.openOrCreateDatabase(PATH, Context.MODE_PRIVATE, null);
+      } catch (SQLiteException e) {
+        if (count < 2) {
+          continue;
+        } else {
+          throw new AccountDbOpenException("Failed to open AccountDb database in three tries.", e);
+        }
+      }
+    }
   }
-  
-  static Cursor getAccount(String email) {
-    return DATABASE.query(TABLE_NAME, null, EMAIL_COLUMN + "= ?",
-        new String[] {email}, null, null, null);
+
+  /**
+   * Closes this database and releases any system resources held.
+   */
+  public void close() {
+    mDatabase.close();
   }
-  
-  static boolean nameExists(String email) {
+
+  /*
+   * deleteAllData() will remove all rows. Useful for testing.
+   */
+  public boolean deleteAllData() {
+    mDatabase.delete(AccountDb.TABLE_NAME, null, null);
+    return true;
+  }
+
+  boolean nameExists(String email) {
     Cursor cursor = getAccount(email);
     try {
       return !cursorIsEmpty(cursor);
@@ -87,8 +129,8 @@ public class AccountDb {
       tryCloseCursor(cursor);
     }
   }
-  
-  static String getSecret(String email) {
+
+  public String getSecret(String email) {
     Cursor cursor = getAccount(email);
     try {
       if (!cursorIsEmpty(cursor)) {
@@ -98,57 +140,85 @@ public class AccountDb {
     } finally {
       tryCloseCursor(cursor);
     }
-    return null;   
+    return null;
   }
 
-  static Integer getCounter(String email) {
+  static Signer getSigningOracle(String secret) {
+    try {
+      byte[] keyBytes = decodeKey(secret);
+      final Mac mac = Mac.getInstance("HMACSHA1");
+      mac.init(new SecretKeySpec(keyBytes, ""));
+
+      // Create a signer object out of the standard Java MAC implementation.
+      return new Signer() {
+        @Override
+        public byte[] sign(byte[] data) {
+          return mac.doFinal(data);
+        }
+      };
+    } catch (DecodingException error) {
+      Log.e(LOCAL_TAG, error.getMessage());
+    } catch (NoSuchAlgorithmException error) {
+      Log.e(LOCAL_TAG, error.getMessage());
+    } catch (InvalidKeyException error) {
+      Log.e(LOCAL_TAG, error.getMessage());
+    }
+
+    return null;
+  }
+
+  private static byte[] decodeKey(String secret) throws DecodingException {
+    return Base32String.decode(secret);
+  }
+
+  public Integer getCounter(String email) {
     Cursor cursor = getAccount(email);
     try {
       if (!cursorIsEmpty(cursor)) {
         cursor.moveToFirst();
         return cursor.getInt(cursor.getColumnIndex(COUNTER_COLUMN));
-      } 
+      }
     } finally {
       tryCloseCursor(cursor);
     }
-    return null;   
+    return null;
   }
-  
-  static void incrementCounter(String email) {
+
+  void incrementCounter(String email) {
     ContentValues values = new ContentValues();
     values.put(EMAIL_COLUMN, email);
     Integer counter = getCounter(email);
     values.put(COUNTER_COLUMN, counter + 1);
-    DATABASE.update(TABLE_NAME, values, whereClause(email), null);
+    mDatabase.update(TABLE_NAME, values, whereClause(email), null);
   }
 
-  static OtpType getType(String email) {
+  public OtpType getType(String email) {
     Cursor cursor = getAccount(email);
     try {
       if (!cursorIsEmpty(cursor)) {
         cursor.moveToFirst();
         Integer value = cursor.getInt(cursor.getColumnIndex(TYPE_COLUMN));
         return OtpType.getEnum(value);
-      } 
+      }
     } finally {
       tryCloseCursor(cursor);
     }
-    return null;   
+    return null;
   }
 
-  static void setType(String email, OtpType type) {
+  void setType(String email, OtpType type) {
     ContentValues values = new ContentValues();
     values.put(EMAIL_COLUMN, email);
     values.put(TYPE_COLUMN, type.value);
-    DATABASE.update(TABLE_NAME, values, whereClause(email), null);
+    mDatabase.update(TABLE_NAME, values, whereClause(email), null);
   }
 
   private static String whereClause(String email) {
     return EMAIL_COLUMN + " = " + DatabaseUtils.sqlEscapeString(email);
   }
-  
-  static void delete(String email) {
-    DATABASE.delete(TABLE_NAME, whereClause(email), null);
+
+  public void delete(String email) {
+    mDatabase.delete(TABLE_NAME, whereClause(email), null);
   }
 
   /**
@@ -159,33 +229,76 @@ public class AccountDb {
    * @param type hotp vs totp
    * @param counter only important for the hotp type
    */
-  static void update(String email, String secret, String oldEmail,
-      Integer type, Integer counter) {
+  public void update(String email, String secret, String oldEmail,
+      OtpType type, Integer counter) {
     ContentValues values = new ContentValues();
     values.put(EMAIL_COLUMN, email);
     values.put(SECRET_COLUMN, secret);
-    values.put(TYPE_COLUMN, type);
+    values.put(TYPE_COLUMN, type.ordinal());
     values.put(COUNTER_COLUMN, counter);
-    int updated = DATABASE.update(TABLE_NAME, values, 
+    int updated = mDatabase.update(TABLE_NAME, values,
                                   whereClause(oldEmail), null);
     if (updated == 0) {
-      DATABASE.insert(TABLE_NAME, null, values);
+      mDatabase.insert(TABLE_NAME, null, values);
     }
   }
-  
+
+  private Cursor getNames() {
+    return mDatabase.query(TABLE_NAME, null, null, null, null, null, null, null);
+  }
+
+  private Cursor getAccount(String email) {
+    return mDatabase.query(TABLE_NAME, null, EMAIL_COLUMN + "= ?",
+        new String[] {email}, null, null, null);
+  }
+
   /**
    * Returns true if the cursor is null, or contains no rows.
    */
-  public static boolean cursorIsEmpty(Cursor c) {
+  private static boolean cursorIsEmpty(Cursor c) {
     return c == null || c.getCount() == 0;
   }
-  
+
   /**
    * Closes the cursor if it is not null and not closed.
    */
-  public static void tryCloseCursor(Cursor c) {
+  private static void tryCloseCursor(Cursor c) {
     if (c != null && !c.isClosed()) {
       c.close();
+    }
+  }
+
+  /**
+   * Get list of all account names.
+   * @param result Collection of strings-- account names are appended, without
+   *               clearing this collection on entry.
+   * @return Number of accounts added to the output parameter.
+   */
+  public int getNames(Collection<String> result) {
+    Cursor cursor = getNames();
+
+    try {
+      if (cursorIsEmpty(cursor))
+        return 0;
+
+      int nameCount = cursor.getCount();
+      int index = cursor.getColumnIndex(AccountDb.EMAIL_COLUMN);
+
+      for (int i = 0; i < nameCount; ++i) {
+        cursor.moveToPosition(i);
+        String username = cursor.getString(index);
+        result.add(username);
+      }
+
+      return nameCount;
+    } finally {
+      tryCloseCursor(cursor);
+    }
+  }
+
+  private static class AccountDbOpenException extends RuntimeException {
+    public AccountDbOpenException(String message, Exception e) {
+      super(message, e);
     }
   }
 }
