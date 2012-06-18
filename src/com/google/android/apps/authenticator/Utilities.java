@@ -16,15 +16,7 @@
 
 package com.google.android.apps.authenticator;
 
-import com.google.android.apps.authenticator.testability.accounts.AccountManager;
-
-import android.accounts.Account;
-import android.text.Spannable;
-import android.text.Spanned;
-import android.text.TextUtils;
-import android.text.style.ClickableSpan;
-import android.text.style.URLSpan;
-import android.view.View;
+import android.webkit.WebView;
 
 /**
  * A class for handling a variety of utility things.  This was mostly made
@@ -47,10 +39,6 @@ public class Utilities {
   static final int INVALID_QR_CODE = 3;
   static final int INVALID_SECRET_IN_QR_CODE = 7;
 
-  /** Google account type used by {@link AccountManager}. */
-  public static final String GOOGLE_ACCOUNT_TYPE = "com.google";
-
-
   // Constructor -- Does nothing yet
   private Utilities() { }
 
@@ -63,70 +51,9 @@ public class Utilities {
   }
 
   /**
-   * Lists all Google accounts registered with the provided {@link AccountManager}.
-   *
-   * @param accountManager account manager or {@code null} for none in which case {@code 0} accounts
-   *        will be returned.
+   * Sets the provided HTML as the contents of the provided {@link WebView}.
    */
-  public static Account[] listGoogleAccounts(AccountManager accountManager) {
-    return (accountManager != null)
-        ? accountManager.getAccountsByType(GOOGLE_ACCOUNT_TYPE)
-        : new Account[0];
-  }
-
-  /**
-   * Finds a Google account having the provided name.
-   *
-   * @return account or {@code null} if no such account is registered with the
-   *         {@code accountManager}.
-   */
-  public static Account findGoogleAccountByName(AccountManager accountManager, String name) {
-    if (name == null) {
-      return null;
-    }
-
-    for (Account account : listGoogleAccounts(accountManager)) {
-      if (name.equalsIgnoreCase(account.name)) {
-        return account;
-      }
-    }
-    return null;
-  }
-
-  /**
-   * Replaces all spans of type {@link URLSpan} in the provided source with clickable spans that
-   * invoked the provided listener when clicked.
-   */
-  public static Spanned replaceEmptyUrlSpansWithClickableSpans(
-      Spanned source, final View.OnClickListener onClickListener) {
-    URLSpan[] sourceSpans = source.getSpans(0, source.length(), URLSpan.class);
-    if ((sourceSpans == null) || (sourceSpans.length == 0)) {
-      // Nothing to replace
-      return source;
-    }
-    if (!(source instanceof Spannable)) {
-      throw new RuntimeException("Source not spannable: " + source);
-    }
-    Spannable spannableSource = (Spannable) source;
-    for (URLSpan sourceSpan : sourceSpans) {
-      if (!TextUtils.isEmpty(sourceSpan.getURL())) {
-        continue;
-      }
-      int spanStart = source.getSpanStart(sourceSpan);
-      int spanEnd = source.getSpanEnd(sourceSpan);
-      int spanFlags = source.getSpanFlags(sourceSpan);
-      spannableSource.removeSpan(sourceSpan);
-      spannableSource.setSpan(
-          new ClickableSpan() {
-            @Override
-            public void onClick(View widget) {
-              onClickListener.onClick(widget);
-            }
-          },
-          spanStart,
-          spanEnd,
-          spanFlags);
-    }
-    return source;
+  public static void setWebViewHtml(WebView view, String html) {
+    view.loadDataWithBaseURL(null, html, "text/html", "utf-8", null);
   }
 }

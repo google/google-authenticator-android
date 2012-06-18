@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google 身份验证器"</string>
   <string name="app_name_short" msgid="6268465073167241020">"身份验证器"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"手动输入帐户"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"手动添加帐户"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"添加"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"添加帐户"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"了解其工作原理"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"添加帐户"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"工作原理"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"添加其他帐户"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"手动添加帐户"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"扫描条形码"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"输入帐户名称"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"输入您的密钥"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"密钥值太短"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"密钥无法识别。"</string>
   <string name="error_qr" msgid="1076904454315180481">"无法解读 QR 码。"</string>
   <string name="secret_saved" msgid="2201025202465443226">"密钥已保存"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"保存针对以下内容而扫描的密钥："</string>
+  <string name="save_key_message" msgid="4427138629791380096">"保存以下帐户的密钥："</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"无法保存空密钥"</string>
   <string name="enter_pin" msgid="2238539410253130912">"在登录帐户期间，如果提示输入验证码，请输入此验证码："</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Google 身份验证器会生成验证码，可以用来在登录时提供更多一层安全防护。&lt;br/&gt; &lt;br/&gt; Google 身份验证器必须与 Google 帐户的两步验证功能配合使用。"</string>
   <string name="check_code_title" msgid="6308604727562833139">"完整性校验值"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"检查密钥值"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"扫描条形码"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"要安装条形码扫描器吗？"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"要扫描包含密钥的条形码，必须安装斑马线条形码扫描器。"</string>
   <string name="install_button" msgid="5395462228740377795">"安装"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"解码异常"</string>
   <string name="submit" msgid="1518558163262431303">"保存"</string>
   <string name="cancel" msgid="5705561042616477184">"取消"</string>
-  <string name="delete" msgid="2463438384745656241">"删除"</string>
-  <string name="delete_message" msgid="7101401126932957358">"要删除此密钥吗？"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"删除"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"删除帐户"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"是否删除 <xliff:g id="ACCOUNT">%1$s</xliff:g>？"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"删除该帐户会&lt;b&gt;导致您无法&lt;/b&gt;生成验证码，但&lt;b&gt;不会&lt;/b&gt;关闭双重身份验证。您可能会因此无法登录自己的帐户。&lt;p&gt;在删除该帐户之前，请执行以下操作：&lt;ul&gt;&lt;li&gt;关闭该帐户的两双重身份验证功能，或者&lt;/li&gt;&lt;li&gt;确保您可以通过其他方法生成验证码。&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"删除该帐户会&lt;b&gt;导致您无法&lt;/b&gt;生成验证码，但&lt;b&gt;不会&lt;/b&gt;关闭两步验证。您可能会因此无法登录自己的帐户。&lt;p&gt;在删除该帐户之前，请执行以下操作：&lt;ul&gt;&lt;li&gt;关闭该帐户的两步验证，或者&lt;/li&gt;&lt;li&gt;确保您可以通过其他方法生成验证码。&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"重命名"</string>
   <string name="rename_message" msgid="5929955206098259018">"重命名 <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"抱歉，此名称已在使用。"</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"基于时间"</item>
     <item msgid="5212912099902129712">"基于计数器"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"导出程序"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"我们将不再支持此版本的 Google 身份验证器。您的设备上已有该应用程序的新版本。&lt;a href=&gt;卸载此应用程序&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"我们将不再支持此版本的 Google 身份验证器。要导入您的帐户，请&lt;a href=&gt;启动新版应用程序&lt;/a&gt;。"</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"我们将不再支持此版本的 Google 身份验证器。&lt;a href=&gt;了解详情&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"我们将不再支持此版本的 Google 身份验证器。&lt;p&gt;要对新的版本进行设置，请&lt;a href=&gt;安装电子市场上的新版 Google 身份验证器应用程序&lt;/a&gt;，然后此应用程序会自动导入您的帐户。"</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"我们将不再支持此版本的 Google 身份验证器。&lt;p&gt;要对新的版本进行设置，请安装新版 Google 身份验证器应用程序，然后此应用程序会自动导入您的帐户。"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"已成功导入"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"已成功从弃用的 Google 身份验证器应用程序中导入您的数据。现在您可以点击下面的按钮放心地卸载该应用程序先前的版本。"</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"卸载"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"退出"</string>
 </resources>

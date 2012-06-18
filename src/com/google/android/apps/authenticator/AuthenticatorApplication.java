@@ -19,7 +19,6 @@ package com.google.android.apps.authenticator;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 
 import android.app.Application;
-import android.os.Build;
 
 /**
  * Authenticator application which is one of the first things instantiated when our process starts.
@@ -42,16 +41,11 @@ public class AuthenticatorApplication extends Application {
     // security vulnerability where SQLite database transaction journals are world-readable.
     // NOTE: This also prevents all files in the data dir from being world-accessible, which is fine
     // because this application does not need world-accessible files.
-    // Since we're not yet sure whether it's a good idea to preclude the data dir from being
-    // world-executable on future Android platforms, we're only performing the fix on Honeycomb
-    // and below which is affected by the vulnerability.
-    if (Build.VERSION.SDK_INT < 14) {
-      try {
-        FileUtilities.restrictAccessToOwnerOnly(
-            getApplicationContext().getApplicationInfo().dataDir);
-      } catch (Throwable e) {
-        // Ignore this exception and don't log anything to avoid attracting attention to this fix
-      }
+    try {
+      FileUtilities.restrictAccessToOwnerOnly(
+          getApplicationContext().getApplicationInfo().dataDir);
+    } catch (Throwable e) {
+      // Ignore this exception and don't log anything to avoid attracting attention to this fix
     }
 
     // During test runs the injector may have been configured already. Thus we take care to avoid

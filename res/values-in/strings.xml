@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
   <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"Entri akun manual"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"Tambahkan akun secara manual"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"Tambahkan"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"Tambahkan akun"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"Lihat cara kerjanya"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"Tambahkan akun"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"Cara kerjanya"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"Tambahkan akun lainnya"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"Tambahkan akun secara manual"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"Pindai kode batang"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"Masukkan nama akun"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"Masukkan kunci Anda"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"Nilai kunci terlalu pendek"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"Kunci tidak dikenal."</string>
   <string name="error_qr" msgid="1076904454315180481">"Tidak dapat menginterpretasikan kode QR."</string>
   <string name="secret_saved" msgid="2201025202465443226">"Rahasia tersimpan"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"Simpan kunci yang dipindai untuk"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"Simpan kunci untuk"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"Tidak dapat menyimpan rahasia kosong"</string>
   <string name="enter_pin" msgid="2238539410253130912">"Masukkan kode verifikasi ini jika diminta selama proses masuk akun:"</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Google Authenticator akan menghasilkan kode verifikasi yang dapat digunakan untuk menambah lapisan keamanan saat masuk ke sistem. &lt;br/&gt; &lt;br/&gt; Google Authenticator wajib digunakan bersama fitur verifikasi 2 langkah untuk Akun Google Anda."</string>
   <string name="check_code_title" msgid="6308604727562833139">"Nilai pemeriksaan integritas"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"Periksa nilai kunci"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"Pindai kode batang"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"Pasang pemindai kode batang?"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"Untuk memindai kode batang yang berisi kunci, Anda harus memasang pemindai kode batang ZXing."</string>
   <string name="install_button" msgid="5395462228740377795">"Pasang"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"Pengecualian pengawasandian"</string>
   <string name="submit" msgid="1518558163262431303">"Simpan"</string>
   <string name="cancel" msgid="5705561042616477184">"Batal"</string>
-  <string name="delete" msgid="2463438384745656241">"Hapus"</string>
-  <string name="delete_message" msgid="7101401126932957358">"Hapus kunci ini?"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"Hapus"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Hapus akun"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"Hapus <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"Menghapus akun ini akan &lt;b&gt;menghilangkan kemampuan Anda&lt;/b&gt; untuk menghasilkan kode, namun proses ini &lt;b&gt;tidak&lt;/b&gt; akan menonaktifkan autentikasi 2 faktor. Hal ini dapat mencegah Anda masuk ke akun.&lt;p&gt; Sebelum menghapus: &lt;ul&gt; &lt;li&gt;Nonaktifkan autentikasi 2 faktor untuk akun ini, atau&lt;/li&gt; &lt;li&gt;Pastikan Anda memiliki mekanisme alternatif untuk menghasilkan kode.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Menghapus akun ini akan &lt;b&gt;menghilangkan kemampuan Anda&lt;/b&gt; untuk menghasilkan kode, namun proses ini &lt;b&gt;tidak&lt;/b&gt; akan menonaktifkan verifikasi 2 langkah. Hal ini dapat mencegah Anda masuk ke akun.&lt;p&gt; Sebelum menghapus: &lt;ul&gt; &lt;li&gt;Nonaktifkan verifikasi 2 langkah untuk akun ini, atau&lt;/li&gt; &lt;li&gt;Pastikan bahwa Anda memiliki mekanisme alternatif untuk menghasilkan kode.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"Ganti nama"</string>
   <string name="rename_message" msgid="5929955206098259018">"Ganti nama <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"Maaf, nama itu sudah digunakan."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"Berbasis waktu"</item>
     <item msgid="5212912099902129712">"Berbasis penghitung"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"Pengekspor"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"Versi Google Authenticator ini sudah tidak didukung. Anda telah memiliki versi baru dari apl pada perangkat Anda. &lt;a href=&gt;Copot pemasangan apl ini&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"Versi Google Authenticator ini sudah tidak didukung. &lt;a href=&gt;Luncurkan apl baru&lt;/a&gt; untuk mengimpor akun Anda."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"Versi Google Authenticator ini sudah tidak didukung. &lt;a href=&gt;Pelajari lebih lanjut&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"Versi Google Authenticator ini sudah tidak didukung. &lt;p&gt; Untuk menyiapkan versi yang baru, &lt;a href=&gt;pasang apl Google Authenticator yang baru&lt;/a&gt; dari Market, lalu apl ini akan mengimpor akun Anda secara otomatis."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"Versi Google Authenticator ini sudah tidak didukung. &lt;p&gt; Untuk menyiapkan versi baru, pasang apl Google Authenticator baru, lalu apl ini akan mengimpor status Anda secara otomatis."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"Impor berhasil"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"Data Anda telah berhasil diimpor dari apl Google Authenticator yang usang. Sekarang aman bagi Anda untuk mencopot pemasangan versi apl sebelumnya dengan mengeklik di bawah ini."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"Copot pemasangan"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"Keluar"</string>
 </resources>

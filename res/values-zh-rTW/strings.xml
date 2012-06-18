@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
   <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"手動輸入帳戶"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"手動新增帳戶"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"新增"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"新增帳戶"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"參閱說明"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"新增帳戶"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"說明"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"新增其他帳戶"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"手動新增帳戶"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"掃描條碼"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"輸入帳戶名稱"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"輸入金鑰"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"金鑰值太短"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"無法辨識金鑰。"</string>
   <string name="error_qr" msgid="1076904454315180481">"無法解譯 QR 圖碼。"</string>
   <string name="secret_saved" msgid="2201025202465443226">"秘密金鑰已儲存"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"儲存以下項目的掃描金鑰"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"儲存以下項目的金鑰"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"無法儲存空白的秘密金鑰"</string>
   <string name="enter_pin" msgid="2238539410253130912">"登入帳戶時若提示輸入驗證碼，請輸入這組驗證碼："</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Google Authenticator 會產生驗證碼，進一步強化登入程序的安全性。&lt;br/&gt; &lt;br/&gt; Google Authenticator 必須配合 Google 帳戶的兩步驟驗證功能一併使用。"</string>
   <string name="check_code_title" msgid="6308604727562833139">"完整性檢查值"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"檢查金鑰值"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"掃描條碼"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"安裝條碼掃描器？"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"如要掃描含有金鑰的條碼，您必須安裝 ZXing 條碼掃描器。"</string>
   <string name="install_button" msgid="5395462228740377795">"安裝"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"解讀例外狀況"</string>
   <string name="submit" msgid="1518558163262431303">"儲存"</string>
   <string name="cancel" msgid="5705561042616477184">"取消"</string>
-  <string name="delete" msgid="2463438384745656241">"刪除"</string>
-  <string name="delete_message" msgid="7101401126932957358">"要刪除這個金鑰嗎？"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"移除"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"移除帳戶"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"移除 <xliff:g id="ACCOUNT">%1$s</xliff:g>？"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"移除這個帳戶後&lt;b&gt;便無法&lt;/b&gt;產生驗證碼，但是&lt;b&gt;並不會&lt;/b&gt;關閉兩步驟驗證功能。移除後可能無法登入帳戶。&lt;p&gt;移除前請先：&lt;ul&gt; &lt;li&gt;關閉這個帳戶的兩步驟驗證功能，或是&lt;/li&gt; &lt;li&gt;確認有其他方法可產生驗證碼。&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"移除這個帳戶後&lt;b&gt;便無法&lt;/b&gt;產生驗證碼，但是&lt;b&gt;並不會&lt;/b&gt;關閉兩步驟驗證功能。移除後可能無法登入帳戶。&lt;p&gt;移除前請先：&lt;ul&gt; &lt;li&gt;關閉這個帳戶的兩步驟驗證功能，或是&lt;/li&gt; &lt;li&gt;確認有其他方法可產生驗證碼。&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"重新命名"</string>
   <string name="rename_message" msgid="5929955206098259018">"重新命名 <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"很抱歉，該名稱已在使用中。"</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"根據時間"</item>
     <item msgid="5212912099902129712">"根據計數器"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"匯出程式"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"我們將不再支援這個版本的 Google Authenticator。您的裝置已經安裝了這個應用程式的最新版本。&lt;a href=&gt;解除安裝這個應用程式&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"我們將不再支援這個版本的 Google Authenticator。&lt;a href=&gt;啟動新的應用程式&lt;/a&gt;來匯入您的帳戶。"</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"我們將不再支援這個版本的 Google Authenticator。&lt;a href=&gt;瞭解詳情&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"我們將不再支援這個版本的 Google Authenticator。&lt;p&gt;如要設定新的版本，請透過 Android Market &lt;a href=&gt;安裝新版 Google Authenticator 應用程式&lt;/a&gt;，該程式會自動匯入您的帳戶。"</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"我們將不再支援這個版本的 Google Authenticator。&lt;p&gt;如要設定新的版本，請安裝新版 Google Authenticator 應用程式，該程式會自動匯入您的帳戶。"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"匯入成功"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"您的資料已成功從已淘汰的 Google Authenticator 應用程式匯出，現在按一下底下的選項即可解除安裝舊版應用程式。"</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"解除安裝"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"結束"</string>
 </resources>

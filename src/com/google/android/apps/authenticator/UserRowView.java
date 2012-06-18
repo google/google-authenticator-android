@@ -16,6 +16,8 @@
 
 package com.google.android.apps.authenticator;
 
+import com.google.android.apps.authenticator2.R;
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.accessibility.AccessibilityEvent;

@@ -16,14 +16,12 @@
 
 package com.google.android.apps.authenticator;
 
-import com.google.android.apps.authenticator.testability.CapturingStartActivityListener;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
+import com.google.android.apps.authenticator2.R;
 
 import android.content.Intent;
 import android.preference.Preference;
 import android.test.ActivityInstrumentationTestCase2;
-
-import java.util.concurrent.TimeoutException;
 
 /**
  * Unit tests for {@link SettingsAboutActivity}.
@@ -33,10 +31,23 @@ import java.util.concurrent.TimeoutException;
 public class SettingsAboutActivityTest
     extends ActivityInstrumentationTestCase2<SettingsAboutActivity> {
 
-  private static long CLICK_EFFECT_TIMEOUT_MILLIS = 1000;
-
   public SettingsAboutActivityTest() {
-    super("com.google.android.apps.authenticator", SettingsAboutActivity.class);
+    super(TestUtilities.APP_PACKAGE_NAME, SettingsAboutActivity.class);
+  }
+
+  @Override
+  protected void setUp() throws Exception {
+    super.setUp();
+
+    DependencyInjector.resetForIntegrationTesting(getInstrumentation().getTargetContext());
+    TestUtilities.withLaunchPreventingStartActivityListenerInDependencyResolver();
+  }
+
+  @Override
+  protected void tearDown() throws Exception {
+    DependencyInjector.close();
+
+    super.tearDown();
   }
 
   public void testVersionTakenFromPackageVersion() throws Exception {
@@ -73,12 +84,8 @@ public class SettingsAboutActivityTest
     assertEquals(expectedData, intent.getDataString());
   }
 
-  private Intent tapOnPreferenceAndCatchFiredIntent(String preferenceKey)
-      throws TimeoutException, InterruptedException {
-    CapturingStartActivityListener startActivityListener = new CapturingStartActivityListener();
-    DependencyInjector.setStartActivityListener(startActivityListener);
-
+  private Intent tapOnPreferenceAndCatchFiredIntent(String preferenceKey) {
     TestUtilities.tapPreference(this, getActivity(), getActivity().findPreference(preferenceKey));
-    return startActivityListener.waitForFirstInvocation(CLICK_EFFECT_TIMEOUT_MILLIS).intent;
+    return TestUtilities.verifyWithTimeoutThatStartActivityAttemptedExactlyOnce();
   }
 }

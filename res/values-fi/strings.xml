@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
   <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"Manuaalinen tilin lisäys"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"Lisää tili manuaalisesti"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"Lisää"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"Lisää tili"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"Näin se toimii"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"Lisää tili"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"Näin se toimii"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"Lisää toinen tili"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"Lisää tili manuaalisesti"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"Lue viivakoodi"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"Anna tilin nimi"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"Anna avain"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"Avainarvo on liian lyhyt"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"Tuntematon avain."</string>
   <string name="error_qr" msgid="1076904454315180481">"QR-koodia ei voi tulkita."</string>
   <string name="secret_saved" msgid="2201025202465443226">"Salaisuus tallennettu"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"Tallenna avain tilille"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"Tallenna avain"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"Tyhjää salaisuutta ei voi tallentaa"</string>
   <string name="enter_pin" msgid="2238539410253130912">"Anna tämä vahvistuskoodi tiliin kirjautumisen yhteydessä pyydettäessä:"</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Google Authenticator luo vahvistuskoodeja, jotka antavat lisäsuojaa kirjautumisen yhteydessä. &lt;br/&gt; &lt;br/&gt; Google Authenticatoria tulee käyttää Google-tilisi kaksivaiheisen vahvistuksen yhteydessä."</string>
   <string name="check_code_title" msgid="6308604727562833139">"Eheydentarkistusarvo"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"Tarkista avainarvo"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"Lue viivakoodi"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"Asennetaanko viivakoodinlukija?"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"Asenna ZXing-viivakoodinlukija lukeaksesi avaimia sisältäviä viivakoodeja."</string>
   <string name="install_button" msgid="5395462228740377795">"Asenna"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"Koodauksen purkamispoikkeus"</string>
   <string name="submit" msgid="1518558163262431303">"Tallenna"</string>
   <string name="cancel" msgid="5705561042616477184">"Peruuta"</string>
-  <string name="delete" msgid="2463438384745656241">"Poista"</string>
-  <string name="delete_message" msgid="7101401126932957358">"Poistetaanko tämä avain?"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"Poista"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Poista tili"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"Poistetaanko <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"Jos poistat tämän tilin, &lt;b&gt;et voi enää&lt;/b&gt; luoda koodeja. Toiminto &lt;b&gt;ei&lt;/b&gt; kuitenkaan poista kaksivaiheista vahvistusta käytöstä. Toiminto voi estää sinua kirjautumasta tiliisi. &lt;p&gt; Ennen poistamista: &lt;ul&gt; &lt;li&gt;poista kaksivaiheinen vahvistus käytöstä tältä tililtä tai&lt;/li&gt; &lt;li&gt;varmista, että sinulla on vaihtoehtoinen tapa koodien luomiseksi.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Jos poistat tämän tilin, &lt;b&gt;et voi enää&lt;/b&gt; luoda koodeja. Toiminto ei kuitenkaan &lt;b&gt;&lt;/b&gt; poista kaksivaiheista vahvistusta käytöstä. Toiminto voi estää sinua kirjautumasta tiliisi. &lt;p&gt; Ennen poistamista: &lt;ul&gt; &lt;li&gt;poista kaksivaiheinen vahvistus käytöstä tältä tililtä tai&lt;/li&gt; &lt;li&gt;varmista, että sinulla on vaihtoehtoinen tapa koodien luomiseksi.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"Nimeä uudelleen"</string>
   <string name="rename_message" msgid="5929955206098259018">"Nimeä uudelleen <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"Nimi on jo käytössä."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"Aikaan perustuva"</item>
     <item msgid="5212912099902129712">"Laskuriin perustuva"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"Vientiohjelma"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"Tätä Google Authenticatorin versiota ei enää tueta. Laitteellasi on jo sovelluksen uusi versio. &lt;a href=&gt;Poista tämä sovellus&lt;/a&gt;."</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"Tätä Google Authenticatorin versiota ei enää tueta. Tuo tilisi &lt;a href=&gt;käynnistämällä uusi sovellus&lt;/a&gt;."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"Tätä Google Authenticatorin versiota ei enää tueta. &lt;a href=&gt;Lisätietoja&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"Tätä Google Authenticatorin versiota ei enää tueta. &lt;p&gt; Ota uusi versio käyttöön &lt;a href=&gt;asentamalla uusi Google Authenticator -sovellus&lt;/a&gt; Marketista – sovellus tuo tilisi automaattisesti."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"Tätä Google Authenticatorin versiota ei enää tueta. &lt;p&gt; Ota uusi versio käyttöön asentamalla uusi Google Authenticator -sovellus – se tuo tilisi automaattisesti."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"Tuonti onnistui"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"Tietosi tuotiin Google Authenticator -sovelluksesta. Voit nyt poistaa sovelluksen aiemman version napsauttamalla alla."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"Poista"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"Poistu"</string>
 </resources>

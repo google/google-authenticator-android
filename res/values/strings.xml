@@ -26,8 +26,35 @@
   <!-- Title displayed at the top when adding new OTP account manually -->
   <string name="enter_key_title">Manual account entry</string>
 
-  <!-- Label for menu option: user selects this to enter new OTP account manually -->
-  <string name="enter_key_menu_item">Manually add account</string>
+  <!-- Button on the Manual Account Entry page to add the account the details of which the user
+       is entering on the page. -->
+  <string name="enter_key_page_add_button">Add</string>
+
+  <!-- Label for a button on the main screen: add a new OTP account -->
+  <string name="button_add_account">Add an account</string>
+
+  <!-- Label for a button on the main screen: display an set of help pages explaining how 2-step
+       verification works. -->
+  <string name="button_how_it_works">See how it works</string>
+
+  <!-- Label for menu option: add a new OTP account -->
+  <string name="add_account_menu_item">Add account</string>
+
+  <!-- Label for menu option: display an set of help pages explaining how 2-step verification
+       works. -->
+  <string name="how_it_works_menu_item">How it works</string>
+
+  <!-- Title of the Add Other Account screen that offers the user to scan a barcode or manually
+       enter account details.  -->
+  <string name="add_other_account_page_title">Add other account</string>
+
+  <!-- Button on the Add Other Account screen that lets the user add an account by manually entering
+       account details. -->
+  <string name="button_add_account_manual_entry">Manually add account</string>
+
+  <!-- Button on the Add Other Account screen that lets the user add an account by scanning a QR
+       code. -->
+  <string name="button_add_account_scan_barcode">Scan barcode</string>
 
   <!-- Form field to enter account name (part of the form used for manually adding account) -->
   <string name="enter_account_label">Enter account name</string>
@@ -53,8 +80,9 @@
   <!-- Confirmation message displayed in a toast after adding new account -->
   <string name="secret_saved">Secret saved</string>
 
-  <!-- Question asking user to confirm adding a new account, after scanning QR code -->
-  <string name="save_key_message">Save scanned key for</string>
+  <!-- Question asking user to confirm adding a new account, the details of which were obtained
+       by scanning a QR code or provided by the web browser. -->
+  <string name="save_key_message">Save key for</string>
 
   <!-- Error message displayed if the scanned QR code contains an empty key -->
   <string name="error_empty_secret">Cannot save empty secret</string>
@@ -64,26 +92,11 @@
     Enter this verification code if prompted during account sign-in:
   </string>
 
-  <!-- Informational message displayed when user runs the application first time,
-       or anytime with no accounts configured. -->
-  <string name="not_initialized">
-      Google Authenticator will generate verification codes that
-      can be used to provide additional security when signing in.
-      &lt;br/&gt;
-      &lt;br/&gt;
-      Google Authenticator must be used along with the
-      2-step verification
-      feature for your Google Account.
-  </string>
-
   <!-- Label displayed before the integrity check, used to verify key was entered correctly -->
   <string name="check_code_title">Integrity check value</string>
 
   <!-- Menu item user selects to view the key integrity check for a particular account -->
   <string name="check_code_menu_item">Check key value</string>
-
-  <!-- Label for menu item, used to launch the barcode scanning application. -->
-  <string name="scan_barcode_menu_item">Scan a barcode</string>
 
   <!-- Title for error message dialog when user attempts to scan a barcode but does not
        have the barcode scanner application installed. -->
@@ -122,7 +135,7 @@
   <string name="privacy_preference_title">Privacy policy</string>
 
   <!-- DO NOT TRANSLATE. URL of the Privacy Policy page. -->
-  <string name="privacy_page_url">http://m.google.com/privacy</string>
+  <string name="privacy_page_url">http://www.google.com/policies/privacy/</string>
 
   <!-- Information displayed on the check-key screen, explaining use of the integrity check -->
   <string name="check_code">
@@ -144,11 +157,50 @@
   <!-- Button on manual account entry page, cancels adding account, returns to main page -->
   <string name="cancel">Cancel</string>
 
-  <!-- Menu item when long-pressing on account, used to delete OTP account -->
-  <string name="delete">Delete</string>
+  <!-- Menu item when long-pressing on account, used to remove the account -->
+  <string name="context_menu_remove_account">Remove</string>
 
-  <!-- Confirmation message displayed when user selects "Delete" menu item -->
-  <string name="delete_message">Delete this key?</string>
+  <!-- Remove/Delete button in the dialog displayed when the user attempts to remove an account.
+       -->
+  <string name="remove_account_dialog_button_remove">Remove account</string>
+
+  <!-- Title of the dialog displayed when the user attempts to remove an account. -->
+  <string name="remove_account_dialog_title">
+    Remove <xliff:g id="account" example="mallory@gmail.com">%1$s</xliff:g>?
+  </string>
+
+  <!-- Text (HTML) of the dialog displayed when the user attempts to delete an account.
+       The dialog offers two buttons: Remove (remove_account_dialog_button_remove) and Cancel. -->
+  <string name="remove_account_dialog_message">
+    <![CDATA[
+      Removing this account will <b>remove your ability</b> to generate codes, however, it will
+      <b>not</b> turn off 2-factor authentication. This may prevent you from signing into your
+      account.
+      <p>
+      Before removing:
+      <ul>
+        <li>Turn off 2-factor authentication for this account, or</li>
+        <li>Ensure you have an alternate mechanism for generating codes.</li>
+      </ul>
+    ]]>
+  </string>
+
+  <!-- Text (HTML) of the dialog displayed when the user attempts to remove a Google account.
+       The text differs slightly from remove_account_dialog_button_remove which is displayed
+       for non-Google accounts for which we don't know the exact effects of removing the account.
+       The dialog offers two buttons: Remove (remove_account_dialog_button_remove) and Cancel. -->
+  <string name="remove_google_account_dialog_message">
+    <![CDATA[
+      Removing this account will <b>remove your ability</b> to generate codes, however, it will
+      <b>not</b> turn off 2-step verification. This may prevent you from signing into your account.
+      <p>
+      Before removing:
+      <ul>
+        <li>Turn off 2-step verification for this account, or</li>
+        <li>Ensure you have an alternate mechanism for generating codes.</li>
+      </ul>
+    ]]>
+  </string>
 
   <!-- Long-press menu item for an account, used to rename that account -->
   <string name="rename">Rename</string>
@@ -191,63 +243,26 @@
     <item>Counter based</item>
   </string-array>
 
-  <!-- Name of the Service for exporting the application's data
-       to the new version of the application (signed with a different key). -->
-  <string name="dataexport_service_name">Exporter</string>
+  <!-- Title of the prompt/dialog displayed to the user on application startup when data from the
+       deprecated/old Authenticator app has been imported into this app and thus the
+       deprecated/old app can be uninstalled. The text of the prompt is defined in
+       dataimport_import_succeeded_uninstall_dialog_prompt. -->
+  <string name="dataimport_import_succeeded_uninstall_dialog_title">Import succeeded</string>
 
-  <!--  Short notice (HTML) displayed at the top of the main screen that says that this app is
-        deprecated and should be uninstalled. The notice contains a link that will the system UI
-        for uninstalling this app. -->
-  <string name="deprecation_notice_in_main_screen_uninstall_self">
-    <![CDATA[
-    This version of Google Authenticator will no longer be supported.
-    You already have the new version of the app on your device.
-    <a href="">Uninstall this app</a>
-    ]]>
+  <!-- Text of the prompt displayed to the user on application startup when data from the
+       deprecated/old Authenticator app has been imported into this app and thus the
+       deprecated/old app can be uninstalled.
+       The dialog offers two buttons: Uninstall (button_uninstall_old_app) and Cancel. -->
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt">
+    Your data has been successfully imported from the deprecated Google Authenticator app.
+    It is now safe to uninstall the prior version of the app by clicking below.
   </string>
 
-  <!--  Short notice (HTML) displayed at the top of the main screen that says that this app is
-        deprecated, that the new app is already installed. The notice contains a link that
-        launches the new app. -->
-  <string name="deprecation_notice_in_main_screen_launch_new_app">
-    <![CDATA[
-    This version of Google Authenticator will no longer be supported.
-    <a href="">Launch the new app</a> to import your accounts.
-    ]]>
-  </string>
+  <!-- Text on the button to uninstall the deprecated/old app. Clicking the button displays the
+       system UI for uninstalling the deprecated/old app. -->
+  <string name="button_uninstall_old_app">Uninstall</string>
 
-  <!--  Short notice (HTML) displayed at the top of the main screen that says that this app is
-        deprecated and that the new app should be intalled. The notice contains a link that
-        that opens a page that provides more details (see deprecated_notice_page_text). -->
-  <string name="deprecation_notice_in_main_screen_install_new_app">
-    <![CDATA[
-    This version of Google Authenticator will no longer be supported. <a href="">Learn more</a>
-    ]]>
-  </string>
-
-  <!-- Text (HTML) of the page that has the full details on the deprecation of this app and provides
-       a link to install the new app from the Android Market.
-       The link will open the Android Market app to install the new app. -->
-  <string name="deprecation_notice_page_text_install_via_market">
-    <![CDATA[
-    This version of Google Authenticator will no longer be supported.
-
-    <p>
-    To set up the new version, please <a href="">install the new Google Authenticator app</a>
-    from Market, then it will automatically import your accounts.
-    ]]>
-  </string>
-
-  <!-- Text (HTML) of the page that has the full details on the deprecation of this app. The text
-       is displayed when we don't know how to install the new app. -->
-  <string name="deprecation_notice_page_text_install_path_unknown">
-    <![CDATA[
-    This version of Google Authenticator will no longer be supported.
-
-    <p>
-    To set up the new version, please install the new Google Authenticator app,
-    then it will automatically import your accounts.
-    ]]>
-  </string>
+  <!-- Label of the button to exit the "How it works" introductory flow. -->
+  <string name="button_exit_intro_flow">Exit</string>
 
 </resources>

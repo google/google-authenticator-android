@@ -17,16 +17,17 @@
 package com.google.android.apps.authenticator.testability;
 
 import com.google.android.apps.authenticator.AccountDb;
+import com.google.android.apps.authenticator.AuthenticatorActivity;
+import com.google.android.apps.authenticator.MarketBuildOptionalFeatures;
+import com.google.android.apps.authenticator.OptionalFeatures;
 import com.google.android.apps.authenticator.OtpProvider;
 import com.google.android.apps.authenticator.OtpSource;
-import com.google.android.apps.authenticator.testability.accounts.AccountManager;
-import com.google.android.apps.authenticator.testability.accounts.AndroidAccountManager;
-import com.google.android.apps.authenticator.testability.app.AndroidNotificationManager;
-import com.google.android.apps.authenticator.testability.app.NotificationManager;
-import com.google.android.apps.authenticator.testability.content.pm.AndroidPackageManager;
-import com.google.android.apps.authenticator.testability.content.pm.PackageManager;
+import com.google.android.apps.authenticator.dataimport.ExportServiceBasedImportController;
+import com.google.android.apps.authenticator.dataimport.ImportController;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.preference.PreferenceManager;
 import android.test.RenamingDelegatingContext;
 
 /**
@@ -51,10 +52,10 @@ public final class DependencyInjector {
 
   private static AccountDb sAccountDb;
   private static OtpSource sOtpProvider;
-  private static AccountManager sAccountManager;
-  private static NotificationManager sNotificationManager;
   private static PackageManager sPackageManager;
   private static StartActivityListener sStartActivityListener;
+  private static ImportController sImportController;
+  private static OptionalFeatures sOptionalFeatures;
 
   private enum Mode {
     PRODUCTION,
@@ -65,7 +66,10 @@ public final class DependencyInjector {
 
   private DependencyInjector() {}
 
-  private static synchronized Context getContext() {
+  /**
+   * Gets the {@link Context} passed the instances created by this injector.
+   */
+  public static synchronized Context getContext() {
     if (sContext == null) {
       throw new IllegalStateException("Context not set");
     }
@@ -109,45 +113,6 @@ public final class DependencyInjector {
   }
 
   /**
-   * Sets the {@link AccountManager} instance returned by this injector. This will prevent the
-   * injector from creating its own instance.
-   */
-  public static synchronized void setAccountManager(AccountManager accountManager) {
-    sAccountManager = accountManager;
-  }
-
-  public static synchronized AccountManager getAccountManager() {
-    if (sAccountManager == null) {
-      sAccountManager =
-          AndroidAccountManager.wrap(android.accounts.AccountManager.get(getContext()));
-    }
-    return sAccountManager;
-  }
-
-  /**
-   * Sets the {@link NotificationManager} instance returned by this injector. This will prevent the
-   * injector from creating its own instance.
-   */
-  public static synchronized void setNotificationManager(NotificationManager notificationManager) {
-    sNotificationManager = notificationManager;
-  }
-
-  public static synchronized NotificationManager getNotificationManager() {
-    if (sNotificationManager == null) {
-      // Only obtain the actual NotificationManager in production mode.
-      // In test mode simulate that there's no NotificationManager support on the device by
-      // returning null.
-      if (sMode == Mode.PRODUCTION) {
-        sNotificationManager =
-            AndroidNotificationManager.wrap(
-                (android.app.NotificationManager) getContext().getSystemService(
-                    Context.NOTIFICATION_SERVICE));
-      }
-    }
-    return sNotificationManager;
-  }
-
-  /**
    * Sets the {@link PackageManager} instance returned by this injector. This will prevent the
    * injector from creating its own instance.
    */
@@ -157,7 +122,7 @@ public final class DependencyInjector {
 
   public static synchronized PackageManager getPackageManager() {
     if (sPackageManager == null) {
-      sPackageManager = AndroidPackageManager.wrap(getContext().getPackageManager());
+      sPackageManager = getContext().getPackageManager();
     }
     return sPackageManager;
   }
@@ -173,6 +138,51 @@ public final class DependencyInjector {
     // Don't create an instance on demand -- the default behavior when the listener is null is to
     // proceed with launching activities.
     return sStartActivityListener;
+  }
+
+  /**
+   * Sets the {@link ImportController} instance returned by this injector. This will prevent the
+   * injector from creating its own instance.
+   */
+  public static synchronized void setDataImportController(ImportController importController) {
+    sImportController = importController;
+  }
+
+  public static synchronized ImportController getDataImportController() {
+    if (sImportController == null) {
+      if (sMode == Mode.PRODUCTION) {
+        sImportController = new ExportServiceBasedImportController();
+      } else {
+        // By default, use a no-op controller during tests to avoid them being dependent on the
+        // presence of the "old" app on the device under test.
+        sImportController = new ImportController() {
+          @Override
+          public void start(Context context, Listener listener) {}
+        };
+      }
+    }
+    return sImportController;
+  }
+
+  public static synchronized void setOptionalFeatures(OptionalFeatures optionalFeatures) {
+    sOptionalFeatures = optionalFeatures;
+  }
+
+  public static synchronized OptionalFeatures getOptionalFeatures() {
+    if (sOptionalFeatures == null) {
+      try {
+        Class<?> resultClass = Class.forName(
+            AuthenticatorActivity.class.getPackage().getName() + ".NonMarketBuildOptionalFeatures");
+        try {
+          sOptionalFeatures = (OptionalFeatures) resultClass.newInstance();
+        } catch (Exception e) {
+          throw new RuntimeException("Failed to instantiate optional features module", e);
+        }
+      } catch (ClassNotFoundException e) {
+        sOptionalFeatures = new MarketBuildOptionalFeatures();
+      }
+    }
+    return sOptionalFeatures;
   }
 
   /**
@@ -204,7 +214,8 @@ public final class DependencyInjector {
     sMode = Mode.INTEGRATION_TEST;
     RenamingDelegatingContext renamingContext = new RenamingDelegatingContext(context, "test_");
     renamingContext.makeExistingFilesAndDbsAccessible();
-    sContext = renamingContext;
+    sContext = new SharedPreferencesRenamingDelegatingContext(renamingContext, "test_");
+    PreferenceManager.getDefaultSharedPreferences(sContext).edit().clear().commit();
   }
 
   /**
@@ -220,9 +231,9 @@ public final class DependencyInjector {
     sContext = null;
     sAccountDb = null;
     sOtpProvider = null;
-    sAccountManager = null;
-    sNotificationManager = null;
     sPackageManager = null;
     sStartActivityListener = null;
+    sImportController = null;
+    sOptionalFeatures = null;
   }
 }

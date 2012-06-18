@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google Autentificering"</string>
   <string name="app_name_short" msgid="6268465073167241020">"Autentificering"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"Manuel angivelse af konto"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"Tilføj konto manuelt"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"Tilføj"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"Tilføj en konto"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"Se, hvordan det fungerer"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"Tilføj konto"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"Sådan fungerer det"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"Tilføj en anden konto"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"Tilføj konto manuelt"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"Scan stregkode"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"Angiv kontonavn"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"Angiv din nøgle"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"Nøgleværdien er for kort"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"Nøglen blev ikke genkendt."</string>
   <string name="error_qr" msgid="1076904454315180481">"QR-koden kan ikke fortolkes."</string>
   <string name="secret_saved" msgid="2201025202465443226">"Den hemmelige nøgle er gemt"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"Vil du gemme scannet nøgle til"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"Gem nøgle til"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"Tom hemmelig nøgle kan ikke gemmes"</string>
   <string name="enter_pin" msgid="2238539410253130912">"Angiv denne bekræftelseskode, hvis du bliver bedt om det under login:"</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Google Autentificering genererer bekræftelseskoder, som kan yde ekstra sikkerhed, når du logger ind. &lt;br/&gt; &lt;br/&gt; Google Autentificering skal bruges sammen med funktionen for totrinsbekræftelse til din Google-konto."</string>
   <string name="check_code_title" msgid="6308604727562833139">"Integritetskontrolværdi"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"Kontroller nøgleværdi"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"Scan en stregkode"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"Installer stregkodescanner?"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"Du skal installere stregkodescanneren ZXing for at scanne stregkoder, der indeholder nøgler."</string>
   <string name="install_button" msgid="5395462228740377795">"Installer"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"Afkodning af undtagelse"</string>
   <string name="submit" msgid="1518558163262431303">"Gem"</string>
   <string name="cancel" msgid="5705561042616477184">"Annuller"</string>
-  <string name="delete" msgid="2463438384745656241">"Slet"</string>
-  <string name="delete_message" msgid="7101401126932957358">"Vil du slette denne nøgle?"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"Fjern"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Fjern konto"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"Vil du fjerne <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"Fjernelse af denne konto vil &lt;b&gt;fjerne din mulighed&lt;/b&gt; for at generere koder, men det vil &lt;b&gt;ikke&lt;/b&gt; slå godkendelse via to faktorer fra. Dette kan forhindre dig i at logge ind på din konto. &lt;p&gt; Før fjernelse: &lt;ul&gt; &lt;li&gt;Sluk for godkendelse via to faktorer for denne konto, eller&lt;/li&gt; &lt;li&gt;kontroller, at du har en alternativ mekanisme til generering af koder.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Fjernelse af denne konto vil &lt;b&gt;fjerne din mulighed&lt;/b&gt; for at generere koder, men det vil &lt;b&gt;ikke&lt;/b&gt; slå godkendelse via to faktorer fra. Dette kan forhindre dig i at logge ind på din konto. &lt;p&gt; Inden du fjerner kontoen: &lt;ul&gt; &lt;li&gt;Slå totrinsbekræftelse fra for denne konto, eller&lt;/li&gt; &lt;li&gt;kontroller, at du har en alternativ metode til at generere koder.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"Omdøb"</string>
   <string name="rename_message" msgid="5929955206098259018">"Omdøb <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"Det navn bruges allerede."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"Tidsbaseret"</item>
     <item msgid="5212912099902129712">"Tællerbaseret"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"Eksporttjeneste"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"Denne version af Google Autentificering understøttes ikke fremover. Du har allerede den nye version af app\'en på din enhed. &lt;a href=&gt;Afinstaller denne app&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"Denne version af Google Autentificering understøttes ikke fremover. &lt;a href=&gt;Start den nye app&lt;/a&gt; for at importere dine konti."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"Denne version af Google Autentificering understøttes ikke fremover. &lt;a href=&gt;Få flere oplysninger&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"Denne version af Google Autentificering understøttes ikke fremover. &lt;p&gt; Hvis du vil konfigurere den nye version, skal du &lt;a href=&gt;installere den nye version af app\'en Google Autentificering&lt;/a&gt; fra Marked. App\'en importerer efterfølgende dine konti automatisk."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"Denne version af Google Autentificering understøttes ikke fremover. &lt;p&gt; Hvis du vil konfigurere den nye version, skal du installere den nye version af app\'en Google Autentificering. App\'en importerer efterfølgende dine konti automatisk."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"Importen er fuldført"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"Dine data er blevet importeret fra den forældede udgave af appen Google Autentificering. Det er nu sikkert at afinstallere den tidligere version af appen ved at klikke nedenfor."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"Afinstaller"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"Afslut"</string>
 </resources>

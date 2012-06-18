@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google Şifrematik"</string>
   <string name="app_name_short" msgid="6268465073167241020">"Şifrematik"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"El ile hesap girişi"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"El ile hesap ekle"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"Ekle"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"Hesap ekleyin"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"İşleyişini öğrenin"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"Hesap ekleyin"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"Nasıl çalışır?"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"Başka hesap ekle"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"El ile hesap ekle"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"Barkod tara"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"Hesap adını girin"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"Anahtarınızı buraya girin"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"Anahtar değeri çok kısa"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"Anahtar tanınmıyor."</string>
   <string name="error_qr" msgid="1076904454315180481">"QR kodu anlaşılamadı."</string>
   <string name="secret_saved" msgid="2201025202465443226">"Sır kaydedildi"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"Taranan anahtarı şunun için kaydet:"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"Anahtarı şunun için kaydet:"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"Boş sır kaydedilemez"</string>
   <string name="enter_pin" msgid="2238539410253130912">"Hesapta oturum açarken doğrulama kodu girmeniz istenirse, şu kodu girin:"</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Google Şifrematik, oturum açma sırasında ek güvenlik sağlamak için kullanılabilecek doğrulama kodları üretir. &lt;br/&gt; &lt;br/&gt; Google Şifrematik\'in, Google Hesabınız için 2 adımlı doğrulama ile birlikte kullanılması gerekir."</string>
   <string name="check_code_title" msgid="6308604727562833139">"Bütünlük denetimi değeri"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"Anahtar değerini kontrol et"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"Barkod tara"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"Barkod tarayıcı yüklensin mi?"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"Anahtarları içeren barkodları taramak için ZXing barkod tarayıcısını yüklemelisiniz."</string>
   <string name="install_button" msgid="5395462228740377795">"Yükle"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"Kod çözme istisnası"</string>
   <string name="submit" msgid="1518558163262431303">"Kaydet"</string>
   <string name="cancel" msgid="5705561042616477184">"İptal"</string>
-  <string name="delete" msgid="2463438384745656241">"Sil"</string>
-  <string name="delete_message" msgid="7101401126932957358">"Bu anahtar silinsin mi?"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"Kaldır"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Hesabı kaldır"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> kaldırılsın mı?"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"Bu hesabın kaldırılması kod oluşturma &lt;b&gt;olanağınızı kaldıracak&lt;/b&gt;, ancak 2 etkenli kimlik doğrulamayı &lt;b&gt;kapatmayacaktır&lt;/b&gt;. Bu durum, hesabınızda oturum açmanızı engelleyebilir. &lt;p&gt; Kaldırmadan önce: &lt;ul&gt; &lt;li&gt;Bu hesaba ilişkin 2 etkenli kimlik doğrulamayı kapatın veya &lt;/li&gt; &lt;li&gt;Kod oluşturmak için alternatif bir mekanizmanız olduğundan emin olun.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Bu hesabın kaldırılması kod oluşturma &lt;b&gt;olanağınızı kaldıracak&lt;/b&gt;, ancak 2 adımlı doğrulamayı &lt;b&gt;kapatmayacaktır&lt;/b&gt;. Bu durum, hesabınızda oturum açmanızı engelleyebilir. &lt;p&gt; Kaldırmadan önce: &lt;ul&gt; &lt;li&gt;Bu hesaba ilişkin 2 adımlı doğrulamayı kapatın veya &lt;/li&gt; &lt;li&gt;Kod oluşturmak için alternatif bir mekanizmanız olduğundan emin olun.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"Yeniden Adlandır"</string>
   <string name="rename_message" msgid="5929955206098259018">"Yeniden Adlandır: <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"Maalesef bu ad zaten kullanılıyor."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"Zamana dayalı"</item>
     <item msgid="5212912099902129712">"Sayaca dayalı"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"Dışa Aktarma Hizmeti"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"Google Şifrematik\'in bu sürümü artık desteklenmiyor. Uygulamanın yeni sürümü, cihazınızda zaten mevcut. &lt;a href=&gt;Bu uygulamanın yüklemesini kaldırın&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"Google Şifrematik\'in bu sürümü artık desteklenmiyor. Hesaplarınızı içe aktarmak için &lt;a href=&gt;yeni uygulamayı başlatın&lt;/a&gt;."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"Google Şifrematik\'in bu sürümü artık desteklenmiyor. &lt;a href=&gt;Daha fazla bilgi edinin&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"Google Şifrematik\'in bu sürümü artık desteklenmiyor. &lt;p&gt;Yeni sürümü yüklemek için lütfen Market\'ten &lt;a href=&gt;yeni Google Şifrematik uygulamasını yükleyin&lt;/a&gt;, hesaplarınız otomatik olarak içe aktarılacaktır."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"Google Şifrematik\'in bu sürümü artık desteklenmiyor. &lt;p&gt; Yeni sürümü kurmak için lütfen yeni Google Şifrematik uygulamasını yükleyin, hesaplarınız otomatik olarak içe aktarılacaktır."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"İçe aktarma başarılı oldu"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"Verileriniz artık kullanılmayan Google Şifrematik uygulamasından başarılı bir şekilde içe aktarıldı. Artık aşağıdaki düğmeyi tıklayarak önceki sürümün yüklemesini güvenle kaldırabilirsiniz."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"Yüklemeyi kaldır"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"Çıkış"</string>
 </resources>

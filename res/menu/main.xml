@@ -17,17 +17,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:id="@+id/normal_grp">
         <item
-            android:id="@+id/enter_key_item"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="@string/enter_key_menu_item" />
+            android:id="@+id/add_account"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/add_account_menu_item" />
         <item
-            android:id="@+id/scan_barcode"
-            android:icon="@drawable/ic_menu_scan"
-            android:title="@string/scan_barcode_menu_item" />
+            android:id="@+id/how_it_works"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/how_it_works_menu_item" />
         <item
-            android:id="@+id/settings_about"
+            android:id="@+id/about"
             android:icon="@android:drawable/ic_menu_info_details"
             android:title="@string/about_menu_item" />
     </group>
 </menu>
-

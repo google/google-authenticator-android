@@ -15,12 +15,50 @@
 -->
 
 <resources>
-  <style name="TitleBackground">
-    <item name="android:background">#36c</item>
-    <item name="android:paddingLeft">20dp</item>
+
+  <style name="AuthenticatorTheme" parent="android:Theme" >
+    <item name="accountListWithVerificationCodes">@style/AccountListWithVerificationCodes</item>
+    <item name="accountListWithVerificationCodesRowAccountName">@style/AccountListWithVerificationCodesRowAccountName</item>
+    <item name="accountListWithVerificationCodesRowVerificationCode">@style/AccountListWithVerificationCodesRowVerificationCode</item>
+    <item name="accountListWithVerificationCodesRowCountdownIndicator">@style/AccountListWithVerificationCodesRowCountdownIndicator</item>
+    <item name="enrollmentWizardButtonBarStyle">@style/EnrollmentWizardButtonBar</item>
+    <item name="directionalButtonLeftStyle">@style/DirectionalButtonLeft</item>
+    <item name="directionalButtonRightStyle">@style/DirectionalButtonRight</item>
+    <item name="enrollmentWizardDividerHorizontal">@android:drawable/divider_horizontal_textfield</item>
   </style>
 
-  <style name="AuthenticatorTheme" parent="android:Theme">
-    <item name="android:windowTitleBackgroundStyle">@style/TitleBackground</item>
+  <style name="AuthenticatorTheme.NoTitleBar" parent="AuthenticatorTheme" >
+     <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodes">
+    <item name="android:dividerHeight">1dip</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowAccountName">
+    <item name="android:textColor">?android:attr/textColorTertiary</item>
+    <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+  </style>
+
+  <style name="EnrollmentWizardButtonBar" parent="android:ButtonBar">
+    <item name="android:background">@android:drawable/bottom_bar</item>
+  </style>
+
+  <style name="DirectionalButtonLeft">
+    <item name="android:drawableLeft">@drawable/ic_btn_back</item>
+  </style>
+
+  <style name="DirectionalButtonRight">
+    <item name="android:drawableRight">@drawable/ic_btn_next</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowVerificationCode">
+    <item name="android:textColor">?android:attr/textColorPrimary</item>
+    <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    <item name="android:textSize">40sp</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowCountdownIndicator">
+    <item name="com.google.android.apps.authenticator2:color">@color/countdown_indicator</item>
   </style>
 </resources>

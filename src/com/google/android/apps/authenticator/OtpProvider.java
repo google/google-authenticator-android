@@ -40,7 +40,7 @@ public class OtpProvider implements OtpSource {
   }
 
   @Override
-  public String getNextCode(String accountName) {
+  public String getNextCode(String accountName) throws OtpSourceException {
     return getCurrentCode(accountName, null);
   }
 
@@ -49,7 +49,7 @@ public class OtpProvider implements OtpSource {
   // The additional string is appended to standard HOTP/TOTP state before
   // applying the MAC function.
   @Override
-  public String respondToChallenge(String accountName, String challenge) {
+  public String respondToChallenge(String accountName, String challenge) throws OtpSourceException {
     if (challenge == null) {
       return getCurrentCode(accountName, null);
     }
@@ -66,10 +66,10 @@ public class OtpProvider implements OtpSource {
     return mTotpCounter;
   }
 
-  private String getCurrentCode(String username, byte[] challenge) {
+  private String getCurrentCode(String username, byte[] challenge) throws OtpSourceException {
     // Account name is required.
     if (username == null) {
-      return "";
+      throw new OtpSourceException("No account name");
     }
 
     OtpType type = mAccountDb.getType(username);
@@ -106,11 +106,12 @@ public class OtpProvider implements OtpSource {
    * @param secret the secret key
    * @param otp_state current token state (counter or time-interval)
    * @param challenge optional challenge bytes to include when computing passcode.
-   * @return the PIN, or if error an error message
+   * @return the PIN
    */
-  private String computePin(String secret, long otp_state, byte[] challenge) {
+  private String computePin(String secret, long otp_state, byte[] challenge)
+      throws OtpSourceException {
     if (secret == null || secret.length() == 0) {
-      return "Null or empty secret";
+      throw new OtpSourceException("Null or empty secret");
     }
 
     try {
@@ -122,7 +123,7 @@ public class OtpProvider implements OtpSource {
              pcg.generateResponseCode(otp_state) :
              pcg.generateResponseCode(otp_state, challenge);
     } catch (GeneralSecurityException e) {
-      return "General security exception";
+      throw new OtpSourceException("Crypto failure", e);
     }
   }
 

@@ -17,6 +17,7 @@
 package com.google.android.apps.authenticator;
 
 import com.google.android.apps.authenticator.testability.DependencyInjector;
+import com.google.android.apps.authenticator2.R;
 
 import android.app.Instrumentation;
 import android.test.ActivityInstrumentationTestCase2;
@@ -48,7 +49,7 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
   private AccountDb mAccountDb;
 
   public EnterKeyActivityTest() {
-    super("com.google.android.apps.authenticator", EnterKeyActivity.class);
+    super(TestUtilities.APP_PACKAGE_NAME, EnterKeyActivity.class);
   }
 
   @Override
@@ -59,6 +60,7 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
     super.setUp();
 
     DependencyInjector.resetForIntegrationTesting(getInstrumentation().getTargetContext());
+    TestUtilities.withLaunchPreventingStartActivityListenerInDependencyResolver();
     mAccountDb = DependencyInjector.getAccountDb();
 
     setActivityInitialTouchMode(false);
@@ -67,7 +69,7 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
     mAccountName = (EditText) mActivity.findViewById(R.id.account_name);
     mKeyEntryField = (EditText) mActivity.findViewById(R.id.key_value);
     mType = (Spinner) mActivity.findViewById(R.id.type_choice);
-    mSubmitButton = (Button) mActivity.findViewById(R.id.submit_button);
+    mSubmitButton = (Button) mActivity.findViewById(R.id.button_right);
   }
 
   @Override

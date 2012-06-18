@@ -27,9 +27,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.util.Log;
 
+import java.io.IOException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Locale;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
@@ -42,15 +45,27 @@ import javax.crypto.spec.SecretKeySpec;
 public class AccountDb {
   public static final Integer DEFAULT_HOTP_COUNTER = 0;
 
+  public static final String GOOGLE_CORP_ACCOUNT_NAME = "Google Internal 2Factor";
+
   private static final String ID_COLUMN = "_id";
   private static final String EMAIL_COLUMN = "email";
   private static final String SECRET_COLUMN = "secret";
   private static final String COUNTER_COLUMN = "counter";
   private static final String TYPE_COLUMN = "type";
-  private static final String TABLE_NAME = "accounts";
-  private static final String PATH = "databases";
+  // @VisibleForTesting
+  static final String PROVIDER_COLUMN = "provider";
+  // @VisibleForTesting
+  static final String TABLE_NAME = "accounts";
+  // @VisibleForTesting
+  static final String PATH = "databases";
 
-  private SQLiteDatabase mDatabase;
+  private static final String TABLE_INFO_COLUMN_NAME_COLUMN = "name";
+
+  private static final int PROVIDER_UNKNOWN = 0;
+  private static final int PROVIDER_GOOGLE = 1;
+
+  // @VisibleForTesting
+  SQLiteDatabase mDatabase;
 
   private static final String LOCAL_TAG = "GoogleAuthenticator.AccountDb";
 
@@ -80,13 +95,23 @@ public class AccountDb {
 
   public AccountDb(Context context) {
     mDatabase = openDatabase(context);
-    String createTableIfNeeded = String.format(
+
+    // Create the table if it doesn't exist
+    mDatabase.execSQL(String.format(
         "CREATE TABLE IF NOT EXISTS %s" +
         " (%s INTEGER PRIMARY KEY, %s TEXT NOT NULL, %s TEXT NOT NULL, " +
-        " %s INTEGER DEFAULT %s, %s INTEGER)",
+        " %s INTEGER DEFAULT %s, %s INTEGER, %s INTEGER DEFAULT %s)",
         TABLE_NAME, ID_COLUMN, EMAIL_COLUMN, SECRET_COLUMN, COUNTER_COLUMN,
-        DEFAULT_HOTP_COUNTER, TYPE_COLUMN);
-    mDatabase.execSQL(createTableIfNeeded);
+        DEFAULT_HOTP_COUNTER, TYPE_COLUMN,
+        PROVIDER_COLUMN, PROVIDER_UNKNOWN));
+
+    Collection<String> tableColumnNames = listTableColumnNamesLowerCase();
+    if (!tableColumnNames.contains(PROVIDER_COLUMN.toLowerCase(Locale.US))) {
+      // Migrate from old schema where the PROVIDER_COLUMN wasn't there
+      mDatabase.execSQL(String.format(
+          "ALTER TABLE %s ADD COLUMN %s INTEGER DEFAULT %s",
+          TABLE_NAME, PROVIDER_COLUMN, PROVIDER_UNKNOWN));
+    }
   }
 
   /*
@@ -100,10 +125,29 @@ public class AccountDb {
         if (count < 2) {
           continue;
         } else {
-          throw new AccountDbOpenException("Failed to open AccountDb database in three tries.", e);
+          throw new AccountDbOpenException("Failed to open AccountDb database in three tries.\n"
+              + getAccountDbOpenFailedErrorString(context), e);
         }
       }
     }
+  }
+
+  private String getAccountDbOpenFailedErrorString(Context context) {
+    String dataPackageDir = context.getApplicationInfo().dataDir;
+    String databaseDirPathname = context.getDatabasePath(PATH).getParent();
+    String databasePathname = context.getDatabasePath(PATH).getAbsolutePath();
+    String[] dirsToStat = new String[] {dataPackageDir, databaseDirPathname, databasePathname};
+    StringBuilder error = new StringBuilder();
+    for (String directory : dirsToStat) {
+      try {
+        FileUtilities.StatStruct stat = FileUtilities.getStat(directory);
+        error.append(directory + " directory stat: ");
+        error.append(stat.toString() + "\n");
+      } catch (IOException e) {
+        error.append(directory + " directory stat threw an exception: " + e + "\n");
+      }
+    }
+    return error.toString();
   }
 
   /**
@@ -111,6 +155,35 @@ public class AccountDb {
    */
   public void close() {
     mDatabase.close();
+  }
+
+  /**
+   * Lists the names of all the columns in the specified table.
+   */
+  // @VisibleForTesting
+  static Collection<String> listTableColumnNamesLowerCase(
+      SQLiteDatabase database, String tableName) {
+    Cursor cursor =
+        database.rawQuery(String.format("PRAGMA table_info(%s)", tableName), new String[0]);
+    Collection<String> result = new ArrayList<String>();
+    try {
+      if (cursor != null) {
+        int nameColumnIndex = cursor.getColumnIndexOrThrow(TABLE_INFO_COLUMN_NAME_COLUMN);
+        while (cursor.moveToNext()) {
+          result.add(cursor.getString(nameColumnIndex).toLowerCase(Locale.US));
+        }
+      }
+      return result;
+    } finally {
+      tryCloseCursor(cursor);
+    }
+  }
+
+  /**
+   * Lists the names of all the columns in the accounts table.
+   */
+  private Collection<String> listTableColumnNamesLowerCase() {
+    return listTableColumnNamesLowerCase(mDatabase, TABLE_NAME);
   }
 
   /*
@@ -121,7 +194,7 @@ public class AccountDb {
     return true;
   }
 
-  boolean nameExists(String email) {
+  public boolean nameExists(String email) {
     Cursor cursor = getAccount(email);
     try {
       return !cursorIsEmpty(cursor);
@@ -213,6 +286,37 @@ public class AccountDb {
     mDatabase.update(TABLE_NAME, values, whereClause(email), null);
   }
 
+  public boolean isGoogleAccount(String email) {
+    Cursor cursor = getAccount(email);
+    try {
+      if (!cursorIsEmpty(cursor)) {
+        cursor.moveToFirst();
+        if (cursor.getInt(cursor.getColumnIndex(PROVIDER_COLUMN)) == PROVIDER_GOOGLE) {
+          // The account is marked as source: Google
+          return true;
+        }
+        // The account is from an unknown source. Could be a Google account added by scanning
+        // a QR code or by manually entering a key
+        String emailLowerCase = email.toLowerCase(Locale.US);
+        return(emailLowerCase.endsWith("@gmail.com"))
+            || (emailLowerCase.endsWith("@google.com"))
+            || (email.equals(GOOGLE_CORP_ACCOUNT_NAME));
+      }
+    } finally {
+      tryCloseCursor(cursor);
+    }
+    return false;
+  }
+
+  /**
+   * Finds the Google corp account in this database.
+   *
+   * @return the name of the account if it is present or {@code null} if the account does not exist.
+   */
+  public String findGoogleCorpAccount() {
+    return nameExists(GOOGLE_CORP_ACCOUNT_NAME) ? GOOGLE_CORP_ACCOUNT_NAME : null;
+  }
+
   private static String whereClause(String email) {
     return EMAIL_COLUMN + " = " + DatabaseUtils.sqlEscapeString(email);
   }
@@ -231,11 +335,31 @@ public class AccountDb {
    */
   public void update(String email, String secret, String oldEmail,
       OtpType type, Integer counter) {
+    update(email, secret, oldEmail, type, counter, null);
+  }
+
+  /**
+   * Save key to database, creating a new user entry if necessary.
+   * @param email the user email address. When editing, the new user email.
+   * @param secret the secret key.
+   * @param oldEmail If editing, the original user email, otherwise null.
+   * @param type hotp vs totp
+   * @param counter only important for the hotp type
+   * @param googleAccount whether the key is for a Google account or {@code null} to preserve
+   *        the previous value (or use a default if adding a key).
+   */
+  public void update(String email, String secret, String oldEmail,
+      OtpType type, Integer counter, Boolean googleAccount) {
     ContentValues values = new ContentValues();
     values.put(EMAIL_COLUMN, email);
     values.put(SECRET_COLUMN, secret);
     values.put(TYPE_COLUMN, type.ordinal());
     values.put(COUNTER_COLUMN, counter);
+    if (googleAccount != null) {
+      values.put(
+          PROVIDER_COLUMN,
+          (googleAccount.booleanValue()) ? PROVIDER_GOOGLE : PROVIDER_UNKNOWN);
+    }
     int updated = mDatabase.update(TABLE_NAME, values,
                                   whereClause(oldEmail), null);
     if (updated == 0) {
@@ -301,4 +425,5 @@ public class AccountDb {
       super(message, e);
     }
   }
+
 }

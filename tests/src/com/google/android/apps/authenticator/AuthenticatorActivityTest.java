@@ -16,16 +16,19 @@
 
 package com.google.android.apps.authenticator;
 
-import static com.google.testing.littlemock.LittleMock.anyInt;
-import static com.google.testing.littlemock.LittleMock.anyString;
 import static com.google.testing.littlemock.LittleMock.doThrow;
 import static com.google.testing.littlemock.LittleMock.initMocks;
+import static com.google.testing.littlemock.LittleMock.mock;
+import static com.google.testing.littlemock.LittleMock.verify;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
-import com.google.android.apps.authenticator.testability.CapturingStartActivityListener;
+import com.google.android.apps.authenticator.dataimport.ImportController;
+import com.google.android.apps.authenticator.enroll2sv.wizard.IntroEnterPasswordActivity;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 import com.google.android.apps.authenticator.testability.StartActivityListener;
-import com.google.android.apps.authenticator.testability.content.pm.PackageManager;
+import com.google.android.apps.authenticator2.R;
+import com.google.testing.littlemock.ArgumentCaptor;
+import com.google.testing.littlemock.LittleMock;
 import com.google.testing.littlemock.Mock;
 
 import android.content.ActivityNotFoundException;
@@ -38,7 +41,6 @@ import android.text.ClipboardManager;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -53,15 +55,11 @@ import java.util.List;
 public class AuthenticatorActivityTest extends
     ActivityInstrumentationTestCase2<AuthenticatorActivity> {
 
-  private static final int SEND_KEYS_EFFECTS_TIMEOUT_MILLIS = 1000;
-  private static final int INVOKE_MENU_ITEM_TIMEOUT_MILLIS = 1000;
-  private static final int ACTIVITY_FINISH_TIMEOUT_MILLIS = 1000;
-
   private AccountDb mAccountDb;
-  @Mock private PackageManager mMockPackageManager;
+  @Mock private ImportController mMockDataImportController;
 
   public AuthenticatorActivityTest() {
-    super("com.google.android.apps.authenticator", AuthenticatorActivity.class);
+    super(TestUtilities.APP_PACKAGE_NAME, AuthenticatorActivity.class);
   }
 
   @Override
@@ -69,21 +67,17 @@ public class AuthenticatorActivityTest extends
     super.setUp();
 
     DependencyInjector.resetForIntegrationTesting(getInstrumentation().getTargetContext());
-    initMocks(this);
-
-    // Mock out package manager since the UI depends on whether the "new" is installed or not
-    // Pretend that no packages are installed.
-    doThrow(new android.content.pm.PackageManager.NameNotFoundException())
-        .when(mMockPackageManager).getPackageInfo(anyString(), anyInt());
-    DependencyInjector.setPackageManager(mMockPackageManager);
-
     mAccountDb = DependencyInjector.getAccountDb();
+
+    initMocks(this);
+    DependencyInjector.setDataImportController(mMockDataImportController);
+    TestUtilities.withLaunchPreventingStartActivityListenerInDependencyResolver();
   }
 
   @Override
   protected void tearDown() throws Exception {
     // Stop the activity to avoid it using the DependencyInjector after it's been closed.
-    TestUtilities.invokeFinishActivityOnUiThread(getActivity(), ACTIVITY_FINISH_TIMEOUT_MILLIS);
+    TestUtilities.invokeFinishActivityOnUiThread(getActivity());
 
     DependencyInjector.close();
 
@@ -99,24 +93,24 @@ public class AuthenticatorActivityTest extends
   public void testNoAccountUi() throws Throwable {
     getActivity();
     ListView userList = (ListView) getActivity().findViewById(R.id.user_list);
-    TextView enterPinTextView = (TextView) getActivity().findViewById(R.id.enter_pin);
-    Button scanBarcodeButton = (Button) getActivity().findViewById(R.id.scan_barcode_button);
-    Button enterKeyButton = (Button) getActivity().findViewById(R.id.enter_key_button);
-    LinearLayout buttonsLayout = (LinearLayout) getActivity().findViewById(R.id.main_buttons);
+    TextView enterPinPrompt = (TextView) getActivity().findViewById(R.id.enter_pin_prompt);
+    Button howItWorksButton = (Button) getActivity().findViewById(R.id.how_it_works_button);
+    Button addAccountButton = (Button) getActivity().findViewById(R.id.add_account_button);
+    View contentWhenNoAccounts = getActivity().findViewById(R.id.content_no_accounts);
 
     // check existence of fields
     assertNotNull(userList);
-    assertNotNull(enterPinTextView);
-    assertNotNull(scanBarcodeButton);
-    assertNotNull(enterKeyButton);
-    assertNotNull(buttonsLayout);
+    assertNotNull(enterPinPrompt);
+    assertNotNull(howItWorksButton);
+    assertNotNull(addAccountButton);
+    assertNotNull(contentWhenNoAccounts);
 
     // check visibility
     View origin = getActivity().getWindow().getDecorView();
-    ViewAsserts.assertOnScreen(origin, enterPinTextView);
-    ViewAsserts.assertOnScreen(origin, scanBarcodeButton);
-    ViewAsserts.assertOnScreen(origin, enterKeyButton);
-    ViewAsserts.assertOnScreen(origin, buttonsLayout);
+    ViewAsserts.assertOnScreen(origin, enterPinPrompt);
+    ViewAsserts.assertOnScreen(origin, howItWorksButton);
+    ViewAsserts.assertOnScreen(origin, addAccountButton);
+    ViewAsserts.assertOnScreen(origin, contentWhenNoAccounts);
     assertFalse(userList.isShown());
   }
 
@@ -162,7 +156,6 @@ public class AuthenticatorActivityTest extends
     mAccountDb.update(
         "johndoeTotp2@gmail.com", "3333333333333333", "johndoeTotp2@gmail.com", OtpType.TOTP, null);
     ListView userList = (ListView) getActivity().findViewById(R.id.user_list);
-    Thread.sleep(5000);
     assertEquals(3, userList.getChildCount());
 
     // check hotp account
@@ -202,9 +195,6 @@ public class AuthenticatorActivityTest extends
   //////////////////////////   Context Menu Tests  ////////////////////////////
 
   public void testContextMenuCheckCode() throws Exception {
-    CapturingStartActivityListener startActivityMonitor = new CapturingStartActivityListener();
-    DependencyInjector.setStartActivityListener(startActivityMonitor);
-
     mAccountDb.update(
       "johndoeHotp@gmail.com", "7777777777777777", "johndoeHotp@gmail.com", OtpType.HOTP, null);
     ListView userList = (ListView) getActivity().findViewById(R.id.user_list);
@@ -215,15 +205,14 @@ public class AuthenticatorActivityTest extends
         listEntry0,
         AuthenticatorActivity.CHECK_KEY_VALUE_ID);
 
-    Intent launchIntent =
-        startActivityMonitor.waitForFirstInvocation(INVOKE_MENU_ITEM_TIMEOUT_MILLIS).intent;
+    Intent launchIntent = TestUtilities.verifyWithTimeoutThatStartActivityAttemptedExactlyOnce();
     assertEquals(
         new ComponentName(getInstrumentation().getTargetContext(), CheckCodeActivity.class),
         launchIntent.getComponent());
     assertEquals("johndoeHotp@gmail.com", launchIntent.getStringExtra("user"));
   }
 
-  public void testContextMenuDelete() throws Exception {
+  public void testContextMenuRemove() throws Exception {
     mAccountDb.update(
       "johndoeHotp@gmail.com", "7777777777777777", "johndoeHotp@gmail.com", OtpType.HOTP, null);
     ListView userList = (ListView) getActivity().findViewById(R.id.user_list);
@@ -232,12 +221,12 @@ public class AuthenticatorActivityTest extends
         getInstrumentation(),
         getActivity(),
         listEntry0,
-        AuthenticatorActivity.DELETE_ID);
-    // Select OK on confirmation dialog to delete account.
+        AuthenticatorActivity.REMOVE_ID);
+    // Select Remove on confirmation dialog to remove account.
     sendKeys(KeyEvent.KEYCODE_DPAD_DOWN);
     sendKeys(KeyEvent.KEYCODE_DPAD_CENTER);
     // check main  screen gets focus back;
-    TestUtilities.waitForWindowFocus(listEntry0, SEND_KEYS_EFFECTS_TIMEOUT_MILLIS);
+    TestUtilities.waitForWindowFocus(listEntry0);
     // check that account is deleted in database.
     assertEquals(0, mAccountDb.getNames(new ArrayList<String>()));
   }
@@ -256,10 +245,11 @@ public class AuthenticatorActivityTest extends
     sendKeys("21*DPAD_RIGHT");  // move right to end;
     sendKeys("21*DEL"); // delete the entire name
     sendKeys("N E W N A M E AT G M A I L PERIOD C O M");
-    sendKeys("DPAD_DOWN DPAD_LEFT DPAD_CENTER"); // select save on the dialog
+    sendKeys("DPAD_DOWN");
+    TestUtilities.tapDialogPositiveButton(this); // select save on the dialog
     // check main  screen gets focus back;
     listEntry0 = userList.getChildAt(0);
-    TestUtilities.waitForWindowFocus(listEntry0, SEND_KEYS_EFFECTS_TIMEOUT_MILLIS);
+    TestUtilities.waitForWindowFocus(listEntry0);
     // check update to database.
     List<String> accountNames = new ArrayList<String>();
     assertEquals(1, mAccountDb.getNames(accountNames));
@@ -292,55 +282,125 @@ public class AuthenticatorActivityTest extends
   ///////////////////////////   Options Menu Tests  /////////////////////////////
 
   private void checkOptionsMenuItemWithComponent(int itemId,  Class<?> cls) throws Exception {
-    CapturingStartActivityListener startActivityListener = new CapturingStartActivityListener();
-    DependencyInjector.setStartActivityListener(startActivityListener);
-
     TestUtilities.openOptionsMenuAndInvokeItem(getInstrumentation(), getActivity(), itemId);
 
-    Intent launchIntent =
-        startActivityListener.waitForFirstInvocation(INVOKE_MENU_ITEM_TIMEOUT_MILLIS).intent;
+    Intent launchIntent = TestUtilities.verifyWithTimeoutThatStartActivityAttemptedExactlyOnce();
     assertEquals(new ComponentName(getInstrumentation().getTargetContext(), cls),
         launchIntent.getComponent());
   }
 
-  public void testOptionsMenuManuallyAddAccount() throws Exception {
-    checkOptionsMenuItemWithComponent(R.id.enter_key_item, EnterKeyActivity.class);
+  public void testOptionsMenuHowItWorks() throws Exception {
+    checkOptionsMenuItemWithComponent(R.id.how_it_works, IntroEnterPasswordActivity.class);
   }
 
-  public void testOptionsMenuAbout() throws Exception {
-    checkOptionsMenuItemWithComponent(R.id.settings_about, SettingsAboutActivity.class);
+  public void testOptionsMenuAddAccount() throws Exception {
+    checkOptionsMenuItemWithComponent(R.id.add_account, AddOtherAccountActivity.class);
   }
 
+  public void testOptionsMenuSettingsAbout() throws Exception {
+    // This test only works in Market builds of the app
+    DependencyInjector.setOptionalFeatures(new MarketBuildOptionalFeatures());
+    checkOptionsMenuItemWithComponent(R.id.about, SettingsAboutActivity.class);
+  }
 
+  public void testIntentActionScanBarcode_withScannerInstalled() throws Exception {
+    setActivityIntent(new Intent(AuthenticatorActivity.ACTION_SCAN_BARCODE));
+    getActivity();
 
-  public void testOptionsMenuScanABarcode_withScannerInstalled() throws Exception {
-    CapturingStartActivityListener startActivityListener = new CapturingStartActivityListener();
-    DependencyInjector.setStartActivityListener(startActivityListener);
-
-    TestUtilities.openOptionsMenuAndInvokeItem(
-        getInstrumentation(), getActivity(), R.id.scan_barcode);
-
-    Intent launchIntent =
-        startActivityListener.waitForFirstInvocation(INVOKE_MENU_ITEM_TIMEOUT_MILLIS).intent;
+    Intent launchIntent = TestUtilities.verifyWithTimeoutThatStartActivityAttemptedExactlyOnce();
     assertEquals("com.google.zxing.client.android.SCAN", launchIntent.getAction());
     assertEquals("QR_CODE_MODE", launchIntent.getStringExtra("SCAN_MODE"));
     assertEquals(false, launchIntent.getExtras().get("SAVE_HISTORY"));
   }
 
-  public void testOptionsMenuScanABarcode_withScannerNotInstalled() throws Exception {
+  public void testIntentActionScanBarcode_withScannerNotInstalled() throws Exception {
     // When no barcode scanner is installed no matching activities are found as emulated below.
-    DependencyInjector.setStartActivityListener(new StartActivityListener() {
+    StartActivityListener mockStartActivityListener = mock(StartActivityListener.class);
+    doThrow(new ActivityNotFoundException())
+        .when(mockStartActivityListener).onStartActivityInvoked(
+            LittleMock.<Context>anyObject(), LittleMock.<Intent>anyObject());
+    DependencyInjector.setStartActivityListener(mockStartActivityListener);
+
+    setActivityIntent(new Intent(AuthenticatorActivity.ACTION_SCAN_BARCODE));
+    getActivity();
+
+    TestUtilities.assertDialogWasDisplayed(getActivity(), Utilities.DOWNLOAD_DIALOG);
+  }
+
+  ///////////////////////////   Data Import tests  /////////////////////////////
+
+  public void testLaunchingActivityStartsImportController() {
+    AuthenticatorActivity activity = getActivity();
+
+    ArgumentCaptor<Context> contextArgCaptor = LittleMock.<Context>createCaptor();
+    verify(mMockDataImportController)
+        .start(contextArgCaptor.capture(), LittleMock.<ImportController.Listener>anyObject());
+    assertEquals(activity, contextArgCaptor.getValue());
+  }
+
+  public void testImportControllerOldAppUninstallCallbackDisplaysDialog() {
+    final ImportController.Listener listener = startActivityAndGetDataImportListener();
+    assertNotNull(listener);
+    invokeDataImportListenerOnOldAppUninstallSuggestedOnMainThread(listener, new Intent());
+    invokeDataImportListenerFinishedOnMainThread(listener);
+
+    TestUtilities.assertDialogWasDisplayed(
+        getActivity(), AuthenticatorActivity.DIALOG_ID_UNINSTALL_OLD_APP);
+  }
+
+  public void testImportControllerDataImportedDoesNotBlowUp() {
+    final ImportController.Listener listener = startActivityAndGetDataImportListener();
+    assertNotNull(listener);
+    invokeDataImportListenerOnDataImportedOnMainThread(listener);
+    invokeDataImportListenerFinishedOnMainThread(listener);
+    getInstrumentation().waitForIdleSync();
+  }
+
+  public void testImportControllerUnknownFailureDoesNotBlowUp() {
+    final ImportController.Listener listener = startActivityAndGetDataImportListener();
+    assertNotNull(listener);
+    invokeDataImportListenerFinishedOnMainThread(listener);
+    getInstrumentation().waitForIdleSync();
+  }
+
+  private ImportController.Listener startActivityAndGetDataImportListener() {
+    ArgumentCaptor<ImportController.Listener> listenerArgCaptor =
+        LittleMock.<ImportController.Listener>createCaptor();
+    LittleMock.doNothing().when(mMockDataImportController).start(
+        LittleMock.<Context>anyObject(), listenerArgCaptor.capture());
+
+    getActivity();
+
+    return listenerArgCaptor.getValue();
+  }
+
+  private void invokeDataImportListenerOnOldAppUninstallSuggestedOnMainThread(
+      final ImportController.Listener listener, final Intent uninstallIntent) {
+    getInstrumentation().runOnMainSync(new Runnable() {
       @Override
-      public boolean onStartActivityInvoked(Context sourceContext, Intent intent) {
-        throw new ActivityNotFoundException();
+      public void run() {
+        listener.onOldAppUninstallSuggested(uninstallIntent);
       }
     });
+  }
 
-    TestUtilities.openOptionsMenuAndInvokeItem(
-        getInstrumentation(), getActivity(), R.id.scan_barcode);
+  private void invokeDataImportListenerOnDataImportedOnMainThread(
+      final ImportController.Listener listener) {
+    getInstrumentation().runOnMainSync(new Runnable() {
+      @Override
+      public void run() {
+        listener.onDataImported();
+      }
+    });
+  }
 
-    // Assert that the Download Scanner dialog is displayed -- dimissDialog throws an exception
-    // if the dialog has never been displayed by this Activity.
-    getActivity().dismissDialog(Utilities.DOWNLOAD_DIALOG);
+  private void invokeDataImportListenerFinishedOnMainThread(
+      final ImportController.Listener listener) {
+    getInstrumentation().runOnMainSync(new Runnable() {
+      @Override
+      public void run() {
+        listener.onFinished();
+      }
+    });
   }
 }

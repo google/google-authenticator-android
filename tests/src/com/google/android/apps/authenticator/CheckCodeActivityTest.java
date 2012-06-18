@@ -18,6 +18,7 @@ package com.google.android.apps.authenticator;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
+import com.google.android.apps.authenticator2.R;
 
 import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
@@ -34,7 +35,7 @@ import android.widget.TextView;
 public class CheckCodeActivityTest extends ActivityInstrumentationTestCase2<CheckCodeActivity> {
 
   public CheckCodeActivityTest() {
-    super("com.google.android.apps.authenticator", CheckCodeActivity.class);
+    super(TestUtilities.APP_PACKAGE_NAME, CheckCodeActivity.class);
   }
 
   @Override

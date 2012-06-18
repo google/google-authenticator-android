@@ -20,6 +20,8 @@ import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.PasscodeGenerator.Signer;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;
 
@@ -114,6 +116,20 @@ public class AccountDbTest extends  AndroidTestCase {
     assertTrue(accountDb.getType("johndoe@gmail.com").equals(OtpType.TOTP));
   }
 
+  public void testGetAndSetAccountType() throws Exception {
+    addSomeRecords();
+    assertTrue(accountDb.getType("johndoe@gmail.com").equals(OtpType.TOTP));
+    assertTrue(accountDb.getType("maryweiss@yahoo.com").equals(OtpType.HOTP));
+    assertFalse(accountDb.getType("amywinehouse@aol.com").equals(OtpType.HOTP));
+    accountDb.setType("johndoe@gmail.com", OtpType.HOTP);
+    assertTrue(accountDb.getType("johndoe@gmail.com").equals(OtpType.HOTP));
+    // check that the counter retains its values.
+    assertEquals(0, (int) accountDb.getCounter("johndoe@gmail.com"));
+    // check that it can be reset to original value
+    accountDb.setType("johndoe@gmail.com", OtpType.TOTP);
+    assertTrue(accountDb.getType("johndoe@gmail.com").equals(OtpType.TOTP));
+  }
+
   public void testDelete() throws Exception {
     addSomeRecords();
     accountDb.delete("johndoe@gmail.com");
@@ -143,6 +159,69 @@ public class AccountDbTest extends  AndroidTestCase {
     accountDb.getNames(result);
     MoreAsserts.assertContentsInAnyOrder(result,
         "johndoe@gmail.com", "amywinehouse@aol.com", "maryweiss@yahoo.com");
+  }
+
+  public void testIsGoogleAccount() {
+    accountDb.update("1@b.c", SECRET, "1@b.c", OtpType.TOTP, null, true);
+    accountDb.update("2@gmail.com", SECRET, "2@gmail.com", OtpType.TOTP, null);
+    accountDb.update("3@google.com", SECRET, "3@google.com", OtpType.TOTP, null);
+    accountDb.update("4", SECRET, "4", OtpType.HOTP, 3, true);
+    accountDb.update("5@yahoo.co.uk", SECRET, "5@yahoo.co.uk", OtpType.TOTP, null);
+    accountDb.update("gmail.com", SECRET, "gmail.com", OtpType.TOTP, null);
+    accountDb.update(
+        "Google Internal 2Factor", SECRET, "Google Internal 2Factor", OtpType.HOTP, null);
+    assertTrue(accountDb.isGoogleAccount("1@b.c"));
+    assertTrue(accountDb.isGoogleAccount("2@gmail.com"));
+    assertTrue(accountDb.isGoogleAccount("3@google.com"));
+    assertTrue(accountDb.isGoogleAccount("4"));
+    assertFalse(accountDb.isGoogleAccount("5@yahoo.co.uk"));
+    assertFalse(accountDb.isGoogleAccount("gmail.com"));
+    assertTrue(accountDb.isGoogleAccount("Google Internal 2Factor"));
+    assertFalse(accountDb.isGoogleAccount("non-existent account"));
+  }
+
+  public void testUpdateWithoutSourceValuePreservesSourceValue() {
+    accountDb.update("a@b.c", SECRET, "a@b.c", OtpType.TOTP, null, true);
+    accountDb.update("test@gmail.com", SECRET, "test@gmail.com", OtpType.TOTP, null);
+    assertTrue(accountDb.isGoogleAccount("a@b.c"));
+    assertTrue(accountDb.isGoogleAccount("test@gmail.com"));
+    accountDb.update("b@a.c", SECRET, "a@b.c", OtpType.TOTP, null);
+    accountDb.update("test@yahoo.com", SECRET, "test@gmail.com", OtpType.TOTP, null);
+    assertTrue(accountDb.isGoogleAccount("b@a.c"));
+    assertFalse(accountDb.isGoogleAccount("test@yahoo.com"));
+  }
+
+  public void testConstruct_whenNoDatabase() {
+    deleteAccountDb();
+    accountDb = DependencyInjector.getAccountDb();
+  }
+
+  public void testConstruct_whenDatabaseWithoutProviderColumn() {
+    deleteAccountDb();
+    SQLiteDatabase database =
+        DependencyInjector.getContext().openOrCreateDatabase(
+            AccountDb.PATH, Context.MODE_PRIVATE, null);
+    database.execSQL("CREATE TABLE " + AccountDb.TABLE_NAME + " (first INTEGER)");
+    MoreAsserts.assertContentsInAnyOrder(
+        AccountDb.listTableColumnNamesLowerCase(database, AccountDb.TABLE_NAME),
+        "first");
+    database.close();
+    database = null;
+
+    accountDb = DependencyInjector.getAccountDb();
+    MoreAsserts.assertContentsInAnyOrder(
+        AccountDb.listTableColumnNamesLowerCase(accountDb.mDatabase, AccountDb.TABLE_NAME),
+        "first", AccountDb.PROVIDER_COLUMN);
+  }
+
+  private void deleteAccountDb() {
+    if (accountDb != null) {
+      accountDb.close();
+      accountDb = null;
+    }
+    DependencyInjector.setAccountDb(null);
+
+    assertTrue(DependencyInjector.getContext().deleteDatabase(AccountDb.PATH));
   }
 
   public void testSigningOracle() throws Exception {

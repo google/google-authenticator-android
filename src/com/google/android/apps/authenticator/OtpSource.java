@@ -42,7 +42,7 @@ public interface OtpSource {
    * @param accountName Username, email address or other unique identifier for the account.
    * @return OTP as string code.
    */
-  String getNextCode(String accountName);
+  String getNextCode(String accountName) throws OtpSourceException;
 
   /**
    * Generate response to a given challenge based on next OTP code.
@@ -54,7 +54,7 @@ public interface OtpSource {
    * @throws UnsupportedOperationException if the token does not support
    *         challenge-response extension for this account.
    */
-  String respondToChallenge(String accountName, String challenge);
+  String respondToChallenge(String accountName, String challenge) throws OtpSourceException;
 
   /**
    * Gets the counter for generating or verifying TOTP codes.

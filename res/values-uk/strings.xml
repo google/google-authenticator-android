@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Генератор кодів Google"</string>
   <string name="app_name_short" msgid="6268465073167241020">"Генератор кодів"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"Введення облікового запису вручну"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"Додати обліковий запис вручну"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"Додати"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"Додати обліковий запис"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"Переглянути принцип роботи"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"Додати обліковий запис"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"Принцип роботи"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"Додати інший облік. запис"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"Додати обліковий запис вручну"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"Сканувати штрих-код"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"Введіть назву облік. запису"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"Введіть свій ключ"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"Закоротке значення ключа"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"Ключ не розпізнано."</string>
   <string name="error_qr" msgid="1076904454315180481">"Неможливо розпізнати QR-код."</string>
   <string name="secret_saved" msgid="2201025202465443226">"Секретний ключ збережено"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"Зберегти сканований ключ для"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"Зберегти ключ для:"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"Неможливо зберегти порожній секретний ключ"</string>
   <string name="enter_pin" msgid="2238539410253130912">"Введіть цей код підтвердження, якщо з’явиться відповідний запит під час входу в обліковий запис:"</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Генератор кодів Google створює коди підтвердження, які можна використовувати для додаткової безпеки під час входу. &lt;br/&gt; &lt;br/&gt; Генератор кодів Google потрібно використовувати разом із функцією двоетапнї перевірки в Обліковому записі Google."</string>
   <string name="check_code_title" msgid="6308604727562833139">"Перевірка ключа"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"Перевірити значення ключа"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"Сканувати штрих-код"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"Установити сканер штрих-коду?"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"Щоб сканувати штрих-коди, що містять ключі, треба встановити сканер штрих-кодів ZXing."</string>
   <string name="install_button" msgid="5395462228740377795">"Установити"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"Виняток із розшифрування"</string>
   <string name="submit" msgid="1518558163262431303">"Зберегти"</string>
   <string name="cancel" msgid="5705561042616477184">"Скасувати"</string>
-  <string name="delete" msgid="2463438384745656241">"Видалити"</string>
-  <string name="delete_message" msgid="7101401126932957358">"Видалити цей ключ?"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"Видалити"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Видалити обліковий запис"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"Видалити <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"Після видалення цього облікового запису &lt;b&gt;ви не зможете&lt;/b&gt; генерувати коди, але подвійну автентифікацію &lt;b&gt;не&lt;/b&gt; буде вимкнено. Це не дозволить вам входити у свій обліковий запис. &lt;p&gt; Перш ніж видаляти, &lt;ul&gt; &lt;li&gt;вимкніть подвійну автентифікацію для цього облікового запису чи&lt;/li&gt; &lt;li&gt;переконайтеся, що у вас є інший механізм для генерування кодів.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Після видалення цього облікового запису &lt;b&gt;ви не зможете&lt;/b&gt; генерувати коди, але двоетапну перевірку &lt;b&gt;не&lt;/b&gt; буде вимкнено. Це не дозволить вам входити у свій обліковий запис. &lt;p&gt; Перш ніж видаляти: &lt;ul&gt; &lt;li&gt;вимкніть двоетапну перевірку для цього облікового запису чи&lt;/li&gt; &lt;li&gt;переконайтеся, що у вас є інший механізм для генерування кодів.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"Перейменувати"</string>
   <string name="rename_message" msgid="5929955206098259018">"Перейменувати <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"На жаль, це ім’я вже використовується."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"За часом"</item>
     <item msgid="5212912099902129712">"За лічильником"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"Експортер"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"Ця версія Генератора кодів Google надалі не буде підтримуватися. На вашому пристрої вже є нова версія програми. &lt;a href=&gt;Видаліть цю програму&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"Ця версія Генератора кодів Google  надалі не буде підтримуватися. &lt;a href=&gt;Запустіть нову програму&lt;/a&gt;, щоб імпортувати свої облікові записи."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"Ця версія Генератора кодів Google надалі не буде підтримуватися. &lt;a href=&gt;Докладніше&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"Ця версія Генератора кодів Google надалі не буде підтримуватися. &lt;p&gt; Щоб налаштувати нову версію, &lt;a href=&gt;установіть нову програму Генератор кодів Google&lt;/a&gt; із Market, яка потім автоматично імпортує ваші облікові записи."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"Ця версія Генератора кодів Google надалі не буде підтримуватися. &lt;p&gt; Щоб налаштувати нову версію, установіть нову програму Генератор кодів Google, яка потім автоматично імпортує ваші облікові записи."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"Імпортування виконано"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"Ваші дані успішно імпортовано з нерекомендованої програми Генератор кодів Google. Тепер можна безпечно видалити попередню версію програми, натиснувши нижче."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"Видалити"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"Вийти"</string>
 </resources>

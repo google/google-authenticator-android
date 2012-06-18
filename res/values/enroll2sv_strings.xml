@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <!-- Title of the Welcome page of the 2-step verification enrollment wizard. -->
+  <string name="enroll2sv_welcome_page_title">
+    Thousands of online accounts are hijacked every day.
+  </string>
+
+  <!-- Text (HTML) of the Welcome page of the 2-step verification enrollment wizard. -->
+  <string name="enroll2sv_welcome_page_details">
+    2-step verification protects your Google account even if your password is stolen.
+  </string>
+
+  <!-- Title of the introduction page of the 2-step verification enrollment wizard,
+       which explains that in addition to entering a password during sign in
+       a verification code may need to be entered. -->
+  <string name="enroll2sv_intro_page_enter_password_title">
+    To sign in, you\'ll enter your password.
+  </string>
+
+  <!-- Details (HTML) of the introduction page of the 2-step verification enrollment wizard,
+       which explains that in addition to entering a password during sign in
+       a verification code may need to be entered. -->
+  <string name="enroll2sv_intro_page_enter_password_details">
+    However, if you\'re at a new computer or device, Google will ask you for a special code to make
+    sure it\'s really you.
+  </string>
+
+  <!-- Title of the introduction page of the 2-step verification enrollment wizard,
+       which explains that a verification code may need to be entered when signing in. -->
+  <string name="enroll2sv_intro_page_enter_code_title">
+    If you\'re on a new computer, enter a code from your phone.
+  </string>
+
+  <!-- Details (HTML) of the introduction page of the 2-step verification enrollment wizard,
+       which explains that a verification code may need to be entered when signing in and that this
+       app will generate the code. -->
+  <string name="enroll2sv_intro_page_enter_code_details">
+    This app will generate the code needed to proceed with sign in.
+  </string>
+
+  <!-- Title of the introduction page of the 2-step verification enrollment wizard,
+       which that once a computer/device is verified the user can tell Google not to ask for
+       a verification code when signing in from that computer/device. -->
+  <string name="enroll2sv_intro_page_verify_device_title">
+    Then you\'re signed in.
+  </string>
+
+  <!-- Details (HTML) of the introduction page of the 2-step verification enrollment wizard,
+       which that once a computer/device is verified the user can tell Google not to ask for
+       a verification code when signing from that computer/device. -->
+  <string name="enroll2sv_intro_page_verify_device_details">
+    You can also choose to remember the computer and Google won\'t ask you for a code there again.
+  </string>
+
+  <!-- Text of the button to advance to the Next page of the 2-step verification enrollment wizard.
+       [CHAR LIMIT=12] -->
+  <string name="button_next">Next</string>
+
+  <!-- Text of the button to return to the previous page of the 2-step verification enrollment
+       wizard. [CHAR LIMIT=12] -->
+  <string name="button_back">Back</string>
+
+</resources>

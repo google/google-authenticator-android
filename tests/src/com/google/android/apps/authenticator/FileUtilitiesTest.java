@@ -52,6 +52,35 @@ public class FileUtilitiesTest extends AndroidTestCase {
     } catch (IOException expected) {}
   }
 
+  public void testGetStat_withActualDirectory() throws Exception {
+    File dir = createTempDirInCacheDir();
+    try {
+      String path = dir.getPath();
+      setFilePermissions(path, 0755);
+      FileUtilities.StatStruct s1 = FileUtilities.getStat(path);
+      assertEquals(0755, s1.mode & 0777);
+      long ctime1 = s1.ctime;
+      assertTrue(s1.toString().contains(Long.toString(ctime1)));
+
+      setFilePermissions(path, 0700);
+      FileUtilities.StatStruct s2 = FileUtilities.getStat(path);
+      assertEquals(0700, s2.mode & 0777);
+      long ctime2 = s2.ctime;
+      assertTrue(ctime2 >= ctime1);
+    } finally {
+      dir.delete();
+    }
+  }
+
+  public void testGetStat_withActualNonExistentDirectory() throws Exception {
+    File dir = createTempDirInCacheDir();
+    assertTrue(dir.delete());
+    try {
+      FileUtilities.getStat(dir.getPath());
+      fail();
+    } catch (IOException expected) {}
+  }
+
   private static void setFilePermissions(String path, int mode) throws Exception {
     // IMPLEMENTATION NOTE: The code below simply invokes
     // android.os.FileUtils.setPermissions(path, mode, -1, -1) via Reflection.

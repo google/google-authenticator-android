@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2011 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="enroll2sv_welcome_page_title" msgid="7315749770561704214">"Vsak dan je zabeleženih več tisoč vdorov v spletne račune."</string>
+  <string name="enroll2sv_welcome_page_details" msgid="2035373304224001569">"Preverjanje v dveh korakih ščiti Google Račun, tudi če vam ukradejo geslo."</string>
+  <string name="enroll2sv_intro_page_enter_password_title" msgid="3845725384905471573">"Za prijavo vnesite geslo."</string>
+  <string name="enroll2sv_intro_page_enter_password_details" msgid="6081950394681853992">"Če uporabljate nov računalnik ali napravo, bo Google zahteval, da vnesete posebno kodo, s katero potrdi, da ste to res vi."</string>
+  <string name="enroll2sv_intro_page_enter_code_title" msgid="2526771905197548496">"Če uporabljate nov računalnik, vnesite kodo iz telefona."</string>
+  <string name="enroll2sv_intro_page_enter_code_details" msgid="4247727206761654112">"Ta program bo ustvaril kodo, potrebno za nadaljevanje prijave."</string>
+  <string name="enroll2sv_intro_page_verify_device_title" msgid="6058390532717821203">"Nato ste prijavljeni."</string>
+  <string name="enroll2sv_intro_page_verify_device_details" msgid="3947649573696617810">"Izberete lahko tudi, da si Google zapomni vaš računalnik in ne zahteva ponovnega vnosa kode."</string>
+  <string name="button_next" msgid="2353761571069251223">"Naprej"</string>
+  <string name="button_back" msgid="2814588052595466630">"Nazaj"</string>
+</resources>

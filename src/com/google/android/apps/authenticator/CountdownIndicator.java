@@ -16,7 +16,11 @@
 
 package com.google.android.apps.authenticator;
 
+import com.google.android.apps.authenticator2.R;
+
 import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
@@ -32,7 +36,7 @@ import android.view.View;
 public class CountdownIndicator extends View {
   private final Paint mRemainingSectorPaint;
   private final Paint mBorderPaint;
-  private static final int COLOR = 0xff3060c0;
+  private static final int DEFAULT_COLOR = 0xff3060c0;
 
   /**
    * Countdown phase starting with {@code 1} when a full cycle is remaining and shrinking to
@@ -47,10 +51,27 @@ public class CountdownIndicator extends View {
   public CountdownIndicator(Context context, AttributeSet attrs) {
     super(context, attrs);
 
+    int color = DEFAULT_COLOR;
+    Resources.Theme theme = context.getTheme();
+    TypedArray appearance = theme.obtainStyledAttributes(
+        attrs, R.styleable.CountdownIndicator, 0, 0);
+    if (appearance != null) {
+      int n = appearance.getIndexCount();
+      for (int i = 0; i < n; i++) {
+        int attr = appearance.getIndex(i);
+
+        switch (attr) {
+        case R.styleable.CountdownIndicator_color:
+          color = appearance.getColor(attr, DEFAULT_COLOR);
+          break;
+        }
+      }
+    }
+
     mBorderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     mBorderPaint.setStrokeWidth(0); // hairline
     mBorderPaint.setStyle(Style.STROKE);
-    mBorderPaint.setColor(COLOR);
+    mBorderPaint.setColor(color);
     mRemainingSectorPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     mRemainingSectorPaint.setColor(mBorderPaint.getColor());
   }

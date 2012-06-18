@@ -18,31 +18,27 @@ package com.google.android.apps.authenticator;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.Base32String.DecodingException;
+import com.google.android.apps.authenticator.enroll2sv.wizard.IntroPageActivity;
+import com.google.android.apps.authenticator2.R;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
 /**
- * The activity that allows users to manually enter a key.
+ * The activity that lets the user manually add an account by entering its name, key, and type
+ * (TOTP/HOTP).
  *
  * @author sweis@google.com (Steve Weis)
  */
-public class EnterKeyActivity extends Activity implements OnClickListener,
-    TextWatcher {
+public class EnterKeyActivity extends IntroPageActivity implements TextWatcher {
   private static final int MIN_KEY_BYTES = 10;
   private EditText mKeyEntryField;
   private EditText mAccountName;
   private Spinner mType;
-  private Button mSubmitButton;
-  private Button mCancelButton;
 
   /**
    * Called when the activity is first created
@@ -50,12 +46,10 @@ public class EnterKeyActivity extends Activity implements OnClickListener,
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.enter_key);
+    setPageContentView(R.layout.enter_key);
 
     // Find all the views on the page
     mKeyEntryField = (EditText) findViewById(R.id.key_value);
-    mSubmitButton = (Button) findViewById(R.id.submit_button);
-    mCancelButton = (Button) findViewById(R.id.cancel_button);
     mAccountName = (EditText) findViewById(R.id.account_name);
     mType = (Spinner) findViewById(R.id.type_choice);
 
@@ -65,9 +59,9 @@ public class EnterKeyActivity extends Activity implements OnClickListener,
     mType.setAdapter(types);
 
     // Set listeners
-    mSubmitButton.setOnClickListener(this);
-    mCancelButton.setOnClickListener(this);
     mKeyEntryField.addTextChangedListener(this);
+
+    mRightButton.setText(R.string.enter_key_page_add_button);
   }
 
   /*
@@ -102,24 +96,20 @@ public class EnterKeyActivity extends Activity implements OnClickListener,
   }
 
   @Override
-  public void onClick(View view) {
-    if (view == mSubmitButton) {
-      // TODO(cemp): This depends on the OtpType enumeration to correspond
-      // to array indices for the dropdown with different OTP modes.
-      OtpType mode = mType.getSelectedItemPosition() == OtpType.TOTP.value ?
-                     OtpType.TOTP :
-                     OtpType.HOTP;
-      if (validateKeyAndUpdateStatus(true)) {
-        AuthenticatorActivity.saveSecret(this,
-            mAccountName.getText().toString(),
-            getEnteredKey(),
-            null,
-            mode,
-            AccountDb.DEFAULT_HOTP_COUNTER);
-        finish();
-      }
-    } else if (view == mCancelButton) {
-      finish();
+  protected void onRightButtonPressed() {
+    // TODO(cemp): This depends on the OtpType enumeration to correspond
+    // to array indices for the dropdown with different OTP modes.
+    OtpType mode = mType.getSelectedItemPosition() == OtpType.TOTP.value ?
+                   OtpType.TOTP :
+                   OtpType.HOTP;
+    if (validateKeyAndUpdateStatus(true)) {
+      AuthenticatorActivity.saveSecret(this,
+          mAccountName.getText().toString(),
+          getEnteredKey(),
+          null,
+          mode,
+          AccountDb.DEFAULT_HOTP_COUNTER);
+      exitWizard();
     }
   }
 

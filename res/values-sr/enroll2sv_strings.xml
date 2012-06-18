@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2011 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="enroll2sv_welcome_page_title" msgid="7315749770561704214">"Сваког дана се отима на хиљаде налога на мрежи."</string>
+  <string name="enroll2sv_welcome_page_details" msgid="2035373304224001569">"Верификација у 2 корака штити Google налог чак и ако вам украду лозинку."</string>
+  <string name="enroll2sv_intro_page_enter_password_title" msgid="3845725384905471573">"Да бисте се пријавили, унесите лозинку."</string>
+  <string name="enroll2sv_intro_page_enter_password_details" msgid="6081950394681853992">"Међутим, ако користите нови рачунар или уређај, Google ће тражити посебан кôд да би се уверио да сте то заиста ви."</string>
+  <string name="enroll2sv_intro_page_enter_code_title" msgid="2526771905197548496">"Ако користите нов рачунар, унесите кôд са телефона."</string>
+  <string name="enroll2sv_intro_page_enter_code_details" msgid="4247727206761654112">"Ова апликација ће генерисати кôд потребан за наставак пријављивања."</string>
+  <string name="enroll2sv_intro_page_verify_device_title" msgid="6058390532717821203">"Онда сте пријављени."</string>
+  <string name="enroll2sv_intro_page_verify_device_details" msgid="3947649573696617810">"Можете да изаберете опцију која памти рачунар и Google вам више неће тражити кôд када га користите."</string>
+  <string name="button_next" msgid="2353761571069251223">"Даље"</string>
+  <string name="button_back" msgid="2814588052595466630">"Назад"</string>
+</resources>

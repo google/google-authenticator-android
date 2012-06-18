@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
   <string name="app_name_short" msgid="6268465073167241020">"أداة المصادقة"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"إدخال الحساب يدويًا"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"إضافة حساب يدويًا"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"إضافة"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"إضافة حساب"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"الاطلاع على طريقة العمل"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"إضافة حساب"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"كيفية العمل"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"إضافة حساب آخر"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"إضافة حساب يدويًا"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"مسح الرمز الشريطي ضوئيًا"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"أدخل اسم الحساب"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"إدخال المفتاح"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"قيمة المفتاح أقصر مما ينبغي"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"لم يتم التعرف على المفتاح."</string>
   <string name="error_qr" msgid="1076904454315180481">"لا يمكن تفسير رمز QR."</string>
   <string name="secret_saved" msgid="2201025202465443226">"تم حفظ السر"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"حفظ المفتاح الذي تم مسحه ضوئيًا لـ"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"حفظ المفتاح لـ"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"لا يمكنك حفظ سر فارغ"</string>
   <string name="enter_pin" msgid="2238539410253130912">"أدخل رمز التحقق هذا إذا طُلب منك ذلك أثناء تسجيل الدخول إلى الحساب:"</string>
-  <string name="not_initialized" msgid="4029306154380409711">"وسوف يولد Google Authenticator رموز التحقق التي يمكن استخدامها لتوفير حماية إضافية عند تسجيل الدخول. &lt;br/&gt; &lt;br/&gt; يجب استخدام Google Authenticator بالإضافة إلى ميزة التحقق بخطوتين لحساب Google الخاص بك."</string>
   <string name="check_code_title" msgid="6308604727562833139">"قيمة التحقق من السلامة"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"تحقق من قيمة المفتاح"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"مسح رمز شريطي ضوئيًا"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"هل تريد تثبيت ماسحة ضوئية للرموز الشريطية؟"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"لمسح الرموز الشريطية المشتملة على مفاتيح ضوئيًا، يجب تثبيت الماسحة الضوئية للرموز الشريطية من ZXing."</string>
   <string name="install_button" msgid="5395462228740377795">"تثبيت"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"استثناء فك التشفير"</string>
   <string name="submit" msgid="1518558163262431303">"حفظ"</string>
   <string name="cancel" msgid="5705561042616477184">"إلغاء"</string>
-  <string name="delete" msgid="2463438384745656241">"حذف"</string>
-  <string name="delete_message" msgid="7101401126932957358">"هل تريد حذف هذا المفتاح؟"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"إزالة"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"إزالة الحساب"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"هل تريد إزالة <xliff:g id="ACCOUNT">%1$s</xliff:g>؟"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"ستؤدي إزالة هذا الحساب إلى &lt;b&gt;إزالة قدرتك&lt;/b&gt; على إنشاء الرموز، ولكنها &lt;b&gt;لن&lt;/b&gt; توقف المصادقة الثنائية. قد يمنعك هذا من تسجيل الدخول إلى حسابك. &lt;p&gt; قبل الإزالة: &lt;ul&gt; &lt;li&gt;أوقف المصادقة الثنائية لهذا الحساب، أو&lt;/li&gt; &lt;li&gt;تأكد من أنه لديك آلية بديلة لإنشاء الرموز.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"ستؤدي إزالة هذا الحساب إلى &lt;b&gt;إزالة قدرتك&lt;/b&gt; على إنشاء الرموز ولكنها &lt;b&gt;لن&lt;/b&gt; توقف التحقق بخطوتين. قد يمنعك هذا من تسجيل الدخول إلى حسابك. &lt;p&gt; قبل الإزالة: &lt;ul&gt; &lt;li&gt;أوقف التحقق بخطوتين لهذا الحساب، أو&lt;/li&gt; &lt;li&gt;تأكد من أنه لديك آلية بديلة لإنشاء الرموز.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"إعادة تسمية"</string>
   <string name="rename_message" msgid="5929955206098259018">"إعادة تسمية <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"عذرًا، هذا الاسم مستخدم فعلاً."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"وفقًا للوقت"</item>
     <item msgid="5212912099902129712">"وفقًا للعداد"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"أداة التصدير"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. لديك الإصدار الجديد من هذا التطبيق فعلاً على جهازك. &lt;a href=&gt;إزالة هذا التطبيق&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. &lt;a href=&gt;إطلاق التطبيق الجديد&lt;/a&gt; لاستيراد حساباتك."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. &lt;a href=&gt;مزيد من المعلومات&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. &lt;p&gt; لإعداد الإصدار الجديد، الرجاء &lt;a href=&gt;تثبيت تطبيق أداة مصادقة Google الجديد&lt;/a&gt; من Market، ثم سيجري استيراد حساباتك تلقائيًا."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"لن يتم دعم هذا الإصدار من أداة مصادقة Google بعد الآن. &lt;p&gt; لإعداد الإصدار الجديد، الرجاء تثبيت تطبيق أداة مصادقة Google الجديد، ثم سيجري استيراد حساباتك تلقائيًا."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"تم الاستيراد بنجاح"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"تم استيراد بياناتك بنجاح من تطبيق أداة مصادقة Google المتحفظ عليه. يمكنك الآن إزالة الإصدار السابق من التطبيق بأمان من خلال النقر أدناه."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"إزالة"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"خروج"</string>
 </resources>

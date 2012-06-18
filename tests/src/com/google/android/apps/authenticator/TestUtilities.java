@@ -16,19 +16,39 @@
 
 package com.google.android.apps.authenticator;
 
+import static com.google.testing.littlemock.LittleMock.createCaptor;
+import static com.google.testing.littlemock.LittleMock.doReturn;
+import static com.google.testing.littlemock.LittleMock.timeout;
+import static com.google.testing.littlemock.LittleMock.verify;
+
+import com.google.android.apps.authenticator.testability.DependencyInjector;
+import com.google.android.apps.authenticator.testability.StartActivityListener;
+import com.google.testing.littlemock.ArgumentCaptor;
+import com.google.testing.littlemock.LittleMock;
+
 import android.app.Activity;
 import android.app.Instrumentation;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Looper;
 import android.os.SystemClock;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceScreen;
 import android.test.InstrumentationTestCase;
-import android.test.TouchUtils;
+import android.test.ViewAsserts;
 import android.view.View;
+import android.view.ViewParent;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
 
+import junit.framework.Assert;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
@@ -42,6 +62,14 @@ import java.util.concurrent.TimeoutException;
  * @author sarvar@google.com (Sarvar Patel)
  */
 public class TestUtilities {
+
+  public static final String APP_PACKAGE_NAME = "com.google.android.apps.authenticator2";
+
+  /**
+   * Timeout (milliseconds) when waiting for the results of a UI action performed by the code
+   * under test.
+   */
+  public static final long UI_ACTION_EFFECT_TIMEOUT_MILLIS = 5000;
 
   private TestUtilities() { }
 
@@ -105,20 +133,66 @@ public class TestUtilities {
   /**
    * Taps the specified preference displayed by the provided Activity.
    */
-  public static void tapPreference(
-      InstrumentationTestCase instrumentationTestCase,
-      PreferenceActivity activity,
-      Preference preference) {
+  public static void tapPreference(InstrumentationTestCase instrumentationTestCase,
+      PreferenceActivity activity, Preference preference) {
+    // IMPLEMENTATION NOTE: There's no obvious way to find out which View corresponds to the
+    // preference because the Preference list in the adapter is flattened, whereas the View
+    // hierarchy in the ListView is not.
+    // Thus, we go for the Reflection-based invocation of Preference.performClick() which is as
+    // close to the invocation stack of a normal tap as it gets.
+
+    // Only perform the click if the preference is in the adapter to catch cases where the
+    // preference is not part of the PreferenceActivity for some reason.
     ListView listView = activity.getListView();
     ListAdapter listAdapter = listView.getAdapter();
     for (int i = 0, len = listAdapter.getCount(); i < len; i++) {
       if (listAdapter.getItem(i) == preference) {
-        View itemView = listView.getChildAt(listView.getHeaderViewsCount() + i);
-        TouchUtils.tapView(instrumentationTestCase, itemView);
+        invokePreferencePerformClickOnMainThread(
+            instrumentationTestCase.getInstrumentation(),
+            preference,
+            activity.getPreferenceScreen());
         return;
       }
     }
     throw new IllegalArgumentException("Preference " + preference + " not in list");
+  }
+
+  private static void invokePreferencePerformClickOnMainThread(
+      Instrumentation instrumentation,
+      final Preference preference,
+      final PreferenceScreen preferenceScreen) {
+    if (Thread.currentThread() == Looper.getMainLooper().getThread()) {
+      invokePreferencePerformClick(preference, preferenceScreen);
+    } else {
+      FutureTask<Void> task = new FutureTask<Void>(new Runnable() {
+        @Override
+        public void run() {
+          invokePreferencePerformClick(preference, preferenceScreen);
+        }
+      }, null);
+      instrumentation.runOnMainSync(task);
+      try {
+        task.get();
+      } catch (Exception e) {
+        throw new RuntimeException("Failed to click on preference on main thread", e);
+      }
+    }
+  }
+
+  private static void invokePreferencePerformClick(
+      Preference preference, PreferenceScreen preferenceScreen) {
+    try {
+      Method performClickMethod =
+          Preference.class.getDeclaredMethod("performClick", PreferenceScreen.class);
+      performClickMethod.setAccessible(true);
+      performClickMethod.invoke(preference, preferenceScreen);
+    } catch (NoSuchMethodException e) {
+      throw new RuntimeException("Preference.performClickMethod method not found", e);
+    } catch (InvocationTargetException e) {
+      throw new RuntimeException("Preference.performClickMethod failed", e);
+    } catch (IllegalAccessException e) {
+      throw new RuntimeException("Failed to access Preference.performClickMethod", e);
+    }
   }
 
   /*
@@ -148,9 +222,9 @@ public class TestUtilities {
   /**
    * Waits until the window which contains the provided view has focus.
    */
-  public static void waitForWindowFocus(View view, long timeoutMillis)
+  public static void waitForWindowFocus(View view)
       throws InterruptedException, TimeoutException {
-    long deadline = SystemClock.uptimeMillis() + timeoutMillis;
+    long deadline = SystemClock.uptimeMillis() + UI_ACTION_EFFECT_TIMEOUT_MILLIS;
     while (!view.hasWindowFocus()) {
       long millisTillDeadline = deadline - SystemClock.uptimeMillis();
       if (millisTillDeadline < 0) {
@@ -161,11 +235,47 @@ public class TestUtilities {
   }
 
   /**
+   * Waits until the {@link Activity} is finishing.
+   */
+  public static void waitForActivityFinishing(Activity activity)
+      throws InterruptedException, TimeoutException {
+    long deadline = SystemClock.uptimeMillis() + UI_ACTION_EFFECT_TIMEOUT_MILLIS;
+    while (!activity.isFinishing()) {
+      long millisTillDeadline = deadline - SystemClock.uptimeMillis();
+      if (millisTillDeadline < 0) {
+        throw new TimeoutException("Timed out while waiting for activity to start finishing");
+      }
+      Thread.sleep(50);
+    }
+  }
+
+  /**
+   * Invokes the {@link Activity}'s {@code onBackPressed()} on the UI thread and blocks (with
+   * a timeout) the calling thread until the invocation completes. If the calling thread is the UI
+   * thread, the {@code finish} is invoked directly and without a timeout.
+   */
+  public static void invokeActivityOnBackPressedOnUiThread(final Activity activity)
+      throws InterruptedException, TimeoutException {
+    FutureTask<Void> finishTask = new FutureTask<Void>(new Runnable() {
+      @Override
+      public void run() {
+        activity.onBackPressed();
+      }
+    }, null);
+    activity.runOnUiThread(finishTask);
+    try {
+      finishTask.get(UI_ACTION_EFFECT_TIMEOUT_MILLIS, TimeUnit.MILLISECONDS);
+    } catch (ExecutionException e) {
+      throw new RuntimeException("Activity.onBackPressed() failed", e);
+    }
+  }
+
+  /**
    * Invokes the {@link Activity}'s {@code finish()} on the UI thread and blocks (with
    * a timeout) the calling thread until the invocation completes. If the calling thread is the UI
    * thread, the {@code finish} is invoked directly and without a timeout.
    */
-  public static void invokeFinishActivityOnUiThread(final Activity activity, long timeoutMillis)
+  public static void invokeFinishActivityOnUiThread(final Activity activity)
       throws InterruptedException, TimeoutException {
     FutureTask<Void> finishTask = new FutureTask<Void>(new Runnable() {
       @Override
@@ -175,10 +285,59 @@ public class TestUtilities {
     }, null);
     activity.runOnUiThread(finishTask);
     try {
-      finishTask.get(timeoutMillis, TimeUnit.MILLISECONDS);
+      finishTask.get(UI_ACTION_EFFECT_TIMEOUT_MILLIS, TimeUnit.MILLISECONDS);
     } catch (ExecutionException e) {
       throw new RuntimeException("Activity.finish() failed", e);
     }
+  }
+
+  private static boolean isViewAndAllItsParentsVisible(View view) {
+    if (view.getVisibility() != View.VISIBLE) {
+      return false;
+    }
+    ViewParent parent = view.getParent();
+    if (!(parent instanceof View)) {
+      // This View is the root of the View hierarche, and it's visible (checked above)
+      return true;
+    }
+    // This View itself is actually visible only all of its parents are visible.
+    return isViewAndAllItsParentsVisible((View) parent);
+  }
+
+  private static boolean isViewOrAnyParentVisibilityGone(View view) {
+    if (view.getVisibility() == View.GONE) {
+      return true;
+    }
+    ViewParent parent = view.getParent();
+    if (!(parent instanceof View)) {
+      // This View is the root of the View hierarchy, and its visibility is not GONE (checked above)
+      return false;
+    }
+    // This View itself is actually visible only all of its parents are visible.
+    return isViewOrAnyParentVisibilityGone((View) parent);
+  }
+
+  /**
+   * Asserts that the provided {@link View} and all its parents are visible.
+   */
+  public static void assertViewAndAllItsParentsVisible(View view) {
+    Assert.assertTrue(isViewAndAllItsParentsVisible(view));
+  }
+
+  /**
+   * Asserts that the provided {@link View} and all its parents are visible.
+   */
+  public static void assertViewOrAnyParentVisibilityGone(View view) {
+    Assert.assertTrue(isViewOrAnyParentVisibilityGone(view));
+  }
+
+  /**
+   * Asserts that the provided {@link View} is on the screen and is visible (which means its parent
+   * and the parent of its parent and so forth are visible too).
+   */
+  public static void assertViewVisibleOnScreen(View view) {
+    ViewAsserts.assertOnScreen(view.getRootView(), view);
+    assertViewAndAllItsParentsVisible(view);
   }
 
   /**
@@ -224,5 +383,128 @@ public class TestUtilities {
     }
     instrumentation.waitForIdleSync();
   }
-}
 
+  /**
+   * Asserts that the provided {@link Activity} displayed a dialog with the provided ID at some
+   * point in the past. Note that this does not necessarily mean that the dialog is still being
+   * displayed.
+   *
+   * <p>
+   * <b>Note:</b> this method resets the "was displayed" state of the dialog. This means that a
+   * consecutive invocation of this method for the same dialog ID will fail unless the dialog
+   * was displayed again prior to the invocation of this method.
+   */
+  public static void assertDialogWasDisplayed(Activity activity, int dialogId) {
+    // IMPLEMENTATION NOTE: This code below relies on the fact that, if a dialog with the ID was
+    // every displayed, then dismissDialog will succeed, whereas if the dialog with the ID has
+    // never been shown, then dismissDialog throws an IllegalArgumentException.
+    try {
+      activity.dismissDialog(dialogId);
+      // Reset the "was displayed" state
+      activity.removeDialog(dialogId);
+    } catch (IllegalArgumentException e) {
+      Assert.fail("No dialog with ID " + dialogId + " was ever displayed");
+    }
+  }
+
+  /**
+   * Taps the positive button of a currently displayed dialog. This method assumes that a button
+   * of the dialog is currently selected.
+   *
+   * @see #tapDialogNegativeButton(InstrumentationTestCase)
+   */
+  public static void tapDialogNegativeButton(InstrumentationTestCase testCase) {
+    // The order of the buttons is reversed from ICS onwards
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+      testCase.sendKeys("DPAD_RIGHT DPAD_CENTER");
+    } else {
+      testCase.sendKeys("DPAD_LEFT DPAD_CENTER");
+    }
+  }
+
+  /**
+   * Taps the negative button of a currently displayed dialog. This method assumes that a button
+   * of the dialog is currently selected.
+   *
+   * @see #tapDialogNegativeButton(InstrumentationTestCase)
+   */
+  public static void tapDialogPositiveButton(InstrumentationTestCase testCase) {
+    // The order of the buttons is reversed from ICS onwards
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+      testCase.sendKeys("DPAD_LEFT DPAD_CENTER");
+    } else {
+      testCase.sendKeys("DPAD_RIGHT DPAD_CENTER");
+    }
+  }
+
+  /**
+   * Taps the negative button of a currently displayed 3 button dialog. This method assumes
+   * that a button of the dialog is currently selected.
+   */
+  public static void tapNegativeButtonIn3ButtonDialog(InstrumentationTestCase testCase) {
+    // The order of the buttons is reversed from ICS onwards
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+      testCase.sendKeys("DPAD_RIGHT DPAD_RIGHT DPAD_CENTER");
+    } else {
+      testCase.sendKeys("DPAD_LEFT DPAD_LEFT DPAD_CENTER");
+    }
+  }
+
+  /**
+   * Taps the neutral button of a currently displayed 3 button dialog. This method assumes
+   * that a button of the dialog is currently selected.
+   */
+  public static void tapNeutralButtonIn3ButtonDialog(InstrumentationTestCase testCase) {
+    // The order of the buttons is reversed from ICS onwards
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+      testCase.sendKeys("DPAD_RIGHT DPAD_CENTER");
+    } else {
+      testCase.sendKeys("DPAD_RIGHT DPAD_CENTER");
+    }
+  }
+
+  /**
+   * Taps the positive button of a currently displayed 3 button dialog. This method assumes
+   * that a button of the dialog is currently selected.
+   */
+  public static void tapPositiveButtonIn3ButtonDialog(InstrumentationTestCase testCase) {
+    // The order of the buttons is reversed from ICS onwards
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+      testCase.sendKeys("DPAD_LEFT DPAD_LEFT DPAD_CENTER");
+    } else {
+      testCase.sendKeys("DPAD_RIGHT DPAD_RIGHT DPAD_CENTER");
+    }
+  }
+
+  /**
+   * Configures the {@link DependencyInjector} with a {@link StartActivityListener} that prevents
+   * activity launches.
+   */
+  public static void withLaunchPreventingStartActivityListenerInDependencyResolver() {
+    StartActivityListener mockListener = LittleMock.mock(StartActivityListener.class);
+    doReturn(true).when(mockListener).onStartActivityInvoked(
+        LittleMock.<Context>anyObject(), LittleMock.<Intent>anyObject());
+    DependencyInjector.setStartActivityListener(mockListener);
+  }
+
+  /**
+   * Verifies (with a timeout of {@link #UI_ACTION_EFFECT_TIMEOUT_MILLIS}) that an activity launch
+   * has been attempted and returns the {@link Intent} with which the attempt occurred.
+   *
+   * <p><b>NOTE: This method assumes that the {@link DependencyInjector} was configured
+   * using {@link #withLaunchPreventingStartActivityListenerInDependencyResolver()}.</b>
+   */
+  public static Intent verifyWithTimeoutThatStartActivityAttemptedExactlyOnce() {
+    StartActivityListener mockListener = DependencyInjector.getStartActivityListener();
+    ArgumentCaptor<Intent> intentCaptor = createCaptor();
+    verify(mockListener, timeout(UI_ACTION_EFFECT_TIMEOUT_MILLIS))
+        .onStartActivityInvoked(LittleMock.<Context>anyObject(), intentCaptor.capture());
+    return intentCaptor.getValue();
+  }
+
+  public static void assertLessThanOrEquals(long expected, long actual) {
+    if (actual > expected) {
+      Assert.fail(actual + " > " + expected);
+    }
+  }
+}

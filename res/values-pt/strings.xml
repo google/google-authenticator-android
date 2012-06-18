@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google Autenticador"</string>
   <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"Inserção manual de conta"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"Adicionar conta manualmente"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"Adicionar"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"Adicionar uma conta"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"Veja como funciona"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"Adicionar conta"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"Como funciona"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"Adicionar outra conta"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"Adicionar conta manualmente"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"Ler código de barras"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"Inserir nome da conta"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"Inserir sua chave"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"O valor-chave é muito curto"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"Chave não reconhecida."</string>
   <string name="error_qr" msgid="1076904454315180481">"Não é possível ler o código QR."</string>
   <string name="secret_saved" msgid="2201025202465443226">"Segredo salvo"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"Salvar chave digitalizada para"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"Salvar chave para"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"Não é possível salvar um segredo em branco"</string>
   <string name="enter_pin" msgid="2238539410253130912">"Insira este código de verificação durante o login na conta se solicitado:"</string>
-  <string name="not_initialized" msgid="4029306154380409711">"O Google Autenticador gerará códigos de verificação que poderão ser usados para fornecer segurança adicional ao fazer login. &lt;br/&gt; &lt;br/&gt;  O Google Autenticador deve ser usado em conjunto com o recurso de verificação em duas etapas para sua Conta do Google."</string>
   <string name="check_code_title" msgid="6308604727562833139">"Valor de verificação de integridade"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"Verificar valor-chave"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"Ler um código de barras"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"Instalar leitor de código de barras?"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"Para ler códigos de barras com chaves, você deve instalar o leitor de código de barras ZXing."</string>
   <string name="install_button" msgid="5395462228740377795">"Instalar"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"Exceção de decodificação"</string>
   <string name="submit" msgid="1518558163262431303">"Salvar"</string>
   <string name="cancel" msgid="5705561042616477184">"Cancelar"</string>
-  <string name="delete" msgid="2463438384745656241">"Excluir"</string>
-  <string name="delete_message" msgid="7101401126932957358">"Excluir essa chave?"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"Remover"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Remover conta"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"Remover <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"A remoção desta conta &lt;b&gt;eliminará sua capacidade&lt;/b&gt; de gerar códigos. No entanto, &lt;b&gt;não&lt;/b&gt; desativará a autenticação de dois fatores. Isso pode fazer com que você não consiga fazer login na conta. &lt;p&gt; Antes de removê-la: &lt;ul&gt; &lt;li&gt;Desative a autenticação de dois fatores da conta, or&lt;/li&gt; &lt;li&gt;Verifique se você tem um mecanismo alternativo para a geração de códigos.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"A remoção desta conta &lt;b&gt;eliminará sua capacidade&lt;/b&gt; de gerar códigos. No entanto, &lt;b&gt;não&lt;/b&gt; desativará a verificação em duas etapas. Isso pode fazer com que você não consiga fazer login na conta. &lt;p&gt; Antes de removê-la: &lt;ul&gt; &lt;li&gt;Desative a verificação em duas etapas da conta ou&lt;/li&gt; &lt;li&gt;Verifique se você tem um mecanismo alternativo para a geração de códigos.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"Renomear"</string>
   <string name="rename_message" msgid="5929955206098259018">"Renomear <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"Este nome já está em uso."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"De acordo com horário"</item>
     <item msgid="5212912099902129712">"De acordo com contagem"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"Exportador"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"Esta versão do Google Authenticator deixará de ser compatível. Você já tem a nova versão do aplicativo em seu dispositivo. &lt;a href=&gt;Desinstale este aplicativo&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"Esta versão do Google Authenticator deixará de ser compatível. &lt;a href=&gt;Abra o novo aplicativo&lt;/a&gt; para importar suas contas."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"Esta versão do Google Authenticator deixará de ser compatível. &lt;a href=&gt;Saiba mais&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"Esta versão do Google Authenticator deixará de ser compatível. &lt;p&gt; Para configurar a nova versão, &lt;a href=&gt;instale o novo aplicativo do Google Authenticator&lt;/a&gt; do Market e ele irá importar automaticamente suas contas."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"Esta versão do Google Authenticator deixará de ser compatível. &lt;p&gt; Para configurar a nova versão, instale o novo aplicativo do Google Authenticator, que irá importar automaticamente suas contas."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"Importação concluída"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"Seus dados foram importados do aplicativo obsoleto Google Authenticator. Agora você pode clicar abaixo para desinstalar a versão anterior do aplicativo com segurança."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"Desinstalar"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"Sair"</string>
 </resources>

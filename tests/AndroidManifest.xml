@@ -15,11 +15,11 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.google.android.apps.authenticator.tests"
+      package="com.google.android.apps.authenticator2.tests"
       android:versionCode="1"
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="7" />
-    <instrumentation android:targetPackage="com.google.android.apps.authenticator"
+    <instrumentation android:targetPackage="com.google.android.apps.authenticator2"
                      android:name="android.test.InstrumentationTestRunner" />
     <application android:label="AuthenticatorTests">
       <uses-library android:name="android.test.runner" />

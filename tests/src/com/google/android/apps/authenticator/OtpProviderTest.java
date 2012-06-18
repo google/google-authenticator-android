@@ -16,6 +16,8 @@
 
 package com.google.android.apps.authenticator;
 
+import static com.google.testing.littlemock.LittleMock.initMocks;
+
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 
@@ -42,6 +44,7 @@ public class OtpProviderTest extends  AndroidTestCase {
   public void setUp() throws Exception {
     super.setUp();
 
+    initMocks(this);
     DependencyInjector.resetForIntegrationTesting(getContext());
     accountDb = DependencyInjector.getAccountDb();
     otpProvider = new OtpProvider(accountDb);

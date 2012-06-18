@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
   <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"Entrada de compte manual"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"Afegeix compte manualment"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"Afegeix"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"Afegeix un compte"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"Mostra com funciona"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"Afegeix un compte"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"Com funciona"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"Afegeix un altre compte"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"Afegeix un compte manualment"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"Escaneja un codi de barres"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"Introduïu el nom del compte"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"Introduïu la clau"</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"El valor de clau és massa curt"</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"No es reconeix la clau."</string>
   <string name="error_qr" msgid="1076904454315180481">"No es pot interpretar el codi QR."</string>
   <string name="secret_saved" msgid="2201025202465443226">"Secret desat"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"Voleu desar la clau explorada per a"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"Desa la clau per a"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"No es pot desar un secret buit"</string>
   <string name="enter_pin" msgid="2238539410253130912">"Introduïu aquest codi de verificació si se us demana durant l\'inici de sessió al compte:"</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Google Authenticator generarà codis de verificació que es poden utilitzar com a seguretat addicional en iniciar la sessió. &lt;br/&gt; &lt;br/&gt; Google Authenticator s\'ha d\'utilitzar conjuntament amb la funció de verificació en dos passos del vostre Compte de Google."</string>
   <string name="check_code_title" msgid="6308604727562833139">"Valor de comprovació"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"Comprova el valor de clau"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"Escaneja un codi de barres"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"Instal·lació de l\'escàner de codi de barres?"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"Per explorar codis de barres que continguin claus, heu d\'instal·lar l\'explorador de codis de barres de ZXing."</string>
   <string name="install_button" msgid="5395462228740377795">"Instal·la"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"Excepció de descodificació"</string>
   <string name="submit" msgid="1518558163262431303">"Desa"</string>
   <string name="cancel" msgid="5705561042616477184">"Cancel·la"</string>
-  <string name="delete" msgid="2463438384745656241">"Suprimeix"</string>
-  <string name="delete_message" msgid="7101401126932957358">"Voleu suprimir aquesta clau?"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"Elimina"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Elimina el compte"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"Voleu eliminar <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"Si elimineu aquest compte, perdreu la capacitat&lt;/b&gt; de generar codis; tot i això, &lt;b&gt;no&lt;/b&gt; es desactivarà l\'autenticació de dos factors. Això pot evitar que algú iniciï la sessió al vostre compte. &lt;p&gt; Abans d\'eliminar-lo: &lt;ul&gt; &lt;li&gt;Desactiveu l\'autenticació de dos factors per a aquest compte o bé&lt;/li&gt; &lt;li&gt;assegureu-vos que disposeu d\'un mecanisme alternatiu per generar codis.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Si elimineu aquest compte, perdreu la capacitat&lt;/b&gt; de generar codis; tot i això,  &lt;b&gt;no&lt;/b&gt; es desactivarà la verificació en dos passos. Això pot evitar que algú iniciï la sessió al vostre compte. &lt;p&gt; Abans d\'eliminar-lo: &lt;ul&gt; &lt;li&gt;Desactiveu la verificació en dos passos per a aquest compte o bé&lt;/li&gt; &lt;li&gt;assegureu-vos que disposeu d\'un mecanisme alternatiu per generar codis.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"Canvia el nom"</string>
   <string name="rename_message" msgid="5929955206098259018">"Canvia el nom <xliff:g id="ACCOUNT">%1$s</xliff:g>"</string>
   <string name="error_exists" msgid="9037595140877350695">"El nom ja està en ús."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"Basada en temps"</item>
     <item msgid="5212912099902129712">"Basada en comptador"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"Exportador"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"Aquesta versió de Google Authenticator deixarà de ser compatible. Ja teniu la versió nova de l\'aplicació al dispositiu. &lt;a href=&gt;Desinstal·la aquesta aplicació&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"Aquesta versió de Google Authenticator deixarà de ser compatible. &lt;a href=&gt;Inicieu l\'aplicació nova&lt;/a&gt; per importar els vostres comptes."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"Aquesta versió de Google Authenticator deixarà de ser compatible. &lt;a href=&gt;Més informació&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"Aquesta versió de Google Authenticator deixarà de ser compatible. &lt;p&gt; Per configurar la versió nova, &lt;a href=&gt;instal·leu l\'aplicació de Google Authenticator nova&lt;/a&gt; des de Market i, a continuació, s\'importaran automàticament els vostres comptes."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"Aquesta versió de Google Authenticator deixarà de ser compatible. &lt;p&gt; Per configurar la versió nova, instal·leu l\'aplicació de Google Authenticator nova i, a continuació, s\'importaran automàticament els vostres comptes."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"Importació correcta"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"S\'han importat correctament les vostres dades de l\'aplicació obsoleta de Google Authenticator. Ara podeu desinstal·lar la versió anterior de l\'aplicació si feu clic a continuació."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"Desinstal·la"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"Surt"</string>
 </resources>

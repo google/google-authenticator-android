@@ -15,10 +15,10 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.google.android.apps.authenticator"
-          android:versionCode="91" android:versionName="0.91">
+          package="com.google.android.apps.authenticator2"
+          android:versionCode="15" android:versionName="2.15">
 
-  <uses-sdk android:minSdkVersion="7" />
+  <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="14" />
 
   <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -27,16 +27,12 @@
   from the device using various backup methods (e.g., adb backup introduced in ICS).
   -->
   <application android:label="@string/app_name_short"
-               android:icon="@drawable/authenticator_launcher_icon"
+               android:icon="@drawable/ic_launcher_authenticator"
                android:theme="@style/AuthenticatorTheme"
                android:name="com.google.android.apps.authenticator.AuthenticatorApplication"
                android:allowBackup="false">
 
-    <service android:name=".dataexport.ExportServiceV2"
-             android:label="@string/dataexport_service_name"
-             android:exported="true" />
-
-    <activity android:name=".AuthenticatorActivity"
+    <activity android:name="com.google.android.apps.authenticator.AuthenticatorActivity"
               android:label="@string/app_name_short"
               android:launchMode="singleTask">
       <intent-filter>
@@ -46,30 +42,33 @@
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="otpauth" />
       </intent-filter>
     </activity>
 
-    <receiver android:name=".NewAppInstallListener">
-      <intent-filter>
-        <action android:name="android.intent.action.PACKAGE_ADDED" />
-        <data android:scheme="package" />
-      </intent-filter>
-    </receiver>
-
-    <activity android:name=".DeprecationInfoActivity" />
-
-    <activity android:name=".SettingsAboutActivity"
+    <activity android:name="com.google.android.apps.authenticator.SettingsAboutActivity"
               android:label="@string/about_preference_screen_title" />
 
-    <activity android:name=".EnterKeyActivity"
+    <activity android:name="com.google.android.apps.authenticator.AddOtherAccountActivity"
+              android:label="@string/add_account_menu_item" />
+
+    <activity android:name="com.google.android.apps.authenticator.EnterKeyActivity"
               android:label="@string/enter_key_title" />
 
-    <activity android:name=".CheckCodeActivity"
-              android:label="@string/check_code_title"
-              android:screenOrientation="portrait" />
+    <activity android:name="com.google.android.apps.authenticator.CheckCodeActivity"
+              android:label="@string/check_code_title" />
+
+    <activity android:name="com.google.android.apps.authenticator.enroll2sv.wizard.IntroEnterPasswordActivity"
+              android:theme="@style/AuthenticatorTheme.NoTitleBar"
+              android:label="@string/enroll2sv_intro_page_enter_password_title" />
+    <activity android:name="com.google.android.apps.authenticator.enroll2sv.wizard.IntroEnterCodeActivity"
+              android:theme="@style/AuthenticatorTheme.NoTitleBar"
+              android:label="@string/enroll2sv_intro_page_enter_code_title" />
+    <activity android:name="com.google.android.apps.authenticator.enroll2sv.wizard.IntroVerifyDeviceActivity"
+              android:theme="@style/AuthenticatorTheme.NoTitleBar"
+              android:label="@string/enroll2sv_intro_page_verify_device_title" />
 
   </application>
 
 </manifest>
-

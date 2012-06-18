@@ -1,6 +1,25 @@
 Google Authenticator for Android ChangeLog
 
 
+v2.15
+
+* Changed package name from com.google.android.apps.authenticator to
+  com.google.android.apps.authenticator2 and changed the signing key.
+  This is a new app as far as the Android OS and Google Play are concerned.
+  The app securely imports data from the "old" app (v0.91).
+* Made the app's UI look more native. The blue on black theme has been
+  replaced with the system default (dark) theme.
+* Grouped Scan Barcode and Manually Enter Account functionality into a
+  separate Add Account screen.
+* Switched the Privacy Policy URL to http://www.google.com/policies/privacy/.
+* Renamed account deletion to account removal and added more details to the
+  removal prompt. The prompt is slightly different for Google accounts.
+* Made the "Manual account entry" screen scrollable.
+* Made the "Integrity check code" screen support the landscape orientation.
+* Enabled account provisioning via a click on a hyperlink in the device's web
+  browser (otpauth://...).
+
+
 v0.91
 
 * Starting from March 29 2012 7:00 GMT, display a deprecation notice in the

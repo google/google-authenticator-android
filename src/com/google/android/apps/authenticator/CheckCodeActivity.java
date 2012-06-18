@@ -26,6 +26,7 @@ import android.widget.TextView;
 
 import com.google.android.apps.authenticator.Base32String.DecodingException;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
+import com.google.android.apps.authenticator2.R;
 
 import java.security.GeneralSecurityException;
 

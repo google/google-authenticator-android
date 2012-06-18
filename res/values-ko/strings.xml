@@ -19,7 +19,14 @@
   <string name="app_name" msgid="5078996080612406301">"Google OTP"</string>
   <string name="app_name_short" msgid="6268465073167241020">"OTP"</string>
   <string name="enter_key_title" msgid="3762128630776563361">"수동 계정 입력"</string>
-  <string name="enter_key_menu_item" msgid="6734462024545949337">"직접 계정 추가"</string>
+  <string name="enter_key_page_add_button" msgid="7145413404890383746">"추가"</string>
+  <string name="button_add_account" msgid="4301500554118934829">"계정 추가"</string>
+  <string name="button_how_it_works" msgid="5576563994507351533">"작동 원리 보기"</string>
+  <string name="add_account_menu_item" msgid="6422163385921921789">"계정 추가"</string>
+  <string name="how_it_works_menu_item" msgid="7162080619184257276">"작동 원리"</string>
+  <string name="add_other_account_page_title" msgid="6567238899360147841">"다른 계정 추가"</string>
+  <string name="button_add_account_manual_entry" msgid="7234157710472604378">"직접 계정 추가"</string>
+  <string name="button_add_account_scan_barcode" msgid="4400516455038574606">"바코드 스캔"</string>
   <string name="enter_account_label" msgid="1488259241384211529">"계정 이름 입력"</string>
   <string name="enter_key_hint" msgid="480564521423532185">"키를 입력하세요."</string>
   <string name="enter_key_too_short" msgid="1883571748860519725">"키 값이 너무 짧습니다."</string>
@@ -28,13 +35,11 @@
   <string name="error_uri" msgid="8889749448317216536">"키를 인식할 수 없습니다."</string>
   <string name="error_qr" msgid="1076904454315180481">"QR 코드를 해석할 수 없습니다."</string>
   <string name="secret_saved" msgid="2201025202465443226">"비밀번호 저장됨"</string>
-  <string name="save_key_message" msgid="7326861247411778537">"스캔한 키 저장 계정:"</string>
+  <string name="save_key_message" msgid="4427138629791380096">"키 저장 계정:"</string>
   <string name="error_empty_secret" msgid="1889970426144134666">"비어 있는 비밀번호를 저장할 수 없습니다."</string>
   <string name="enter_pin" msgid="2238539410253130912">"계정 로그인 중 메시지가 표시되면 다음 인증 코드를 입력하세요."</string>
-  <string name="not_initialized" msgid="4029306154380409711">"Google OTP는 로그인 시 추가 보안장치 역할을 하는 인증 코드를 생성합니다. &lt;br/&gt; &lt;br/&gt; Google OTP는 Google 계정의 2단계 인증과 함께 사용해야 합니다."</string>
   <string name="check_code_title" msgid="6308604727562833139">"무결성 검사 값"</string>
   <string name="check_code_menu_item" msgid="6851230890695316742">"키 값 확인"</string>
-  <string name="scan_barcode_menu_item" msgid="4148970637508211540">"바코드 스캔"</string>
   <string name="install_dialog_title" msgid="6389833865110438047">"바코드 스캐너를 설치하시겠습니까?"</string>
   <string name="install_dialog_message" msgid="4701150232869547399">"키가 포함된 바코드를 스캔하려면 ZXing 바코드 스캐너를 설치해야 합니다."</string>
   <string name="install_button" msgid="5395462228740377795">"설치"</string>
@@ -49,8 +54,11 @@
   <string name="decoding_exception" msgid="7778970130063776199">"디코딩 예외"</string>
   <string name="submit" msgid="1518558163262431303">"저장"</string>
   <string name="cancel" msgid="5705561042616477184">"취소"</string>
-  <string name="delete" msgid="2463438384745656241">"삭제"</string>
-  <string name="delete_message" msgid="7101401126932957358">"이 키를 삭제하시겠습니까?"</string>
+  <string name="context_menu_remove_account" msgid="2776049374428247354">"삭제"</string>
+  <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"계정 삭제"</string>
+  <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g>을(를) 삭제하시겠습니까?"</string>
+  <string name="remove_account_dialog_message" msgid="5152134907192755352">"계정을 삭제하면 코드를 생성할 수 있는 &lt;b&gt;권한도 사라집니다&lt;/b&gt;. 하지만 2단계 인증도 사용중지되는 것은 &lt;b&gt;아닙니다&lt;/b&gt;. 이때문에 계정에 로그인하지 못할 수도 있습니다. &lt;p&gt; 계정을 삭제하기 전에 다음을 수행하세요. &lt;ul&gt; &lt;li&gt;계정에서 2단계 인증을 사용중지합니다. 또는&lt;/li&gt; &lt;li&gt;코드를 생성할 수 있는 다른 대체 수단을 마련합니다.&lt;/li&gt; &lt;/ul&gt;"</string>
+  <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"계정을 삭제하면 코드를 생성할 수 있는 &lt;b&gt;권한도 사라집니다&lt;/b&gt;. 하지만 2단계 인증도 사용중지되는 것은 &lt;b&gt;아닙니다&lt;/b&gt;. 이때문에 계정에 로그인하지 못할 수도 있습니다. &lt;p&gt; 계정을 삭제하기 전에 다음을 수행하세요. &lt;ul&gt; &lt;li&gt;계정에서 2단계 인증을 사용중지합니다. 또는&lt;/li&gt; &lt;li&gt;코드를 생성할 수 있는 다른 대체 수단을 마련합니다.&lt;/li&gt; &lt;/ul&gt;"</string>
   <string name="rename" msgid="4407492613148938173">"이름 바꾸기"</string>
   <string name="rename_message" msgid="5929955206098259018">"<xliff:g id="ACCOUNT">%1$s</xliff:g> 이름 바꾸기"</string>
   <string name="error_exists" msgid="9037595140877350695">"죄송합니다. 이미 사용 중인 이름입니다."</string>
@@ -63,10 +71,8 @@
     <item msgid="7456778849112065121">"시간 기준"</item>
     <item msgid="5212912099902129712">"카운터 기준"</item>
   </string-array>
-  <string name="dataexport_service_name" msgid="8245583929925055560">"내보내기 도구"</string>
-  <string name="deprecation_notice_in_main_screen_uninstall_self" msgid="841922268119355290">"현재 Google OTP 버전이 더 이상 지원되지 않습니다. 기기에 이미 앱의 새 버전이 설치되어 있습니다. &lt;a href=&gt;앱 제거하기&lt;/a&gt;"</string>
-  <string name="deprecation_notice_in_main_screen_launch_new_app" msgid="6435455954513283935">"현재 Google OTP 버전이 더 이상 지원되지 않습니다. &lt;a href=&gt;새 앱을 실행&lt;/a&gt;하여 계정을 가져옵니다."</string>
-  <string name="deprecation_notice_in_main_screen_install_new_app" msgid="2446257227612074578">"현재 Google OTP 버전이 더 이상 지원되지 않습니다. &lt;a href=&gt;자세히 알아보기&lt;/a&gt;"</string>
-  <string name="deprecation_notice_page_text_install_via_market" msgid="2343169220685108063">"현재 Google OTP 버전이 더 이상 지원되지 않습니다. &lt;p&gt; 새 앱을 설치하려면 마켓에서 &lt;a href=&gt;새 Google OTP 앱을 설치&lt;/a&gt;합니다. 그러면 계정을 자동으로 가져옵니다."</string>
-  <string name="deprecation_notice_page_text_install_path_unknown" msgid="971707065976017955">"현재 Google OTP 버전이 더 이상 지원되지 않습니다. &lt;p&gt; 새 버전을 설치하려면 새 Google OTP 앱을 설치합니다. 그러면 계정을 자동으로 가져옵니다."</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_title" msgid="6215126097026112170">"가져오기 성공"</string>
+  <string name="dataimport_import_succeeded_uninstall_dialog_prompt" msgid="4298949858655509063">"사용중지된 Google OTP 앱으로부터 데이터를 가져왔습니다. 이제 아래를 클릭하여 앱의 이전 버전을 제거할 수 있습니다."</string>
+  <string name="button_uninstall_old_app" msgid="425412851508359894">"제거"</string>
+  <string name="button_exit_intro_flow" msgid="2677284002493447901">"종료"</string>
 </resources>
