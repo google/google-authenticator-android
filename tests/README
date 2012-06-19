@@ -1,0 +1,5 @@
+Some tests require LittleMock and DexMaker to compile and run.
+The two libraries need to be included into the APK.
+
+* LittleMock: http://code.google.com/p/littlemock/
+* DexMaker: http://code.google.com/p/dexmaker/
