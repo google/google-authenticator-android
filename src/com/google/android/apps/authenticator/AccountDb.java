@@ -21,10 +21,12 @@ import com.google.android.apps.authenticator.PasscodeGenerator.Signer;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
+import android.os.Process;
 import android.util.Log;
 
 import java.io.IOException;
@@ -138,10 +140,27 @@ public class AccountDb {
     String databasePathname = context.getDatabasePath(PATH).getAbsolutePath();
     String[] dirsToStat = new String[] {dataPackageDir, databaseDirPathname, databasePathname};
     StringBuilder error = new StringBuilder();
+    int myUid = Process.myUid();
     for (String directory : dirsToStat) {
       try {
         FileUtilities.StatStruct stat = FileUtilities.getStat(directory);
-        error.append(directory + " directory stat: ");
+        String ownerUidName = null;
+        try {
+          if (stat.uid == 0) {
+            ownerUidName = "root";
+          } else {
+            PackageManager packageManager = context.getPackageManager();
+            ownerUidName = (packageManager != null) ? packageManager.getNameForUid(stat.uid) : null;
+          }
+        } catch (Exception e) {
+          ownerUidName = e.toString();
+        }
+        error.append(directory + " directory stat (my UID: " + myUid);
+        if (ownerUidName == null) {
+          error.append("): ");
+        } else {
+          error.append(", dir owner UID name: " + ownerUidName + "): ");
+        }
         error.append(stat.toString() + "\n");
       } catch (IOException e) {
         error.append(directory + " directory stat threw an exception: " + e + "\n");

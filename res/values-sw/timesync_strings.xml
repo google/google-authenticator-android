@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Marekebisho ya muda ya misimbo"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Landanisha saa ya ndani ya Kihalalishaji na sava za Google"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Landanisha sasa"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Kuhusu kipengele hiki"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"Kuhusu kipengele hiki"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Ukibonyeza &amp;quot;Landanisha sasa&amp;quot;, Kihalalishaji kitajaribu kulandanisha mara moja saa yake ya ndani na seva za Google. Mipangilio yaTarehe ya kifaa na Saa haitabadilishwa. &lt;p&gt; Kihalalishaji hakipeleki data yoyote ya kibinafsi au maelezo ya akaunti wakati wa kulandanisha saa yake ya ndani na seva za Google, &lt;p&gt; &lt;b&gt;Kwanini hii ni ya muhimu lt;p&gt; &lt;b&gt; Kihalalishaji kinafanyiza misimbo ya uthibitishaji wa hatua-2 inayolingana na 1) saa ya sasa, na 2) nambari ya siri inayojulikana na programu na seva. &lt;p&gt; Kama kihalalishaji na seva hazitakubaliana saa ni gani, misimbo ya ile programu inafanyiza inaweza kosa kukubalika unapojaribu kuingia. &lt;p&gt; Kwa chaguo-msingi Kihalalishaji kinatumia Tarehe ya kifaa na mipangilio ya Saa, tarehe, na mipangilio ya ukanda wa saa na kusanidiwa vizuri. Hata hivyo, wakati muda usipolingana unapotokea, unaweza kuwa ngumu kusuluhisha (hasa ukitumia muda unaotolewa na mtandao au kanda za saa)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Landanisha sasa"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Landanisha sasa"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Inaunganisha na seva..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Muda umesahihishwa"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Saa ya ndani ya kihalalishaji imerekebishwa kulingana na saa iliyotolewa na seva za Google. "\n" "\n" Tarehe na mipangilio ya Saa katika kifaa hiki hayajabadilishwa."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Muda tayari ni sahihi"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Saa ya ndani ya kihalalishaji haikurekebishwa kwa sababu inaonenakana tayari imelandanishwa na seva za Google."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Landanisha sasa"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Kulikuwa na tatizo la kuwasiliana na seva ya Google. Tafadhali kagua mipangilio ya mtandao wako na ujaribu tena."</string>
+</resources>

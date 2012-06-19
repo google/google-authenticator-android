@@ -26,6 +26,7 @@ import android.os.Handler;
  */
 class TotpCountdownTask implements Runnable {
   private final TotpCounter mCounter;
+  private final TotpClock mClock;
   private final long mRemainingTimeNotificationPeriod;
   private final Handler mHandler = new Handler();
 
@@ -53,12 +54,14 @@ class TotpCountdownTask implements Runnable {
    * Constructs a new {@code TotpRefreshTask}.
    *
    * @param counter TOTP counter this task monitors.
+   * @param clock TOTP clock that drives this task.
    * @param remainingTimeNotificationPeriod approximate interval (milliseconds) at which this task
    *        notifies its listener about the time remaining until the @{code counter} changes its
    *        value.
    */
-  TotpCountdownTask(TotpCounter counter, long remainingTimeNotificationPeriod) {
+  TotpCountdownTask(TotpCounter counter, TotpClock clock, long remainingTimeNotificationPeriod) {
     mCounter = counter;
+    mClock = clock;
     mRemainingTimeNotificationPeriod = remainingTimeNotificationPeriod;
   }
 
@@ -100,7 +103,7 @@ class TotpCountdownTask implements Runnable {
       return;
     }
 
-    long now = System.currentTimeMillis();
+    long now = mClock.currentTimeMillis();
     long counterValue = getCounterValue(now);
     if (mLastSeenCounterValue != counterValue) {
       mLastSeenCounterValue = counterValue;
@@ -112,7 +115,7 @@ class TotpCountdownTask implements Runnable {
   }
 
   private void scheduleNextInvocation() {
-    long now = System.currentTimeMillis();
+    long now = mClock.currentTimeMillis();
     long counterValueAge = getCounterValueAge(now);
     long timeTillNextInvocation =
         mRemainingTimeNotificationPeriod - (counterValueAge % mRemainingTimeNotificationPeriod);

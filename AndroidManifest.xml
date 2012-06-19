@@ -16,11 +16,12 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.google.android.apps.authenticator2"
-          android:versionCode="15" android:versionName="2.15">
+          android:versionCode="21" android:versionName="2.21">
 
   <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="14" />
 
   <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
 
   <!--
   NOTE: android:allowBackup is set to false below to prevent the key material from being extracted
@@ -59,15 +60,29 @@
     <activity android:name="com.google.android.apps.authenticator.CheckCodeActivity"
               android:label="@string/check_code_title" />
 
-    <activity android:name="com.google.android.apps.authenticator.enroll2sv.wizard.IntroEnterPasswordActivity"
+    <activity android:name="com.google.android.apps.authenticator.SettingsActivity"
+              android:label="@string/main_preference_screen_title" />
+
+    <activity android:name="com.google.android.apps.authenticator.howitworks.IntroEnterPasswordActivity"
               android:theme="@style/AuthenticatorTheme.NoTitleBar"
-              android:label="@string/enroll2sv_intro_page_enter_password_title" />
-    <activity android:name="com.google.android.apps.authenticator.enroll2sv.wizard.IntroEnterCodeActivity"
+              android:label="@string/howitworks_page_enter_password_title" />
+    <activity android:name="com.google.android.apps.authenticator.howitworks.IntroEnterCodeActivity"
               android:theme="@style/AuthenticatorTheme.NoTitleBar"
-              android:label="@string/enroll2sv_intro_page_enter_code_title" />
-    <activity android:name="com.google.android.apps.authenticator.enroll2sv.wizard.IntroVerifyDeviceActivity"
+              android:label="@string/howitworks_page_enter_code_title" />
+    <activity android:name="com.google.android.apps.authenticator.howitworks.IntroVerifyDeviceActivity"
               android:theme="@style/AuthenticatorTheme.NoTitleBar"
-              android:label="@string/enroll2sv_intro_page_verify_device_title" />
+              android:label="@string/howitworks_page_verify_device_title" />
+
+    <activity android:name="com.google.android.apps.authenticator.timesync.SettingsTimeCorrectionActivity"
+              android:label="@string/timesync_preference_screen_title" />
+
+    <activity android:name="com.google.android.apps.authenticator.timesync.AboutActivity"
+              android:theme="@style/AuthenticatorTheme.NoTitleBar"
+              android:label="@string/timesync_about_feature_screen_title" />
+
+    <activity android:name="com.google.android.apps.authenticator.timesync.SyncNowActivity"
+              android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:label="@string/timesync_sync_now_screen_title" />
 
   </application>
 

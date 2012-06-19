@@ -15,5 +15,5 @@
 -->
 
 <resources>
-  <color name="countdown_indicator">@android:color/tertiary_text_dark</color>
+  <color name="countdown_indicator">#ff71ca00</color>
 </resources>

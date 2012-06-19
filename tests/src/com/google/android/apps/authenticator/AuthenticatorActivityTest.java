@@ -23,7 +23,7 @@ import static com.google.testing.littlemock.LittleMock.verify;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.dataimport.ImportController;
-import com.google.android.apps.authenticator.enroll2sv.wizard.IntroEnterPasswordActivity;
+import com.google.android.apps.authenticator.howitworks.IntroEnterPasswordActivity;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 import com.google.android.apps.authenticator.testability.StartActivityListener;
 import com.google.android.apps.authenticator2.R;
@@ -297,10 +297,8 @@ public class AuthenticatorActivityTest extends
     checkOptionsMenuItemWithComponent(R.id.add_account, AddOtherAccountActivity.class);
   }
 
-  public void testOptionsMenuSettingsAbout() throws Exception {
-    // This test only works in Market builds of the app
-    DependencyInjector.setOptionalFeatures(new MarketBuildOptionalFeatures());
-    checkOptionsMenuItemWithComponent(R.id.about, SettingsAboutActivity.class);
+  public void testOptionsMenuSettings() throws Exception {
+    checkOptionsMenuItemWithComponent(R.id.settings, SettingsActivity.class);
   }
 
   public void testIntentActionScanBarcode_withScannerInstalled() throws Exception {

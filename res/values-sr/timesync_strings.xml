@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Исправка времена за кодове"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Синхронизација интерног времена Authenticator-а са Google серверима"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Синхронизуј одмах"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"О овој функцији"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"О овој функцији"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Ако притиснете &amp;quot;Синхронизуј одмах&amp;quot;, Authenticator ће покушати да синхронизује интерно време са Google серверима једанпут. Подешавања времена и датума уређаја неће бити промењена. &lt;p&gt; Authenticator не преноси личне податке или информације о налогу при синхронизацији интерног времена са Google серверима. &lt;p&gt; &lt;b&gt;Зашто је ово корисно&lt;/b&gt; &lt;p&gt; Authenticator генерише кодове за верификацију у 2 корака на основу 1) тренутног времена и 2) тајног броја који знају апликација и сервер. &lt;p&gt; Ако се Authenticator и сервер не слажу око тренутног времена, кодови које апликација генерише можда неће бити прихваћени када покушате да се пријавите. &lt;p&gt; Authenticator подразумевано користи подешавања датума и времена уређаја и у већини случајева ћете моћи да генеришете важеће кодове ако тачно конфигуришете подешавања времена, датума и временске зоне. Међутим, када се јаве неподударности, решавање овог проблема може да буде тешко (нарочито ако користите време или временске зоне које наводи мрежа)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Синхронизуј одмах"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Синхронизуј одмах"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Повезивање са сервером..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Време је исправљено"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Интерно време Authenticator-а је већ прилагођено и подудара се са временом које наводе Google сервери. "\n\n"Подешавања датума и времена на овом уређају нису промењена."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Време је већ исправно"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Интерно време Authenticator-а није прилагођено пошто је већ синхронизовано са Google серверима."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Синхронизуј одмах"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Дошло је до проблема при контактирању Google-овог сервера. Проверите подешавања мреже и покушајте поново."</string>
+</resources>

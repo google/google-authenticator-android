@@ -16,10 +16,11 @@
 
 package com.google.android.apps.authenticator;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
-import android.view.MenuItem;
 
 /**
  * {@link OptionalFeatures} implementation used in Market builds.
@@ -32,15 +33,7 @@ public class MarketBuildOptionalFeatures implements OptionalFeatures {
   public void onAuthenticatorActivityCreated(AuthenticatorActivity activity) {}
 
   @Override
-  public int getAuthenticatorActivityOptionsMenuResourceId() {
-    return 0;
-  }
-
-  @Override
-  public boolean onAuthenticatorActivityMenuItemSelected(
-      AuthenticatorActivity activity, int featureId, MenuItem item) {
-    return false;
-  }
+  public void onAuthenticatorActivityAccountSaved(Context context, String account) {}
 
   @Override
   public boolean interpretScanResult(Context context, Uri scanResult) {
@@ -61,7 +54,23 @@ public class MarketBuildOptionalFeatures implements OptionalFeatures {
   }
 
   @Override
-  public boolean isCorpSeedDebugUiEnabled() {
-    return false;
+  public OtpSource createOtpSource(AccountDb accountDb, TotpClock totpClock) {
+    return new OtpProvider(accountDb, totpClock);
+  }
+
+  @Override
+  public void onAuthenticatorActivityGetNextOtpFailed(
+      AuthenticatorActivity activity, String accountName, OtpSourceException exception) {
+    throw new RuntimeException("Failed to generate OTP for account", exception);
+  }
+
+  @Override
+  public Dialog onAuthenticatorActivityCreateDialog(AuthenticatorActivity activity, int id) {
+    return null;
+  }
+
+  @Override
+  public void onAuthenticatorActivityAddAccount(AuthenticatorActivity activity) {
+    activity.startActivity(new Intent(activity, AddOtherAccountActivity.class));
   }
 }

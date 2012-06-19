@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Коррекция времени для кодов"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Синхронизация внутренних часов Authenticator с серверами Google"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Синхронизировать"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Об этой функции"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"Об этой функции"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Если нажать кнопку &quot; Синхронизировать&quot;, Authenticator попробует привести свое внутреннее время в соответствие с серверами Google. Настройки даты и времени устройства при этом изменены не будут. &lt;p&gt; Приложение не отправит нам или третьим лицам ваши личные сведения или данные вашего аккаунта. &lt;p&gt; &lt;b&gt; Почему это следует сделать &lt;/b&gt; &lt;p&gt; Authenticator генерирует коды двухэтапной аутентификации на основе 1) текущего времени и 2) секретного номера, известного приложению и серверу. &lt;p&gt; Если время в Authenticator и на сервере будет отличаться, созданные коды окажутся недействительными. &lt;p&gt; По умолчанию в Authenticator используются дата и время, установленные на устройстве. Если эти настройки верны, в большинстве случаев их оказывается достаточно для генерации действительных кодов. Если же время на устройстве и сервере не совпадает, могут возникнуть проблемы, которые не так просто устранить (особенно если вы получаете настройки времени и часового пояса с какого-либо стороннего сервера)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Синхронизация"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Синхронизация"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Подключение к серверу..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Время исправлено"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Внутренние часы Authenticator были настроены в соответствии со временем на серверах Google. "\n\n"Настройки на этом устройстве не были изменены."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Установленное время является точным"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Внутренние часы Authenticator уже были синхронизированы с серверами Google, поэтому настройки оставлены без изменений."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Синхронизация"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Произошла ошибка при попытке установить связь с сервером Google. Проверьте настройки сети и повторите попытку."</string>
+</resources>

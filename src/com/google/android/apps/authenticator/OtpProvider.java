@@ -16,12 +16,12 @@
 
 package com.google.android.apps.authenticator;
 
+import com.google.android.apps.authenticator.AccountDb.OtpType;
+import com.google.android.apps.authenticator.PasscodeGenerator.Signer;
+
 import java.io.UnsupportedEncodingException;
 import java.security.GeneralSecurityException;
 import java.util.Collection;
-
-import com.google.android.apps.authenticator.AccountDb.OtpType;
-import com.google.android.apps.authenticator.PasscodeGenerator.Signer;
 
 /**
  * Class containing implementation of HOTP/TOTP.
@@ -66,6 +66,11 @@ public class OtpProvider implements OtpSource {
     return mTotpCounter;
   }
 
+  @Override
+  public TotpClock getTotpClock() {
+    return mTotpClock;
+  }
+
   private String getCurrentCode(String username, byte[] challenge) throws OtpSourceException {
     // Account name is required.
     if (username == null) {
@@ -80,7 +85,7 @@ public class OtpProvider implements OtpSource {
     if (type == OtpType.TOTP) {
       // For time-based OTP, the state is derived from clock.
       otp_state =
-          mTotpCounter.getValueAtTime(Utilities.millisToSeconds(System.currentTimeMillis()));
+          mTotpCounter.getValueAtTime(Utilities.millisToSeconds(mTotpClock.currentTimeMillis()));
     } else if (type == OtpType.HOTP){
       // For counter-based OTP, the state is obtained by incrementing stored counter.
       mAccountDb.incrementCounter(username);
@@ -91,13 +96,14 @@ public class OtpProvider implements OtpSource {
     return computePin(secret, otp_state, challenge);
   }
 
-  public OtpProvider(AccountDb accountDb) {
-    this(DEFAULT_INTERVAL, accountDb);
+  public OtpProvider(AccountDb accountDb, TotpClock totpClock) {
+    this(DEFAULT_INTERVAL, accountDb, totpClock);
   }
 
-  public OtpProvider(int interval, AccountDb accountDb) {
+  public OtpProvider(int interval, AccountDb accountDb, TotpClock totpClock) {
     mAccountDb = accountDb;
     mTotpCounter = new TotpCounter(interval);
+    mTotpClock = totpClock;
   }
 
   /**
@@ -143,4 +149,7 @@ public class OtpProvider implements OtpSource {
 
   /** Counter for time-based OTPs (TOTP). */
   private final TotpCounter mTotpCounter;
+
+  /** Clock input for time-based OTPs (TOTP). */
+  private final TotpClock mTotpClock;
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Tydregstelling vir kodes"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Sinkroniseer Authenticator se interne klok met Google-bedieners"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Sinkroniseer nou"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Meer oor hierdie kenmerk"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"Meer oor hierdie kenmerk"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Wanneer jy Sync druk, sal Authenticator een keer poog om die interne klok met Google-bedieners te sinkroniseer. Die toestel se datum- en tydinstellings sal nie verander nie. Authenticator dra nie enige persoonlike data of rekeninginligting oor terwyl die interne klok met Google-bedieners sinkroniseer nie. Hoekom dit nuttig is; Authenticator genereer 2-stap-verifikasiekodes gebaseer op 1) die huidige tyd, en 2) \'n geheime nommer wat slegs aan die program en die bediener bekend is. Indien Authenticator en die bediener verskil oor watter tyd dit is, sal die kodes wat die program genereer moontlik nie aanvaar word wanneer jy probeer aanmeld nie. Authenticator gebruik by verstek die toestel se datum- en tydinstellings, en in meeste gevalle, sal jy geldige kodes kan genereer deur seker te maak dat jou tyd, datum, en tydzone reg opgestel is.  Wanneer tydongelykhede wel voorkom, kan dit egter moeilik wees om die fout op te spoor (veral indien jy tyd of tydzones soos deur die netwerk verskaf word, gebruik)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Sinkroniseer nou"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Sinkroniseer nou"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Koppel tans aan bediener..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Tyd reggemaak"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Authenticator se interne klok is aangepas om by die tyd wat deur Google-bedieners verskaf is te pas. "\n\n"Die datum- en tydinstellings op hierdie toestel is nie verander nie."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Tyd reeds korrek"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Authenticator se interne klok is nie aangepas nie, want dit blyk dat dit reeds met Google-bedieners gesinkroniseer is."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Sinkroniseer nou"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Kon nie Google se bediener kontak nie. Gaan asseblief jou netwerkinstellings na en probeer weer."</string>
+</resources>

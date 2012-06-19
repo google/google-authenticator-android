@@ -30,6 +30,7 @@ import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Build;
 import android.os.Looper;
 import android.os.SystemClock;
@@ -37,7 +38,9 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.test.InstrumentationTestCase;
+import android.test.TouchUtils;
 import android.test.ViewAsserts;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewParent;
 import android.widget.EditText;
@@ -109,6 +112,22 @@ public class TestUtilities {
     });
     instr.waitForIdleSync();
     return spinner.getSelectedItem().toString();
+  }
+
+  /**
+   * Sets the text of the provided {@link EditText} widget on the UI thread.
+   *
+   * @return the resulting text of the widget.
+   */
+  public static String setText(Instrumentation instr, final EditText editText, final String text) {
+    instr.runOnMainSync(new Runnable() {
+      @Override
+      public void run() {
+        editText.setText(text);
+      }
+    });
+    instr.waitForIdleSync();
+    return editText.getText().toString();
   }
 
   /*
@@ -193,30 +212,6 @@ public class TestUtilities {
     } catch (IllegalAccessException e) {
       throw new RuntimeException("Failed to access Preference.performClickMethod", e);
     }
-  }
-
-  /*
-   * Sends a space separated key sequence to a EditText box using
-   * {@link InstrumentationTestCase#sendKeys()}.
-   *
-   * @param instrumentationTestCase the test case instance to use. We need this, unlike the other
-   *        methods which use instrumentation, because sending a space separated keys sequence
-   *        is not supported by any methods in Instrumentation.
-   * @param editText EditText where the space separated keys sequence should be entered.
-   * @param keysSequence string of space separated keys sequence to enter in the editText.
-   * @return the resulting string read from the editText - this should equal keysSequence.
-   */
-  public static String enterKeysSequence(InstrumentationTestCase instrumentationTestCase,
-      final EditText editText, final String keysSequence) {
-    instrumentationTestCase.getInstrumentation().runOnMainSync(new Runnable() {
-      @Override
-      public void run() {
-        editText.requestFocus();
-      }
-    });
-    instrumentationTestCase.sendKeys(keysSequence);
-    instrumentationTestCase.getInstrumentation().waitForIdleSync();
-    return editText.getText().toString();
   }
 
   /**
@@ -507,4 +502,62 @@ public class TestUtilities {
       Assert.fail(actual + " > " + expected);
     }
   }
+
+  /*
+   * Returns the x and y coordinates of center of view in pixels.
+   */
+  public static Point getCenterOfViewOnScreen(
+      InstrumentationTestCase instr, View view) {
+    int[] location = new int[2];
+    view.getLocationOnScreen(location);
+    int width = view.getWidth();
+    int height = view.getHeight();
+    final int center_x = location[0] + width / 2;
+    final int center_y = location[1] + height / 2;
+    return new Point(center_x, center_y);
+  }
+
+  /*
+   * returns the pixel value at the right side end of the view.
+   */
+  public static int getRightXofViewOnScreen(View view) {
+    int[] location = new int[2];
+    view.getLocationOnScreen(location);
+    int width = view.getWidth();
+    return location[0] + width;
+  }
+
+  /*
+   * returns the pixel value at the left side end of the view.
+   */
+  public static int getLeftXofViewOnScreen(View view) {
+    int[] location = new int[2];
+    view.getLocationOnScreen(location);
+    return location[0];
+  }
+
+
+  /*
+   * Drags from the center of the view to the toX value.
+   * This methods exists in TouchUtil, however, it has a bug which causes it to work
+   * while dragging on the left side, but not on the right side, hence, we
+   * had to recreate it here.
+   */
+  public static int dragViewToX(InstrumentationTestCase test, View v, int gravity, int toX) {
+
+    if (gravity != Gravity.CENTER) {
+      throw new IllegalArgumentException("Can only handle Gravity.CENTER.");
+    }
+    Point point = getCenterOfViewOnScreen(test, v);
+
+    final int fromX = point.x;
+    final int fromY = point.y;
+
+    int deltaX = Math.abs(fromX - toX);
+
+    TouchUtils.drag(test, fromX, toX, fromY, fromY, deltaX);
+
+    return deltaX;
+  }
+
 }

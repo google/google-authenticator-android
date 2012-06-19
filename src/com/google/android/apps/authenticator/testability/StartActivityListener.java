@@ -20,8 +20,20 @@ import android.content.Context;
 import android.content.Intent;
 
 /**
+ * Listener which is invoked when an attempt is made to launch an {@link android.app.Activity} via
+ * {@link Context#startActivity(Intent)} or
+ * {@link android.app.Activity#startActivityForResult(Intent, int)}.
+ * The listener can decide whether to proceed with the launch.
+ *
  * @author klyubin@google.com (Alex Klyubin)
  */
 public interface StartActivityListener {
+
+  /**
+   * Invoked when a launch of an {@link android.app.Activity} is requested.
+   *
+   * @return {@code true} to consume/ignore the request, {@code false} to proceed with the launching
+   *         of the {@code Activity}.
+   */
   boolean onStartActivityInvoked(Context sourceContext, Intent intent);
 }

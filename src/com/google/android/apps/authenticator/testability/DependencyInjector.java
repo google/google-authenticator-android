@@ -20,8 +20,8 @@ import com.google.android.apps.authenticator.AccountDb;
 import com.google.android.apps.authenticator.AuthenticatorActivity;
 import com.google.android.apps.authenticator.MarketBuildOptionalFeatures;
 import com.google.android.apps.authenticator.OptionalFeatures;
-import com.google.android.apps.authenticator.OtpProvider;
 import com.google.android.apps.authenticator.OtpSource;
+import com.google.android.apps.authenticator.TotpClock;
 import com.google.android.apps.authenticator.dataimport.ExportServiceBasedImportController;
 import com.google.android.apps.authenticator.dataimport.ImportController;
 
@@ -29,6 +29,10 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 import android.test.RenamingDelegatingContext;
+
+import org.apache.http.client.HttpClient;
+import org.apache.http.conn.ClientConnectionManager;
+
 
 /**
  * Dependency injector that decouples the clients of various objects from their
@@ -52,8 +56,10 @@ public final class DependencyInjector {
 
   private static AccountDb sAccountDb;
   private static OtpSource sOtpProvider;
+  private static TotpClock sTotpClock;
   private static PackageManager sPackageManager;
   private static StartActivityListener sStartActivityListener;
+  private static HttpClient sHttpClient;
   private static ImportController sImportController;
   private static OptionalFeatures sOptionalFeatures;
 
@@ -107,9 +113,24 @@ public final class DependencyInjector {
 
   public static synchronized OtpSource getOtpProvider() {
     if (sOtpProvider == null) {
-      sOtpProvider = new OtpProvider(getAccountDb());
+      sOtpProvider = getOptionalFeatures().createOtpSource(getAccountDb(), getTotpClock());
     }
     return sOtpProvider;
+  }
+
+  /**
+   * Sets the {@link TotpClock} instance returned by this injector. This will prevent the injector
+   * from creating its own instance.
+   */
+  public static synchronized void setTotpClock(TotpClock totpClock) {
+    sTotpClock = totpClock;
+  }
+
+  public static synchronized TotpClock getTotpClock() {
+    if (sTotpClock == null) {
+      sTotpClock = new TotpClock(getContext());
+    }
+    return sTotpClock;
   }
 
   /**
@@ -162,6 +183,21 @@ public final class DependencyInjector {
       }
     }
     return sImportController;
+  }
+
+  /**
+   * Sets the {@link HttpClient} instance returned by this injector. This will prevent the
+   * injector from creating its own instance.
+   */
+  public static synchronized void setHttpClient(HttpClient httpClient) {
+    sHttpClient = httpClient;
+  }
+
+  public static synchronized HttpClient getHttpClient() {
+    if (sHttpClient == null) {
+      sHttpClient = HttpClientFactory.createHttpClient(getContext());
+    }
+    return sHttpClient;
   }
 
   public static synchronized void setOptionalFeatures(OptionalFeatures optionalFeatures) {
@@ -226,13 +262,21 @@ public final class DependencyInjector {
     if (sAccountDb != null) {
       sAccountDb.close();
     }
+    if (sHttpClient != null) {
+      ClientConnectionManager httpClientConnectionManager = sHttpClient.getConnectionManager();
+      if (httpClientConnectionManager != null) {
+        httpClientConnectionManager.shutdown();
+      }
+    }
 
     sMode = null;
     sContext = null;
     sAccountDb = null;
     sOtpProvider = null;
+    sTotpClock = null;
     sPackageManager = null;
     sStartActivityListener = null;
+    sHttpClient = null;
     sImportController = null;
     sOptionalFeatures = null;
   }

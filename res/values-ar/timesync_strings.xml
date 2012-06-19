@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"التصحيح الزمني للرموز"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"مزامنة الساعة الداخلية لأداة المصادقة مع خوادم Google"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"مزامنة الآن"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"حول هذه الميزة"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"حول هذه الميزة"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"في حالة الضغط على &amp;quot;مزامنة الآن&amp;quot;، فستحاول أداة المصادقة مزامنة ساعتها الداخلية مع خوادم Google مرة واحدة. ولن يتم تغيير إعدادات \"التاريخ والوقت\" على الجهاز. &lt;p&gt; لا تنقل أداة المصادقة أية معلومات شخصية أو أي من معلومات الحساب أثناء مزامنة الساعة الداخلية مع خوادم Google. &lt;p&gt; &lt;b&gt;ما اوجه الاستفادة من هذا&lt;/b&gt; &lt;p&gt; تنشئ أداة المصادقة رموز التحقق بخطوتين بناءً على 1) الوقت الحالي و2) رقم سري معروف للتطبيق والخادم. &lt;p&gt; وفي حالة عدم توافق أداة المصادقة والخادم على الوقت، فإن الرموز التي ينشئها التطبيق ربما لا يتم قبولها عند محاولة تسجيل الدخول. &lt;p&gt; تستخدم أداة المصادقة افتراضيًا إعدادات \"التاريخ والوقت\" على الجهاز، وفي معظم الحالات ستتمكن من إنشاء رموز صالحة من خلال التأكد من تهيئة إعدادات الوقت والتاريخ والمنطقة الزمنية بشكل صحيح. ومع ذلك، عندما يحدث عدم تطابق الوقت، فربما يكون من الصعب تحرّي الخلل وإصلاحه (خاصة إذا كنت تستخدم الوقت أو المناطق الزمنية التي توفرها الشبكة)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"مزامنة الآن"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"مزامنة الآن"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"جارٍ الاتصال بالخادم..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"تم تصحيح الوقت"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"تم ضبط الساعة الداخلية لأداة المزامنة لتطابق الوقت الذي توفره خوادم Google. "\n\n"لم يتم تغيير إعدادات \"الوقت والتاريخ\" على هذا الجهاز."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"الوقت صحيح فعلاً"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"لم يتم ضبط الساعة الداخلية لأداة المصادقة نظرًا لأنها تتم مزامنتها مع خوادم Google فعلاً."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"مزامنة الآن"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"حدثت مشكلة أثناء الاتصال بخادم Google. الرجاء التحقق من إعدادات الشبكة وإعادة المحاولة."</string>
+</resources>

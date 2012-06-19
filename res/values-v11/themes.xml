@@ -21,7 +21,7 @@
     <item name="accountListWithVerificationCodesRowAccountName">@style/AccountListWithVerificationCodesRowAccountName</item>
     <item name="accountListWithVerificationCodesRowVerificationCode">@style/AccountListWithVerificationCodesRowVerificationCode</item>
     <item name="accountListWithVerificationCodesRowCountdownIndicator">@style/AccountListWithVerificationCodesRowCountdownIndicator</item>
-    <item name="enrollmentWizardButtonBarStyle">@null</item>
+    <item name="wizardButtonBarStyle">@null</item>
     <item name="directionalButtonLeftStyle">@style/DirectionalButtonLeft</item>
     <item name="directionalButtonRightStyle">@style/DirectionalButtonRight</item>
     <item name="enrollmentWizardDividerHorizontal">?android:attr/dividerHorizontal</item>

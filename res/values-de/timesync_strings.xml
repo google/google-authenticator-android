@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Zeitkorrektur für Codes"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Interne Uhr von Authenticator mit Google-Servern synchronisieren"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Jetzt synchronisieren"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Über diese Funktion"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"Über diese Funktion"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Wenn Sie &amp;quot;Jetzt synchronisieren&amp;quot; drücken, versucht Authenticator ein Mal, die interne Uhr mit Google-Servern zu synchronisieren. Die Datums- und Uhrzeiteinstellungen des Geräts bleiben unverändert. &lt;p&gt; Bei der Synchronisierung der internen Uhr mit Google-Servern überträgt Authenticator keine personenbezogenen Daten oder Kontoinformationen. &lt;p&gt; &lt;b&gt;Warum ist das nützlich?&lt;/b&gt; &lt;p&gt; Authenticator generiert Codes für die Bestätigung in zwei Schritten auf Grundlage 1.) der aktuellen Uhrzeit und 2.) einer geheimen Nummer, die der App und dem Server bekannt ist. &lt;p&gt; Falls die Zeiten von Authenticator und Server nicht übereinstimmen, werden die von der App generierten Codes eventuell beim Anmelden nicht akzeptiert. &lt;p&gt; Standardmäßig verwendet Authenticator die Datums- und Uhrzeiteinstellungen des Geräts, und in den meisten Fällen können Sie gültige Codes generieren, indem Sie sicherstellen, dass Ihre Einstellungen für Uhrzeit, Datum und Zeitzone richtig konfiguriert sind. Wenn jedoch Abweichungen bei der Zeit auftreten, sind sie möglicherweise nur schwer zu beheben (insbesondere, falls Sie die Uhrzeit bzw. die Zeitzonen verwenden, die vom Netzwerk bereitgestellt werden)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Jetzt synchronisieren"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Jetzt synchronisieren"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Die Verbindung zum Server wird hergestellt…"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Zeit korrigiert"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Die interne Uhr von Authenticator wurde an die von Google-Servern bereitgestellte Zeit angepasst. "\n\n"Die Datums- und Uhrzeiteinstellungen auf diesem Gerät wurden nicht geändert."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Zeit bereits richtig"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Die interne Uhr von Authenticator wurde nicht angepasst, da sie offenbar bereits mit Google-Servern synchron ist."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Jetzt synchronisieren"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Es gab ein Problem beim Kontaktieren des Google-Servers. Bitte überprüfen Sie Ihre Netzwerkeinstellungen und versuchen Sie es erneut."</string>
+</resources>

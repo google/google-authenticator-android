@@ -16,10 +16,12 @@
 
 package com.google.android.apps.authenticator;
 
+import static com.google.testing.littlemock.LittleMock.doReturn;
 import static com.google.testing.littlemock.LittleMock.initMocks;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
+import com.google.testing.littlemock.Mock;
 
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;
@@ -39,15 +41,18 @@ public class OtpProviderTest extends  AndroidTestCase {
   private Collection<String> result = new ArrayList<String>();
   private OtpProvider otpProvider;
   private AccountDb accountDb;
+  @Mock private TotpClock mockTotpClock;
 
   @Override
   public void setUp() throws Exception {
     super.setUp();
 
-    initMocks(this);
     DependencyInjector.resetForIntegrationTesting(getContext());
+    initMocks(this);
+    DependencyInjector.setTotpClock(mockTotpClock);
+
     accountDb = DependencyInjector.getAccountDb();
-    otpProvider = new OtpProvider(accountDb);
+    otpProvider = new OtpProvider(accountDb, mockTotpClock);
   }
 
   @Override
@@ -82,15 +87,15 @@ public class OtpProviderTest extends  AndroidTestCase {
     // counter updated to 1, check response has changed.
     assertEquals("891123", otpProvider.getNextCode("maryweiss@yahoo.com"));
 
-    // TOTP, test using an independent calculation. Better would be OtpProvider with a mock clock.
-    String responseCode = otpProvider.getNextCode("johndoe@gmail.com");
-    long currentInterval = System.currentTimeMillis() / (1000 * OtpProvider.DEFAULT_INTERVAL);
-    assertTrue((new PasscodeGenerator(AccountDb.getSigningOracle(SECRET)))
-        .verifyTimeoutCode(currentInterval, responseCode));
-    // Test TOTP with a different account and secret
-    responseCode = otpProvider.getNextCode("amywinehouse@aol.com");
-    assertTrue((new PasscodeGenerator(AccountDb.getSigningOracle(SECRET2)))
-        .verifyTimeoutCode(currentInterval, responseCode));
+    // TOTP: HOTP with current time (seconds / 30) as the counter
+    withTotpClockCurrentTimeSeconds(OtpProvider.DEFAULT_INTERVAL * 1);
+    assertEquals("683298", otpProvider.getNextCode("johndoe@gmail.com"));
+    withTotpClockCurrentTimeSeconds(OtpProvider.DEFAULT_INTERVAL * 2);
+    assertEquals("891123", otpProvider.getNextCode("johndoe@gmail.com"));
+
+    // Different TOTP account/secret
+    withTotpClockCurrentTimeSeconds(OtpProvider.DEFAULT_INTERVAL * 1234567890L);
+    assertEquals("817746", otpProvider.getNextCode("amywinehouse@aol.com"));
   }
 
   public void testGetNextCodeWithEmptyAccountName() throws Exception {
@@ -110,12 +115,20 @@ public class OtpProviderTest extends  AndroidTestCase {
     assertEquals("561472261",
         otpProvider.respondToChallenge("maryweiss@yahoo.com", "this is my challenge"));
 
-    // TOTP, cannot test using an independent calculation since PasscodeGenerator.verifyTimeoutCode
-    //   does not accept a byte[] challenge. Best would be if OtpProvider accepts a mock clock.
-    // Do minimum sanity checks for now.
-    String responseCode =
-        otpProvider.respondToChallenge("johndoe@gmail.com", "this is my challenge");
-    assertNotNull(responseCode);
-    assertEquals(9, responseCode.length());
+    // TOTP: HOTP with current time (seconds / 30) as the counter
+    withTotpClockCurrentTimeSeconds(OtpProvider.DEFAULT_INTERVAL * 1);
+    assertEquals("308683298", otpProvider.respondToChallenge("johndoe@gmail.com", ""));
+    withTotpClockCurrentTimeSeconds(OtpProvider.DEFAULT_INTERVAL * 2);
+    assertEquals("561472261",
+        otpProvider.respondToChallenge("johndoe@gmail.com", "this is my challenge"));
+
+    // Different TOTP account/secret
+    withTotpClockCurrentTimeSeconds(OtpProvider.DEFAULT_INTERVAL * 9876543210L);
+    assertEquals("834647199",
+        otpProvider.respondToChallenge("amywinehouse@aol.com", "this is my challenge"));
+  }
+
+  private void withTotpClockCurrentTimeSeconds(long timeSeconds) {
+    doReturn(Utilities.secondsToMillis(timeSeconds)).when(mockTotpClock).currentTimeMillis();
   }
 }

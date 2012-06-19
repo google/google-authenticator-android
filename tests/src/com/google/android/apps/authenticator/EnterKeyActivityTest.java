@@ -105,10 +105,10 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
   private void checkCorrectEntry(AccountDb.OtpType type) {
     // enter account name
     assertEquals("johndoe@gmail.com",
-        TestUtilities.enterText(mInstr, mAccountName, "johndoe@gmail.com"));
+        TestUtilities.setText(mInstr, mAccountName, "johndoe@gmail.com"));
     // enter key
     assertEquals("7777777777777777",
-        TestUtilities.enterText(mInstr, mKeyEntryField, "7777777777777777"));
+        TestUtilities.setText(mInstr, mKeyEntryField, "7777777777777777"));
     // select TOTP/HOTP type
     assertEquals(mActivity.getResources().getStringArray(R.array.type)[type.value],
         TestUtilities.selectSpinnerItem(mInstr, mType, type.value));
@@ -135,7 +135,7 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
 
   public void testSubmitFailsWithShortKey()  {
     assertEquals("johndoe@gmail.com",
-        TestUtilities.enterText(mInstr, mAccountName, "johndoe@gmail.com"));
+        TestUtilities.setText(mInstr, mAccountName, "johndoe@gmail.com"));
     TestUtilities.selectSpinnerItem(mInstr, mType, AccountDb.OtpType.TOTP.value);
     assertEquals(
         mActivity.getResources().getStringArray(R.array.type)[AccountDb.OtpType.TOTP.value],
@@ -144,16 +144,16 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
 
     // enter bad key without submitting, check status message
     assertEquals("@@",
-        TestUtilities.enterText(mInstr, mKeyEntryField, "@@"));
+        TestUtilities.setText(mInstr, mKeyEntryField, "@@"));
     assertEquals(mActivity.getString(R.string.enter_key_illegal_char), mKeyEntryField.getError());
 
     // clear bad keys, see status message is cleared.
-    assertEquals("", TestUtilities.enterKeysSequence(this, mKeyEntryField, "DEL DEL"));
+    assertEquals("", TestUtilities.setText(mInstr, mKeyEntryField, ""));
     assertEquals(null, mKeyEntryField.getError());
 
     // enter short key, check status message is empty
     assertEquals("77777",
-        TestUtilities.enterText(mInstr, mKeyEntryField, "77777"));
+        TestUtilities.setText(mInstr, mKeyEntryField, "77777"));
     assertEquals(null, mKeyEntryField.getError());
 
     // submit short key, and verify no updates to database and check status msg.
@@ -166,9 +166,7 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
 
     // submit empty key.
     assertEquals("",
-        TestUtilities.enterKeysSequence(this, mKeyEntryField, "DEL DEL DEL DEL DEL"));
-    assertEquals("",
-        TestUtilities.enterText(mInstr, mKeyEntryField, ""));
+        TestUtilities.setText(mInstr, mKeyEntryField, ""));
     TestUtilities.clickView(getInstrumentation(), mSubmitButton);
     assertFalse(mActivity.isFinishing());
     assertEquals(0, mAccountDb.getNames(result));
@@ -178,14 +176,14 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
   // TODO(sarvar): Consider not allowing acceptance of such bad account names.
   public void testSubmitWithEmptyAccountName()  {
     assertEquals("7777777777777777",
-        TestUtilities.enterText(mInstr, mKeyEntryField, "7777777777777777"));
+        TestUtilities.setText(mInstr, mKeyEntryField, "7777777777777777"));
     assertEquals(
         mActivity.getResources().getStringArray(R.array.type)[AccountDb.OtpType.TOTP.value],
         TestUtilities.selectSpinnerItem(mInstr, mType, AccountDb.OtpType.TOTP.value));
 
     // enter empty name
     assertEquals("",
-        TestUtilities.enterText(mInstr, mAccountName, ""));
+        TestUtilities.setText(mInstr, mAccountName, ""));
     TestUtilities.clickView(mInstr, mSubmitButton);
     assertEquals(1, mAccountDb.getNames(result));
     assertEquals("7777777777777777", mAccountDb.getSecret(""));
@@ -194,14 +192,14 @@ public class EnterKeyActivityTest extends ActivityInstrumentationTestCase2<Enter
   // TODO(sarvar): Consider not allowing acceptance of such bad account names.
   public void testSubmitWithWierdAccountName()  {
     assertEquals("7777777777777777",
-        TestUtilities.enterText(mInstr, mKeyEntryField, "7777777777777777"));
+        TestUtilities.setText(mInstr, mKeyEntryField, "7777777777777777"));
     assertEquals(
         mActivity.getResources().getStringArray(R.array.type)[AccountDb.OtpType.TOTP.value],
         TestUtilities.selectSpinnerItem(mInstr, mType, AccountDb.OtpType.TOTP.value));
 
     // enter empty name
     assertEquals(",,",
-        TestUtilities.enterText(mInstr, mAccountName, ",,"));
+        TestUtilities.setText(mInstr, mAccountName, ",,"));
     TestUtilities.clickView(getInstrumentation(), mSubmitButton);
     assertEquals(1, mAccountDb.getNames(result));
     assertEquals("7777777777777777", mAccountDb.getSecret(",,"));

@@ -44,9 +44,14 @@
        works. -->
   <string name="how_it_works_menu_item">How it works</string>
 
-  <!-- Title of the Add Other Account screen that offers the user to scan a barcode or manually
-       enter account details.  -->
-  <string name="add_other_account_page_title">Add other account</string>
+  <!-- Title of the main (top-level) preference/settings screen. -->
+  <string name="main_preference_screen_title">Settings</string>
+
+  <!-- Title of the preference in the main preference screen that displays the About settings screen. -->
+  <string name="about_preference_title">About</string>
+
+  <!-- Application settings menu item in the main screen's menu. -->
+  <string name="settings_menu_item">Settings</string>
 
   <!-- Button on the Add Other Account screen that lets the user add an account by manually entering
        account details. -->
@@ -55,6 +60,13 @@
   <!-- Button on the Add Other Account screen that lets the user add an account by scanning a QR
        code. -->
   <string name="button_add_account_scan_barcode">Scan barcode</string>
+
+  <!-- Text of the button to advance to the Next page of a wizard.
+       [CHAR LIMIT=12] -->
+  <string name="button_next">Next</string>
+
+  <!-- Text of the button to return to the previous page of a wizard [CHAR LIMIT=12] -->
+  <string name="button_back">Back</string>
 
   <!-- Form field to enter account name (part of the form used for manually adding account) -->
   <string name="enter_account_label">Enter account name</string>
@@ -109,9 +121,6 @@
 
   <!-- Text on button user clicks to start installation of barcode scanning app -->
   <string name="install_button">Install</string>
-
-  <!-- Menu item, used to display more information about this application -->
-  <string name="about_menu_item">About</string>
 
   <!-- Preference screen title that displays information about the application. -->
   <string name="about_preference_screen_title">About</string>
@@ -262,7 +271,56 @@
        system UI for uninstalling the deprecated/old app. -->
   <string name="button_uninstall_old_app">Uninstall</string>
 
+  <!-- Title of the "How it works" wizard page which explains that in addition to entering a
+       password during sign in a verification code may need to be entered. -->
+  <string name="howitworks_page_enter_password_title">
+    To sign in, you\'ll enter your password.
+  </string>
+
+  <!-- Details (HTML) of the "How it works" wizard page which explains that in addition to entering
+       a password during sign in a verification code may need to be entered. -->
+  <string name="howitworks_page_enter_password_details">
+    However, if you\'re at a new computer or device, Google will ask you for a special code to make
+    sure it\'s really you.
+  </string>
+
+  <!-- Title of the "How it works" wizard page which explains that a verification code may need to
+       be entered when signing in. -->
+  <string name="howitworks_page_enter_code_title">
+    If you\'re on a new computer, enter a code from your phone.
+  </string>
+
+  <!-- Details (HTML) of the "How it works" wizard page which explains that a verification code may
+       need to be entered when signing in and that this app will generate the code. -->
+  <string name="howitworks_page_enter_code_details">
+    This app will generate the code needed to proceed with sign in.
+  </string>
+
+  <!-- Title of the "How it works" wizard page which that once a computer/device is verified the
+       user can tell Google not to ask for a verification code when signing in from that
+       computer/device. -->
+  <string name="howitworks_page_verify_device_title">
+    Then you\'re signed in.
+  </string>
+
+  <!-- Details (HTML) of the "How it works" wizard page which that once a computer/device is
+       verified the user can tell Google not to ask for a verification code when signing from that
+       computer/device. -->
+  <string name="howitworks_page_verify_device_details">
+    You can also choose to remember the computer and Google won\'t ask you for a code there again.
+  </string>
+
   <!-- Label of the button to exit the "How it works" introductory flow. -->
-  <string name="button_exit_intro_flow">Exit</string>
+  <string name="button_exit_howitworks_flow">Exit</string>
+
+  <!-- Heading in the main screen of the app when there are no accounts configured (yet). -->
+  <string name="welcome_page_title">
+    Thousands of online accounts are hijacked every day.
+  </string>
+
+  <!-- Subheading in the main screen of the app when there are no accounts configured (yet).  -->
+  <string name="welcome_page_details">
+    2-step verification protects your Google account even if your password is stolen.
+  </string>
 
 </resources>

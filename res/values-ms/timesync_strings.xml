@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Pembetulan masa untuk kod"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Segerakkan jam dalaman Pengecam dengan pelayan Google"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Segerak sekarang"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Tentang ciri ini"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"Tentang ciri ini"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Jika anda tekan  &amp;quot;Segerak sekarang&amp;quot;, Pengecam akan cuba untuk menyegerakkan jam dalamannya dengan pelayan Google sekali. Tetapan Tarikh &amp; Masa tidak akan berubah. &lt;p&gt; Pengecam tidak menghantar sebarang data peribadi atau maklumat akaun semasa menyegerakkan jam dalamannya dengan pelayan Google. &lt;p&gt; &lt;b&gt;Mengapa ini berguna&lt;/b&gt; &lt;p&gt; Pengecam menjana kod pengesahan 2-langkah berdasarkan kepada 1) masa semasa, dan 2) nombor rahsia yang diketahui oleh apl dan pelayan. &lt;p&gt; Jika Pengecam dan pelayan tidak sepakat dengan waktu, kod yang apl janakan mungkin tidak diterima apabila anda cuba melog masuk. &lt;p&gt; Secara lalai Pengecam akan menggunakan tetapan Tarikh &amp; Masa dan dalam kebanyakan kes anda akan boleh menjana kod yang sah dengan memastikan tetapan masa, tarikh dan zon masa anda dikonfigurasikan dengan betul. Bagaimanapun, apabila ketidaksepadanan masa berlaku, keadaan ini mungkin sukar dicarisilapan (terutama jika anda menggunakan masa atau zon masa yang diberikan oleh rangkaian)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Segerak sekarang"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Segerak sekarang"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Menyambung ke pelayan..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Masa telah diperbetulkan"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Jam dalaman pengecam telah diselaraskan agar sepadan dengan masa yang diberikan oleh pelayan Google. "\n\n"Tetapan Tarikh &amp; Masa pada peranti ini tidak boleh diubah."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Masa adalah betul"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Jam dalaman pelayan tidak diselaraskan kerana jam ini kelihatan seperti telah segerak dengan pelayan Google."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Segerak sekarang"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Terdapat masalah menghubungi pelayan Google. Sila semak tetapan rangkaian anda dan cuba lagi."</string>
+</resources>

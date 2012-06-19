@@ -34,7 +34,7 @@
         android:layout_marginRight="10sp"
         android:layout_marginTop="10sp">
         <TextView
-          android:text="@string/enroll2sv_welcome_page_title"
+          android:text="@string/welcome_page_title"
           android:textStyle="bold"
           android:textAppearance="?android:attr/textAppearanceLarge"
           android:layout_width="fill_parent"
@@ -42,7 +42,7 @@
         />
        <TextView
           android:id="@+id/details"
-          android:text="@string/enroll2sv_welcome_page_details"
+          android:text="@string/welcome_page_details"
           android:textAppearance="?android:attr/textAppearanceMedium"
           android:layout_marginTop="30sp"
           android:layout_width="fill_parent"

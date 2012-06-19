@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Ukulungiswa kwesikhathi kwamakhodi"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Vumelanisa iwashi langaphakathi le-Authenticator neziphakeli zakwa-Google"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Vumelanisa manje"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Mayelana nalesi sici"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"Mayelana nalesi sici"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Uma ucindezela u-&amp;quot;Vumelanisa manje&amp;quot;, i-Authenticator izozama ukuvumelanisa iwashi layo langaphakathi neziphakeli zakwa-Google ngesikhathi esisodwa. Izilungiselelo zosuku nesikhathi zedivayisi ngeke zishintshwe. &lt;p&gt; I-Authenticator ayihambisi noma iyiphi idatha yomuntu siqu noma ulwazi lwe-akhawunti ngenkathi ivumelanisa iwashi layo langaphakathi neziphakeli zakwa-Google. &lt;p&gt; &lt;b&gt;Kungani lokhu kubalulekile&lt;/b&gt; &lt;p&gt; i-Authenticator yenza amakhodi okuqinisekiswa okuyizinyathelo ezimbili ngokususelwa 1) esikhathini samanje, futhi 2) inombolo eyimfihlo eyaziwa ohlelweni lokusebenza nakwisiphakeli. &lt;p&gt; Uma i-Authenticator nesiphakeli ziphikisana ekutheni ubani isikhathi, amakhodi enziwa uhlelo lokusebenza ngeke amukelwe uma uzama ukungena ngemvume. &lt;p&gt; Ngokuzenzakalelayo i-Authenticator isebenzisa izilungiselelo zosuku nesikhathi, futhi ezikhathini eziningi uzokwazi ukwenza amakhodi avumalekile ngokuqinisekisa ukuthi izilungiselelo zakho zesikhathi, usuku nezoni yesikhathi zulungiswe kahle. Yize kunjalo, uma ukungafani kwesikhathi kuvelo, kungabalukhuni ukuxazulula (ikakhulu uma usebenzisa isikhathi noma amazoni esikhathi anikelwa inethiwekhi)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Vumelanisa manje"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Vumelanisa manje"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Ixhuma kwisiphakeli…"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Isikhathi silungisiwe"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Iwashi langaphakathi le-Authenticator lilungisiwe ukuze lifane nesikhathi esinikelwe iziphakeli zakwa-Google. "\n\n"Izilungiselelo zosuku nesikhathi kule divayisi azishintshiwe."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Isikhathi sivele silungile"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Iwashi langaphakathi le-Authenticator lalingalungisiwe ngoba libonakala selivele livumelanisiwe neziphakeli zakwa-Google."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Vumelanisa manje"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Kube nenkinga ngokuxhumana nesiphakeli sakwa-Google. Sicela uhlole izilungiselelo zenethiwekhi yakho bese uyazama futhi."</string>
+</resources>

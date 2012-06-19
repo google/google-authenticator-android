@@ -18,7 +18,7 @@ package com.google.android.apps.authenticator;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.dataimport.ImportController;
-import com.google.android.apps.authenticator.enroll2sv.wizard.IntroEnterPasswordActivity;
+import com.google.android.apps.authenticator.howitworks.IntroEnterPasswordActivity;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 import com.google.android.apps.authenticator.testability.TestableActivity;
 import com.google.android.apps.authenticator2.R;
@@ -45,7 +45,6 @@ import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -117,6 +116,9 @@ public class AuthenticatorActivity extends TestableActivity {
 
   /** Counter used for generating TOTP verification codes. */
   private TotpCounter mTotpCounter;
+
+  /** Clock used for generating TOTP verification codes. */
+  private TotpClock mTotpClock;
 
   /**
    * Task that periodically notifies this activity about the amount of time remaining until
@@ -203,6 +205,7 @@ public class AuthenticatorActivity extends TestableActivity {
     setTitle(R.string.app_name);
 
     mTotpCounter = mOtpProvider.getTotpCounter();
+    mTotpClock = mOtpProvider.getTotpClock();
 
     setContentView(R.layout.main);
 
@@ -231,7 +234,7 @@ public class AuthenticatorActivity extends TestableActivity {
     mContentAccountsPresent.setVisibility((mUsers.length > 0) ? View.VISIBLE : View.GONE);
     TextView noAccountsPromptDetails = (TextView) findViewById(R.id.details);
     noAccountsPromptDetails.setText(
-        Html.fromHtml(getString(R.string.enroll2sv_welcome_page_details)));
+        Html.fromHtml(getString(R.string.welcome_page_details)));
 
     findViewById(R.id.how_it_works_button).setOnClickListener(new View.OnClickListener() {
       @Override
@@ -264,11 +267,10 @@ public class AuthenticatorActivity extends TestableActivity {
         }
     });
 
-    DependencyInjector.getOptionalFeatures().onAuthenticatorActivityCreated(this);
-
     if (savedInstanceState == null) {
       // This is the first time this Activity is starting (i.e., not restoring previous state which
       // was saved, for example, due to orientation change)
+      DependencyInjector.getOptionalFeatures().onAuthenticatorActivityCreated(this);
       importDataFromOldAppIfNecessary();
       handleIntent(getIntent());
     }
@@ -343,7 +345,8 @@ public class AuthenticatorActivity extends TestableActivity {
   private void updateCodesAndStartTotpCountdownTask() {
     stopTotpCountdownTask();
 
-    mTotpCountdownTask = new TotpCountdownTask(mTotpCounter, TOTP_COUNTDOWN_REFRESH_PERIOD);
+    mTotpCountdownTask =
+        new TotpCountdownTask(mTotpCounter, mTotpClock, TOTP_COUNTDOWN_REFRESH_PERIOD);
     mTotpCountdownTask.setListener(new TotpCountdownTask.Listener() {
       @Override
       public void onTotpCountdown(long millisRemaining) {
@@ -525,8 +528,17 @@ public class AuthenticatorActivity extends TestableActivity {
     } else if (HOTP.equals(authority)) {
       type = OtpType.HOTP;
       String counterParameter = uri.getQueryParameter(COUNTER_PARAM);
-      counter = (counterParameter != null) ?
-          Integer.parseInt(counterParameter) : AccountDb.DEFAULT_HOTP_COUNTER;
+      if (counterParameter != null) {
+        try {
+          counter = Integer.parseInt(counterParameter);
+        } catch (NumberFormatException e) {
+          Log.e(getString(R.string.app_name), LOCAL_TAG + ": Invalid counter in uri");
+          showDialog(Utilities.INVALID_QR_CODE);
+          return;
+        }
+      } else {
+        counter = AccountDb.DEFAULT_HOTP_COUNTER;
+      }
     } else {
       Log.e(getString(R.string.app_name), LOCAL_TAG + ": Invalid or missing authority in uri");
       showDialog(Utilities.INVALID_QR_CODE);
@@ -616,6 +628,7 @@ public class AuthenticatorActivity extends TestableActivity {
     if (secret != null) {
       AccountDb accountDb = DependencyInjector.getAccountDb();
       accountDb.update(user, secret, originalUser, type, counter);
+      DependencyInjector.getOptionalFeatures().onAuthenticatorActivityAccountSaved(context, user);
       // TODO: Consider having a display message that activities can call and it
       //       will present a toast with a uniform duration, and perhaps update
       //       status messages (presuming we have a way to remove them after they
@@ -746,24 +759,12 @@ public class AuthenticatorActivity extends TestableActivity {
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
-    // Inflate the menu XML resource.
-    MenuInflater inflater = getMenuInflater();
-    int menuResourceId =
-        DependencyInjector.getOptionalFeatures().getAuthenticatorActivityOptionsMenuResourceId();
-    if (menuResourceId == 0) {
-      menuResourceId = R.menu.main;
-    }
-    inflater.inflate(menuResourceId, menu);
+    getMenuInflater().inflate(R.menu.main, menu);
     return true;
   }
 
   @Override
   public boolean onMenuItemSelected(int featureId, MenuItem item) {
-    if (DependencyInjector.getOptionalFeatures().onAuthenticatorActivityMenuItemSelected(
-        this, featureId, item)) {
-      return true;
-    }
-
     switch (item.getItemId()) {
       case R.id.add_account:
         addAccount();
@@ -771,8 +772,8 @@ public class AuthenticatorActivity extends TestableActivity {
       case R.id.how_it_works:
         displayHowItWorksInstructions();
         return true;
-      case R.id.about:
-        showSettingsAbout();
+      case R.id.settings:
+        showSettings();
         return true;
     }
 
@@ -795,7 +796,7 @@ public class AuthenticatorActivity extends TestableActivity {
   }
 
   private void addAccount() {
-    startActivity(new Intent(this, AddOtherAccountActivity.class));
+    DependencyInjector.getOptionalFeatures().onAuthenticatorActivityAddAccount(this);
   }
 
   private void scanBarcode() {
@@ -814,9 +815,9 @@ public class AuthenticatorActivity extends TestableActivity {
         .setComponent(new ComponentName(context, AuthenticatorActivity.class));
   }
 
-  private void showSettingsAbout() {
+  private void showSettings() {
     Intent intent = new Intent();
-    intent.setClass(this, SettingsAboutActivity.class);
+    intent.setClass(this, SettingsActivity.class);
     startActivity(intent);
   }
 
@@ -966,6 +967,14 @@ public class AuthenticatorActivity extends TestableActivity {
             .setNegativeButton(R.string.cancel, null)
             .create();
         break;
+
+      default:
+        dialog =
+            DependencyInjector.getOptionalFeatures().onAuthenticatorActivityCreateDialog(this, id);
+        if (dialog == null) {
+          dialog = super.onCreateDialog(id);
+        }
+        break;
     }
     return dialog;
   }
@@ -1042,7 +1051,9 @@ public class AuthenticatorActivity extends TestableActivity {
       try {
         computeAndDisplayPin(mAccount.user, position, true);
       } catch (OtpSourceException e) {
-        throw new RuntimeException("Failed to generate OTP for account", e);
+        DependencyInjector.getOptionalFeatures().onAuthenticatorActivityGetNextOtpFailed(
+            AuthenticatorActivity.this, mAccount.user, e);
+        return;
       }
 
       final String pin = mAccount.pin;

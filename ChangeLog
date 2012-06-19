@@ -1,6 +1,20 @@
 Google Authenticator for Android ChangeLog
 
 
+v2.21
+
+* Enabled the app to generate correct time-based (TOTP) verification codes
+  even on devices where the system time is wrong. The user can synchronize
+  the app's internal time with Google servers using Settings ->
+  Time correction for codes -> Sync now.
+  NOTE: This feature adds requirement for the Full Internet Access
+  permission.
+* Made the countdown indicator and the Get Next Code button on Gingerbread
+  and below green instead of gray.
+* Fixed a bug where parsing a HOTP account provisioning URL with an invalid
+  counter crashed the app.
+
+
 v2.15
 
 * Changed package name from com.google.android.apps.authenticator to

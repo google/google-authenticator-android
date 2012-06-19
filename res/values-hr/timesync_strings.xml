@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Ispravljanje vremena za kodove"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Sinkroniziranje unutarnjeg sata Autentifikatora s Googleovim poslužiteljima"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Sinkroniziraj sada"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"O značajci"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"O značajci"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Ako pritisnete &amp;quot;Sinkroniziraj sada&amp;quot;, Autentifikator će pokušati jedanput sinkronizirati svoj unutarnji sat s Googleovim poslužiteljima. Postavke datuma i vremena na uređaju neće se promijeniti. &lt;p&gt; Autentifikator ne prenosi osobne podatke ni podatke o računu dok sinkronizira svoj unutarnji sat s Googleovim poslužiteljima. &lt;p&gt; &lt;b&gt;Zašto je to korisno&lt;/b&gt; &lt;p&gt; Autentifikator generira kodove za potvrdu u 2 koraka na temelju 1) trenutačnog vremena i 2) tajnog broja poznatog aplikaciji i poslužitelju. &lt;p&gt; Ako su Autentifikator i poslužitelj podešeni na različita vremena, kodovi koje aplikacija generira možda neće biti prihvaćeni kada se pokušate prijaviti. &lt;p&gt; Prema zadanim postavkama Autentifikator upotrebljava postavke datuma i vremena s uređaja i u većini ćete slučajeva moći generirati valjane kodove ako su vrijeme, datum i vremenska zona pravilno konfigurirani. Međutim, ako se vrijeme ne podudara, može biti teško ukloniti problem (posebice ako upotrebljavate mrežno vrijeme ili vremenske zone)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Sinkroniziraj sada"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Sinkroniziraj sada"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Povezivanje s poslužiteljem…"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Vrijeme je ispravljeno"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Unutarnji sat Autentifikatora podešen je kako bi se podudarao s vremenom Googleovih poslužitelja. "\n\n"Postavke datuma i vremena na ovom uređaju nisu promijenjene."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Vrijeme je već točno"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Unutarnji sat Autentifikatora nije podešen jer se čini da je već sinkroniziran s Googleovim poslužiteljima."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Sinkroniziraj sada"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Pojavio se problem pri kontaktiranju s Googleovim poslužiteljem. Provjerite mrežne postavke i pokušajte ponovo."</string>
+</resources>

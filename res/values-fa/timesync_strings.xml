@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"اصلاح زمان برای کدها"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"همگام‌سازی ساعت داخلی Authenticator با سرورهای Google"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"اکنون همگام‌سازی شود"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"درباره این ویژگی"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"درباره این ویژگی"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"اگر  &amp;quot;اکنون همگامسازی شود&amp;quot; را فشار دهید Authenticator تلاش می‌کند ساعت داخلی خود را با سرورهای Google یکبار همگام کند. تنظیمات تاریخ و ساعت دستگاه تغییر نخواهد کرد. &lt;p&gt; Authenticator هنگام همگام‌سازی ساعت داخلی خود با سرورهای Google٬ داده‌های شخصی یا اطلاعات حساب را منتقل نمی‌کند. &lt;p&gt; &lt;b&gt;چرا این کار مفید است&lt;/b&gt; &lt;p&gt; Authenticator کدهای ۲ مرحله‌ای را براساس این موارد تولید می‌کند ۱) زمان کنونی٬ و ۲) شماره رمزی که فقط برنامه و سرور آن را می‌دانند. &lt;p&gt; اگر Authenticator و سرور زمان هماهنگی نداشته باشند٬ وقتی سعی می‌کنید وارد سیستم شوید٬ کدی که برنامه ایجاد می‌کند ممکن است پذیرفته نشود. &lt;p&gt; بصورت پیش‌فرض Authenticator از تنظیمات تاریخ و ساعت دستگاه استفاده می‌کند٬ و در اغلب موارد شما می‌توانید با پیکربندی درست زمان٬ تاریخ و منطقه زمانی خود٬ کدهای معتبر ایجاد کنید. اما وقتی زمان هماهنگ نباشد٬ عیب یابی آن مشکل است (مخصوصاً اگر از زمان یا منطقه زمانی ارائه شده توسط شبکه استفاده کنید)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"اکنون همگام‌سازی شود"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"اکنون همگام‌سازی شود"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"اتصال به سرور..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"زمان اصلاح شد"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"ساعت داخلی Authenticator تنظیم شده است تا با زمان ارائه شده توسط سرورهای Google هماهنگ شود."\n\n" تنظیمات تاریخ و زمان این دستگاه تغییر نکرده است."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"زمان در حال حاضر درست است"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"ساعت داخلی Authenticator تنظیم نشد چون به نظر می‌رسد از قبل با سرورهای Google همگامسازی می‌شود."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"اکنون همگام‌سازی شود"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"در تماس با سرور Google مشکلی وجود داشت. لطفاً تنظیمات شبکه خود را بررسی کنید و دوباره امتحان کنید."</string>
+</resources>

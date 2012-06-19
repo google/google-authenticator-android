@@ -85,6 +85,40 @@ public class AuthenticatorActivityPart2Test
     assertFalse(getActivity().isFinishing()); // AuthenticatorActivity should continue
   }
 
+  public void testAccountSetup_validHotpUriWithoutCounterAccepted() throws Throwable {
+    getActivity();
+
+    String secret = "CQAHUXJ2VWDI7WFF";
+    String accountName = "9.99.99.999";
+    callOnActivityResultOnUiThreadWithScannedUri(
+        "otpauth://hotp/" + accountName + "?secret=" + secret);
+
+    List<String> accountNames = new ArrayList<String>();
+    assertEquals(1, mAccountDb.getNames(accountNames));
+    assertEquals(accountName, accountNames.get(0));
+    assertEquals(secret, mAccountDb.getSecret(accountName));
+    assertEquals(OtpType.HOTP, mAccountDb.getType(accountName));
+    assertEquals(new Integer(0), mAccountDb.getCounter(accountName));
+    assertFalse(getActivity().isFinishing()); // AuthenticatorActivity should continue
+  }
+
+  public void testAccountSetup_validHotpUriWithCounterAccepted() throws Throwable {
+    getActivity();
+
+    String secret = "CQAHUXJ2VWDI7WFF";
+    String accountName = "9.99.99.999";
+    callOnActivityResultOnUiThreadWithScannedUri(
+        "otpauth://hotp/" + accountName + "?secret=" + secret + "&counter=264");
+
+    List<String> accountNames = new ArrayList<String>();
+    assertEquals(1, mAccountDb.getNames(accountNames));
+    assertEquals(accountName, accountNames.get(0));
+    assertEquals(secret, mAccountDb.getSecret(accountName));
+    assertEquals(OtpType.HOTP, mAccountDb.getType(accountName));
+    assertEquals(new Integer(264), mAccountDb.getCounter(accountName));
+    assertFalse(getActivity().isFinishing()); // AuthenticatorActivity should continue
+  }
+
   /////////////////////  Tests with Scanned URIs returned in ActivityResult ////////////////
 
   private void checkBadAccountSetup(String uri, int dialogId) throws Throwable {
@@ -144,6 +178,16 @@ public class AuthenticatorActivityPart2Test
 
   public void testAccountSetup_withWhiteSpaceForUserAccount() throws Throwable {
     checkBadAccountSetup("otpauth://totp/    ?secret=CQAHUXJ2VWDI7WFF",
+                         Utilities.INVALID_QR_CODE);
+  }
+
+  public void testAccountSetup_withCounterTooBig() throws Throwable {
+    checkBadAccountSetup("otpauth://hotp/?secret=CQAHUXJ2VWDI7WFF&counter=34359738368",
+                         Utilities.INVALID_QR_CODE);
+  }
+
+  public void testAccountSetup_withNonNumericCounter() throws Throwable {
+    checkBadAccountSetup("otpauth://hotp/?secret=CQAHUXJ2VWDI7WFF&counter=abc",
                          Utilities.INVALID_QR_CODE);
   }
 

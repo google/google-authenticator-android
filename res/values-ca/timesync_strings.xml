@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Correcció d\'hora per als codis"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Sincronitza el rellotge intern d\'Authenticator amb els servidors de Google"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Sincronitza ara"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Sobre aquesta funció"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"Sobre aquesta funció"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Si premeu &amp;quot;Sincronitza ara&amp;quot;, Authenticator provarà de sincronitzar el rellotge intern amb els servidors de Google. La configuració de data i hora del dispositiu no canviarà. &lt;p&gt; Authenticator no transmet dades personals ni informació del compte durant la sincronització del seu rellotge intern amb els servidors de Google. &lt;p&gt; &lt;b&gt;Utilitat de la sincronització&lt;/b&gt; &lt;p&gt; Authenticator genera codis de verificació en dos passos que es basen en 1) l\'hora actual i 2) un número secret que coneixen l\'aplicació i el servidor. &lt;p&gt; Si Authenticator i el servidor no estan d\'acord en l\'hora que és, és possible que no s\'acceptin els codis que generi l\'aplicació quan proveu d\'iniciar la sessió. &lt;p&gt; De manera predeterminada, Authenticator fa servir la configuració de data i hora del dispositiu i, en la majoria de casos, podreu generar codis vàlids si us assegureu que la configuració d\'hora, de data i de zona horària és la correcta. De totes maneres, quan es produeixen problemes deguts a incoherències, és possible que costi resoldre\'ls (especialment si feu servir hores o zones horàries proporcionades per la xarxa)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Sincronitza ara"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Sincronitza ara"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"S\'està connectant amb el servidor…"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Hora corregida"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"El rellotge intern d\'Authenticator s\'ha ajustat perquè coincideixi amb l\'hora proporcionada pels servidors de Google. "\n\n"La configuració de data i hora d\'aquest dispositiu no s\'ha canviat."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"L\'hora ja és correcta"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"El rellotge intern d\'Authenticator no s\'ha ajustat perquè sembla que ja està sincronitzat amb els servidors de Google."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Sincronitza ara"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"S\'ha produït un problema en contactar amb el servidor de Google. Comproveu la configuració de la xarxa i torneu-ho a provar."</string>
+</resources>

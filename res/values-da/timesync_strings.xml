@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Tidsrettelse for koder"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"Synkroniser Autentificerings interne ur med Googles servere"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Synkroniser nu"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Om denne funktion"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"Om denne funktion"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"Hvis du trykker på &amp;quot;Synkroniser nu&amp;quot;, forsøger Autentificering at synkronisere sit indre ur med Googles servere én gang. Enhedens dato- og tidsindstillinger ændres ikke. &lt;p&gt; Autentificering overfører ikke nogen personlige data eller kontooplysninger, mens dens indre ur synkroniseres med Googles servere. &lt;p&gt; &lt;b&gt;Derfor er dette nyttigt&lt;/b&gt; &lt;p&gt; Autentificering genererer koder til totrinsbekræftelse baseret på 1) den aktuelle tid og 2) et hemmeligt nummer, som appen og serveren kender. &lt;p&gt; Hvis Autentificering og serveren er uenige om, hvad klokken er, accepteres de koder, som appen genererer, muligvis ikke, når du forsøger at logge ind. &lt;p&gt; Autentificering bruger som standard enhedens dato- og tidsindstillinger, og i de fleste tilfælde kan du generere gyldige koder ved at sikre, at dine indstillinger for tid, dato og tidszone er konfigureret korrekt. Når der opstår tidsuoverensstemmelser, kan de imidlertid være svære at fejlfinde (især hvis du bruger netværkets klokkeslæt og tidszoner)."</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Synkroniser nu"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Synkroniser nu"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"Der oprettes forbindelse til serveren..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Tiden blev korrigeret"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Autentificerings indre ur er blevet justeret til at matche den tid, som Googles servere har angivet. "\n\n"Dato- og tidsindstillingerne på denne enhed er ikke blevet ændret."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Tiden er allerede korrekt"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Autentificerings interne ur blev ikke indstillet, fordi det tilsyneladende allerede er synkroniseret med Googles servere."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Synkroniser nu"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Der opstod et problem med at kontakte Googles server. Kontrollér dine netværksindstillingerne, og prøv igen."</string>
+</resources>

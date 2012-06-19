@@ -16,12 +16,14 @@
 
 package com.google.android.apps.authenticator;
 
-import com.google.android.apps.authenticator.enroll2sv.wizard.IntroPageActivity;
+import com.google.android.apps.authenticator.wizard.WizardPageActivity;
 import com.google.android.apps.authenticator2.R;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import java.io.Serializable;
 
 /**
  * The page of the "Add account" flow that offers the user to add an account.
@@ -29,7 +31,7 @@ import android.view.View;
  *
  * @author klyubin@google.com (Alex Klyubin)
  */
-public class AddOtherAccountActivity extends IntroPageActivity {
+public class AddOtherAccountActivity extends WizardPageActivity<Serializable> {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

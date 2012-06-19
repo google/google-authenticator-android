@@ -18,7 +18,7 @@ package com.google.android.apps.authenticator;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.Base32String.DecodingException;
-import com.google.android.apps.authenticator.enroll2sv.wizard.IntroPageActivity;
+import com.google.android.apps.authenticator.wizard.WizardPageActivity;
 import com.google.android.apps.authenticator2.R;
 
 import android.os.Bundle;
@@ -28,13 +28,15 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import java.io.Serializable;
+
 /**
  * The activity that lets the user manually add an account by entering its name, key, and type
  * (TOTP/HOTP).
  *
  * @author sweis@google.com (Steve Weis)
  */
-public class EnterKeyActivity extends IntroPageActivity implements TextWatcher {
+public class EnterKeyActivity extends WizardPageActivity<Serializable> implements TextWatcher {
   private static final int MIN_KEY_BYTES = 10;
   private EditText mKeyEntryField;
   private EditText mAccountName;

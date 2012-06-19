@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"校正用来生成验证码的时间"</string>
+    <string name="timesync_preference_screen_summary" msgid="4761393049788324525">"将身份验证器的内部时钟与 Google 服务器进行同步"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"立即同步"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"关于此功能"</string>
+    <string name="timesync_about_feature_screen_title" msgid="8248453942850581677">"关于此功能"</string>
+    <string name="timesync_about_feature_screen_details" msgid="1484703765964566915">"如果您按下&amp;ldquo;立即同步&amp;rdquo;，身份验证器就会尝试将其内部时钟与 Google 服务器同步一次。设备的日期和时间设置不会更改。&lt;p&gt;与 Google 服务器同步内部时钟时，身份验证器不会传输任何个人数据或帐户信息。&lt;p&gt; &lt;b&gt;这有什么作用&lt;/b&gt; &lt;p&gt;身份验证器需要根据以下信息生成两步验证码：1) 当前时间，2) 该应用与服务器联络时使用的暗号。&lt;p&gt;如果身份验证器和服务器上的时间不一致，那么当您尝试登录时，系统可能不会接受该应用生成的验证码。&lt;p&gt;默认情况下，身份验证器会使用设备的日期和时间设置，因此在大多数情况下，只要您确保您的时间、日期和时区设置配置正确，即可生成有效的验证码。但是，如果确实出现时间不匹配的情况，就很难排查出问题（尤其是当您使用网络提供的时间或时区时）。"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"立即同步"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"立即同步"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"正在连接服务器…"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"时间已校正"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"身份验证器的内部时钟已按照 Google 服务器提供的时间进行调整。"\n\n"此设备上的日期和时间设置未更改。"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"时间已正确"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"身份验证器的内部时钟未作调整，因为该时钟已经与 Google 服务器同步。"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"立即同步"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"与 Google 服务器联系时出现问题。请检查您的网络设置，然后重试。"</string>
+</resources>

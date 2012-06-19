@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Google Inc. All Rights Reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="fill_parent"
+  android:layout_width="fill_parent"
+  android:orientation="vertical"
+  >
+  <!-- Body -->
+  <FrameLayout
+    android:id="@+id/page_content"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:paddingTop="10sp"
+    android:paddingBottom="10sp"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    >
+  </FrameLayout>
+  <!-- Progress -->
+  <LinearLayout
+    android:id="@+id/inline_progress"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0"
+    android:layout_gravity="bottom"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:paddingTop="10sp"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:paddingBottom="10sp"
+    >
+    <ProgressBar
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:indeterminate="true"
+      />
+  </LinearLayout>
+  <!-- Button bar -->
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5sp"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:orientation="horizontal"
+    style="?attr/wizardButtonBarStyle"
+    >
+
+    <!-- Only of the LinearLayouts below is shown at any point in time. -->
+
+    <!-- Two buttons, each in its own half of the bar: Back Next -->
+    <LinearLayout
+      android:id="@+id/button_bar_left_right_buttons"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1.0"
+      >
+      <Button
+        android:id="@+id/button_left"
+        android:text="@string/button_back"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:layout_gravity="left"
+        android:layout_marginRight="5sp"
+        style="?attr/directionalButtonLeftStyle"
+        />
+      <Button
+        android:id="@+id/button_right"
+        android:text="@string/button_next"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5sp"
+        style="?attr/directionalButtonRightStyle"
+        />
+    </LinearLayout>
+
+    <!-- One button spanning the whole width of the bar -->
+    <LinearLayout
+      android:id="@+id/button_bar_middle_button_only"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      >
+      <Button
+        android:id="@+id/button_middle"
+        android:text="@string/button_next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <!-- One button in the left half of the bar: Cancel -->
+    <LinearLayout
+      android:id="@+id/button_bar_cancel_only"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1.0"
+      >
+      <Button
+        android:id="@+id/button_cancel"
+        android:text="@android:string/cancel"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginRight="5sp"
+        />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

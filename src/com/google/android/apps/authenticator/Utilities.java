@@ -39,6 +39,9 @@ public class Utilities {
   static final int INVALID_QR_CODE = 3;
   static final int INVALID_SECRET_IN_QR_CODE = 7;
 
+  public static final long SECOND_IN_MILLIS = 1000;
+  public static final long MINUTE_IN_MILLIS = 60 * SECOND_IN_MILLIS;
+
   // Constructor -- Does nothing yet
   private Utilities() { }
 
