@@ -3,3 +3,6 @@ The two libraries need to be included into the APK.
 
 * LittleMock: http://code.google.com/p/littlemock/
 * DexMaker: http://code.google.com/p/dexmaker/
+
+When importing this project into Eclipse, add littlemock.jar and dexmaker.jar
+to the "libs" directory of this test project.
