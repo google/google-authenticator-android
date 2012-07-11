@@ -25,7 +25,7 @@ import junit.framework.TestCase;
 
 /**
  * Unit test for {@link Base32String}
- * @author Sarvar Patel (sarvar@google.com)
+ * @author sarvar@google.com (Sarvar Patel)
  */
 public class Base32StringTest extends TestCase {
 

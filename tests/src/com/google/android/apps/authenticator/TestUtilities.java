@@ -16,15 +16,12 @@
 
 package com.google.android.apps.authenticator;
 
-import static com.google.testing.littlemock.LittleMock.createCaptor;
-import static com.google.testing.littlemock.LittleMock.doReturn;
-import static com.google.testing.littlemock.LittleMock.timeout;
-import static com.google.testing.littlemock.LittleMock.verify;
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.timeout;
+import static org.mockito.Mockito.verify;
 
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 import com.google.android.apps.authenticator.testability.StartActivityListener;
-import com.google.testing.littlemock.ArgumentCaptor;
-import com.google.testing.littlemock.LittleMock;
 
 import android.app.Activity;
 import android.app.Instrumentation;
@@ -50,6 +47,9 @@ import android.widget.Spinner;
 
 import junit.framework.Assert;
 
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mockito;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.concurrent.Callable;
@@ -72,7 +72,7 @@ public class TestUtilities {
    * Timeout (milliseconds) when waiting for the results of a UI action performed by the code
    * under test.
    */
-  public static final long UI_ACTION_EFFECT_TIMEOUT_MILLIS = 5000;
+  public static final int UI_ACTION_EFFECT_TIMEOUT_MILLIS = 5000;
 
   private TestUtilities() { }
 
@@ -476,9 +476,9 @@ public class TestUtilities {
    * activity launches.
    */
   public static void withLaunchPreventingStartActivityListenerInDependencyResolver() {
-    StartActivityListener mockListener = LittleMock.mock(StartActivityListener.class);
+    StartActivityListener mockListener = Mockito.mock(StartActivityListener.class);
     doReturn(true).when(mockListener).onStartActivityInvoked(
-        LittleMock.<Context>anyObject(), LittleMock.<Intent>anyObject());
+        Mockito.<Context>anyObject(), Mockito.<Intent>anyObject());
     DependencyInjector.setStartActivityListener(mockListener);
   }
 
@@ -491,9 +491,9 @@ public class TestUtilities {
    */
   public static Intent verifyWithTimeoutThatStartActivityAttemptedExactlyOnce() {
     StartActivityListener mockListener = DependencyInjector.getStartActivityListener();
-    ArgumentCaptor<Intent> intentCaptor = createCaptor();
+    ArgumentCaptor<Intent> intentCaptor = ArgumentCaptor.forClass(Intent.class);
     verify(mockListener, timeout(UI_ACTION_EFFECT_TIMEOUT_MILLIS))
-        .onStartActivityInvoked(LittleMock.<Context>anyObject(), intentCaptor.capture());
+        .onStartActivityInvoked(Mockito.<Context>anyObject(), intentCaptor.capture());
     return intentCaptor.getValue();
   }
 

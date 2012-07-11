@@ -16,13 +16,12 @@
 
 package com.google.android.apps.authenticator;
 
-import static com.google.testing.littlemock.LittleMock.initMocks;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.dataimport.ImportController;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 import com.google.android.apps.authenticator2.R;
-import com.google.testing.littlemock.Mock;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -31,13 +30,15 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.test.MoreAsserts;
 import android.view.View;
 
+import org.mockito.Mock;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Unit test for authenticator activity (part/shard 2).
  *
- * @author Sarvar Patel (sarvar@google.com)
+ * @author sarvar@google.com (Sarvar Patel)
  */
 public class AuthenticatorActivityPart2Test
     extends ActivityInstrumentationTestCase2<AuthenticatorActivity> {

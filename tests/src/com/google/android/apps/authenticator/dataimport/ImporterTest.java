@@ -16,21 +16,22 @@
 
 package com.google.android.apps.authenticator.dataimport;
 
-import static com.google.testing.littlemock.LittleMock.doReturn;
-import static com.google.testing.littlemock.LittleMock.initMocks;
-import static com.google.testing.littlemock.LittleMock.verify;
-import static com.google.testing.littlemock.LittleMock.verifyNoMoreInteractions;
-import static com.google.testing.littlemock.LittleMock.verifyZeroInteractions;
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
+import static org.mockito.Mockito.verifyZeroInteractions;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 import com.google.android.apps.authenticator.AccountDb;
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
-import com.google.testing.littlemock.Mock;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;
+
+import org.mockito.Mock;
 
 import java.util.ArrayList;
 import java.util.List;

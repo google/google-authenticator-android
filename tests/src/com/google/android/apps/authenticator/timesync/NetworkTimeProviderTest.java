@@ -16,16 +16,11 @@
 
 package com.google.android.apps.authenticator.timesync;
 
-import static com.google.testing.littlemock.LittleMock.createCaptor;
-import static com.google.testing.littlemock.LittleMock.doReturn;
-import static com.google.testing.littlemock.LittleMock.doThrow;
-import static com.google.testing.littlemock.LittleMock.initMocks;
-import static com.google.testing.littlemock.LittleMock.mock;
-import static com.google.testing.littlemock.LittleMock.verify;
-
-import com.google.testing.littlemock.ArgumentCaptor;
-import com.google.testing.littlemock.LittleMock;
-import com.google.testing.littlemock.Mock;
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 import android.test.MoreAsserts;
 
@@ -36,6 +31,9 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.message.BasicHeader;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -68,7 +66,7 @@ public class NetworkTimeProviderTest extends TestCase {
       mProvider.getNetworkTime();
     } catch (Exception expected) {}
 
-    ArgumentCaptor<HttpUriRequest> requestCaptor = createCaptor();
+    ArgumentCaptor<HttpUriRequest> requestCaptor = ArgumentCaptor.forClass(HttpUriRequest.class);
     verify(mMockHttpClient).execute(requestCaptor.capture());
 
     HttpUriRequest request = requestCaptor.getValue();
@@ -113,7 +111,7 @@ public class NetworkTimeProviderTest extends TestCase {
   }
 
   private void withHttpRequestThrowing(Exception exception) throws IOException {
-    doThrow(exception).when(mMockHttpClient).execute(LittleMock.<HttpUriRequest>anyObject());
+    doThrow(exception).when(mMockHttpClient).execute(Mockito.<HttpUriRequest>anyObject());
   }
 
   private void withHttpRequestReturningDate(String dateHeaderValue) throws IOException {
@@ -122,6 +120,6 @@ public class NetworkTimeProviderTest extends TestCase {
       doReturn(new BasicHeader("Date", dateHeaderValue)).when(mockResponse).getLastHeader("Date");
     }
 
-    doReturn(mockResponse).when(mMockHttpClient).execute(LittleMock.<HttpUriRequest>anyObject());
+    doReturn(mockResponse).when(mMockHttpClient).execute(Mockito.<HttpUriRequest>anyObject());
   }
 }

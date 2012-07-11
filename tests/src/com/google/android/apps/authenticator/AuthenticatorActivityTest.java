@@ -16,10 +16,11 @@
 
 package com.google.android.apps.authenticator;
 
-import static com.google.testing.littlemock.LittleMock.doThrow;
-import static com.google.testing.littlemock.LittleMock.initMocks;
-import static com.google.testing.littlemock.LittleMock.mock;
-import static com.google.testing.littlemock.LittleMock.verify;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.dataimport.ImportController;
@@ -27,9 +28,6 @@ import com.google.android.apps.authenticator.howitworks.IntroEnterPasswordActivi
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 import com.google.android.apps.authenticator.testability.StartActivityListener;
 import com.google.android.apps.authenticator2.R;
-import com.google.testing.littlemock.ArgumentCaptor;
-import com.google.testing.littlemock.LittleMock;
-import com.google.testing.littlemock.Mock;
 
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
@@ -44,13 +42,17 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Unit test for authenticator activity (part/shard 1).
  *
- * @author Sarvar Patel (sarvar@google.com)
+ * @author sarvar@google.com (Sarvar Patel)
  */
 public class AuthenticatorActivityTest extends
     ActivityInstrumentationTestCase2<AuthenticatorActivity> {
@@ -316,13 +318,14 @@ public class AuthenticatorActivityTest extends
     StartActivityListener mockStartActivityListener = mock(StartActivityListener.class);
     doThrow(new ActivityNotFoundException())
         .when(mockStartActivityListener).onStartActivityInvoked(
-            LittleMock.<Context>anyObject(), LittleMock.<Intent>anyObject());
+            Mockito.<Context>anyObject(), Mockito.<Intent>anyObject());
     DependencyInjector.setStartActivityListener(mockStartActivityListener);
 
     setActivityIntent(new Intent(AuthenticatorActivity.ACTION_SCAN_BARCODE));
     getActivity();
 
-    TestUtilities.assertDialogWasDisplayed(getActivity(), Utilities.DOWNLOAD_DIALOG);
+    TestUtilities.assertDialogWasDisplayed(
+        getActivity(), Utilities.DOWNLOAD_DIALOG);
   }
 
   ///////////////////////////   Data Import tests  /////////////////////////////
@@ -330,9 +333,9 @@ public class AuthenticatorActivityTest extends
   public void testLaunchingActivityStartsImportController() {
     AuthenticatorActivity activity = getActivity();
 
-    ArgumentCaptor<Context> contextArgCaptor = LittleMock.<Context>createCaptor();
+    ArgumentCaptor<Context> contextArgCaptor = ArgumentCaptor.forClass(Context.class);
     verify(mMockDataImportController)
-        .start(contextArgCaptor.capture(), LittleMock.<ImportController.Listener>anyObject());
+        .start(contextArgCaptor.capture(), Mockito.<ImportController.Listener>anyObject());
     assertEquals(activity, contextArgCaptor.getValue());
   }
 
@@ -363,9 +366,9 @@ public class AuthenticatorActivityTest extends
 
   private ImportController.Listener startActivityAndGetDataImportListener() {
     ArgumentCaptor<ImportController.Listener> listenerArgCaptor =
-        LittleMock.<ImportController.Listener>createCaptor();
-    LittleMock.doNothing().when(mMockDataImportController).start(
-        LittleMock.<Context>anyObject(), listenerArgCaptor.capture());
+        ArgumentCaptor.forClass(ImportController.Listener.class);
+    doNothing().when(mMockDataImportController).start(
+        Mockito.<Context>anyObject(), listenerArgCaptor.capture());
 
     getActivity();
 

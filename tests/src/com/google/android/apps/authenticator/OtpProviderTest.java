@@ -16,15 +16,16 @@
 
 package com.google.android.apps.authenticator;
 
-import static com.google.testing.littlemock.LittleMock.doReturn;
-import static com.google.testing.littlemock.LittleMock.initMocks;
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 import com.google.android.apps.authenticator.AccountDb.OtpType;
 import com.google.android.apps.authenticator.testability.DependencyInjector;
-import com.google.testing.littlemock.Mock;
 
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;
+
+import org.mockito.Mock;
 
 import java.util.ArrayList;
 import java.util.Collection;

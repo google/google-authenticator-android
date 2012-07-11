@@ -16,24 +16,24 @@
 
 package com.google.android.apps.authenticator.timesync;
 
-import static com.google.testing.littlemock.LittleMock.createCaptor;
-import static com.google.testing.littlemock.LittleMock.doReturn;
-import static com.google.testing.littlemock.LittleMock.doThrow;
-import static com.google.testing.littlemock.LittleMock.initMocks;
-import static com.google.testing.littlemock.LittleMock.mock;
-import static com.google.testing.littlemock.LittleMock.never;
-import static com.google.testing.littlemock.LittleMock.reset;
-import static com.google.testing.littlemock.LittleMock.verify;
-import static com.google.testing.littlemock.LittleMock.verifyZeroInteractions;
+import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyZeroInteractions;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 import com.google.android.apps.authenticator.RunImmediatelyOnCallingThreadExecutor;
 import com.google.android.apps.authenticator.TotpClock;
 import com.google.android.apps.authenticator.Utilities;
-import com.google.testing.littlemock.ArgumentCaptor;
-import com.google.testing.littlemock.LittleMock;
-import com.google.testing.littlemock.Mock;
 
 import junit.framework.TestCase;
+
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
 
 import java.io.IOException;
 import java.util.concurrent.Executor;
@@ -179,24 +179,20 @@ public class SyncNowControllerTest extends TestCase {
   }
 
   private SyncNowController.Result verifyPresenterOnDoneInvoked() {
-    ArgumentCaptor<SyncNowController.Result> resultCaptor = createCaptor();
+    ArgumentCaptor<SyncNowController.Result> resultCaptor =
+        ArgumentCaptor.forClass(SyncNowController.Result.class);
     verify(mMockPresenter).onDone(resultCaptor.capture());
     return resultCaptor.getValue();
   }
 
   private void verifyTotpClockSetTimeCorrectionNotInvoked() {
-    verify(mMockTotpClock, never()).setTimeCorrectionMinutes(LittleMock.anyInt());
+    verify(mMockTotpClock, never()).setTimeCorrectionMinutes(anyInt());
   }
 
   private int verifyTotpClockSetTimeCorrectionInvoked() {
-    ArgumentCaptor<Integer> resultCaptor = createCaptor();
-    verify(mMockTotpClock).setTimeCorrectionMinutes(intCapture(resultCaptor));
+    ArgumentCaptor<Integer> resultCaptor = ArgumentCaptor.forClass(Integer.class);
+    verify(mMockTotpClock).setTimeCorrectionMinutes(resultCaptor.capture());
     return resultCaptor.getValue();
-  }
-
-  private static int intCapture(ArgumentCaptor<Integer> captor) {
-    captor.capture();
-    return 0;
   }
 
   private void withImmediateExecutors() {

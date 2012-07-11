@@ -21,6 +21,8 @@
     <uses-sdk android:minSdkVersion="7" />
     <instrumentation android:targetPackage="com.google.android.apps.authenticator2"
                      android:name="android.test.InstrumentationTestRunner" />
+    <instrumentation android:targetPackage="com.google.android.apps.authenticator2"
+                     android:name="com.google.android.apps.authenticator.MockitoWorkaroundForEclairInstrumentationTestRunner" />
     <application android:label="AuthenticatorTests">
       <uses-library android:name="android.test.runner" />
     </application>

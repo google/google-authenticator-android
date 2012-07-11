@@ -16,8 +16,8 @@
 
 package com.google.android.apps.authenticator.wizard;
 
-import static com.google.testing.littlemock.LittleMock.mock;
-import static com.google.testing.littlemock.LittleMock.verify;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 import com.google.android.apps.authenticator.AuthenticatorActivity;
 import com.google.android.apps.authenticator.TestUtilities;
