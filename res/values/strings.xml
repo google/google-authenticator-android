@@ -132,7 +132,7 @@
   <string name="opensource_preference_title">Open-source project</string>
 
   <!-- DO NOT TRANSLATE. URL of the Open-Source project's page. -->
-  <string name="opensource_page_url">http://code.google.com/p/google-authenticator/</string>
+  <string name="opensource_page_url">https://github.com/google/google-authenticator/</string>
 
   <!-- Preference title, used to view the terms of service from Google web page -->
   <string name="terms_preference_title">Terms of service</string>
