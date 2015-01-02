@@ -47,6 +47,11 @@ public class PasscodeGenerator {
   /** The number of previous and future intervals to check */
   private static final int ADJACENT_INTERVALS = 1;
 
+  /** Powers of 10 used to shorten the pin to the desired number of digits */
+  private static final int[] DIGITS_POWER
+      // 0 1  2   3    4     5      6       7        8         9
+      = {1,10,100,1000,10000,100000,1000000,10000000,100000000,1000000000};
+
   private final Signer signer;
   private final int codeLength;
 
@@ -151,7 +156,7 @@ public class PasscodeGenerator {
     int offset = hash[hash.length - 1] & 0xF;
     // Grab a positive integer value starting at the given offset.
     int truncatedHash = hashToInt(hash, offset) & 0x7FFFFFFF;
-    int pinValue = truncatedHash % (int) Math.pow(10, codeLength);
+    int pinValue = truncatedHash % DIGITS_POWER[codeLength];
     return padOutput(pinValue);
   }
 
