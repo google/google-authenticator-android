@@ -25,6 +25,11 @@
       android:targetClass="com.google.android.apps.authenticator.timesync.SyncNowActivity">
     </intent>
   </PreferenceScreen>
+  <EditTextPreference
+      android:defaultValue="0"
+      android:inputType="numberSigned"
+      android:key="timeCorrectionMinutes"
+      android:title="Adjustment in minutes" />
   <PreferenceScreen
     android:key="about"
     android:title="@string/timesync_about_feature_preference_title"
