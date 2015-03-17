@@ -19,4 +19,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        androidTestCompile "org.mockito:mockito-core:1.9.5"
+    }
 }
