@@ -59,6 +59,6 @@
   </style>
 
   <style name="AccountListWithVerificationCodesRowCountdownIndicator">
-    <item name="com.google.android.apps.authenticator2:color">@color/countdown_indicator</item>
+    <item name="color">@color/countdown_indicator</item>
   </style>
 </resources>

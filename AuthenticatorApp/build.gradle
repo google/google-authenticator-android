@@ -13,6 +13,19 @@ android {
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
 
+    productFlavors {
+        playStore {
+        }
+        openSource {
+            applicationId "com.google.android.apps.authenticator2.os"
+            testApplicationId "com.google.android.apps.authenticator2.tests.os"
+        }
+        openSourceDev {
+            applicationId "com.google.android.apps.authenticator2.osdev"
+            testApplicationId "com.google.android.apps.authenticator2.tests.osdev"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false

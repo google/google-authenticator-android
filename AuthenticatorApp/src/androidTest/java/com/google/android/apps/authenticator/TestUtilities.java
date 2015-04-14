@@ -22,6 +22,7 @@ import static org.mockito.Mockito.verify;
 
 import com.google.android.apps.authenticator.testability.DependencyInjector;
 import com.google.android.apps.authenticator.testability.StartActivityListener;
+import com.google.android.apps.authenticator2.BuildConfig;
 
 import android.app.Activity;
 import android.app.Instrumentation;
@@ -66,7 +67,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class TestUtilities {
 
-  public static final String APP_PACKAGE_NAME = "com.google.android.apps.authenticator2";
+  public static final String APP_PACKAGE_NAME = BuildConfig.APPLICATION_ID;
 
   /**
    * Timeout (milliseconds) when waiting for the results of a UI action performed by the code

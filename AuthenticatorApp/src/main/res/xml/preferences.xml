@@ -22,7 +22,7 @@
     android:summary="@string/timesync_preference_screen_summary"
     android:persistent="false">
     <intent
-      android:targetPackage="com.google.android.apps.authenticator2"
+      android:targetPackage="@string/app_package_name"
       android:targetClass="com.google.android.apps.authenticator.timesync.SettingsTimeCorrectionActivity">
     </intent>
   </PreferenceScreen>
@@ -32,7 +32,7 @@
     android:title="@string/about_preference_title"
     android:persistent="false">
     <intent
-      android:targetPackage="com.google.android.apps.authenticator2"
+      android:targetPackage="@string/app_package_name"
       android:targetClass="com.google.android.apps.authenticator.SettingsAboutActivity">
     </intent>
   </PreferenceScreen>
