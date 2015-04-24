@@ -69,7 +69,7 @@ public class AccountDb {
   // @VisibleForTesting
   SQLiteDatabase mDatabase;
 
-  private static final String LOCAL_TAG = "GoogleAuthenticator.AccountDb";
+  private static final String LOCAL_TAG = "AccountDb";
 
   /**
    * Types of secret keys.

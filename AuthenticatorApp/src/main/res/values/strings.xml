@@ -135,19 +135,19 @@
   <string name="opensource_preference_title">Open-source project</string>
 
   <!-- DO NOT TRANSLATE. URL of the Open-Source project's page. -->
-  <string name="opensource_page_url">https://github.com/google/google-authenticator/</string>
+  <string name="opensource_page_url" translatable="false">https://github.com/google/google-authenticator/</string>
 
   <!-- Preference title, used to view the terms of service from Google web page -->
   <string name="terms_preference_title">Terms of service</string>
 
   <!-- DO NOT TRANSLATE. URL of the Terms of Service page. -->
-  <string name="terms_page_url">http://m.google.com/tospage</string>
+  <string name="terms_page_url" translatable="false">http://m.google.com/tospage</string>
 
   <!-- Preference title, used to view the privacy policy from Google web page -->
   <string name="privacy_preference_title">Privacy policy</string>
 
   <!-- DO NOT TRANSLATE. URL of the Privacy Policy page. -->
-  <string name="privacy_page_url">http://www.google.com/policies/privacy/</string>
+  <string name="privacy_page_url" translatable="false">http://www.google.com/policies/privacy/</string>
 
   <!-- Information displayed on the check-key screen, explaining use of the integrity check -->
   <string name="check_code">
