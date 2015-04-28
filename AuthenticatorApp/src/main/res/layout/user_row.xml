@@ -17,8 +17,8 @@
 <!-- With the exception of UserRowView, this file should be kept in sync
 with user_row_legacy.xml -->
 <com.google.android.apps.authenticator.UserRowView xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res/com.google.android.apps.authenticator2"
-  android:orientation="vertical" android:layout_width="fill_parent"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
   android:layout_height="wrap_content">
 
   <TextView android:id="@+id/current_user" android:layout_width="wrap_content"
