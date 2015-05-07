@@ -16,7 +16,7 @@ the [Initiative for Open Authentication (OATH)](http://www.openauthentication.or
 (which is unrelated to [OAuth](http://oauth.net/ OAuth)). 
 
 This project contains the Android app. All other apps, and the PAM module, are in
-[a separate project](https://github.com/google/google-authenticator-android).
+[a separate project](https://github.com/google/google-authenticator).
 
 This implementation supports the HMAC-Based One-time Password (HOTP) algorithm
 specified in [RFC 4226](https://tools.ietf.org/html/rfc4226) and the Time-based
