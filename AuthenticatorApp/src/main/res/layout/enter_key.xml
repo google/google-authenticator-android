@@ -30,7 +30,7 @@
       <EditText android:id="@+id/key_value" android:layout_marginTop="5dip"
         android:layout_width="fill_parent" android:layout_height="wrap_content"
         android:hint="@string/enter_key_hint"
-        android:singleLine="true" android:inputType="textNoSuggestions"/>
+        android:singleLine="true" android:inputType="textNoSuggestions|textVisiblePassword"/>
       <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_marginTop="5dip"
         android:id="@+id/type_choice" android:prompt="@string/type_prompt" />
