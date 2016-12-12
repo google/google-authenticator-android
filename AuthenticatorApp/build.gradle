@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.google.android.apps.authenticator2"
