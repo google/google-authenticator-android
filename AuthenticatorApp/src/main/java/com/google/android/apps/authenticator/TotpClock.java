@@ -85,7 +85,7 @@ public class TotpClock implements SharedPreferences.OnSharedPreferenceChangeList
       mCachedCorrectionMinutes = null;
     }
   }
-  
+
   public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
     if (key.equals(PREFERENCE_KEY_OFFSET_MINUTES)) {
       // Invalidate the cache
