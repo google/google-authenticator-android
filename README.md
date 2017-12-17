@@ -18,6 +18,8 @@ the [Initiative for Open Authentication (OATH)](http://www.openauthentication.or
 This project contains the Android app. All other apps, and the PAM module, are in
 [a separate project](https://github.com/google/google-authenticator).
 
+There is by design NO account backups in any of the apps.
+
 This implementation supports the HMAC-Based One-time Password (HOTP) algorithm
 specified in [RFC 4226](https://tools.ietf.org/html/rfc4226) and the Time-based
 One-time Password (TOTP) algorithm specified in [RFC 6238](https://tools.ietf.org/html/rfc6238).
