@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    buildToolsVersion '27.0.3'
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
@@ -14,14 +14,18 @@ android {
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
 
+    flavorDimensions 'release'
     productFlavors {
         playStore {
+            dimension 'release'
         }
         openSource {
+            dimension 'release'
             applicationId "com.google.android.apps.authenticator2.os"
             testApplicationId "com.google.android.apps.authenticator2.tests.os"
         }
         openSourceDev {
+            dimension 'release'
             applicationId "com.google.android.apps.authenticator2.osdev"
             testApplicationId "com.google.android.apps.authenticator2.tests.osdev"
         }
@@ -39,8 +43,8 @@ android {
     }
 
     dependencies {
-        androidTestCompile "org.mockito:mockito-core:1.9.5"
-        androidTestCompile "com.google.dexmaker:dexmaker:1.2"
-        androidTestCompile "com.google.dexmaker:dexmaker-mockito:1.2"
+        androidTestImplementation "org.mockito:mockito-core:1.9.5"
+        androidTestImplementation "com.google.dexmaker:dexmaker:1.2"
+        androidTestImplementation "com.google.dexmaker:dexmaker-mockito:1.2"
     }
 }
