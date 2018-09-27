@@ -18,7 +18,7 @@
           package="com.google.android.apps.authenticator2"
           android:versionCode="21" android:versionName="2.21">
 
-  <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="14" />
+  <uses-sdk android:targetSdkVersion="14" />
 
   <uses-permission android:name="android.permission.VIBRATE" />
   <uses-permission android:name="android.permission.INTERNET" />
