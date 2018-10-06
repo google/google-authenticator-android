@@ -4,8 +4,10 @@ Copyright 2010 Google Inc.
 
 https://github.com/google/google-authenticator-android
 
-This project is an older fork of the one on the Play store. It's an older
-version that doesn't get changes synced to it from the Play store version.
+This project is an older fork of
+[the one on the Play store](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2).
+It's an older version that doesn't get changes synced to it from the
+[Play store version](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2).
 
 Description
 -----------
