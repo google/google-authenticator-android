@@ -342,6 +342,7 @@ public class AccountDb {
 
   public void delete(String email) {
     mDatabase.delete(TABLE_NAME, whereClause(email), null);
+    mDatabase.execSQL("VACUUM");
   }
 
   /**
