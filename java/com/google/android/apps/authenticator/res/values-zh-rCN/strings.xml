@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google 身份验证器"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"身份验证器"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"输入帐号详情"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"添加"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"工作原理"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"设置"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"设置"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"帮助与反馈"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"在日间模式下查看"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"在夜间模式下查看"</string>
+    <string name="button_next" msgid="2321252361372851972">"下一步"</string>
+    <string name="button_back" msgid="414120249698283380">"上一步"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"帐号名"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"您的密钥"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"密钥值太短"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"密钥值中含有非法字符"</string>
+    <string name="error_title" msgid="1784361744549854479">"错误"</string>
+    <string name="error_uri" msgid="8889749448317216536">"密钥无法识别。"</string>
+    <string name="error_qr" msgid="1076904454315180481">"无法解读 QR 码。"</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"无法添加帐号。请与 TechStop 联系以获得帮助。"</string>
+    <string name="secret_saved" msgid="2201025202465443226">"密钥已保存"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"保存以下帐号的密钥："</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"无法保存空密钥"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"在登录期间，如果要求输入验证码，请输入此验证码"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"完整性校验值"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"检查密钥值"</string>
+    <string name="update_button" msgid="288114907177363159">"更新"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"不用了"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"开放源代码许可"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"服务条款"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"隐私权政策"</string>
+    <string name="check_code" msgid="8970489904648838257">"为确保 <xliff:g id="ACCOUNT">%1$s</xliff:g> 的密钥值准确无误，请核对下列值是否与服务器提供的完整性校验值一致：&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"一般安全异常"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"解码异常"</string>
+    <string name="submit" msgid="1518558163262431303">"保存"</string>
+    <string name="cancel" msgid="5705561042616477184">"取消"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"删除"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"删除帐号"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"是否删除 <xliff:g id="ACCOUNT">%1$s</xliff:g>？"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"删除该帐号会&lt;b&gt;导致您无法&lt;/b&gt;生成验证码，但&lt;b&gt;不会&lt;/b&gt;关闭双重身份验证。您可能会因此无法登录自己的帐号。&lt;p&gt;在删除该帐号之前，请执行以下操作：&lt;ul&gt;&lt;li&gt;关闭该帐号的两双重身份验证功能，或者&lt;/li&gt;&lt;li&gt;确保您可以通过其他方法生成验证码。&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"删除该帐号会&lt;b&gt;导致您无法&lt;/b&gt;生成验证码，但&lt;b&gt;不会&lt;/b&gt;关闭两步验证。您可能会因此无法登录自己的帐号。&lt;p&gt;在删除该帐号之前，请执行以下操作：&lt;ul&gt;&lt;li&gt;关闭该帐号的两步验证，或者&lt;/li&gt;&lt;li&gt;确保您可以通过其他方法生成验证码。&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"重命名"</string>
+    <string name="error_exists" msgid="9037595140877350695">"抱歉，此名称已在使用。"</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"复制到剪贴板"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"已将验证码复制到剪贴板。"</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP 代码"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"获取代码"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"确定"</string>
+    <string name="close" msgid="3805915606074588527">"关闭"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"密钥类型"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"基于时间"</item>
+    <item msgid="5212912099902129712">"基于计数器"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"工作原理"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"跳过"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"下一步"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"完成"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"登录 Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"不论何时登录 Google，您都会像平常一样输入用户名和密码。"</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"当系统要求您提供验证码时，您可以通过该应用获得。"</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"确保帐号安全且由您自己掌控"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"当您在信任的设备上登录时，可以告诉我们不再要求在该设备上输入验证码。"</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"即便如此，您的帐号仍将得到保护，因为当您（或其他人）在其他设备上登录您的帐号时，系统还是会要求输入验证码"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"准备好添加帐号了吗？"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"请注意，您可以随时访问 g.co/2sv 更新自己的设置"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"更新您的电话号码"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"创建其他备用方式"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"停用两步验证"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"帐号已添加"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"当系统要求您输入验证码时，您可在此处获取。验证码每次都不相同，因此您无需记住它。"</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"添加帐号"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"为您的 Google 帐号（或其他帐号）开启两步验证后，您需要"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"您的密码"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"该应用将为您生成的验证码"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"未能对帐号重新排序，请稍后重试。"</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"要扫描条形码，我们需要获得相机使用权限。"</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"若要扫描条形码，请允许身份验证器使用设备的相机"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"您的设备空间不足"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"您需要删除一些文件，然后才能使用条形码扫描器"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"条形码扫描器现在无法使用"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"您的设备上没有相机"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"身份验证器需要使用相机来扫描条形码"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"请将条形码放置在红线内"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"更新 &lt;b&gt;Google Play 服务&lt;/b&gt;后才能使用条形码扫描器"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"需更新 &lt;b&gt;Google Play 服务&lt;/b&gt;，才能使用安全密钥"</string>
+</resources>

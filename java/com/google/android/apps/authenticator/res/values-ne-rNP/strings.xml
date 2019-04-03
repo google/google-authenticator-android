@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google प्रमाणक"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"प्रमाणक"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"खाताका विवरणहरू प्रविष्ट गर्नुहोस्"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"थप गर्नुहोस्"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"यसले कसरी कार्य गर्दछ"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"सेटिङ्स"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"सेटिङ्स"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"मद्दत र प्रतिक्रिया"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"फिक्का मोडमा हेर्नुहोस्"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"गाढा मोडमा हेर्नुहोस्"</string>
+    <string name="button_next" msgid="2321252361372851972">"अर्को"</string>
+    <string name="button_back" msgid="414120249698283380">"पछाडि"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"खाताको नाम"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"तपाईंको सँचो"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"कुञ्जीमान ज्यादैै छोटो छ।"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"कुञ्जी मूल्यमा अवैध अक्षर छन्"</string>
+    <string name="error_title" msgid="1784361744549854479">"त्रुटि"</string>
+    <string name="error_uri" msgid="8889749448317216536">"कुञ्जी चिनिएन।"</string>
+    <string name="error_qr" msgid="1076904454315180481">"क्यूआर कोडको ब्याख्या गर्न सकिदैन।"</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"खाता थप गर्न सकिन्न। सहायताको लागि टेकसपमा सम्पर्क गर्नुहोस्।"</string>
+    <string name="secret_saved" msgid="2201025202465443226">"गोप्यता सुरक्षित"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"कुञ्जीका लागि सुरक्षित गर्नुहोस्"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"खाली गोप्यता सुरक्षित गर्न सकिंदैन"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"यो पुष्टि कोड साइन इन गर्ने क्रममा आवश्यक हुँदा प्रविष्ट गर्नुहोस्"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"अखण्डता जाँच संख्या"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"कुञ्जी मान जाँच गर्नुहोस्"</string>
+    <string name="update_button" msgid="288114907177363159">"अद्यावधिक गर्नुहोस्"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"पर्दैन, धन्यवाद"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"खुल्ला स्रोत लाईसेन्स"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"सेवाका शर्तहरु"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"गोपनीयता नीति"</string>
+    <string name="check_code" msgid="8970489904648838257">"तपाईं सँग <xliff:g id="ACCOUNT">%1$s</xliff:g>को सहि कुञ्जी संख्या छ भनेर जाँच गर्नाका लागि, यहाँको संख्या र सर्भर बाट प्राप्त अखण्ड संख्या सँग मेल खान्छ भनेर पुष्टि गर्नहोस्;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"सामान्य सुरक्षा अपवाद"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"डिकोडिङ्गका अपवाद"</string>
+    <string name="submit" msgid="1518558163262431303">"बचत गर्नुहोस्"</string>
+    <string name="cancel" msgid="5705561042616477184">"रद्द गर्ने"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"हटाउनुहोस्"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"खाता हटाउनुहोस्"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> हटाउनुहुन्छ ?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"यो खाता हटाउँनाले तपाईंको &lt;b&gt;आफ्नो क्षमता हट्नेछ &lt;/b&gt; कोडहरू उत्पादन गर्नाका निम्ति, त्यैपनि, यसले &lt;b&gt;not&lt;/b&gt;२-चरण प्रमाणीकरण रद्द गर्नेछ। यसले गर्दा तपाईंलाई आफ्नो खातामा साइन ईन गर्न बचाउनेछ।  &lt;p&gt; हटाउनु भन्दा अगाडी &lt;ul&gt; &lt;li&gt; यो खाताको २-चरण प्रमाणीकरण रद्द गर्नुहोला। &lt;/li&gt; &lt;li&gt;तपाईंसँग अतिरिक्त कोडहरू उत्पादन गर्ने बैकल्पिक मेकानिजम भएको निश्चित गर्नुहोस्।&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"यो खाता हटाउँनाले तपाईंको &lt;b&gt;आफ्नो क्षमता हट्नेछ &lt;/b&gt; कोडहरू उत्पादन गर्नाका निम्ति, त्यैपनि, यसले &lt;b&gt;not&lt;/b&gt;२-चरण प्रमाणीकरण रद्द गर्नेछ। यसले गर्दा तपाईंलाई आफ्नो खातामा साइन ईन गर्न बचाउनेछ।  &lt;p&gt; हटाउनु भन्दा अगाडी &lt;ul&gt; &lt;li&gt; यो खाताको २-चरण प्रमाणीकरण रद्द गर्नुहोला। &lt;/li&gt; &lt;li&gt;तपाईंसँग अतिरिक्त कोडहरू उत्पादन गर्ने बैकल्पिक मेकानिजम भएको निश्चित गर्नुहोस्।&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"पुन:नामाकरण गर्नुहोस्"</string>
+    <string name="error_exists" msgid="9037595140877350695">"माफ गर्नुहोला, त्यो नाम पहिले देखि नै प्रयोगमा छ।"</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"क्लिपबोर्डमा प्रतिलिपि बनाउनुहोस्"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"क्लिपबोर्डमा कपि गरिएको रुजु कोड"</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP Code"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"कोड प्राप्त गर्नुहोस्"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"ठिक"</string>
+    <string name="close" msgid="3805915606074588527">"बन्द गर्नुहोस्"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"कुञ्जीका प्रकार"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"समयमा आधारित"</item>
+    <item msgid="5212912099902129712">"काउण्टर आधारित"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"यसले यसरी काम गर्छ"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"छाड्नुहोस्"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"अर्को"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"सम्पन्न भयो"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google मा साइन इन गर्नुहोस्"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"तपाईंले जहिले पनि Google मा साइन इन गर्दा सदा झैँ आफ्नो प्रयोगकर्ता नाम र पासवर्ड प्रविष्ट गर्नुहुनेछ।"</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"तपाईंसँग कुनै कोड मागियो भने तपाईं यस अनुप्रयोगबाट उक्त कोड प्राप्त गर्न सक्नुहुनेछ।"</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"सुरक्षित र नियन्त्रणमा रहनुहोस्"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"तपाईंले आफूलाई विश्वसनीय लाग्ने कुनै यन्त्रमार्फत साइन इन गर्दा तपाईं हामीलाई उक्त यन्त्रमा कोड नमाग्न भन्न सक्नुहुन्छ।"</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"तपाईंले (वा अरू कसैले) अन्य कम्प्युटरहरूबाट तपाईंको खातामा साइन इन गर्न खोज्दा हामीले कोड माग्ने हुनाले तपाईं अझै पनि सुरक्षित रहनुहुनेछ।"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"खाता थप्न तयार हुनुहुन्छ?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"तपाईंले जुन सुकै बेला आफ्ना सेटिङहरूलाई g.co/2sv मा गई अद्यावधिक गर्न सक्नुहुन्छ भन्ने कुरा नबिर्सनुहोस्"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"आफ्नो फोन नम्बर अद्यावधिक गर्ने"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"ब्याकअप सम्बन्धी अन्य विकल्पहरू सिर्जना गर्ने"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"२-चरण प्रमाणीकरणलाई निष्क्रिय पार्नुहोस्"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"खाता थपियो"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"तपाईंसँग प्रमाणीकरण कोड मागियो भने यहाँबाट प्राप्त गर्नुहोस्। यो कोड बारम्बार परिवर्तन हुने भएकाले यसलाई सम्झिनु पर्दैन।"</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"खाता थप्नुहोस्"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"तपाईंले आफ्नो Google खाताको (वा अन्य कुनै खाताहरूको) २ चरण प्रमाणीकरण सक्रिय गरेपछि तपाईंलाई निम्न कुराको आवश्यकता पर्छ"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"तपाईको पासवर्ड"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"यस अनुप्रयोगले तपाईंका लागि उत्पन्न गर्ने कोड"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"खाताहरू पुन: क्रमबद्ध गर्न सकिएन। कृपया फेरि प्रयास गर्नुहोस्।"</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"बारकोडहरू स्क्यान गर्न हामीलाई क्यामेरा सम्बन्धी अनुमति चाहिन्छ।"</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"तपाईं बारकोडहरू स्क्यान गर्न चाहनुहुन्छ भने प्रमाणकर्तालाई आफ्नो यन्त्रको क्यामेराको प्रयोग गर्न दिनुहोस्"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"तपाईंको यन्त्रमा पर्याप्त खाली ठाउँ छैन"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"यस बारकोड स्क्यानरको प्रयोग गर्न सक्नु अघि तपाईंले केही फाइलहरू मेट्नु पर्नेछ"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"अहिले बारकोड स्क्यानर उपलब्ध छैन"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"तपाईंको यन्त्रमा कुनै क्यामेरा छैन"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"बारकोडहरू स्क्यान गर्न प्रमाणकर्तालाई कुनै क्यामेरा चाहिन्छ"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"बारकोडलाई रातो रेखा भित्र पार्नुहोस्"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"उक्त बारकोड स्क्यानरको प्रयोग गर्न &lt;b&gt;Google Play Services&lt;/b&gt; लाई अद्यावधिक गर्नुहोस्"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"सुरक्षा साँचो प्रयोग गर्न &lt;b&gt;Google Play Services&lt;/b&gt; लाई अद्यावधिक गर्नुहोस्"</string>
+</resources>

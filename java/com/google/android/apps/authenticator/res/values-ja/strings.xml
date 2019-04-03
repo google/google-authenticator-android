@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google認証システム"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"認証システム"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"アカウント情報の入力"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"追加"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"仕組み"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"設定"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"設定"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"ヘルプとフィードバック"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"ライトモードで表示"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"ダークモードで表示"</string>
+    <string name="button_next" msgid="2321252361372851972">"次へ"</string>
+    <string name="button_back" msgid="414120249698283380">"戻る"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"アカウント名"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"キー"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"キーの値が短すぎます"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"キーの値に無効な文字が入力されています"</string>
+    <string name="error_title" msgid="1784361744549854479">"エラー"</string>
+    <string name="error_uri" msgid="8889749448317216536">"キーを認識できません。"</string>
+    <string name="error_qr" msgid="1076904454315180481">"QRコードを解釈できません。"</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"アカウントを追加できません。詳しくはTechStopにお問い合わせください。"</string>
+    <string name="secret_saved" msgid="2201025202465443226">"シークレットを保存しました"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"キーを保存:"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"空のシークレットは保存できません"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"ログイン時に確認コードの入力を求められたら、このコードを入力してください"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"完全性チェック値"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"キーの値を確認"</string>
+    <string name="update_button" msgid="288114907177363159">"更新"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"更新しない"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"オープンソースライセンス"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"利用規約"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"プライバシーポリシー"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g>のキー値が正しいことを確認するには、サーバーから受け取った完全性チェック値と、ここに表示されている値とが一致していることを確認してください:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"一般セキュリティ例外"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"デコード例外"</string>
+    <string name="submit" msgid="1518558163262431303">"保存"</string>
+    <string name="cancel" msgid="5705561042616477184">"キャンセル"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"削除"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"アカウントを削除"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g>を削除しますか？"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"このアカウントを削除するとコード&lt;b&gt;生成機能も削除&lt;/b&gt;されますが、2要素認証プロセスはOFFに&lt;b&gt;なりません&lt;/b&gt;。このため、アカウントにログインできなくなる場合があります。&lt;p&gt; 削除する前に次のことを行ってください: &lt;ul&gt; &lt;li&gt;このアカウントの2要素認証プロセスをOFFにする、または&lt;/li&gt; &lt;li&gt;コードを生成する別の手段を確保する&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"このアカウントを削除するとコード&lt;b&gt;生成機能も削除&lt;/b&gt;されますが、2段階認証プロセスはOFFに&lt;b&gt;なりません&lt;/b&gt;。このため、アカウントにログインできなくなる場合があります。&lt;p&gt; 削除する前に次のことを行ってください: &lt;ul&gt; &lt;li&gt;このアカウントの2段階認証プロセスをOFFにする&lt;/li&gt; &lt;li&gt;コードを生成する別の手段を確保する&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"名前を変更"</string>
+    <string name="error_exists" msgid="9037595140877350695">"その名前は既に使用されています。"</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"クリップボードにコピー"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"確認コードがクリップボードにコピーされました。"</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP コード"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"コードを取得"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"OK"</string>
+    <string name="close" msgid="3805915606074588527">"閉じる"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"キーの種類"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"時間ベース"</item>
+    <item msgid="5212912099902129712">"カウンタベース"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"仕組み"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"スキップ"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"次へ"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"完了"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google へのログイン"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Google にログインするたびに、通常どおりユーザー名とパスワードを入力します。"</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"コードの入力を求められたら、このアプリからコードを取得できます。"</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"安全かつ便利に"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"信頼できる端末でログインするときは、その端末ではコードの入力が不要になるように設定できます。"</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"その場合でも、他の端末からあなた（または別のユーザー）がアカウントにログインしようとするとコードの入力が求められるため、アカウントは保護されます"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"アカウントを追加しますか？"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"設定の変更はいつでも g.co/2sv で行えます"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"電話番号を更新する"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"他のバックアップ オプションを作成する"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"2 段階認証プロセスを無効にする"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"アカウントを追加しました"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"確認コードを求められたら、こちらで取得してください。コードは頻繁に変更されるので、記憶する必要はありません。"</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"アカウントを追加"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"お使いの Google アカウント（や他のアカウント）で 2 段階認証プロセスを有効にすると、次の情報が必要になります:"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"パスワード"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"このアプリが生成するコード"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"アカウントを並べ替えられませんでした。しばらくしてからもう一度お試しください。"</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"バーコードをスキャンするには、カメラの権限が必要です。"</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"バーコードのスキャン時に端末のカメラを使用することを認証システムに許可します"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"端末の空き容量が足りません"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"バーコード リーダーを使用するには、ファイルを削除する必要があります"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"現在、バーコード リーダーは利用できません"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"この端末にはカメラがありません"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"認証システムでバーコードをスキャンするにはカメラが必要です"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"赤線内にバーコードを配置してください"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"バーコード リーダーを使用するには、&lt;b&gt;Google Play 開発者サービス&lt;/b&gt;を更新してください"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"セキュリティ キーを使用するには &lt;b&gt;Google Play 開発者サービス&lt;/b&gt; を更新してください"</string>
+</resources>

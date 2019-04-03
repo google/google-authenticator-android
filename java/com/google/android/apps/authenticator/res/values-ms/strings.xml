@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="3762128630776563361">"Masukan akaun manual"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Tambah"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Bagaimana ia berfungsi"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Tetapan"</string>
+    <string name="about_preference_title" msgid="2797539814683187124">"Perihal"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Tetapan"</string>
+    <string name="button_next" msgid="2321252361372851972">"Seterusnya"</string>
+    <string name="button_back" msgid="414120249698283380">"Kembali"</string>
+    <string name="enter_account_label" msgid="1488259241384211529">"Masukkan nama akaun"</string>
+    <string name="enter_key_hint" msgid="480564521423532185">"Masukkan kunci anda"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Nilai kunci terlalu pendek"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Nilai kunci mempunyai aksara tidak dibenarkan"</string>
+    <string name="error_title" msgid="1784361744549854479">"Ralat"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Kunci tidak dikenali."</string>
+    <string name="error_qr" msgid="1076904454315180481">"Tidak dapat mentafsirkan kod QR."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Tidak boleh menambah akaun. Sila hubungi TechStop untuk mendapatkan bantuan."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Rahsia disimpan"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Simpan kunci untuk"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Tidak boleh menyimpan rahsia kosong"</string>
+    <string name="enter_pin" msgid="2238539410253130912">"Masukkan kod pengesahan ini jika diminta semasa mendaftar masuk ke akaun:"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Nilai semakan integriti"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Semak nilai kunci"</string>
+    <string name="about_preference_screen_title" msgid="8056864904503664711">"Perihal"</string>
+    <string name="version_preference_title" msgid="5388130414499892219">"Versi"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Lesen sumber terbuka"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Syarat perkhidmatan"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Dasar privasi"</string>
+    <string name="check_code" msgid="8970489904648838257">"Untuk memastikan anda mempunyai nilai kunci yang betul untuk <xliff:g id="ACCOUNT">%1$s</xliff:g>, sahkan bahawa nilai di sini sepadan dengan nilai semakan integriti yang disediakan oleh pelayan: &lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Pengecualian keselamatan umum"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Pengecualian penyahkodan"</string>
+    <string name="submit" msgid="1518558163262431303">"Simpan"</string>
+    <string name="cancel" msgid="5705561042616477184">"Batal"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Alih keluar"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Alih keluar akaun"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"Alih keluar <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Mengalih keluar akaun ini akan turut &lt;b&gt;membuang kebolehan anda&lt;/b&gt; untuk menjanakan kod, walau bagaimanapun, ia &lt;b&gt;tidak&lt;/b&gt; akan mematikan pengesahan 2 faktor. Tindakan ini mungkin menghalang anda daripada melog masuk ke akaun anda. &lt;p&gt; Sebelum mengalih keluar: &lt;ul&gt; &lt;li&gt;Matikan pengesahan 2 faktor untuk akaun ini atau&lt;/li&gt; &lt;li&gt;Pastikan anda mempunyai mekanisme lain untuk menjanakan kod.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Pengalihan keluar akaun ini akan &lt;b&gt;membuang kebolehan anda&lt;/b&gt; untuk menjanakan kod, walau bagaimanapun, ia &lt;b&gt;tidak&lt;/b&gt; akan mematikan pengesahan 2 langkah. Tindakan ini mungkin menghalang anda daripada melog masuk ke akaun anda. &lt;p&gt; Sebelum mengalih keluar: &lt;ul&gt; &lt;li&gt;Matikan pengesahan 2 langkah untuk akaun ini, atau&lt;/li&gt; &lt;li&gt;Pastikan anda mempunyai mekanisme lain untuk menjanakan kod.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Namakan semula"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Maaf, nama itu sudah digunakan."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Salin ke papan keratan"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Kod pengesahan disalin ke papan klip."</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Dapatkan kod"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"OK"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Jenis kunci"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Berdasarkan masa"</item>
+    <item msgid="5212912099902129712">"Berdasarkan kaunter"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="1090130717731829850">"Melog masuk ke Google"</string>
+    <string name="welcome_page_details" msgid="1494011764531759030">"Dengan pengesahan 2 langkah, anda memerlukan perkara berikut setiap kali anda melog masuk ke Akaun Google:"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Kata laluan anda"</string>
+    <string name="welcome_page_details_list_entry2" msgid="4081957482817856275">"Kod yang dijanakan oleh apl ini untuk anda"</string>
+</resources>

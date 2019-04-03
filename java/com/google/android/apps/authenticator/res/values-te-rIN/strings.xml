@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"ఖాతా వివరాలు నమోదు చేయండి"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"జోడించు"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"ఇది ఎలా పనిచేస్తుంది"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"సెట్టింగ్‌లు"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"సెట్టింగ్‌లు"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"సహాయం &amp; అభిప్రాయం"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"లేత రంగు మోడ్‌లో వీక్షించండి"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"ముదురు రంగు మోడ్‌లో వీక్షించండి"</string>
+    <string name="button_next" msgid="2321252361372851972">"తదుపరి"</string>
+    <string name="button_back" msgid="414120249698283380">"వెనుకకు"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"ఖాతా పేరు"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"మీ కీ"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"కీ విలువ చాలా చిన్నదిగా ఉంది"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"కీ విలువ చట్టవిరుద్దమైన అక్షరాన్ని కలిగివుంది"</string>
+    <string name="error_title" msgid="1784361744549854479">"లోపం"</string>
+    <string name="error_uri" msgid="8889749448317216536">"కీ గుర్తించబడలేదు."</string>
+    <string name="error_qr" msgid="1076904454315180481">"QR కోడ్ అనువదించబడలేదు."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"ఖాతాను జోడించడం సాధ్యపడదు. దయచేసి సహాయం కోసం TechStopను సంప్రదించండి."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"రహస్యం సేవ్ చేయబడింది"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"దీని కోసం కీని సేవ్ చేయండి"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"ఖాళీ రహస్యం సేవ్ చేయబడదు"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"సైన్-ఇన్ చేసే సమయంలో అడిగినప్పుడు ధృవీకరణ కోడ్‌ను నమోదు చేయండి"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"సమగ్రత తనిఖీ విలువ"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"కీ విలువ తనిఖీ చేయండి"</string>
+    <string name="update_button" msgid="288114907177363159">"నవీకరించు"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"వద్దు, ధన్యవాదాలు"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"ఓపెన్-సోర్స్ లైసెన్స్‌లు"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"సేవా నిబంధనలు"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"గోప్యతా విధానం"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g> కోసం మీరు సరైన కీ విలువ కలిగి ఉన్నారా అని తనిఖీ చేసుకోవడానికి ఇక్కడున్న విలువ సర్వర్ అందించిన సమగ్రత తనిఖీ విలువతో సరిపోతుందని ధృవీకరించుకోండి:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"సాధారణ భద్రత మినహాయింపు"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"డీకోడింగ్ మినహాయింపు"</string>
+    <string name="submit" msgid="1518558163262431303">"సేవ్ చేయి"</string>
+    <string name="cancel" msgid="5705561042616477184">"రద్దు చేయి"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"తీసివేయి"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"ఖాతాను తీసివేయి"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g>ను తీసివేయాలా?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"ఈ ఖాతాను తీసివేయడం వలన కోడ్‌లను సృష్టించే &lt;b&gt;మీ సామర్థ్యం పోతుంది&lt;/b&gt;, అయినప్పటికీ, ఇది 2-కారక ప్రమాణీకరణను ఆఫ్ &lt;b&gt;చేయదు&lt;/b&gt;. ఇది మీ ఖాతాకు సైన్ ఇన్ చేయకుండా నివారించవచ్చు. &lt;p&gt; తీసివేసే ముందు: &lt;ul&gt; &lt;li&gt;ఈ ఖాతాకు 2-కారక ప్రమాణీకరణను ఆఫ్ చేయండి, లేదా&lt;/li&gt; &lt;li&gt;కోడ్‌లను సృష్టించడానికి మీకు ప్రత్యామ్నాయ విధానం ఉన్నదని నిర్ధారించుకోండి.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"ఈ ఖాతాను తీసివేయడం వలన కోడ్‌లను సృష్టించే &lt;b&gt;మీ సామర్థ్యం పోతుంది&lt;/b&gt;, అయినప్పటికీ, ఇది 2-దశల ధృవీకరణను ఆఫ్ &lt;b&gt;చేయదు&lt;/b&gt;. ఇది మీ ఖాతాకు సైన్ ఇన్ చేయకుండా నివారించవచ్చు. &lt;p&gt; తీసివేసే ముందు: &lt;ul&gt; &lt;li&gt;ఈ ఖాతాకు 2-దశల ధృవీకరణను ఆఫ్ చేయండి, లేదా&lt;/li&gt; &lt;li&gt;కోడ్‌లను సృష్టించడానికి మీకు ప్రత్యామ్నాయ విధానం ఉన్నదని నిర్ధారించుకోండి.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"పేరుమార్చు"</string>
+    <string name="error_exists" msgid="9037595140877350695">"క్షమించండి, ఆ పేరు ఇప్పటికే ఉపయోగంలో ఉంది."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"క్లిప్ బోర్డ్‌కు కాపీ చేయి"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"ధృవీకరణ కోడ్ క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP కోడ్"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"కోడ్‌ని పొందండి"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"సరే"</string>
+    <string name="close" msgid="3805915606074588527">"మూసివేయి"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"కీ రకం"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"సమయ ఆధారితం"</item>
+    <item msgid="5212912099902129712">"కౌంటర్ ఆధారితం"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"ఇది పని చేసే విధానం"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"దాటవేయి"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"తదుపరి"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"పూర్తయింది"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Googleకు సైన్ ఇన్ చేయడం"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"మీరు Googleకు సైన్ ఇన్ చేసినప్పుడల్లా, మీరు ఎప్పటిలాగే మీ వినియోగదారు పేరును మరియు పాస్‌వర్డ్‌ను నమోదు చేస్తారు."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"మిమ్మల్ని కోడ్ కోసం అడిగినప్పుడు మీరు ఈ అనువర్తనం నుండి కోడ్‌ను పొందగలుగుతారు."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"సురక్షితంగా &amp; నియంత్రణలో ఉండండి"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"మీరు విశ్వసించే పరికరంతో మీరు సైన్ ఇన్ చేసినప్పుడు, ఆ పరికరంలో కోడ్‌లను అడగడం ఆపండి అని మీరు మాకు చెప్పవచ్చు."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"మీరు (లేదా ఇంకెవరైనా) ఇతర పరికరాల నుండి మీ ఖాతాకు సైన్ ఇన్ చేయడానికి ప్రయత్నించినప్పుడు మేము కోడ్‌ల కోసం అడుగుతాము కనుక మీరు ఇప్పటికీ రక్షించబడతారు"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"ఖాతా జోడించడానికి సిద్ధమా?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"గుర్తుంచుకోండి, g.co/2svలో మీరు ఎప్పుడైనా సెట్టింగ్‌లను నవీకరించవచ్చు"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"మీ ఫోన్ నంబర్‌లను నవీకరించండి"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"ఇతర బ్యాకప్ ఎంపికలను సృష్టించండి"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"2-దశల ధృవీకరణను ఆఫ్ చేస్తుంది"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"ఖాతా జోడించబడింది"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"మిమ్మల్ని ధృవీకరణ కోడ్ కోసం అడిగినప్పుడు, దాన్ని ఇక్కడ పొందండి. కోడ్ తరచుగా మారుతూ ఉంటుంది, కనుక దాన్ని గుర్తుంచుకోవాల్సిన అవసరం లేదు."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"ఖాతాను జోడించు"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"మీ Google ఖాతా (లేదా ఇతర ఖాతాలు) కోసం మీరు 2-దశల ధృవీకరణ ఆన్ చేసిన తర్వాత, మీకు అవసరం అవుతుంది"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"మీ పాస్‌వర్డ్"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"మీ కోసం ఈ అనువర్తనం అందించే కోడ్"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"ఖాతాలను మళ్లీ క్రమం చేయడం విఫలమైంది. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"బార్‌కోడ్‌లను స్కాన్ చేయడానికి, మాకు కెమెరా అనుమతి అవసరం."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"మీరు బార్‌కోడ్‌లను స్కాన్ చేయాలనుకుంటే, మీ పరికరం కెమెరాను ఉపయోగించడానికి Authenticatorని అనుమతించండి"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"మీ పరికరంలో తగినంత స్థలం లేదు"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"మీరు బార్‌కోడ్ స్కానర్‌ను ఉపయోగించడానికి ముందు కొన్ని ఫైల్‌లను తొలగించాలి"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"ఇప్పుడు బార్‌కోడ్ స్కానర్ అందుబాటులో లేదు"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"మీ పరికరానికి కెమెరా లేదు"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Authenticatorకి బార్‌కోడ్‌లను స్కాన్ చేసేందుకు కెమెరా అవసరం"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"బార్‌కోడ్‌ను ఎరుపు రంగు రేఖల్లో ఉంచండి"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"బార్‌కోడ్ స్కానర్‌ను ఉపయోగించడానికి &lt;b&gt;Google Play సేవల&lt;/b&gt;ను నవీకరించండి"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"భద్రతా కీని ఉపయోగించడం కోసం &lt;b&gt;Google Play సేవలు&lt;/b&gt;ని నవీకరించండి"</string>
+</resources>

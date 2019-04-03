@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google аутентификаторы"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Аутентификатор"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Есептік жазба мәліметтерін енгізіңіз"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Қосу"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Жұмыс істеу жолы"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Параметрлер"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Параметрлер"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Анықтама және бағалау"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Жарық режимде көру"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Күңгірт режимде көру"</string>
+    <string name="button_next" msgid="2321252361372851972">"Келесі"</string>
+    <string name="button_back" msgid="414120249698283380">"Артқа"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Есептік жазба аты"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Кодыңыз"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Кілт мәні тым қысқа"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Кілт мәнінде жарамсыз таңба бар"</string>
+    <string name="error_title" msgid="1784361744549854479">"Қате"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Кілт танылған жоқ."</string>
+    <string name="error_qr" msgid="1076904454315180481">"QR кодын оқи алмады."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Есептік жазбаны қоса алмаймын. Көмек алу үшін TechStop қызметіне хабарласыңыз."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Кілт сақталды"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Кілтті сақтау"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Бос қауіпсіздік кілті сақталмайды"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Жүйеге кіру кезінде сұралғанда, осы растау кодын енгізіңіз"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Тұтастығын тексеру мәні"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Кілттің мәнін тексеру"</string>
+    <string name="update_button" msgid="288114907177363159">"ЖАҢАРТУ"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"ЖОҚ, РАҚМЕТ"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Бастапқы коды ашық бағдарлама лицензиялары"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Қызмет көрсету шарттары"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Құпиялылық саясаты"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g> үшін қауіпсіздік кілтінің мәні дұрыс көрсетілгенін растау үшін, осы жердегі мәннің сервер берген қорытынды тексеру мәніне сай келетініне көз жеткізіңіз:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Жалпылама қауіпсіздік ерекшелігі"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Кодты шешу қатесі"</string>
+    <string name="submit" msgid="1518558163262431303">"Сақтау"</string>
+    <string name="cancel" msgid="5705561042616477184">"Бас тарту"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Жою"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Есептік жазбаны жою"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> алу керек пе?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Бұл есептік жазбаны алып тастағанда, кодтарды жасау &lt;b&gt;мүмкіндігінен айырыласыз&lt;/b&gt; бірақ бұл 2 сатылы аутентификацияны &lt;b&gt;өшірмейді&lt;/b&gt;. Бұл есептік жазбаға кіруге жол бермеуі мүмкін. &lt;p&gt; Алу алдында: &lt;ul&gt; &lt;li&gt;Бұл есептік жазба үшін 2 сатылы аутентификацияны өшіріңіз немесе&lt;/li&gt; &lt;li&gt;Сізде код жасаудың балама тәсілінің бар екеніне көз жеткізіңіз.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Бұл есептік жазбаны алып тастағанда, кодтарды жасау &lt;b&gt;мүмкіндігінен айырыласыз&lt;/b&gt; бірақ бұл 2 сатылы растауды &lt;b&gt;өшірмейді&lt;/b&gt; Бұл есептік жазбаға кіруге жол бермеуі мүмкін. &lt;p&gt; Алу алдында: &lt;ul&gt; &lt;li&gt;Бұл есептік жазба үшін 2 сатылы растауды өшіріңіз немесе&lt;/li&gt; &lt;li&gt;Сізде код жасаудың балама тәсілінің бар екеніне көз жеткізіңіз.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Атын өзгерту"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Кешіріңіз, бұл атау бос емес."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Буферге көшіру"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Растау коды буферге көшірілді."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"Бір реттік құпия сөз коды"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Кодты алу"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"Жарайды"</string>
+    <string name="close" msgid="3805915606074588527">"ЖАБУ"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Кілт түрі"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Уақытқа негізделген"</item>
+    <item msgid="5212912099902129712">"Есептегішке негізделген"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Жұмыс істеу жолы"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Өткізіп жіберу"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Келесі"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Дайын"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google жүйесіне кіру"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Пайдаланушы атыңыз бен құпия сөзіңізді Google жүйесіне кірген сайын әдеттегідей енгізесіз."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Код сұраған кезде, осы қолданбадан алуға болады."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Қауіпсіздігіңізді сақтаңыз әрі басқару мүмкіндігін жоғалтпаңыз"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Сенімді құрылғыдан жүйеге кірген кезде, аталған құрылғыдан код сұралмайтын етуге болады."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Сіз (немесе басқа адам) басқа құрылғыдан есептік жазбаңызға кірген кезде, код сұралатындықтан, қауіпсіздігіңіз сақталады."</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Есептік жазбаны енгізуге дайынсыз ба?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Параметрлерді кез келген уақытта g.co/2sv бетінен жаңарта аласыз"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Телефон нөмірлерін жаңарту"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Басқа сақтық опцияларын жасау"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"Екі сатылы растауды өшіру"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Есептік жазба енгізілді"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Растау коды сұралған кезде, оны осы жерден алыңыз. Код жиі өзгереді, оны есте сақтаудың қажеті жоқ."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Есептік жазба қосу"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Google есептік жазбасы (не басқа есептік жазбалар) үшін екі сатылы растау қосылғаннан кейін қажет болады:"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Құпия сөзіңіз"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Осы қолданба жасап беретін код"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Есептік жазбалардың ретін өзгерту мүмкін болмады. Әрекетті кейінірек қайталаңыз."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Штрихкодтарды сканерлеу үшін камераны пайдалану рұқсаты қажет."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Штрихкодтарды сканерлегіңіз келсе, аутентификаторға құрылғының камерасын пайдалануға рұқсат беріңіз"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Құрылғыда орын жеткіліксіз"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Штрихкод сканерін пайдаланбас бұрын, кейбір файлдарды жою керек"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Штрихкод сканері қазір қолжетімді емес"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Бұл құрылғыда камера жоқ"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Аутентификатор штрихкодтарды сканерлеу үшін камераны қажет етеді"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Штрихкодты қызыл сызықтардың ішіне қойыңыз"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Штрихкод сканерін пайдалану үшін &lt;b&gt;Google Play қызметтері&lt;/b&gt; платформасын жаңартыңыз"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Қауіпсіздік кодын пайдалану үшін &lt;b&gt;Google Play қызметтерін&lt;/b&gt; жаңартыңыз"</string>
+</resources>

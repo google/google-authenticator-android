@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="button_begin_setup" msgid="6221503146742363307">"ಆರಂಭಿಸಿ"</string>
+    <string name="fab_add_account" msgid="3550127502220329114">"ಖಾತೆಯೊಂದನ್ನು ಸೇರಿಸಿ"</string>
+    <string name="enroll2sv_auth_token_type" msgid="7231356198131226413">"ನಿಮ್ಮ ಖಾತೆಯ ಸಲುವಾಗಿ 2-ಹಂತ ಪರಿಶೀಲನೆಯನ್ನು ನಿರ್ವಹಿಸಿ"</string>
+    <string name="enroll2sv_choose_account_page_title" msgid="3630283741000107577">"ಖಾತೆ ಸೇರಿಸಿ"</string>
+    <string name="enroll2sv_choose_account_page_description" msgid="3048281723823452347">"ನೀವು ಕೆಳಗಿನ ಆಯ್ಕೆಗಳಲ್ಲಿ ಒಂದನ್ನು ಮಾಡುವ ಮೂಲಕ ನೀವು ಖಾತೆಯನ್ನು ಸೇರಿಸಬಹುದು:"</string>
+    <string name="enroll2sv_choose_account_page_scan_barcode_label" msgid="8834244930585986680">"ಬಾರ್‌ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ"</string>
+    <string name="enroll2sv_choose_account_page_enter_key_label" msgid="10630309521357692">"ಒದಗಿಸಲಾದ ಕೀಯನ್ನು ನಮೂದಿಸಿ"</string>
+    <string name="enroll2sv_howitworks_page_enter_code_details" msgid="2984142212392162190">"&lt;b&gt;ಈಗಿನಿಂದ&lt;/b&gt; ನಿಮ್ಮ ಬಳಿ ಕೋಡ್‌ ಕೇಳಿದಾಗ ಈ ಅಪ್ಲಿಕೇಶನ್‌ನಿಂದ ನೀವು ಕೋಡ್ ಪಡೆಯಬಹುದು."</string>
+    <string name="enroll2sv_access_to_settings_hint" msgid="6403948128290611888">"ನೀವು Google ಪ್ರಮಾಣಕಾರಿಯ &lt;i&gt;ಸೆಟ್ಟಿಂಗ್‌ಗಳು&lt;/i&gt; ಮೆನು ಮೂಲಕ ಈ ಮಾಹಿತಿಗೆ ಹಿಂತಿರುಗಬಹುದಾಗಿದೆ."</string>
+    <string name="country_AD" msgid="5626451084778201764">"ಅಂಡೋರಾ"</string>
+    <string name="country_AE" msgid="3733744688977511196">"ಯುನೈಟೆಡ್ ಅರಬ್ ಎಮಿರೇಟ್ಸ್"</string>
+    <string name="country_AF" msgid="9036590909920610865">"ಅಫಘಾನಿಸ್ತಾನ"</string>
+    <string name="country_AG" msgid="7601774791317593994">"ಅಂಟಿಗುವಾ ಮತ್ತು ಬರ್ಬುಡಾ"</string>
+    <string name="country_AI" msgid="1876759225310728374">"ಅಂಗುಲ್ಲಾ"</string>
+    <string name="country_AL" msgid="5943872260303272923">"ಅಲ್ಬೇನಿಯಾ"</string>
+    <string name="country_AM" msgid="2175503144424077651">"ಆರ್ಮೇನಿಯಾ"</string>
+    <string name="country_AO" msgid="6281819911163464444">"ಅಂಗೋಲ"</string>
+    <string name="country_AR" msgid="5552434369355991014">"ಅರ್ಜೆಂಟಿನಾ"</string>
+    <string name="country_AT" msgid="4318572792543238396">"ಆಸ್ಟ್ರಿಯಾ"</string>
+    <string name="country_AU" msgid="4442495645828996835">"ಆಸ್ಟ್ರೇಲಿಯಾ"</string>
+    <string name="country_AW" msgid="108547513334484184">"ಅರುಬ"</string>
+    <string name="country_AZ" msgid="2082366228978130715">"ಅಜರ್‌ಬೈಜಾನ್"</string>
+    <string name="country_BA" msgid="8084489566668728054">"ಬೋಸ್ನಿಯಾ ಮತ್ತು ಹರ್ಜೆಗೋವಿನಾ"</string>
+    <string name="country_BB" msgid="1712011976875978965">"ಬಾರ್ಬಡೋಸ್"</string>
+    <string name="country_BD" msgid="4042089796078207581">"ಬಾಂಗ್ಲಾದೇಶ"</string>
+    <string name="country_BE" msgid="3030707533638000914">"ಬೆಲ್ಜಿಯಂ"</string>
+    <string name="country_BF" msgid="1695588279502088178">"ಬುರ್ಕಿನಾ ಫಾಸೊ"</string>
+    <string name="country_BG" msgid="8428980128438863910">"ಬಲ್ಗೇರಿಯಾ"</string>
+    <string name="country_BH" msgid="809832059129431756">"ಬಹರೈನ್"</string>
+    <string name="country_BI" msgid="8889833276953435337">"ಬುರುಂಡಿ"</string>
+    <string name="country_BJ" msgid="1578598010419877712">"ಬೆನಿನ್"</string>
+    <string name="country_BM" msgid="1069934677153130686">"ಬರ್ಮುಡಾ"</string>
+    <string name="country_BN" msgid="8977801089032793392">"ಬ್ರೂನಿ"</string>
+    <string name="country_BO" msgid="6219004920467297570">"ಬೊಲಿವಿಯ"</string>
+    <string name="country_BR" msgid="6622669975393166995">"ಬ್ರೆಜಿಲ್"</string>
+    <string name="country_BS" msgid="6993967682360660137">"ಬಹಾಮಾಸ್"</string>
+    <string name="country_BW" msgid="2409074419854094899">"ಬೊಟ್ಸ್‌ವಾನಾ"</string>
+    <string name="country_BY" msgid="5771652900874742677">"ಬೆಲಾರೂಸ್"</string>
+    <string name="country_CA" msgid="2521380599626299445">"ಕೆನಡಾ"</string>
+    <string name="country_CD" msgid="4753999859677792546">"ಕಾಂಗೋ, ಡೆಮಾಕ್ರೆಟಿಕ್ ಗಣರಾಜ್ಯ"</string>
+    <string name="country_CF" msgid="8939420580143055651">"ಮಧ್ಯ ಆಫ್ರಿಕಾ ಗಣರಾಜ್ಯ"</string>
+    <string name="country_CG" msgid="4310149652807965848">"ಕಾಂಗೊ"</string>
+    <string name="country_CH" msgid="8642392939880667035">"ಸ್ವಿಟ್ಜರ್‌ಲ್ಯಾಂಡ್"</string>
+    <string name="country_CI" msgid="4717927844210459528">"ಕೋಟ್ ಡಿವಾರ್"</string>
+    <string name="country_CL" msgid="128856557810949976">"ಚಿಲಿ"</string>
+    <string name="country_CM" msgid="5992635870996168502">"ಕ್ಯಾಮರೂನ್"</string>
+    <string name="country_CN" msgid="4913485330982611816">"ಚೀನಾ"</string>
+    <string name="country_CO" msgid="9191867083437073150">"ಕೊಲಂಬಿಯಾ"</string>
+    <string name="country_CR" msgid="213570598036680869">"ಕೋಸ್ಟ ರಿಕಾ"</string>
+    <string name="country_CU" msgid="5804203201925344265">"ಕ್ಯೂಬಾ"</string>
+    <string name="country_CY" msgid="216583199993050880">"ಸೈಪ್ರಸ್"</string>
+    <string name="country_CZ" msgid="4976016668676832203">"ಝೆಕ್ ಗಣರಾಜ್ಯ"</string>
+    <string name="country_DE" msgid="4760557386192650345">"ಜರ್ಮನಿ"</string>
+    <string name="country_DJ" msgid="6245900984057276375">"ಡಿಬೌಟಿ"</string>
+    <string name="country_DK" msgid="5995500479305961887">"ಡೆನ್ಮಾರ್ಕ್"</string>
+    <string name="country_DM" msgid="8009069174261698067">"ಡೊಮಿನಿಕಾ"</string>
+    <string name="country_DO" msgid="7970713448639372759">"ಡೊಮಿನಿಕನ್ ರಿಪಬ್ಲಿಕ್"</string>
+    <string name="country_DZ" msgid="1379282134648561122">"ಅಲ್ಜೀರಿಯಾ"</string>
+    <string name="country_EC" msgid="8154633242053831801">"ಇಕ್ವಡೋರ್"</string>
+    <string name="country_EE" msgid="4541780447272427311">"ಇಸ್ಟೋನಿಯಾ"</string>
+    <string name="country_EG" msgid="2788958707232493802">"ಈಜಿಪ್ಟ್"</string>
+    <string name="country_ER" msgid="2906648286942796636">"ಎರಿಟ್ರಿಯಾ"</string>
+    <string name="country_ES" msgid="8151036682381925655">"ಸ್ಪೇನ್‌"</string>
+    <string name="country_ET" msgid="6130954805227204026">"ಇಥಿಯೋಪಿಯಾ"</string>
+    <string name="country_FI" msgid="4153955262008713379">"ಫಿನ್‌ಲ್ಯಾಂಡ್"</string>
+    <string name="country_FJ" msgid="3200269582025472436">"ಫಿಜಿ"</string>
+    <string name="country_FO" msgid="6266838663843156667">"ಫೆರೋ ದ್ವೀಪಗಳು"</string>
+    <string name="country_FR" msgid="879136048709243869">"ಫ್ರಾನ್ಸ್"</string>
+    <string name="country_GA" msgid="4981987258820720077">"ಗಬಾನ್‌"</string>
+    <string name="country_GB" msgid="946712085512889715">"ಯುನೈಟೆಡ್ ಕಿಂಗ್‌ಡಮ್"</string>
+    <string name="country_GD" msgid="227890519558319663">"ಗ್ರೆನೇಡಾ"</string>
+    <string name="country_GE" msgid="1395367287389658291">"ಜಾರ್ಜಿಯಾ"</string>
+    <string name="country_GF" msgid="297055780355256735">"ಫ್ರೆಂಚ್ ಗಯಾನಾ"</string>
+    <string name="country_GH" msgid="108433930819620056">"ಘಾನಾ"</string>
+    <string name="country_GI" msgid="974147470298589728">"ಜಿಬ್ರಾಲ್ಟರ್"</string>
+    <string name="country_GL" msgid="632712146418686686">"ಗ್ರೀನ್‌ಲ್ಯಾಂಡ್"</string>
+    <string name="country_GM" msgid="7023275633224237958">"ಗ್ಯಾಂಬಿಯಾ"</string>
+    <string name="country_GN" msgid="1218639534305538861">"ಗಿನೀ"</string>
+    <string name="country_GP" msgid="3457811198310199691">"ಗ್ವಾಡೆಲೋಪ್"</string>
+    <string name="country_GQ" msgid="5962035697663131426">"ಈಕ್ವಟೋರಿಯಲ್ ಗಿನೀ"</string>
+    <string name="country_GR" msgid="148045739519368282">"ಗ್ರೀಸ್"</string>
+    <string name="country_GT" msgid="8667385865196040478">"ಗ್ವಾಟೆಮಾಲಾ"</string>
+    <string name="country_GW" msgid="125897160663272655">"ಗಿನೀ-ಬಿಸಾವ್"</string>
+    <string name="country_GY" msgid="6594522604710532161">"ಗಯಾನಾ"</string>
+    <string name="country_HK" msgid="7245247706417070372">"ಹಾಂಗ್ ಕಾಂಗ್"</string>
+    <string name="country_HN" msgid="2693337321444654257">"ಹೊಂಡೂರಾಸ್"</string>
+    <string name="country_HR" msgid="3244811868402958528">"ಕ್ರೋಯೇಶಿಯಾ"</string>
+    <string name="country_HU" msgid="335246086938879705">"ಹಂಗೇರಿ"</string>
+    <string name="country_ID" msgid="8961826526261800373">"ಇಂಡೋನೇಷ್ಯಾ"</string>
+    <string name="country_IE" msgid="8863383839562453752">"ಐರ್‌ಲ್ಯಾಂಡ್"</string>
+    <string name="country_IL" msgid="5199061029712422886">"ಇಸ್ರೇಲ್"</string>
+    <string name="country_IM" msgid="6047457399873534686">"ಐಲ್ ಆಫ್ ಮ್ಯಾನ್"</string>
+    <string name="country_IN" msgid="2886368139504111280">"ಭಾರತ"</string>
+    <string name="country_IQ" msgid="1177982592475246975">"ಇರಾಕ್"</string>
+    <string name="country_IR" msgid="163219886293853289">"ಇರಾನ್"</string>
+    <string name="country_IS" msgid="1256301059501589935">"ಐಸ್‌ಲ್ಯಾಂಡ್"</string>
+    <string name="country_IT" msgid="1061610680532193160">"ಇಟಲಿ"</string>
+    <string name="country_JM" msgid="4003482214427620011">"ಜಮೈಕಾ"</string>
+    <string name="country_JO" msgid="8889648998844458246">"ಜೋರ್ಡಾನ್"</string>
+    <string name="country_JP" msgid="1813891893421657909">"ಜಪಾನ್"</string>
+    <string name="country_KE" msgid="8975737980463846939">"ಕೀನ್ಯಾ"</string>
+    <string name="country_KG" msgid="3075237784416239570">"ಕಿರ್ಗಿಸ್ತಾನ್"</string>
+    <string name="country_KH" msgid="1815401270795089014">"ಕಾಂಬೋಡಿಯಾ"</string>
+    <string name="country_KM" msgid="1908460022929978811">"ಕೊಮೊರೋಸ್"</string>
+    <string name="country_KN" msgid="8586321767958106627">"ಸೈಂಟ್ ಕಿಟ್ಸ್ ಮತ್ತು ನೆವಿಸ್"</string>
+    <string name="country_KP" msgid="7198123882197442619">"ಉತ್ತರ ಕೊರಿಯಾ"</string>
+    <string name="country_KR" msgid="135168016043627704">"ದಕ್ಷಿಣ ಕೊರಿಯಾ"</string>
+    <string name="country_KW" msgid="2491366997325889418">"ಕುವೈತ್"</string>
+    <string name="country_KY" msgid="5463490512754011629">"ಕೇಮ್ಯಾನ್ ದ್ವೀಪಗಳು"</string>
+    <string name="country_KZ" msgid="3189922559404935564">"ಕಜಾಖಿಸ್ತಾನ್"</string>
+    <string name="country_LA" msgid="5206426133611706492">"ಲಾವೊಸ್"</string>
+    <string name="country_LB" msgid="3800828262955460304">"ಲೆಬೆನಾನ್"</string>
+    <string name="country_LC" msgid="9102686283670905365">"ಸೈಂಟ್ ಲೂಸಿಯಾ"</string>
+    <string name="country_LI" msgid="8746341056192992171">"ಲೈಕೆನ್‌ಸ್ಟೈನ್"</string>
+    <string name="country_LK" msgid="8976527361375108612">"ಶ್ರೀಲಂಕಾ"</string>
+    <string name="country_LR" msgid="3944185125270689532">"ಲಿಬೇರಿಯಾ"</string>
+    <string name="country_LS" msgid="7507879655037593626">"ಲೆಸೋಥೋ"</string>
+    <string name="country_LT" msgid="7990448623426807190">"ಲಿಥುವೇನಿಯಾ"</string>
+    <string name="country_LU" msgid="3194359775131860078">"ಲುಕ್ಸೆಂಬರ್ಗ್"</string>
+    <string name="country_LV" msgid="7030326501576665774">"ಲಾಟ್ವಿಯಾ"</string>
+    <string name="country_MA" msgid="4602362049666820857">"ಮೊರಾಕ್ಕೋ"</string>
+    <string name="country_MC" msgid="4590790395055419295">"ಮೊನಾಕೊ"</string>
+    <string name="country_MD" msgid="198583252025416139">"ಮಾಲ್ಡೋವಾ"</string>
+    <string name="country_ME" msgid="2171005051541471306">"ಮಾಂಟೆನಿಗ್ರೊ"</string>
+    <string name="country_MG" msgid="8604580524462743851">"ಮಡಗಾಸ್ಕರ್"</string>
+    <string name="country_MK" msgid="5273747864313338422">"ಮೆಸಿಡೋನಿಯಾ"</string>
+    <string name="country_ML" msgid="1422257757966515110">"ಮಾಲಿ"</string>
+    <string name="country_MM" msgid="2882418801663851965">"ಮ್ಯಾನ್ಮಾರ್"</string>
+    <string name="country_MN" msgid="3760976866226657276">"ಮಂಗೋಲಿಯಾ"</string>
+    <string name="country_MO" msgid="5319778095185940385">"ಮಕಾವ್"</string>
+    <string name="country_MQ" msgid="5445627929164388048">"ಮಾರ್ಟೆನೀಕ್"</string>
+    <string name="country_MR" msgid="1234488929076485829">"ಮೌರಿಟಾನಿಯಾ"</string>
+    <string name="country_MS" msgid="1100780642924975212">"ಮಾಂಟ್‌ಸೆರೇಟ್"</string>
+    <string name="country_MT" msgid="6153512701517060613">"ಮಾಲ್ಟಾ"</string>
+    <string name="country_MU" msgid="4222900244191278448">"ಮಾರಿಶಸ್"</string>
+    <string name="country_MV" msgid="596817501579164893">"ಮಾಲ್ಡೀವ್ಸ್"</string>
+    <string name="country_MW" msgid="755204744370360614">"ಮಲಾವಿ"</string>
+    <string name="country_MX" msgid="2001001773775556109">"ಮೆಕ್ಸಿಕೊ"</string>
+    <string name="country_MY" msgid="1429248710922637285">"ಮಲೇಶಿಯಾ"</string>
+    <string name="country_MZ" msgid="2066215315144365573">"ಮೊಜಾಂಬಿಕ್"</string>
+    <string name="country_NA" msgid="7061402642934807265">"ನಮೀಬಿಯಾ"</string>
+    <string name="country_NC" msgid="3363371254226815778">"ನ್ಯೂ ಕ್ಯಾಲೆಡೋನಿಯ"</string>
+    <string name="country_NG" msgid="6886492819002583677">"ನೈಜೀರಿಯಾ"</string>
+    <string name="country_NI" msgid="5884661752074609134">"ನಿಕರಾಗುವಾ"</string>
+    <string name="country_NL" msgid="3832504030474706850">"ನೆದರ್‌ಲ್ಯಾಂಡ್ಸ್"</string>
+    <string name="country_NO" msgid="6991765756395594773">"ನಾರ್ವೇ"</string>
+    <string name="country_NP" msgid="9109214653013366616">"ನೇಪಾಳ"</string>
+    <string name="country_NR" msgid="6391879066707795889">"ನೌರು"</string>
+    <string name="country_NZ" msgid="394426426409067157">"ನ್ಯೂಜಿಲ್ಯಾಂಡ್"</string>
+    <string name="country_OM" msgid="6174018213082951743">"ಓಮನ್"</string>
+    <string name="country_PA" msgid="376676449707930372">"ಪನಾಮಾ"</string>
+    <string name="country_PE" msgid="7876736365564310858">"ಪೆರು"</string>
+    <string name="country_PG" msgid="7884271714029032604">"ಪಪುವಾ ನ್ಯೂ ಗಿನೀ"</string>
+    <string name="country_PH" msgid="6351032596945020125">"ಫಿಲಿಫೈನ್ಸ್"</string>
+    <string name="country_PK" msgid="8679189774947289399">"ಪಾಕಿಸ್ತಾನ"</string>
+    <string name="country_PL" msgid="3533123982638142866">"ಪೊಲಾಂಡ್"</string>
+    <string name="country_PR" msgid="6034639290088771047">"ಪ್ಯುಟೋ ರಿಕೊ"</string>
+    <string name="country_PS" msgid="6617147938597124917">"ಪ್ಯಾಲೆಸ್ಟೇನ್"</string>
+    <string name="country_PT" msgid="1493936994444610478">"ಪೋರ್ಚುಗಲ್"</string>
+    <string name="country_PY" msgid="197837646169800813">"ಪರಾಗ್ವೇ"</string>
+    <string name="country_QA" msgid="5091282371950817068">"ಕತಾರ್"</string>
+    <string name="country_RE" msgid="3507948975336292742">"ರಿಯೂನಿಯನ್"</string>
+    <string name="country_RO" msgid="7745200353258160207">"ರೊಮೇನಿಯಾ"</string>
+    <string name="country_RS" msgid="5260938451587943474">"ಸೆರ್ಬಿಯಾ"</string>
+    <string name="country_RU" msgid="6943697703317470071">"ರಷ್ಯಾ"</string>
+    <string name="country_RW" msgid="8670362044767608617">"ರುವಾಂಡಾ"</string>
+    <string name="country_SA" msgid="5841205282706798827">"ಸೌದಿ ಅರೇಬಿಯಾ"</string>
+    <string name="country_SD" msgid="439891094809189844">"ಸೂಡಾನ್"</string>
+    <string name="country_SE" msgid="3465423757995780061">"ಸ್ವೀಡನ್"</string>
+    <string name="country_SG" msgid="5940946652033836139">"ಸಿಂಗಾಪೂರ್"</string>
+    <string name="country_SI" msgid="3248234591511762181">"ಸ್ಲೋವೇನಿಯಾ"</string>
+    <string name="country_SK" msgid="5636291841527378386">"ಸ್ಲೋವಾಕಿಯಾ"</string>
+    <string name="country_SL" msgid="8203378720741963034">"ಸಿಯೆರಾ ಲಿಯೋನ್"</string>
+    <string name="country_SN" msgid="5066156800046547246">"ಸೆನೆಗಲ್"</string>
+    <string name="country_SR" msgid="1988590201974290829">"ಸುರಿನೇಮ್"</string>
+    <string name="country_SV" msgid="2644379088058589638">"ಎಲ್ ಸಾಲ್ವಡೋರ್"</string>
+    <string name="country_SY" msgid="1417156638810050845">"ಸಿರಿಯಾ"</string>
+    <string name="country_SZ" msgid="9036841240370108927">"ಸ್ವಾಝಿಲ್ಯಾಂಡ್"</string>
+    <string name="country_TD" msgid="3300510272472109678">"ಚಾಡ್"</string>
+    <string name="country_TG" msgid="5355626068088520863">"ಟೋಗೊ"</string>
+    <string name="country_TH" msgid="5215608312156654405">"ಥಾಯ್ಲೆಂಡ್"</string>
+    <string name="country_TJ" msgid="1620903385573037455">"ತಜಕಿಸ್ತಾನ್"</string>
+    <string name="country_TM" msgid="984700302333482843">"ಟರ್ಕ್‌ಮೇನಿಸ್ತಾನ್"</string>
+    <string name="country_TN" msgid="8214829912730198491">"ಟ್ಯುನೀಷಿಯಾ"</string>
+    <string name="country_TR" msgid="7021767922705429570">"ಟರ್ಕಿ"</string>
+    <string name="country_TT" msgid="6959276974186364875">"ಟ್ರಿನಿಡಾಡ್ ಮತ್ತು ಟೊಬಾಗೋ"</string>
+    <string name="country_TW" msgid="4907646027405990098">"ಥೈವಾನ್"</string>
+    <string name="country_TZ" msgid="7243789973836617713">"ತಾಂಜಾನಿಯಾ"</string>
+    <string name="country_UA" msgid="1447507657300087999">"ಯುಕ್ರೇನ್"</string>
+    <string name="country_UG" msgid="4268668071520347751">"ಉಗಾಂಡಾ"</string>
+    <string name="country_US" msgid="2135211836373886442">"ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್"</string>
+    <string name="country_UY" msgid="1618121367017384754">"ಉರುಗ್ವೇ"</string>
+    <string name="country_UZ" msgid="6796837877583042282">"ಉಜ್ಬೇಕಿಸ್ತಾನ್"</string>
+    <string name="country_VC" msgid="7751390496955165864">"ಸೈಂಟ್ ವಿನ್ಸೆಂಟ್ ಮತ್ತು ಗ್ರೆನೆಡೈನ್ಸ್"</string>
+    <string name="country_VE" msgid="2667301136223338990">"ವೆನಿಜುವೆಲಾ"</string>
+    <string name="country_VN" msgid="7216507612307346662">"ವಿಯೆಟ್ನಾಂ"</string>
+    <string name="country_YE" msgid="4629804957375479588">"ಯೆಮನ್‌"</string>
+    <string name="country_ZA" msgid="2574411911795507927">"ದಕ್ಷಿಣ ಆಫ್ರಿಕಾ"</string>
+    <string name="country_ZM" msgid="4327766604586298176">"ಜಾಂಬಿಯಾ"</string>
+    <string name="country_ZW" msgid="1463935671860288150">"ಜಿಂಬಾಬ್ವೆ"</string>
+</resources>

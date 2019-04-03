@@ -1,0 +1,47 @@
+0:10695 Android Arch Common
+0:10695 Android Arch Runtime
+0:10695 Android Lifecycle Common
+0:10695 Android Lifecycle LiveData
+0:10695 Android Lifecycle LiveData Core
+0:10695 Android Lifecycle Runtime
+0:10695 Android Lifecycle ViewModel
+0:10695 Android Support AnimatedVectorDrawable
+0:10695 Android AppCompat Library V7
+0:10695 Android Support Library Async Layout Inflater
+0:10695 Android Support CardView V7
+0:10695 Android Support Library Collections
+0:10695 Android Support Library Coordinator Layout
+0:10695 Android Support Library Cursor Adapter
+0:10695 Android Support Library Custom View
+0:10695 Material Components For Android
+0:10695 Android Support Library Document File
+0:10695 Android Support Library Drawer Layout
+0:10695 Android Support Library Interpolators
+0:10695 Android Support Library Loader
+0:10695 Android Support Library Local Broadcast Manager
+0:10695 Android Multi Dex Library
+0:10695 Android Support Library Print
+0:10695 Android Support RecyclerView V7
+0:10695 Android Support Library Sliding Pane Layout
+0:10695 Android Support Library Annotations
+0:10695 Android Support Library Compat
+0:10695 Android Support Library Core UI
+0:10695 Android Support Library Core Utilities
+0:10695 Android Support Library Fragment
+0:10695 Android Support Library Media Compat
+0:10695 Android Support Library V4
+0:10695 Android Support VectorDrawable
+0:10695 Android Support Library Custom View
+0:10695 Android Transition Support Library
+0:10695 VersionedParcelable and Friends
+0:10695 Android Support Library View Pager
+0:10695 DragSortListView
+520:10175 Error Prone
+520:10175 Guava
+520:10175 J2ObjC
+520:10175 Dagger
+520:10175 JSR330
+10695:16013 Android SDK
+26708:1588 JSR305
+28296:1075 Animal Sniffer
+29371:1845 Checker Framework Annotations

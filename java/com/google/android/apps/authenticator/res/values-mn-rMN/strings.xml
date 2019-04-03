@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Гэрчилгээ"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Гэрчилгээ"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Бүртгэлийн дэлгэрэнгүйг оруулна уу"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Нэмэх"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Энэ хэрхэн ажилладаг"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Тохируулга"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Тохируулга"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Тусламж, санал хүсэлт"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Гэрэлтэй горимд харах"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Харанхуй горимд харах"</string>
+    <string name="button_next" msgid="2321252361372851972">"Цааш"</string>
+    <string name="button_back" msgid="414120249698283380">"Буцах"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Бүртгэлийн нэр"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Таны түлхүүр"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Хэт богино түлхүүр утга"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Зөвшөөрөгдөөгүй тэмдэгттэй түлхүүр утга байна"</string>
+    <string name="error_title" msgid="1784361744549854479">"Алдаа"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Түлхүүр танигдсангүй."</string>
+    <string name="error_qr" msgid="1076904454315180481">"Хурдан хариу үйлдлийн кодыг тайлж унших боломжгүй байна."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Бүртгэл нэмэх боломжгүй. TechStop-той холбогдон тусламж авна уу."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Нууцлал хадгалагдлаа"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"тулд түлхүүр хадгалах"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Нууц бичигдээгүй үед хадгалах боломжгүй."</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Нэвтрэх үед баталгаажуулах код асуухад үүнийг оруулна уу"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Нэгдмэл шалгах утга"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Түлхүүр утгыг шалгах"</string>
+    <string name="update_button" msgid="288114907177363159">"ШИНЭЧЛЭХ"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"ҮГҮЙ, БАЯРЛАЛАА"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Нээлттэй эх үүсвэрийн лиценз"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Үйлчилгээний Нөхцөл"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Нууцлалын бодлого"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g>-н таньд байгаа түлхүүр утга зөв эсэхийг шалгахын тулд уг утга серверээс өгөгдсөн нэгдмэл шалгах утгатай таарч байгааг баталгаажуулна уу:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Ерөнхий нууцлалын эсэргүүцэл"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Кодыг таньсангүй"</string>
+    <string name="submit" msgid="1518558163262431303">"Хадгалах"</string>
+    <string name="cancel" msgid="5705561042616477184">"Цуцлах"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Хасах"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Бүртгэлийг хасах"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g>-г хасах уу?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Энэ бүртгэлийг хасах нь &lt;b&gt; өөрийн чадварыг хасах болно &lt;/b&gt; хэдий тийм ч кодыг үйлдвэрлэхийн тулд &lt;b&gt;not&lt;/b&gt; 2-хүчин зүйлийн гэрчилгээг унтраах болно. Энэ нь магадгүй таныг өөрийн бүртгэлд нэвтрэхээс сэргийлнэ. &lt;p&gt; Хасахаас өмнө: &lt;ul&gt; &lt;li&gt; энэ бүртгэлийн 2-хүчин зүйлийн гэрчилгээг унтраах, эсвэл &lt;/li&gt; &lt;li&gt;код үйлдвэрлэх өөр арга зам байгаа эсэхийг батлах.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Энэ бүртгэлийг хасах нь &lt;b&gt; өөрийн чадварыг хасах болно &lt;/b&gt; хэдий тийм ч кодыг үйлдвэрлэхийн тулд &lt;b&gt;not&lt;/b&gt; 2-хүчин зүйлийн гэрчилгээг унтраах болно. Энэ нь магадгүй таныг өөрийн бүртгэлд нэвтрэхээс сэргийлнэ. &lt;p&gt; Хасахаас өмнө: &lt;ul&gt; &lt;li&gt; энэ бүртгэлийн 2-хүчин зүйлийн гэрчилгээг унтраах, эсвэл &lt;/li&gt; &lt;li&gt;код үйлдвэрлэх өөр арга зам байгаа эсэхийг батлах.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Дахин нэрлэх"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Уучлаарай, энэ нэр хэрэглэгчтэй байна."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Түр санах ойд хуулах"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Бататгах кодыг санах самбар луу хуулсан байна."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"Нэг удаагийн нууц үг (OTP) код"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Код авах"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"ОК"</string>
+    <string name="close" msgid="3805915606074588527">"ХААХ"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Түлхүүрийн төрөл"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Хугацаанд суурилсан"</item>
+    <item msgid="5212912099902129712">"Тоолуурт суурилсан"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Энэ хэрхэн ажилладаг вэ"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Алгасах"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Дараах"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Дууссан"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google-д нэвтэрч байна"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Та Google-д нэвтрэх бүртээ хэрэглэгчийн нэр, нууц үгээ урьдын адил оруулах шаардлагатай."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Таниас код шаардах үед энэ апп-с авах боломжтой."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Хяналтад байж &amp; аюулгүй байна уу"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Та итгэдэг төхөөрөмжөөрөө нэвтрэх үедээ тухайн төхөөрөмжийг код асуухыг зогсоох боломжтой."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Таныг (эсвэл өөр хэн нэгэн) өөр төхөөрөмжөөс бүртгэлдээ нэвтрэхээр оролдоход код асуух болно. Ингэснээр бид таны аюулгүй байдлыг хангаж чадна."</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Бүртгэл нэмэхэд бэлэн үү?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Та тохиргоогоо хүссэн үедээ g.co/2sv-д шинэчлэх боломжтой"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Утасны дугаараа шинэчлэх"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Бусад нөөцлөх сонголтыг үүсгэх"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"2 шаттай бататгалыг унтраах"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Бүртгэл нэмсэн"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Танд баталгаажуулах код шаардлагатай бол эндээс авна уу. Код тогтмол өөрчлөгддөг тул цээжлэх шаардлагагүй."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Бүртгэл нэмэх"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Та Google бүртгэлдээ (эсвэл бусад бүртгэл) 2 шаттай бататгалыг асаасан бол танд дараах шаардлагатай болно"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Таны нууц үг"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Энэ апп-н танд үүсгэж өгөх код"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Бүртгэлийг дахин захиалж чадсангүй. Дараа дахин оролдоно уу."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Баркодыг эхлүүлэхийн тулд бидэнд камерын зөвшөөрөл хэрэгтэй."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Та бар код уншуулах бол төхөөрөмжийнхөө камерыг ашиглах зөвшөөрлийг Нотлогчид олгоно уу"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Таны төхөөрөмжид хангалттай зай алга"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Та бар код уншигчийг ашиглахаас өмнө зарим файлыг устгах шаардлагатай"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Бар код уншигч одоогоор боломжгүй байна"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Таны төхөөрөмжид камер алга"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Нотлогчид бар код уншуулах камер шаардлагатай"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Улаан гэрэлд баркодыг байрлуулна уу"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Бар код уншигчийг ашиглахын тулд &lt;b&gt;Google Play үйлчилгээг&lt;/b&gt; шинэчилнэ үү"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Аюулгүй байдлын түлхүүр ашиглахын тулд &lt;b&gt;Google Play үйлчилгээг&lt;/b&gt; шинэчилнэ үү"</string>
+</resources>

@@ -1,9 +1,0 @@
-Some tests require Mockito and DexMaker to compile and run.
-The two libraries need to be included into the APK.
-
-* Mockito: http://code.google.com/p/mockito/
-* DexMaker: http://code.google.com/p/dexmaker/
-
-When importing this project into Eclipse, add mockito.jar
-("all" JAR rather than the "core" JAR) and dexmaker.jar
-to the "libs" directory of this test project.

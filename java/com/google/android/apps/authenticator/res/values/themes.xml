@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources>
+
+  <style name="AuthenticatorTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Color for the app bar -->
+    <item name="colorPrimary">@color/actionBarColor</item>
+    <!-- Darker variant for the status bar and contextual app bars -->
+    <item name="colorPrimaryDark">@color/statusBarColor</item>
+    <item name="colorAccent">@color/google_blue500</item>
+    <item name="toolbarStyle">@style/ToolbarStyle</item>
+    <item name="windowActionModeOverlay">true</item>
+    <item name="actionModeStyle">@style/AuthenticatorActionMode</item>
+    <item name="android:windowBackground">@color/windowBackgroundColor</item>
+    <item name="pinCodeListBackground">@style/PinCodeListBackground</item>
+    <item name="accountListWithVerificationCodes">@style/AccountListWithVerificationCodes</item>
+    <item name="accountListWithVerificationCodesRow">@style/AccountListWithVerificationCodesRow</item>
+    <item name="accountListWithVerificationCodesRowVerificationCode">@style/AccountListWithVerificationCodesRowVerificationCode</item>
+    <item name="accountListWithVerificationCodesRowCountdownIndicator">@style/AccountListWithVerificationCodesRowCountdownIndicator</item>
+    <item name="accountListWithVerificationCodesRowRefreshButton">@style/AccountListWithVerificationCodesRowRefreshButton</item>
+    <item name="accountListWithVerificationCodesRowAccountName">@style/AccountListWithVerificationCodesRowAccountName</item>
+    <item name="accountListWithFirstAccountHeader">@style/AccountListWithFirstAccountHeader</item>
+    <item name="accountListWithFirstAccountDetail">@style/AccountListWithFirstAccountDetail</item>
+    <item name="fabButtonAddAccount">@style/FabButtonAddAccount</item>
+    <item name="firstAccountMessageDoneButtonStyle">@style/FirstAccountMessageDoneButtonStyle</item>
+    <item name="userRowDraggedItemShadowTop">@style/UserRowDraggedItemShadowTop</item>
+    <item name="userRowDraggedItemShadowBottom">@style/UserRowDraggedItemShadowBottom</item>
+  </style>
+
+  <style name="AuthenticatorActionMode" parent="Widget.AppCompat.ActionMode">
+    <item name="background">@color/google_blue500</item>
+    <item name="height">@dimen/toolbar_height</item>
+    <item name="titleTextStyle">@style/ToolbarTitleStyle</item>
+  </style>
+
+  <style name="AuthenticatorTheme.NoActionBar" parent="AuthenticatorTheme">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="AuthenticatorTheme.NoTitleBar" parent="AuthenticatorTheme">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="AuthenticatorTheme.Translucent.NoTitleBar" parent="Theme.AppCompat.Light.Dialog"/>
+
+  <style name="PinCodeListBackground">
+    <item name="android:background">@color/userListBackgroundColor</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodes">
+    <item name="android:divider">@android:color/transparent</item>
+    <item name="android:paddingTop">@dimen/pincode_list_paddingTop</item>
+    <item name="android:paddingBottom">@dimen/pincode_list_paddingBottom</item>
+    <item name="android:clipToPadding">false</item>
+    <item name="android:dividerHeight">0dp</item>
+    <item name="android:listSelector">@android:color/transparent</item>
+    <item name="android:background">@color/userListBackgroundColor</item>
+    <item name="android:scrollbarStyle">outsideOverlay</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRow">
+    <item name="android:background">@drawable/user_row_selector</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowVerificationCode">
+    <item name="android:textColor">@color/userRowPinValueColor</item>
+    <item name="android:textSize">34sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowCountdownIndicator">
+    <item name="countdownIndicatorColor">
+      @color/countdownIndicator
+    </item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowRefreshButton">
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:scaleType">fitXY</item>
+    <item name="android:src">@drawable/refresh_button</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowAccountName">
+    <item name="android:textColor">@color/userRowCurrentUserColor</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="AccountListWithFirstAccountHeader">
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:textColor">@color/primaryTextColor</item>
+    <item name="android:textSize">24sp</item>
+  </style>
+
+  <style name="AccountListWithFirstAccountDetail">
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:textColor">@color/primaryTextColor</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:layout_marginTop">4dp</item>
+    <item name="android:layout_marginStart">24dp</item>
+    <item name="android:lineSpacingExtra">4dp</item>
+    <item name="android:layout_marginLeft">24dp</item>
+    <item name="android:layout_marginRight">24dp</item>
+    <item name="android:layout_marginEnd">24dp</item>
+  </style>
+
+  <style name="FabButtonAddAccount">
+    <item name="backgroundTint">@color/floatingButtonColor</item>
+    <item name="android:layout_margin">0dp</item>
+  </style>
+
+  <style name="AuthenticatorTheme.WhiteAccentColor" parent="AuthenticatorTheme">
+    <item name="colorAccent">#fff</item>
+  </style>
+
+  <style name="ButtonBarButtonStyle" parent="@style/Widget.AppCompat.Button.Colored">
+    <item name="android:textSize">14sp</item>
+    <item name="android:theme">@style/AuthenticatorTheme.WhiteAccentColor</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textColor">@color/google_blue500</item>
+  </style>
+
+  <style name="AddAccountButtonStyle" parent="@style/Widget.AppCompat.Button.Colored">
+    <item name="android:textSize">14sp</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textColor">#fff</item>
+  </style>
+
+  <style name="FirstAccountMessageDoneButtonStyle" parent="@style/Widget.AppCompat.Button.Colored">
+    <item name="android:textSize">14sp</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textColor">#fff</item>
+    <item name="android:minHeight">48dp</item>
+    <item name="android:minWidth">96dp</item>
+  </style>
+
+  <style name="UserRowDraggedItemShadowTop">
+    <item name="android:background">@drawable/user_row_dragged_shadow_top</item>
+  </style>
+
+  <style name="UserRowDraggedItemShadowBottom">
+    <item name="android:background">@drawable/user_row_dragged_shadow_bottom</item>
+  </style>
+
+  <style name="HintTextAppearance" parent="@android:style/TextAppearance">
+    <item name="android:textColor">#9E9E9E</item>
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:lineSpacingExtra">8dp</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+
+  <style name="WhiteActionBar" parent="@style/Theme.AppCompat.Light">
+    <item name="colorPrimary">#fff</item>
+  </style>
+
+  <style name="HowItWorksButtonStyle" parent="@style/Widget.AppCompat.Button.Borderless">
+    <item name="android:minWidth">72dp</item>
+    <item name="android:minHeight">48dp</item>
+    <item name="android:ellipsize">marquee</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">16dp</item>
+    <item name="android:textColor">#fff</item>
+  </style>
+
+  <style name="HowItWorksTextHeadingStyle">
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:textColor">#fff</item>
+  </style>
+
+  <style name="ToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+    <item name="contentInsetStartWithNavigation">0dp</item>
+    <item name="titleTextAppearance">@style/ToolbarTitleStyle</item>
+  </style>
+
+  <style name="ToolbarTitleStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:textSize">20sp</item>
+  </style>
+
+  <style name="HowItWorksTextBodyStyle">
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">#fff</item>
+  </style>
+
+  <style name="Widget.Button.Inset" parent="android:style/Widget.Holo.Light.Button.Inset"/>
+
+  <style name="Widget.ProgressBar.Large" parent="android:style/Widget.Holo.Light.ProgressBar.Large"/>
+
+  <style name="AuthenticatorTheme.Dark" parent="AuthenticatorTheme">
+    <item name="pinCodeListBackground">@style/PinCodeListBackground.Dark</item>
+    <item name="accountListWithVerificationCodes">@style/AccountListWithVerificationCodes.Dark</item>
+    <item name="accountListWithVerificationCodesRow">@style/AccountListWithVerificationCodesRow.Dark</item>
+    <item name="accountListWithVerificationCodesRowVerificationCode">@style/AccountListWithVerificationCodesRowVerificationCode.Dark</item>
+    <item name="accountListWithVerificationCodesRowCountdownIndicator">@style/AccountListWithVerificationCodesRowCountdownIndicator.Dark</item>
+    <item name="accountListWithVerificationCodesRowRefreshButton">@style/AccountListWithVerificationCodesRowRefreshButton.Dark</item>
+    <item name="accountListWithVerificationCodesRowAccountName">@style/AccountListWithVerificationCodesRowAccountName.Dark</item>
+    <item name="accountListWithFirstAccountHeader">@style/AccountListWithFirstAccountHeader.Dark</item>
+    <item name="accountListWithFirstAccountDetail">@style/AccountListWithFirstAccountDetail.Dark</item>
+    <item name="firstAccountMessageDoneButtonStyle">@style/FirstAccountMessageDoneButtonStyle.Dark</item>
+    <item name="actionModeStyle">@style/AuthenticatorActionMode.Dark</item>
+    <item name="userRowDraggedItemShadowTop">@style/UserRowDraggedItemShadowTop.Dark</item>
+    <item name="userRowDraggedItemShadowBottom">@style/UserRowDraggedItemShadowBottom.Dark</item>
+  </style>
+
+  <style name="AuthenticatorActionMode.Dark" parent="AuthenticatorActionMode">
+    <item name="background">@color/actionBarColorDark</item>
+  </style>
+
+  <style name="AuthenticatorTheme.NoActionBar.Dark" parent="AuthenticatorTheme.Dark">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="PinCodeListBackground.Dark">
+    <item name="android:background">@color/userListBackgroundColorDark</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodes.Dark" parent="AccountListWithVerificationCodes">
+    <item name="android:background">@color/userListBackgroundColorDark</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRow.Dark" parent="AccountListWithVerificationCodesRow">
+    <item name="android:background">@drawable/user_row_selector_dark</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowVerificationCode.Dark" parent="AccountListWithVerificationCodesRowVerificationCode">
+    <item name="android:textColor">@color/userRowPinValueColorDark</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowCountdownIndicator.Dark" parent="AccountListWithVerificationCodesRowCountdownIndicator">
+    <item name="countdownIndicatorColor">
+      @color/countdownIndicatorDark
+    </item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowRefreshButton.Dark" parent="AccountListWithVerificationCodesRowRefreshButton">
+    <item name="android:src">@drawable/refresh_button_dark</item>
+  </style>
+
+  <style name="AccountListWithVerificationCodesRowAccountName.Dark" parent="AccountListWithVerificationCodesRowAccountName">
+    <item name="android:textColor">@color/userRowCurrentUserColorDark</item>
+  </style>
+
+  <style name="AccountListWithFirstAccountHeader.Dark" parent="AccountListWithFirstAccountHeader">
+    <item name="android:textColor">@color/primaryTextColorDark</item>
+  </style>
+
+  <style name="AccountListWithFirstAccountDetail.Dark" parent="AccountListWithFirstAccountDetail">
+    <item name="android:textColor">@color/userRowCurrentUserColorDark</item>
+  </style>
+
+  <style name="FirstAccountMessageDoneButtonStyle.Dark" parent="@style/Widget.AppCompat.Button.Colored">
+    <item name="android:textSize">14sp</item>
+    <item name="android:theme">@style/AuthenticatorTheme.WhiteAccentColor.Dark</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textColor">#000</item>
+    <item name="android:minHeight">48dp</item>
+    <item name="android:minWidth">96dp</item>
+  </style>
+
+  <style name="UserRowDraggedItemShadowTop.Dark">
+    <item name="android:background">@drawable/user_row_dragged_shadow_top_dark</item>
+  </style>
+
+  <style name="UserRowDraggedItemShadowBottom.Dark">
+    <item name="android:background">@drawable/user_row_dragged_shadow_bottom_dark</item>
+  </style>
+
+  <style name="AuthenticatorTheme.WhiteAccentColor.Dark" parent="AuthenticatorTheme.Dark">
+    <item name="colorAccent">#fff</item>
+  </style>
+
+</resources>
+
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Унесите податке за налог"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Додај"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Како ово функционише"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Подешавања"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Подешавања"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Помоћ и повратне информације"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Прикажи у светлом режиму"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Прикажи у тамном режиму"</string>
+    <string name="button_next" msgid="2321252361372851972">"Даље"</string>
+    <string name="button_back" msgid="414120249698283380">"Назад"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Назив налога"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Шифра"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Кључна вредност је прекратка"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Кључна вредност садржи неважећи знак"</string>
+    <string name="error_title" msgid="1784361744549854479">"Грешка"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Кôд није препознат."</string>
+    <string name="error_qr" msgid="1076904454315180481">"Није могуће тумачење QR кода."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Није могуће додати налог. Контактирајте TechStop за помоћ."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Тајна је сачувана"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Сачувај тастер за"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Није могуће сачувати празну тајну"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Унесите овај верификациони кôд када се то затражи током пријављивања"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Вредност за проверу"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Провери вредност кода"</string>
+    <string name="update_button" msgid="288114907177363159">"АЖУРИРАЈ"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"НЕ, ХВАЛА"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Лиценце отвореног кода"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Услови коришћења услуге"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Политика приватности"</string>
+    <string name="check_code" msgid="8970489904648838257">"Да бисте проверили да ли имате тачну вредност кода за налог <xliff:g id="ACCOUNT">%1$s</xliff:g>, потврдите да се наведена вредност поклапа са вредношћу провере интегритета коју је доставио сервер:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Општи безбедносни изузетак"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Изузетак декодирања"</string>
+    <string name="submit" msgid="1518558163262431303">"Сачувај"</string>
+    <string name="cancel" msgid="5705561042616477184">"Откажи"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Уклони"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Уклони налог"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"Желите да уклоните <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Уклањањем овог налога &lt;b&gt;онемогућићете&lt;/b&gt; генерисање кодова, међутим, &lt;b&gt;нећете&lt;/b&gt; искључити потврду аутентичности помоћу 2 чиниоца. Ово вас може спречити да се пријавите на налог. &lt;p&gt; Пре уклањања: &lt;ul&gt; &lt;li&gt;Искључите потврду аутентичности помоћу 2 чиниоца за овај налог или&lt;/li&gt; &lt;li&gt;Проверите да ли имате алтернативни механизам за генерисање кодова.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Уклањањем овог налога &lt;b&gt;онемогућићете&lt;/b&gt; генерисање кодова, међутим, &lt;b&gt;нећете&lt;/b&gt; искључити верификацију у 2 корака. Ово вас може спречити да се пријавите на налог. &lt;p&gt; Пре уклањања: &lt;ul&gt; &lt;li&gt;Искључите верификацију у 2 корака за овај налог или&lt;/li&gt; &lt;li&gt;Проверите да ли имате алтернативни механизам за генерисање кодова.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Преименуј"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Жао нам је, то име је већ у употреби."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Копирај у прив. меморију"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Верификациони кôд је копиран у меморију."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP кôд"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Преузми кôд"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"Потврди"</string>
+    <string name="close" msgid="3805915606074588527">"ЗАТВОРИ"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Тип кода"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Засновано на времену"</item>
+    <item msgid="5212912099902129712">"Засновано на бројачу"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Како ово функционише"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Прескочи"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Даље"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Готово"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Пријављивање на Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Сваки пут када се пријављујете на Google, уносите корисничко име и лозинку као и обично."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Када затражимо кôд, моћи ћете да га преузмете из ове апликације."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Будите безбедни и имајте контролу"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Када се пријавите помоћу поузданог уређаја, можете да нам кажете да више не тражимо да уносите кодове на њему."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"И даље ћете бити безбедни јер ћемо тражити кодове када ви (или неко други) покуша да се пријави на ваш налог са других уређаја"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Спремни сте да додате налог?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Не заборавите да у сваком тренутку можете да ажурирате подешавања на g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Ажурирајте бројеве телефона"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Направите друге резервне опције"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"Искључите верификацију у 2 корака"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Додали сте налог"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Када вам затражимо верификациони кôд, преузмите га овде. Кôд се често мења, па нема потребе да га памтите."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Додај налог"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Када укључите верификацију у 2 корака за Google налог (или друге налоге), треба да"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"лозинку"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Кôд који ће ова апликација генерисати за вас"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Промена редоследа налога није успела. Пробајте поново касније."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Да бисмо скенирали бар-кодове, потребна нам је дозвола за камеру."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Дозволите Authenticator-у да користи камеру уређаја ако желите да скенирате бар-кодове"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Нема довољно простора на уређају"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Потребно је да избришете неке датотеке да бисте могли да користите скенер бар-кодова"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Скенер бар-кодова тренутно није доступан"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Уређај нема камеру"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Authenticator-у је потребна камера да би скенирао бар-кодове"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Поставите бар-код унутар црвених линија"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Ажурирајте &lt;b&gt;Google Play услуге&lt;/b&gt; да бисте користили скенер бар-кодова"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Ажурирајте &lt;b&gt;Google Play услуге&lt;/b&gt; да бисте користили безбедносни кључ"</string>
+</resources>

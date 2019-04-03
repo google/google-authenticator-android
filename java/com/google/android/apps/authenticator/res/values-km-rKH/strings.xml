@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"កម្មវិធី​ផ្ទៀងផ្ទាត់​របស់ Google"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"កម្មវិធី​ផ្ទៀងផ្ទាត់"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"បញ្ចូលព័ត៌មានលម្អិតគណនី"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"បន្ថែម"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"របៀបដំណើរការ"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"ការ​កំណត់"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"ការ​កំណត់"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"ជំនួយ &amp; មតិ​ត្រឡប់"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"មើលក្នុងមុខងារភ្លឺ"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"មើលក្នុងមុខងារងងឹត"</string>
+    <string name="button_next" msgid="2321252361372851972">"បន្ទាប់"</string>
+    <string name="button_back" msgid="414120249698283380">"ថយក្រោយ"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"ឈ្មោះគណនី"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"លេខកូដរបស់អ្នក"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"ពាក្យ​គន្លឹះ​ខ្លី​ពេក"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"ពាក្យ​គន្លឹះ​មាន​តួ​អក្សរ​មិន​​ត្រឹមត្រូវ"</string>
+    <string name="error_title" msgid="1784361744549854479">"កំហុស"</string>
+    <string name="error_uri" msgid="8889749448317216536">"ពាក្យ​គន្លឹះ​មិន​ស្គាល់ ។"</string>
+    <string name="error_qr" msgid="1076904454315180481">"មិន​អាច​បកប្រែ​កូដ QR ។"</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"មិន​អាច​បន្ថែម​គណនី។ សូម​ទំនាក់ទំនង TechStop សម្រាប់​ជំនួយ។"</string>
+    <string name="secret_saved" msgid="2201025202465443226">"ពាក្យ​សម្ងាត់​បាន​រក្សាទុក"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"រក្សាទុក​ពាក្យ​គន្លឹះ​សម្រាប់"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"មិន​អាច​រក្សាទុក​ពាក្យ​សម្ងាត់​ទទេ"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"បញ្ចូលលេខកូដផ្ទៀងផ្ទាត់នេះ នៅពេលដែលមានការស្នើសុំអំឡុងពេលចូលគណនី"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"ពិនិត្យ​ពាក្យ​គន្លឹះ​ត្រឹមត្រូវ"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"ពិនិត្យ​ពាក្យ​គន្លឹះ"</string>
+    <string name="update_button" msgid="288114907177363159">"អាប់ដេត"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"ទេ អរគុណ"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"អាជ្ញាប័ណ្ណ​ប្រភព​កូដ​ចំហ"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"លក្ខខណ្ឌ​ប្រើប្រាស់"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"គោលនយោបាយ​​ឯកជន"</string>
+    <string name="check_code" msgid="8970489904648838257">"ដើម្បី​ពិនិត្យ​ថា អ្នក​មាន​​​ពាក្យ​គន្លឹះ​ត្រឹមត្រូវ​សម្រាប់ <xliff:g id="ACCOUNT">%1$s</xliff:g> ផ្ទៀងផ្ទាត់​ថា​ពាក្យ​គន្លឹះ​​នៅ​ទីនេះ​​​​ត្រូវ​គ្នា​ជាមួយ​នឹង​ពាក្យ​គន្លឹះ​​ដែល​ផ្ដល់​ឲ្យ​ដោយ​ម៉ាស៊ីន​បម្រើ:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"ការលើកលែង​សុវត្ថិភាព​ទូទៅ"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"លើកលែង​សម្រាយ​កូដ"</string>
+    <string name="submit" msgid="1518558163262431303">"រក្សាទុក"</string>
+    <string name="cancel" msgid="5705561042616477184">"បោះបង់"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"យកចេញ"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"យក​គណនី​ចេញ"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"យកចេញ <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"យក​គណនី​នេះ​ចេញ​នឹង &lt;b&gt;លុប​សមត្ថភាព​របស់​អ្នក​&lt;/b&gt; ក្នុង​ការ​បង្កើត​លេខ​កូដ យ៉ាង​ណា​ក្ដី វា​នឹង &lt;b&gt;not&lt;/b&gt; បិទ​ការ​ផ្ទៀងផ្ទាត់​​ដែល​មាន​ពីរ​កត្តា ។ នេះ​នឹង​ការពារ​អ្នក​​មិន​ឱ្យ​ចូល​ទៅ​អ្នក​របស់​អ្នក ។ &lt;p&gt; មុន​ពេល​យក​ចេញ: &lt;ul&gt; &lt;li&gt;សូម​បិទ​ការ​ផ្ទៀងផ្ទាត់​​ដែល​មាន​ពីរ​កត្តា​សម្រាប់​គណនី​នេះ ឬ&lt;/li&gt; &lt;li&gt;ប្រាកដ​ថា អ្នក​មាន​វិធី​​​ជំនួស​សម្រាប់​បង្កើត​លេខ​​កូដ ។&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"យក​គណនី​នេះ​ចេញ​នឹង &lt;b&gt;លុប​សមត្ថភាព​របស់​អ្នក​&lt;/b&gt; ក្នុង​ការ​បង្កើត​លេខ​កូដ យ៉ាង​ណា​ក្ដី វា​នឹង &lt;b&gt;not&lt;/b&gt; បិទ​ការ​ផ្ទៀងផ្ទាត់​​ដែល​មាន​ពីរ​ជំហាន ។ នេះ​នឹង​ការពារ​អ្នក​​មិន​ឱ្យ​ចូល​ទៅ​អ្នក​របស់​អ្នក ។ &lt;p&gt; មុន​ពេល​យក​ចេញ: &lt;ul&gt; &lt;li&gt;សូម​បិទ​ការ​ផ្ទៀងផ្ទាត់​​ដែល​មាន​ពីរ​​ជំហាន​សម្រាប់​គណនី​នេះ ឬ&lt;/li&gt; &lt;li&gt;ប្រាកដ​ថា អ្នក​មាន​វិធី​​​ជំនួស​សម្រាប់​បង្កើត​លេខ​​កូដ ។&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"ប្ដូរ​ឈ្មោះ"</string>
+    <string name="error_exists" msgid="9037595140877350695">"សូម​ទោស ឈ្មោះ​នេះ​ត្រូវ​បាន​គេ​ប្រើ​រួច​ហើយ ។"</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"ចម្លង​ទៅ​ក្ដារតម្បៀតខ្ទាស់"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"ការ​ផ្ទៀងផ្ទាត់​កូដ​​ដែល​បាន​ចម្លង​ទៅ​កាន់​ក្ដារ​តម្បៀត​ខ្ទាស់។"</string>
+    <string name="clipboard_label" msgid="923872764435699920">"កូដ OTP"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"យក​​លេខ​កូដ"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _​ ​​​"</string>
+    <string name="ok" msgid="6406800116409689723">"យល់ព្រម"</string>
+    <string name="close" msgid="3805915606074588527">"បិទ"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"ប្រភេទ​ពាក្យ​គន្លឹះ"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"ផ្អែក​តាម​ពេលវេលា"</item>
+    <item msgid="5212912099902129712">"ផ្អែក​តាម​ចំនួន"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"របៀបដែលវាដំណើរការ"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"រំលង"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"បន្ទាប់"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"ធ្វើ​រួច"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"ការចូលទៅកាន់គណនី Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"នៅពេលណាដែលអ្នកចូលទៅកាន់គណនី Google អ្នកនឹងត្រូវបញ្ចូលឈ្មោះអ្នកប្រើ និងពាក្យសម្ងាត់របស់អ្នកដូចធម្មតា។"</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"នៅពេលដែលគេស្នើសុំកូដពីអ្នក អ្នកនឹងអាចទទួលបានវាពីកម្មវិធីនេះ។"</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"រក្សាសុវត្ថិភាព និងធ្វើ​ការ​គ្រប់គ្រង"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"នៅពេលដែលអ្នក​ចូល​គណនី​នៅលើ​ឧបករណ៍​ដែល​អ្នកទុកចិត្ត អ្នកអាច​ប្រាប់​យើង​ឲ្យ​ឈប់​ស្នើសុំលេខកូដ​នៅលើឧបករណ៍នោះបាន។"</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"គណនីរបស់អ្នកនឹងតែទទួលបានការការពារដដែល ពីព្រោះយើងនឹងស្នើសុំលេខកូដ នៅពេលដែលអ្នក (ឬនរណាម្នាក់) ព្យាយាមចូលគណនីរបស់អ្នកពីកុំព្យូទ័រផ្សេង"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"ត្រៀម​ខ្លួនរួចរាល់​ដើម្បី​បញ្ចូល​គណនីហើយ​ឬនៅ?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"សូមចាំថាអ្នកអាច​ធ្វើ​បច្ចុប្បន្នភាព​ការកំណត់​របស់អ្នក​បាន​គ្រប់ពេល​នៅ g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"អាប់ដេតលេខទូរស័ព្ទរបស់អ្នក"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"បង្កើតជម្រើសបម្រុងទុកផ្សេងទៀត"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"បិទការផ្ទៀងផ្ទាត់ 2 ជំហាន"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"បានបញ្ចូលគណនី"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"នៅពេលដែលអ្នកស្នើសុំលេខកូដផ្ទៀងផ្ទាត់ សូមស្នើនៅទីនេះ។ លេខកូដនេះមានការផ្លាស់ប្តូរជាប្រចាំ ដូច្នេះមិនចាំបាច់ចងចាំវានោះទេ។"</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"បញ្ចូល​គណនី"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"បន្ទាប់​ពី​អ្នក​បើក​ការផ្ទៀងផ្ទាត់ 2 ជំហាន​សម្រាប់គណនី​ Google របស់អ្នក (ឬគណនី​ផ្សេង) ហើយ អ្នក​​ត្រូវការ"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"ពាក្យ​សម្ងាត់​របស់​អ្នក"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"លេខកូដដែលកម្មវិធីនេះបង្កើតសម្រាប់អ្នក"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"បរាជ័យក្នុងការថតគណនី សូមព្យាយាមម្តងទៀតពេលក្រោយ។"</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"ដើម្បីស្កេនបារកូដ អ្នកត្រូវមានសិទ្ធិអនុញ្ញាតប្រើកាមេរ៉ា។"</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"អនុញ្ញាតឲ្យកម្មវិធីផ្ទៀងផ្ទាត់ប្រើកាមេរ៉ាឧបករណ៍របស់អ្នកប្រសិនបើអ្នកចង់ស្កេនបាកូដ"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"មិនមានទំហំផ្ទុកគ្រប់គ្រាន់នៅលើឧបករណ៍របស់អ្នកទេ"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"អ្នកត្រូវលុបឯកសារមួយចំនួនមុនពេលដែលអ្នកអាចប្រើកម្មវិធីស្កេនបាកូដនេះ"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"ឥឡូវនេះកម្មវិធីស្កេនបាកូដមិនអាចប្រើបានទេ"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"ឧបករណ៍នេះមិនមានកាមេរ៉ាទេ"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"កម្មវិធីផ្ទៀងផ្ទាត់ត្រូវការប្រើកាមេរ៉ាដើម្បីស្កេនបាកូដ"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"ដាក់បារកូដក្នុងខ្សែពណ៌ក្រហម"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"អាប់ដេត &lt;b&gt;សេវាកម្ម Google Play&lt;/b&gt; ដើម្បីប្រើកម្មវិធីស្កេនបាកូដនេះ"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"ធ្វើ​បច្ចុប្បន្នភាព &lt;b&gt;សេវាកម្ម Google Play&lt;/b&gt; ដើម្បី​ប្រើ​សោសុវត្ថិភាព"</string>
+</resources>

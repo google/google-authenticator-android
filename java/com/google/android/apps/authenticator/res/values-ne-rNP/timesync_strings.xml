@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"कोडहरूका लागि समय सुधार"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"अब सिंक गर्नुहोस्"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"यो सुविधाको बारेमा"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"अब सिंक गर्नुहोस्"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"अब सिंक गर्नुहोस्"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"सर्भरसँग जडान गर्दै..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"समय सुधारियो"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"प्रमाणक आन्तरिक घडि Google सर्भर द्वारा प्रदान गरिएको समय जोडा समायोजित गरिएको छ। \n\n यस उपकरणमा तिथि र समय सेटिङ्स परिवर्तन गरिएको छैन।"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"समय पहिले देखि नै सहि छ।"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"प्रमाणिकरणकर्ताको आन्तरिक घडि समायोजन भएको थिएन किनकि यो Google सर्वरसँग पहिले नै सिंक भएको देखियो।"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"अब सिंक गर्नुहोस्"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Google सर्भरसँग सम्पर्कगर्दा समस्या आएको छ। आफ्नो सञ्जाल सेटिङ्ग्स जाँच गरि फेरि प्रयास गर्नुहोला।"</string>
+</resources>

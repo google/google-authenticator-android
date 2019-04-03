@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <!-- Title of the preference screen to configure the correction of the app's internal time. -->
+  <string name="timesync_preference_screen_title">Time correction for codes</string>
+
+  <!-- Title of the preference to sync the app's internal time with Google. -->
+  <string name="timesync_sync_now_preference_title">Sync now</string>
+
+  <!-- Title of the preference to display more information about the Time Correction feature. -->
+  <string name="timesync_about_feature_preference_title">About this feature</string>
+
+  <!-- DO NOT TRANSLATE: URL of the web page displayed when the user clicks on
+       Settings -> Time correction for codes -> About this feature. -->
+  <string name="timesync_about_feature_url" translatable="false">
+    https://support.google.com/accounts?p=timesync
+  </string>
+
+  <!-- Title of the screen that syncs/corrects the app's internal time with Google servers. -->
+  <string name="timesync_sync_now_screen_title">Sync now</string>
+
+  <!-- Title of the progress dialog displayed when contacting Google servers to correct the app's
+       internal time. -->
+  <string name="timesync_sync_now_progress_dialog_title">Sync now</string>
+
+  <!-- Details of the progress dialog displayed when contacting Google servers to correct the app's
+       internal time. -->
+  <string name="timesync_sync_now_progress_dialog_details">Connecting to server&#8230;</string>
+
+  <!-- Title of the dialog displayed after the application contacted Google servers and
+       corrected its internal time. -->
+  <string name="timesync_sync_now_time_corrected_dialog_title">Time corrected</string>
+
+  <!-- Details of the dialog displayed after the application contacted Google servers and
+       corrected its internal time. -->
+  <string name="timesync_sync_now_time_corrected_dialog_details">
+    Authenticator\'s internal clock has been adjusted to match the time provided by Google servers.
+    \n\nThe Date &amp; Time settings on this device have not been changed.
+  </string>
+
+  <!-- Title of the dialog displayed after the application contacted Google servers and
+       discovered that the internal time does not need correcting. -->
+  <string name="timesync_sync_now_time_already_correct_dialog_title">Time already correct</string>
+
+  <!-- Details of the dialog displayed after the application contacted Google servers and
+       discovered that the internal time does not need correcting. -->
+  <string name="timesync_sync_now_time_already_correct_dialog_details">
+    Authenticator\'s internal clock was not adjusted because it appears to already be in sync with
+    Google servers.
+  </string>
+
+  <!-- Title of the dialog displayed after the application encountered a network connectivity error
+       while trying to contact Google servers to see if its internal time needs to be
+       corrected. -->
+  <string name="timesync_sync_now_connectivity_error_dialog_title">Sync now</string>
+
+  <!-- Details of the dialog displayed after the application encountered a network connectivity
+       error while trying to contact Google servers to see if its internal time needs to be
+       corrected. -->
+  <string name="timesync_sync_now_connectivity_error_dialog_details">
+    There was a problem contacting Google\'s server. Please check your network settings and try
+    again.
+  </string>
+
+</resources>

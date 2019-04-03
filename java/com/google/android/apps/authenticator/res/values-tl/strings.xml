@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Ilagay ang mga detalye ng account"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Idagdag"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Paano ito gumagana"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Mga Setting"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Mga Setting"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Tulong at feedback"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Tingnan sa light mode"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Tingnan sa dark mode"</string>
+    <string name="button_next" msgid="2321252361372851972">"Susunod"</string>
+    <string name="button_back" msgid="414120249698283380">"Bumalik"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Pangalan ng account"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Iyong key"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Masyadong maikli ang halaga ng key"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Mayroong ilegal na character ang value ng key"</string>
+    <string name="error_title" msgid="1784361744549854479">"Error"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Hindi nakilala ang key."</string>
+    <string name="error_qr" msgid="1076904454315180481">"Hindi maipaliwanag ang code ng QR."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Hindi maidagdag ang account. Mangyaring makipag-ugnay sa Techstop para sa tulong."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Na-save ang lihim"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"I-save ang key para sa"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Hindi ma-save ang lihim na walang laman"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Ilagay ang code sa pag-verify na ito kapag hiningi sa pag-sign in"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Integrity check value"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Suriin ang halaga ng key"</string>
+    <string name="update_button" msgid="288114907177363159">"I-UPDATE"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"HINDI, SALAMAT"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Mga open-source na lisensya"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Mga tuntunin ng serbisyo"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Patakaran sa privacy"</string>
+    <string name="check_code" msgid="8970489904648838257">"Upang matingnan na mayroon kang tamang halaga ng key para sa <xliff:g id="ACCOUNT">%1$s</xliff:g> i-verify na ang halaga dito ay tumutugma sa halaga na pagsusuri sa integridad na ibinigay ng server:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Pangkalahatang pagbubukod sa seguridad"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Pagbubukod sa pag-decode"</string>
+    <string name="submit" msgid="1518558163262431303">"I-save"</string>
+    <string name="cancel" msgid="5705561042616477184">"Kanselahin"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Alisin"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Alisin ang account"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"Alisin ang <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Aalisin ng pag-aalis ng account na ito &lt;b&gt;ang iyong kakayahang&lt;/b&gt; bumuo ng mga code, gayunpaman, hindi &lt;b&gt;nito&lt;/b&gt; i-o-off ang 2-salik na pagpapatotoo. Maaari ka nitong pigilan mula sa pag-sign in sa iyong account. &lt;p&gt; Bago alisin: &lt;ul&gt; &lt;li&gt;I-off ang 2-salik na pagpapatotoo para sa account na ito, o&lt;/li&gt; &lt;li&gt;Tiyaking mayroon kang kahaliling mekanismo para sa pagbuo ng mga code.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Aalisin ng pag-aalis ng account na ito &lt;b&gt;ang iyong kakayahang&lt;/b&gt; bumuo ng mga code, gayunpaman, hindi &lt;b&gt;nito&lt;/b&gt; i-o-off ang 2-step na pag-verify. Maaari ka nitong pigilan mula sa pag-sign in sa iyong account. &lt;p&gt; Bago alisin: &lt;ul&gt; &lt;li&gt;I-off ang 2-step na pag-verify para sa account na ito, o&lt;/li&gt; &lt;li&gt;Tiyaking mayroon kang kahaliling mekanismo para sa pagbuo ng mga code.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Palitan ng pangalan"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Paumanhin, ginagamit na ang pangalang iyon."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Kopyahin sa clipboard"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Kinopya sa clipboard ang verification code."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP Code"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Kunin ang code"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"OK"</string>
+    <string name="close" msgid="3805915606074588527">"ISARA"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Uri ng key"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Batay sa oras"</item>
+    <item msgid="5212912099902129712">"Batay sa tagabilang"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Paano ito gumagana"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Laktawan"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Susunod"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Tapos na"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Pagsa-sign in sa Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Sa tuwing magsa-sign in ka sa Google, ilalagay mo ang iyong username at password tulad ng nakasanayan."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Kapag hiningan ka ng code, makakakuha ka ng isa mula sa app na ito."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Manatiling ligtas at may kontrol"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Kapag nag-sign in ka sa isang device na pinagkakatiwalaan mo, maaari mong sabihin sa amin na ihinto ang paghingi ng mga code sa device na iyon."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Mapoprotektahan ka pa rin dahil hihingi kami ng mga code kapag sinubukan mo (o ng ibang tao) na mag-sign in sa iyong account mula sa iba pang device"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Handa nang idagdag ang account?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Tandaan, maaari mong i-update ang iyong mga setting anumang oras sa g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"I-update ang iyong mga numero ng telepono"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Gumawa ng iba pang mga opsyon sa pag-backup"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"I-off ang 2-Step na Pag-verify"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Naidagdag ang account"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Kapag hiningan ka ng verification code, kunin ito rito. Madalas na nagbabago ang code, kaya hindi ito kailangang kabisaduhin."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Magdagdag ng account"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Sa oras na i-on mo ang 2-Step na Pag-verify para sa iyong Google Account (o iba pang account), kakailanganin mo ng"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Iyong password"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Isang code na bubuuin ng app na ito para sa iyo"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Nabigong muling i-order ang mga account. Pakisubukang muli sa ibang pagkakataon."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Upang mag-scan ng mga barcode, kailangan namin ng pahintulot sa camera."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Payagan ang Authenticator na gamitin ang camera ng iyong device kung gusto mong mag-scan ng mga barcode"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Hindi sapat ang espasyo sa iyong device"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Kakailanganin mong mag-delete ng ilang file bago mo magagamit ang scanner ng barcode"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Hindi available ngayon ang scanner ng barcode"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Walang camera ang iyong device"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Kailangan ng Authenticator ng camera upang makapag-scan ng mga barcode"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Ilagay ang barcode sa pagitan ng mga pulang linya"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"I-update ang &lt;b&gt;Google Play Services&lt;/b&gt; upang magamit ang scanner ng barcode"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"I-update ang &lt;b&gt;Mga Serbisyo ng Google Play&lt;/b&gt; upang magamit ang Security Key"</string>
+</resources>

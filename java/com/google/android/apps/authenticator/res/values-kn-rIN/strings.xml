@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"ಖಾತೆ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"ಸೇರಿಸಿ"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"ಅದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"ಸಹಾಯ ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆ"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"ಬೆಳಕಿನ ಮೋಡ್‌ನಲ್ಲಿ ವೀಕ್ಷಿಸಿ"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"ಕತ್ತಲೆ ಮೋಡ್‌ನಲ್ಲಿ ವೀಕ್ಷಿಸಿ"</string>
+    <string name="button_next" msgid="2321252361372851972">"ಮುಂದೆ"</string>
+    <string name="button_back" msgid="414120249698283380">"ಹಿಂದೆ"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"ಖಾತೆ ಹೆಸರು"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"ನಿಮ್ಮ ಕೀ"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"ಕೀಲಿ ಮೌಲ್ಯವು ತುಂಬಾ ಚಿಕ್ಕದಾಗಿದೆ"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"ಕೀಲಿ ಮೌಲ್ಯವು ಕಾನೂನುಬಾಹಿರ ಅಕ್ಷರಗಳನ್ನು ಹೊಂದಿದೆ"</string>
+    <string name="error_title" msgid="1784361744549854479">"ದೋಷ"</string>
+    <string name="error_uri" msgid="8889749448317216536">"ಕೀಲಿಯು ಮಾನ್ಯತೆ ಪಡೆದಿಲ್ಲ."</string>
+    <string name="error_qr" msgid="1076904454315180481">"QR ಕೋಡ್ ಅನ್ನು ವಿವರಿಸಲಾಗಲಿಲ್ಲ."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"ಖಾತೆಯನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ಸಹಾಯಕ್ಕಾಗಿ TechStop ಸಂಪರ್ಕಿಸಿ."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"ರಹಸ್ಯವನ್ನು ಉಳಿಸಲಾಗಿದೆ"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"ಇದಕ್ಕಾಗಿ ಕೀಲಿಯನ್ನು ಉಳಿಸಿ"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"ಖಾಲಿ ರಹಸ್ಯವನ್ನು ಉಳಿಸಲಾಗುವುದಿಲ್ಲ"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"ಸೈನ್ ಇನ್ ಸಮಯದಲ್ಲಿ ಕೇಳಿದಾಗ ಈ ಪರಿಶೀಲನೆ ಕೋಡ್ ನಮೂದಿಸಿ"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"ಸಮಗ್ರತೆ ಪರಿಶೀಲನೆ ಮೌಲ್ಯ"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"ಕೀಲಿ ಮೌಲ್ಯವನ್ನು ಪರಿಶೀಲಿಸಿ"</string>
+    <string name="update_button" msgid="288114907177363159">"ಅಪ್‌ಡೇಟ್‌"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"ಬೇಡ ಧನ್ಯವಾದಗಳು"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"ಓಪನ್ ಸೋರ್ಸ್ ಪರವಾನಗಿಗಳು"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"ಸೇವಾ ನಿಯಮಗಳು"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"ಗೌಪ್ಯತಾ ನೀತಿ"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g> ಗಾಗಿ ನೀವು ಸರಿಯಾದ ಕೀಲಿ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿರುವಿರಿ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಲು ಸರ್ವರ್ ಒದಗಿಸಲಾದ ಸಮಗ್ರತೆ ಪರಿಶೀಲನೆ ಮೌಲ್ಯದೊಂದಿಗೆ ಇಲ್ಲಿನ ಮೌಲ್ಯವು ಹೊಂದಾಣಿಕೆಯಾಗುತ್ತದೆಯೆ ಎಂದು ಪರಿಶೀಲಿಸಿ:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"ಸಾಮಾನ್ಯ ಭದ್ರತೆ ವಿನಾಯತಿ"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"ಡೀಕೋಡಿಂಗ್ ವಿನಾಯಿತಿ"</string>
+    <string name="submit" msgid="1518558163262431303">"ಉಳಿಸು"</string>
+    <string name="cancel" msgid="5705561042616477184">"ರದ್ದು"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"ತೆಗೆದುಹಾಕಿ"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"ಖಾತೆಯನ್ನು ತೆಗೆದುಹಾಕಿ"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> ಅನ್ನು ತೆಗೆದುಹಾಕುವುದೇ?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"ಈ ಖಾತೆಯನ್ನು ತೆಗೆದುಹಾಕುವುದರಿಂದ ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸುವ &lt;b&gt;ನಿಮ್ಮ ಸಾಮರ್ಥ್ಯವನ್ನು ಕುಂಠಿತಗೊಳಿಸುತ್ತದೆ&lt;/b&gt; ಅದಾಗ್ಯೂ, ಇದು &lt;b&gt;not&lt;/b&gt; 2 ಅಂಶದ ಪ್ರಮಾಣೀಕರಣವನ್ನು ಆಫ್ ಮಾಡುತ್ತದೆ. ನಿಮ್ಮ ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡುವುದರಿಂದ ಇದನ್ನು ತಡೆಗಟ್ಟಬಹುದು. &lt;p&gt; ತೆಗೆದುಹಾಕುವುದಕ್ಕೂ ಮುನ್ನ: &lt;ul&gt; &lt;li&gt; ಈ ಖಾತೆಗಾಗಿ 2 ಅಂಶದ ಪ್ರಮಾಣೀಕರಣವನ್ನು ಆಫ್ ಮಾಡಿ ಅಥವಾ &lt;/li&gt; &lt;li&gt;ನೀವು ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸುವುದಕ್ಕಾಗಿ ಪರ್ಯಾಯ ಮೆಕಾನಿಸಮ್ ಅನ್ನು ಹೊಂದಿರುವಿರಿ ಎಂಬುದನ್ನು ಖಾತ್ರಿ ಪಡಿಸಿಕೊಳ್ಳಿ.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"ಈ ಖಾತೆಯನ್ನು ತೆಗೆದುಹಾಕುವುದರಿಂದ ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸುವ &lt;b&gt;ನಿಮ್ಮ ಸಾಮರ್ಥ್ಯವನ್ನು ಕುಂಠಿತಗೊಳಿಸುತ್ತದೆ&lt;/b&gt; ಅದಾಗ್ಯೂ, ಇದು &lt;b&gt;not&lt;/b&gt; 2 ಹಂತದ ಪರಿಶೀಲನೆಯನ್ನು ಆಫ್ ಮಾಡುತ್ತದೆ. ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಸೈನ್ ಇನ್ ಮಾಡುವುದರಿಂದ ಇದನ್ನು ತಡೆಗಟ್ಟಬಹುದು. &lt;p&gt; ತೆಗೆದುಹಾಕುವುದಕ್ಕೂ ಮುನ್ನ: &lt;ul&gt; &lt;li&gt; ಈ ಖಾತೆಗಾಗಿ 2 ಹಂತದ ಪರಿಶೀಲನೆಯನ್ನು ಆಫ್ ಮಾಡಿ ಅಥವಾ &lt;/li&gt; &lt;li&gt;ನೀವು ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸುವುದಕ್ಕಾಗಿ ಪರ್ಯಾಯ ಮೆಕಾನಿಸಮ್ ಅನ್ನು ಹೊಂದಿರುವಿರಿ ಎಂಬುದನ್ನು ಖಾತ್ರಿ ಪಡಿಸಿಕೊಳ್ಳಿ.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"ಮರುಹೆಸರಿಸು"</string>
+    <string name="error_exists" msgid="9037595140877350695">"ಕ್ಷಮಿಸಿ, ಆ ಹೆಸರು ಈಗಾಗಲೇ ಬಳಕೆಯಲ್ಲಿದೆ."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಪರಿಶೀಲನೆ ಕೋಡ್ ನಕಲಿಸಲಾಗಿದೆ."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP ಕೋಡ್"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"ಕೋಡ್ ಪಡೆದುಕೊಳ್ಳಿ"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"ಸರಿ"</string>
+    <string name="close" msgid="3805915606074588527">"ಮುಚ್ಚು"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"ಕೀಲಿ ಪ್ರಕಾರ"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"ಸಮಯ ಅವಲಂಬಿತ"</item>
+    <item msgid="5212912099902129712">"ಕೌಂಟರ್ ಆಧಾರಿತ"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"ಅದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"ಸ್ಕಿಪ್‌"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"ಮುಂದೆ"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"ಮುಗಿದಿದೆ"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google ಗೆ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗುತ್ತಿದೆ"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"ನೀವು Google ಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿದಾಗ, ನೀವು ಎಂದಿನಂತೆ ನಿಮ್ಮ ಬಳಕೆದಾರ ಹೆಸರು ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ನಮೂದಿಸಬೇಕು."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"ನಿಮ್ಮಲ್ಲಿ ಕೋಡ್‌‌ ಕೇಳಿದರೆ ನಿಮಗೆ ಈ ಅಪ್ಲಿಕೇಶನ್‌ನಿಂದ ಒಂದನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"ಸುರಕ್ಷತೆ ಮತ್ತು ನಿಯಂತ್ರಣದಲ್ಲಿರಿ"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"ನಿಮ್ಮ ವಿಶ್ವಾಸಾರ್ಹ ಸಾಧನದೊಂದಿಗೆ ನೀವು ಸೈನ್ ಇನ್ ಮಾಡಿದಾಗ, ಆ ಸಾಧನದಲ್ಲಿ ಕೋಡ್‌ಗಳನ್ನು ಕೇಳಬೇಡಿ ನೀವು ನಮಗೆ ತಿಳಿಸಬಹುದು."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"ನೀವು ಈಗಲೂ ವ್ಯಾಪ್ತಿಗೆ  ಒಳಪಟ್ಟಿದ್ದೀರಿ, ಏಕೆಂದರೆ ಇತರ ಸಾಧನಗಳ ಮೂಲಕ ನೀವು (ಅಥವಾ ಬೇರೆ ಯಾರಾದರೂ) ನಿಮ್ಮ ಖಾತೆಗೆ ಸೈನ್ ಆಗಲು ಪ್ರಯತ್ನಿಸಿದರೆ ನಾವು ನಿಮ್ಮನ್ನು ಕೋಡ್‌ಗಳಿಗಾಗಿ ಕೇಳುತ್ತೇವೆ"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"ಖಾತೆಯನ್ನು ಸೇರಿಸಲು ಸಿದ್ಧರಾಗಿರುವಿರಾ?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"ನೆನಪಿಡಿ, ನೀವು ಯಾವ ಸಮಯದಲ್ಲಾದರೂ g.co/2sv ನಲ್ಲಿ ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಬಹುದು"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆಗಳನ್ನು ಪರಿಷ್ಕರಿಸಿ"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"ಬೇರೆ ಬ್ಯಾಕ್‌ಅಪ್ ಆಯ್ಕೆಗಳನ್ನು ರಚಿಸಿ"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"2-ಹಂತದ ಪರಿಶೀಲನೆಯನ್ನು ಆಫ್ ಮಾಡಿ"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"ಖಾತೆಯನ್ನು ಸೇರಿಸಲಾಗಿದೆ"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"ನಿಮಗೆ ಪರಿಶೀಲನಾ ಕೋಡ್ ಕೇಳಿದಾಗ ಇಲ್ಲಿ ಪಡೆದುಕೊಳ್ಳಿ. ಕೋಡ್ ಆಗಾಗ ಬದಲಾಗುತ್ತಿರುತ್ತದೆ. ಹೀಗಾಗಿ ಅದನ್ನು ನೆನಪಿಡಬೇಕಾದ ಅಗತ್ಯವಿಲ್ಲ."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"ಖಾತೆಯನ್ನು ಸೇರಿಸಿ"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"ನಿಮ್ಮ Google ಖಾತೆ (ಅಥವಾ ಇತರ ಖಾತೆಗಳು) ಗಾಗಿ 2 ಹಂತದ ಪರಿಶೀಲನೆಯನ್ನು ನೀವು ಆನ್ ಮಾಡಿದ ನಂತರ, ನಿಮಗೆ ಇದರ ಅಗತ್ಯವಿದೆ"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"ಈ ಅಪ್ಲಿಕೇಶನ್‌ ನಿಮಗಾಗಿ ರಚಿಸುವ ಕೋಡ್"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"ಖಾತೆಗಳನ್ನು ಪುನಃ ಕ್ರಮಗೊಳಿಸಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ನಂತರ ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"ಬಾರ್‌ಕೋಡ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲು ನಮಗೆ ಕ್ಯಾಮೆರಾ ಅನುಮತಿಯ ಅಗತ್ಯವಿದೆ."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"ನೀವು ಬಾರ್‌ಕೋಡ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲು ಬಯಸಿದಲ್ಲಿ ಪ್ರಮಾಣಕಾರಿಯು ನಿಮ್ಮ ಸಾಧನದ ಕ್ಯಾಮೆರಾವನ್ನು ಬಳಸಲು ಅವಕಾಶನೀಡಿ"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಸಾಕಷ್ಟು ಜಾಗವಿಲ್ಲ"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"ನೀವು ಬಾರ್‌ಕೋಡ್ ಸ್ಕ್ಯಾನರ್ ಅನ್ನು ಬಳಕೆಮಾಡುವುದಕ್ಕೂ ಮುನ್ನ ಕೆಲವು ಫೈಲ್‌ಗಳನ್ನು ಅಳಿಸಬೇಕಾದ ಅಗತ್ಯವಿದೆ"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"ಬಾರ್‌ಕೋಡ್ ಸ್ಕ್ಯಾನರ್ ಈಗ ಲಭ್ಯವಿಲ್ಲ"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಕ್ಯಾಮೆರಾ ಇಲ್ಲ"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"ಪ್ರಮಾಣಕಾರಿಯು ಬಾರ್‌ಕೋಡ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡುವುದಕ್ಕೆ ಕ್ಯಾಮೆರಾದ ಅಗತ್ಯವಿದೆ"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"ಕೆಂಪು ಗೆರೆಗಳ ನಡುವೆ ಬಾರ್‌ಕೋಡ್ ಇರಿಸಿ"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"ಬಾರ್‌ಕೋಡ್ ಸ್ಕ್ಯಾನರ್ ಅನ್ನು ಬಳಕೆಮಾಡುವುದಕ್ಕಾಗಿ &lt;b&gt;Google Play ಸೇವೆಗಳನ್ನು &lt;/b&gt; ಅಪ್‌ಡೇಟ್‌ ಮಾಡಿ"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"ಸುರಕ್ಷತಾ ಕೀಯನ್ನು ಬಳಸಲು &lt;b&gt;Google Play ಸೇವೆಗಳನ್ನು&lt;/b&gt; ಅಪ್‌ಡೇಟ್ ಮಾಡಿ"</string>
+</resources>

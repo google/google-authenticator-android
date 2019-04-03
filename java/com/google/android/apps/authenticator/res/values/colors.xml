@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources>
+  <color name="countdownIndicator">@color/google_blue500</color>
+
+  <color name="actionBarColor">@color/google_blue500</color>
+  <color name="statusBarColor">@color/google_blue700</color>
+  <color name="primaryTextColor">#212121</color>
+
+  <color name="listTextColor">#616161</color>
+
+  <color name="floatingButtonColor">#DD2C00</color>
+
+  <color name="windowBackgroundColor">#FAFAFA</color>
+
+  <color name="userRowBackgroundColor">#FFF</color>
+  <color name="userRowSelectedBackgroundColor">@color/google_blue100</color>
+  <color name="userRowClickedBackgroundColor">@color/google_grey300</color>
+  <color name="userRowPinValueColor">@color/google_blue500</color>
+  <color name="userRowCurrentUserColor">#8A000000</color>
+  <color name="userListBackgroundColor">#F2F2F2</color>
+
+  <color name="howItWorksBackgroundColor">@color/google_blue500</color>
+  <color name="pagination_inactive">#40000000</color>
+  <color name="pagination_active">#80FFFFFF</color>
+  <color name="paging_indicator_color">#40000000</color>
+
+  <color name="barcode_scanner_background">#000</color>
+  <color name="barcode_scanner_border_background">#a0000000</color>
+
+  <color name="countdownIndicatorDark">@color/google_grey400</color>
+  <color name="primaryTextColorDark">@color/google_grey200</color>
+  <color name="actionBarColorDark">@color/google_grey900</color>
+  <color name="statusBarColorDark">#141414</color>
+  <color name="userRowBackgroundColorDark">@color/google_grey800</color>
+  <color name="userRowSelectedBackgroundColorDark">@color/google_grey600</color>
+  <color name="userRowClickedBackgroundColorDark">@color/google_grey700</color>
+  <color name="userRowPinValueColorDark">@color/google_grey200</color>
+  <color name="userRowCurrentUserColorDark">@color/google_grey400</color>
+  <color name="userListBackgroundColorDark">@color/google_grey900</color>
+
+  <color name="google_blue100">#c6dafc</color>
+  <color name="google_blue500">#4285f4</color>
+  <color name="google_blue700">#3367D6</color>
+  <color name="google_grey200">#EEE</color>
+  <color name="google_grey300">#E0E0E0</color>
+  <color name="google_grey400">#BDBDBD</color>
+  <color name="google_grey600">#757575</color>
+  <color name="google_grey700">#616161</color>
+  <color name="google_grey800">#424242</color>
+  <color name="google_grey900">#212121</color>
+
+</resources>

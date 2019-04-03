@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google OTP"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"OTP"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"계정 세부정보 입력"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"추가"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"작동 원리"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"설정"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"설정"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"고객센터"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"밝은 모드로 보기"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"어두운 모드로 보기"</string>
+    <string name="button_next" msgid="2321252361372851972">"다음"</string>
+    <string name="button_back" msgid="414120249698283380">"뒤로"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"계정 이름"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"내 키"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"키 값이 너무 짧습니다."</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"키 값에 잘못된 문자가 있습니다."</string>
+    <string name="error_title" msgid="1784361744549854479">"오류"</string>
+    <string name="error_uri" msgid="8889749448317216536">"키를 인식할 수 없습니다."</string>
+    <string name="error_qr" msgid="1076904454315180481">"QR 코드를 해석할 수 없습니다."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"계정을 추가할 수 없습니다. TechStop에 문의하시기 바랍니다."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"비밀번호 저장됨"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"키 저장 계정:"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"비어 있는 비밀번호를 저장할 수 없습니다."</string>
+    <string name="enter_pin" msgid="7652218068475671082">"로그인 중 메시지가 표시되면 인증 코드를 입력하세요."</string>
+    <string name="check_code_title" msgid="6308604727562833139">"무결성 검사 값"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"키 값 확인"</string>
+    <string name="update_button" msgid="288114907177363159">"업데이트"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"아니요"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"오픈소스 라이선스"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"서비스 약관"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"개인정보처리방침"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g>에 대한 올바른 키 값을 가지고 있는지 확인하려면 여기에 표시된 값과 서버에서 제공한 무결성 확인 값이 일치하는지 확인하세요.&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"일반적인 보안 예외"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"디코딩 예외"</string>
+    <string name="submit" msgid="1518558163262431303">"저장"</string>
+    <string name="cancel" msgid="5705561042616477184">"취소"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"삭제"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"계정 삭제"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g>을(를) 삭제하시겠습니까?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"계정을 삭제하면 코드를 생성할 수 있는 &lt;b&gt;권한도 사라집니다&lt;/b&gt;. 하지만 2단계 인증도 사용중지되는 것은 &lt;b&gt;아닙니다&lt;/b&gt;. 이때문에 계정에 로그인하지 못할 수도 있습니다. &lt;p&gt; 계정을 삭제하기 전에 다음을 수행하세요. &lt;ul&gt; &lt;li&gt;계정에서 2단계 인증을 사용중지합니다. 또는&lt;/li&gt; &lt;li&gt;코드를 생성할 수 있는 다른 대체 수단을 마련합니다.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"계정을 삭제하면 코드를 생성할 수 있는 &lt;b&gt;권한도 사라집니다&lt;/b&gt;. 하지만 2단계 인증도 사용중지되는 것은 &lt;b&gt;아닙니다&lt;/b&gt;. 이때문에 계정에 로그인하지 못할 수도 있습니다. &lt;p&gt; 계정을 삭제하기 전에 다음을 수행하세요. &lt;ul&gt; &lt;li&gt;계정에서 2단계 인증을 사용중지합니다. 또는&lt;/li&gt; &lt;li&gt;코드를 생성할 수 있는 다른 대체 수단을 마련합니다.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"이름 바꾸기"</string>
+    <string name="error_exists" msgid="9037595140877350695">"죄송합니다. 이미 사용 중인 이름입니다."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"클립보드에 복사"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"인증 코드가 클립보드에 복사되었습니다."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP 코드"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"코드 받기"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"확인"</string>
+    <string name="close" msgid="3805915606074588527">"닫기"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"키 유형"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"시간 기준"</item>
+    <item msgid="5212912099902129712">"카운터 기준"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"기본 원리"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"건너뛰기"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"다음"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"완료"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google에 로그인"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Google에 로그인할 때마다 보통 때처럼 사용자 이름과 비밀번호를 입력합니다."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"코드를 입력하라는 메시지가 표시되면 이 앱에서 코드를 생성할 수 있습니다."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"계정 보안 유지"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"신뢰할 수 있는 기기에서 로그인할 경우에는 기기에서 코드를 요청하지 않도록 할 수 있습니다."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"이렇게 설정해도 다른 기기에서 내 계정으로 로그인하려는 경우에는 나를 포함한 모든 사용자에게 코드를 요청하므로 계속해서 계정을 보호할 수 있습니다."</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"계정을 추가하시겠습니까?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"언제든지 g.co/2sv에서 설정을 업데이트할 수 있습니다."</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"전화번호 업데이트"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"다른 백업 옵션 생성"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"2단계 인증 사용 중지"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"계정이 추가됨"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"인증 코드를 입력하라는 메시지가 표시되면 여기에서 확인하세요. 인증 코드는 자주 변경되므로 외우지 않아도 됩니다."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"계정 추가"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"내 Google 계정 및 기타 계정에서 2단계 인증을 사용 설정한 후에 다음이 필요합니다."</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"비밀번호"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"이 앱에서 생성하는 코드"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"계정 재정렬에 실패했습니다. 나중에 다시 시도해 주세요."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"바코드를 스캔하려면 카메라 권한이 필요합니다."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"바코드를 스캔하려면 OTP가 기기의 카메라를 사용할 수 있도록 허용하세요."</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"기기에 저장 공간이 충분하지 않습니다"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"바코드 스캐너를 사용하기 전에 일부 파일을 삭제해야 합니다"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"현재 바코드 스캐너를 사용할 수 없습니다."</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"이 기기에는 카메라가 없습니다."</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"OTP는 바코드를 스캔할 수 있는 카메라가 필요합니다."</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"붉은 선 안에 바코드를 위치시키세요."</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"바코드 스캐너를 사용하려면 &lt;b&gt;Google Play 서비스&lt;/b&gt;를 업데이트하세요."</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"보안 키를 사용하려면 &lt;b&gt;Google Play 서비스&lt;/b&gt;를 업데이트하세요."</string>
+</resources>

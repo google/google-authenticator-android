@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"കോഡുകൾക്കായുള്ള സമയം ശരിയാക്കൽ"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"ഇപ്പോള്‍ സമന്വയിപ്പിക്കുക"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"ഈ സവിശേഷതയെക്കുറിച്ച്"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"ഇപ്പോള്‍ സമന്വയിപ്പിക്കുക"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"ഇപ്പോള്‍ സമന്വയിപ്പിക്കുക"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"സെർവറിലേക്ക് കണക്റ്റുചെയ്യുന്നു..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"സമയം ശരിയാക്കി"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"ഓതന്റിക്കേറ്ററിന്റെ ആന്തരിക ക്ലോക്കിനെ Google സെർവറുകൾ നൽകിയ സമയവുമായി പൊരുത്തപ്പെടുന്ന തരത്തിൽ ക്രമീകരിച്ചു. \n\nഈ ഉപകരണത്തിലെ തീയതി &amp; സമയ ക്രമീകരണങ്ങൾ മാറ്റിയില്ല."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"സമയം ഇതിനകം തന്നെ ശരിയാണ്"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"ഓതന്റിക്കേറ്ററിന്റെ ആന്തരിക ക്ലോക്കിനെ ക്രമീകരിച്ചില്ല കാരണം ഇത് ഇതിനകം തന്നെ Google സെർവറുകളുമായി സമന്വയത്തിലാണെന്ന് തോന്നുന്നു."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"ഇപ്പോള്‍ സമന്വയിപ്പിക്കുക"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Google-ന്റെ സെർവറുമായി ബന്ധിപ്പിക്കുന്നതിൽ ഒരു പ്രശ്‌നമുണ്ടായി. നിങ്ങളുടെ നെറ്റ്‌വർക്ക് ക്രമീകരണങ്ങൾ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക."</string>
+</resources>

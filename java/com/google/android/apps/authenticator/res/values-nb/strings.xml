@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google-autentisering"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Autentisering"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Skriv inn kontoopplysningene dine"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Legg til"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Slik fungerer det"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Innstillinger"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Innstillinger"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Hjelp og tilbakemelding"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Se i lys modus"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Se i mørk modus"</string>
+    <string name="button_next" msgid="2321252361372851972">"Neste"</string>
+    <string name="button_back" msgid="414120249698283380">"Tilbake"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Kontonavn"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Nøkkelen din"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Nøkkelverdien er for kort"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Nøkkelverdi har ugyldig tegn"</string>
+    <string name="error_title" msgid="1784361744549854479">"Feil"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Kjenner ikke igjen nøkkel."</string>
+    <string name="error_qr" msgid="1076904454315180481">"Kan ikke tolke QR-koden."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Kan ikke legge til kontoen. Ta kontakt med TechStop for å få hjelp."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Hemmelig nøkkel er lagret"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Lagre nøkkel for"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Kan ikke lagre hemmelig nøkkel som er tom"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Skriv inn denne bekreftelseskoden når du blir bedt om det i løpet av påloggingsprosessen"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Integritetskontrollverdi"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Kontr. nøkkelverdi"</string>
+    <string name="update_button" msgid="288114907177363159">"OPPDATER"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"NEI TAKK"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Åpen kildekode-lisenser"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Vilkår for bruk"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Personvern"</string>
+    <string name="check_code" msgid="8970489904648838257">"Du kan kontrollere at du har riktig nøkkelverdi for <xliff:g id="ACCOUNT">%1$s</xliff:g> ved å bekrefte at verdien her samsvarer med integritetskontrollverdien som oppgis av tjeneren:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Generelt sikkerhetsunntak"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Dekodingsunntak"</string>
+    <string name="submit" msgid="1518558163262431303">"Lagre"</string>
+    <string name="cancel" msgid="5705561042616477184">"Avbryt"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Slett"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Slett kontoen"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"Vil du slette <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Hvis du sletter denne kontoen, &lt;b&gt;vil du ikke lenger kunne&lt;/b&gt; generere koder. Handlingen vil for øvrig &lt;b&gt;ikke&lt;/b&gt; deaktivere 2-trinns bekreftelse, og dette kan medføre at du ikke får logget deg på kontoen din. &lt;p&gt; Før sletting av kontoen: &lt;ul&gt; &lt;li&gt;Deaktiver 2-trinns bekreftelse for denne kontoen eller&lt;/li&gt; &lt;li&gt;påse at du har en alternativ måte å generere koder på.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Hvis du sletter denne kontoen, &lt;b&gt;vil du ikke lenger kunne&lt;/b&gt; generere koder. Handlingen vil for øvrig &lt;b&gt;ikke&lt;/b&gt; deaktivere 2-trinns bekreftelse, og dette kan medføre at du ikke får logget deg på kontoen din. &lt;p&gt; Før sletting av kontoen: &lt;ul&gt; &lt;li&gt;Deaktiver 2-trinns bekreftelse for denne kontoen eller&lt;/li&gt; &lt;li&gt;påse at du har en alternativ måte å generere koder på.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Gi nytt navn"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Beklager, dette navnet er opptatt."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Kopier til utklippstavlen"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Bekreftelseskoden er kopiert til utklippstavlen."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"Kode for engangspassord"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Hent kode"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"OK"</string>
+    <string name="close" msgid="3805915606074588527">"LUKK"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Nøkkeltype"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Tidsbasert"</item>
+    <item msgid="5212912099902129712">"Eksternenhetsbasert"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Slik virker det"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Hopp over"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Neste"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Ferdig"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google-pålogging"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Når du logger på Google, skriver du inn brukernavnet og passordet ditt som vanlig."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Når du blir spurt om en kode, kan du hente den fra denne appen."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Vær trygg og ha kontroll"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Når du logger på med en enhet du stoler på, kan du be oss om å slutte å be om koder på den aktuelle enheten."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Du er fortsatt beskyttet, fordi vi ber om koder når du (eller andre) prøver å logge på kontoen din fra andre enheter"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Er du klar for å legge til en konto?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Husk at du når som helst kan oppdatere innstillingene dine på g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Oppdater telefonnummeret ditt"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Opprett andre reservealternativer"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"Slå av 2-trinns bekreftelse"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Kontoen er lagt til"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Når du blir bedt om en bekreftelseskode, kan du hente den her. Koden endres hyppig, så du trenger ikke å lære den utenat."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Legg til en konto"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Når du har slått på 2-trinns bekreftelse for Google-kontoen din (eller andre kontoer), trenger du følgende:"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Passordet ditt"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"En kode denne appen genererer for deg"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Kunne ikke endre rekkefølgen på kontoene. Prøv på nytt senere."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Du må gi den tillatelse til å bruke kameraet før du kan skanne strekkoder."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Hvis du vil skanne strekkoder, må du la Autentisering bruke enhetens kamera"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Ikke nok plass på enheten"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Du må slette noen filer før du kan bruke strekkodeleseren"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Strekkodeleseren er ikke tilgjengelig akkurat nå"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Enheten har ikke kamera"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Google Autentisering trenger et kamera for å skanne strekkoder"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Plassér strekkoden innenfor de røde linjene"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Oppdater &lt;b&gt;Google Play Tjenester&lt;/b&gt; for å bruke strekkodeleseren"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Oppdater &lt;b&gt;Google Play Tjenester&lt;/b&gt; til å bruke sikkerhetsnøkkel"</string>
+</resources>

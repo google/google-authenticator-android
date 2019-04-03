@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Մուտքագրեք հաշվի մանրամասները"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Ավելացնել"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Ինչպես է սա աշխատում"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Կարգավորումներ"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Կարգավորումներ"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Օգնություն և հետադարձ կապ"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Դիտել բաց ռեժիմում"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Դիտել մուգ ռեժիմում"</string>
+    <string name="button_next" msgid="2321252361372851972">"Հաջորդը"</string>
+    <string name="button_back" msgid="414120249698283380">"Հետ"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Հաշվի անունը"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Ձեր բանալին"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Բանալին չափազանց կարճ է"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Բանալին պարունակում է անթույլատրելի գրանշան"</string>
+    <string name="error_title" msgid="1784361744549854479">"Սխալ"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Բանալին անճանաչելի է:"</string>
+    <string name="error_qr" msgid="1076904454315180481">"QR կողն անճանաչելի է:"</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Չի հաջողվում հաշիվ ավելացնել: Օգնության համար դիմեք TechStop:"</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Մասնավոր բանալին պահվեց"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Պահել բանալին հետևյալ հաշվի համար՝"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Հնարավոր չէ պահել դատարկ գաղտնի բանալի"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Մուտք գործելիս մուտքագրեք այս հաստատման կոդը"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Ամբողջականության ստուգման արժեք"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Ստուգել բանալու արժեքը"</string>
+    <string name="update_button" msgid="288114907177363159">"ԹԱՐՄԱՑՆԵԼ"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"ՈՉ"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Բաց աղբյուրի արտոնագրեր"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Ծառայությունների օգտագործման պայմաններ"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Գաղտնիության քաղաքականություն"</string>
+    <string name="check_code" msgid="8970489904648838257">"Որպեսզի ստուգեք <xliff:g id="ACCOUNT">%1$s</xliff:g> հաշվի համար ձեր ունեցած բանալու արժեքի ճշտությունը, համեմատեք այն սերվերի տրամադրած ամբողջականության ստուգման արժեքի հետ՝&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Անվտանգության ընդհանուր սխալ"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Ապակոդավորման սխալ"</string>
+    <string name="submit" msgid="1518558163262431303">"Պահել"</string>
+    <string name="cancel" msgid="5705561042616477184">"Չեղարկել"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Հեռացնել"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Հեռացնել հաշիվը"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"Հեռացնե՞լ <xliff:g id="ACCOUNT">%1$s</xliff:g> հաշիվը:"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Այս հաշվի հեռացմամբ &lt;b&gt;կսահմանափակվի&lt;/b&gt; կոդեր ստեղծելու ձեր հնարավորությունը: Այնուհանդերձ դրանով &lt;b&gt;չի&lt;/b&gt; անջատվի երկգործոն իսկորոշման գործառույթը: Սա հետագայում կարող է խոչընդոտ դառնալ՝ ձեր հաշիվ մուտք գործելիս: &lt;p&gt; Այդ պատճառով հաշիվը հեռացնելուց առաջ անհրաժեշտ է՝ &lt;ul&gt; &lt;li&gt;Անջատել այս հաշվի երկգործոն իսկորոշման գործառույթը, կամ&lt;/li&gt; &lt;li&gt;Համոզվել, որ ունեք կոդեր ստեղծելու այլ միջոց:&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Այս հաշվի հեռացմամբ &lt;b&gt;կսահմանափակվի&lt;/b&gt; կոդեր ստեղծելու ձեր հնարավորությունը: Այնուհանդերձ դրանով &lt;b&gt;չի&lt;/b&gt; անջատվի երկքայլ հաստատման գործառույթը: Սա հետագայում կարող է խոչընդոտ դառնալ՝ ձեր հաշիվ մուտք գործելիս: &lt;p&gt; Այդ պատճառով հաշիվը հեռացնելուց առաջ անհրաժեշտ է՝ &lt;ul&gt; &lt;li&gt;Անջատել այս հաշվի երկքայլ հաստատման գործառույթը, կամ&lt;/li&gt; &lt;li&gt;Համոզվել, որ ունեք կոդեր ստեղծելու այլ միջոց:&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Վերանվանել"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Այդ անունն արդեն օգտագործվում է:"</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Պատճենել սեղմատախտակի վրա"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Հաստատման կոդը պատճենվեց սեղմատախտակի վրա:"</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP կոդ"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Ստանալ կոդ"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"Լավ"</string>
+    <string name="close" msgid="3805915606074588527">"ՓԱԿԵԼ"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Բանալու տեսակը"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Ըստ ժամանակի"</item>
+    <item msgid="5212912099902129712">"Ըստ հաշվիչի"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Ինչպես է այն աշխատում"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Բաց թողնել"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Հաջորդը"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Փակել"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Մուտք Google հաշիվ"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Ամեն անգամ Google մտնելիս՝ դուք սովորականի պես կմուտքագրեք ձեր օգտանունն ու գաղտնաբառը։"</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Երբ ձեզնից կոդ պահանջվի, դուք կարող եք ստանալ այն այս հավելվածից:"</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Պաշտպանեք ձեր հաշիվը"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Վստահելի սարքում մուտք գործելիս կարող եք նշել, որ այլևս այդ սարքում կոդ չպահանջվի:"</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Հաշիվը նախկինի պես պաշտպանված կլինի, քանի որ այլ սարքերից մուտք գործելիս համակարգը կոդ կպահանջի:"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Պատրա՞ստ եք հաշիվ ավելացնել"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Ձեր կարգավորումները ցանկացած պահի կարող եք փոխել g.co/2sv էջում"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Թարմացնել հեռախոսահամարները"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Կարգավորել հաշիվ մտնելու պահուստային եղանակներ"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"Անջատել երկքայլ հաստատումը"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Հաշիվն ավելացվեց"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Եթե ձեզնից պահանջվի հաստատման կոդ, այն կարող եք ստանալ այստեղ: Կոդը հաճախակի փոփոխվում է, այնպես որ կարիք չկա հիշել այն:"</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Ավելացնել հաշիվը"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Google հաշվում (կամ այլ հաշիվներում) երկքայլ հաստատումը միացնելուց հետո անհրաժեշտ կլինի"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Ձեր գաղտնաբառը"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Կոդ, որը ձեզ համար կստեղծի այս հավելվածը"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Հաշիվները չհաջողվեց վերադասավորել: Փորձեք կրկին ավելի ուշ:"</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Գծակոդեր սկանավորելու համար տեսախցիկից օգտվելու թույլտվություն է անհրաժեշտ:"</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Եթե ուզում եք գծակոդեր սկանավորել, թույլ տվեք Authenticator-ին օգտագործել ձեր սարքի տեսախցիկը"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Ձեր սարքում բավականաչափ տարածք չկա"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Որպեսզի կարողանաք օգտագործել գծակոդերի սկաները, դուք նախ որոշ ֆայլեր պետք է ջնջեք"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Գծակոդերի սկաները տվյալ պահին հասանելի չէ"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Ձեր սարքը տեսախցիկ չունի"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Գծակոդեր սկանավորելու համար Authenticator-ին տեսախցիկ է հարկավոր"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Գծակոդը տեղադրեք կարմիր գծերի ներսում"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Թարմացրեք &lt;b&gt;Google Play ծառայությունները&lt;/b&gt;՝ գծակոդերի սկաներն օգտագործելու համար"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Թարմացրեք &lt;b&gt;Google Play ծառայությունները&lt;/b&gt;՝ անվտանգության բանալիներ օգտագործելու համար"</string>
+</resources>

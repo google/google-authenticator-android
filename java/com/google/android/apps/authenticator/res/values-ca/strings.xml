@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Introdueix els detalls del compte"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Afegeix"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Funcionament"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Configuració"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Configuració"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Ajuda i suggeriments"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Mostra en mode clar"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Mostra en mode fosc"</string>
+    <string name="button_next" msgid="2321252361372851972">"Següent"</string>
+    <string name="button_back" msgid="414120249698283380">"Enrere"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Nom del compte"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"La teva clau"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"El valor de clau és massa curt"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"El valor de clau té un caràcter no admès"</string>
+    <string name="error_title" msgid="1784361744549854479">"Error"</string>
+    <string name="error_uri" msgid="8889749448317216536">"No es reconeix la clau."</string>
+    <string name="error_qr" msgid="1076904454315180481">"No es pot interpretar el codi QR."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"No es pot afegir el compte. Contacteu amb TechStop per obtenir assistència."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Secret desat"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Desa la clau per a"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"No es pot desar un secret buit"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Introdueix aquest codi de verificació quan se\'t demani durant l\'inici de sessió"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Valor de comprovació"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Comprova el valor de clau"</string>
+    <string name="update_button" msgid="288114907177363159">"ACTUALITZA"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"NO, GRÀCIES"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Llicències de programari lliure"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Condicions del servei"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Política de privadesa"</string>
+    <string name="check_code" msgid="8970489904648838257">"Per comprovar que el valor de clau del compte <xliff:g id="ACCOUNT">%1$s</xliff:g> és correcte, comproveu que aquest valor coincideixi amb el valor de comprovació d’integritat proporcionat pel servidor:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Excepció de seguretat general"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Excepció de descodificació"</string>
+    <string name="submit" msgid="1518558163262431303">"Desa"</string>
+    <string name="cancel" msgid="5705561042616477184">"Cancel·la"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Suprimeix"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Suprimeix el compte"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"Voleu eliminar <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Si elimineu aquest compte, perdreu la capacitat&lt;/b&gt; de generar codis; tot i això, &lt;b&gt;no&lt;/b&gt; es desactivarà l\'autenticació de dos factors. Això pot evitar que algú iniciï la sessió al vostre compte. &lt;p&gt; Abans d\'eliminar-lo: &lt;ul&gt; &lt;li&gt;Desactiveu l\'autenticació de dos factors per a aquest compte o bé&lt;/li&gt; &lt;li&gt;assegureu-vos que disposeu d\'un mecanisme alternatiu per generar codis.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Si elimineu aquest compte, perdreu la capacitat&lt;/b&gt; de generar codis; tot i això,  &lt;b&gt;no&lt;/b&gt; es desactivarà la verificació en dos passos, cosa que pot impedir-vos iniciar la sessió al vostre compte. &lt;p&gt; Abans d\'eliminar-lo: &lt;ul&gt; &lt;li&gt;Desactiveu la verificació en dos passos per a aquest compte, o bé, &lt;/li&gt; &lt;li&gt;assegureu-vos que disposeu d\'un mecanisme alternatiu per generar codis.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Canvia el nom"</string>
+    <string name="error_exists" msgid="9037595140877350695">"El nom ja està en ús."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Copia al porta-retalls"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"S\'ha copiat el codi de verificació al porta-retalls."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"Codi OTP"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Obtén codi"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"D\'acord"</string>
+    <string name="close" msgid="3805915606074588527">"TANCA"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Tipus de clau"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Basat en temps"</item>
+    <item msgid="5212912099902129712">"Basada en comptador"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Funcionament"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Omet"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Següent"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Fet"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Inici de sessió a Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Quan iniciïs la sessió a Google, introduiràs el nom d\'usuari i la contrasenya com sempre."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Quan se\'t demani un codi, podràs obtenir-ne un d\'aquesta aplicació."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Protegeix i controla el teu compte"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Quan iniciïs la sessió amb un dispositiu de confiança, ens pots indicar que deixem de demanar codis per a aquest dispositiu."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Estaràs sempre protegit perquè demanarem codis cada vegada que tu o algú altre proveu d\'iniciar la sessió al teu compte des d\'un altre dispositiu."</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Estàs a punt per afegir el compte?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Recorda que pots canviar la configuració en qualsevol moment a g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Actualitzar els números de telèfon"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Crear altres opcions de seguretat"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"Desactiva la verificació en dos passos"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"S\'ha afegit el compte"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Quan se\'t demani un codi de verificació, el podràs obtenir aquí. El codi canvia sovint, per tant, no cal que te l\'aprenguis de memòria."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Afegeix el compte"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Després d\'activar la verificació en dos passos per al teu compte de Google (o per a altres comptes), necessitaràs"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"La teva contrasenya"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Un codi que et generarà aquesta aplicació"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"No s\'ha pogut canviar l\'ordre dels comptes. Torneu-ho a provar més tard."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Necessitem el permís d\'accés a la càmera per escanejar codis de barres."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Deixa que Authenticator utilitzi la càmera del dispositiu si vols escanejar codis de barres"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"No tens prou espai al dispositiu"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Has de suprimir uns quants fitxers per poder utilitzar l\'escàner de codis de barres"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Ara mateix l\'escàner de codis de barres no està disponible"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"El teu dispositiu no té càmera"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Authenticator necessita una càmera per escanejar codis de barres"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Col·loca el codi de barres dins de les línies vermelles"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Actualitza l\'aplicació &lt;b&gt;Serveis de Google Play&lt;/b&gt; per fer servir l\'escàner de codis de barres"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Actualitza l\'aplicació &lt;b&gt;Serveis de Google Play&lt;/b&gt; per utilitzar la clau de seguretat"</string>
+</resources>

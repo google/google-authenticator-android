@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Google Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Saisir les détails du compte"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Ajouter"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Fonctionnement"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Paramètres"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Paramètres"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Aide et commentaires"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Afficher en mode clair"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Afficher en mode nuit"</string>
+    <string name="button_next" msgid="2321252361372851972">"Suivant"</string>
+    <string name="button_back" msgid="414120249698283380">"Précédent"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Nom du compte"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Votre clé"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"La valeur de la clé est trop courte."</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"La valeur de la clé comporte un caractère non autorisé."</string>
+    <string name="error_title" msgid="1784361744549854479">"Erreur"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Clé non reconnue."</string>
+    <string name="error_qr" msgid="1076904454315180481">"Impossible d\'interpréter le code QR."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Impossible d\'ajouter ce compte. Veuillez contacter TechStop pour obtenir de l\'aide."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Clé secrète enregistrée"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Enregistrer la clé pour"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Impossible d\'enregistrer une clé secrète vide"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"À l\'invite, saisissez ce code de validation lorsque vous vous connectez à votre compte"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Vérification de l\'intégrité"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Vérifier la valeur de la clé"</string>
+    <string name="update_button" msgid="288114907177363159">"METTRE À JOUR"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"NON MERCI"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Licences Open Source"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Conditions d\'utilisation"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Règles de confidentialité"</string>
+    <string name="check_code" msgid="8970489904648838257">"Afin de vérifier que la valeur de la clé est correcte pour <xliff:g id="ACCOUNT">%1$s</xliff:g>, assurez-vous que cette valeur correspond à celle de la vérification d\'intégrité fournie par le serveur :&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Exception générale de sécurité."</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Exception de décodage"</string>
+    <string name="submit" msgid="1518558163262431303">"Enregistrer"</string>
+    <string name="cancel" msgid="5705561042616477184">"Annuler"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Supprimer"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Supprimer le compte"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"Supprimer <xliff:g id="ACCOUNT">%1$s</xliff:g> ?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"La suppression de ce compte entraînera l\'&lt;b&gt;annulation de votre capacité&lt;/b&gt; à générer des codes. Toutefois, cela n\'entraînera &lt;b&gt;pas&lt;/b&gt; la désactivation de l\'authentification en deux étapes. Il est possible que vous ne puissiez pas vous connecter à votre compte. &lt;p&gt; Avant de supprimer ce compte : &lt;ul&gt; &lt;li&gt;Désactivez l\'authentification en deux étapes.&lt;/li&gt; &lt;li&gt;Ou assurez-vous de disposer d\'une autre solution pour générer des codes.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"La suppression de ce compte entraînera l\'&lt;b&gt;annulation de votre capacité&lt;/b&gt; à générer des codes. Toutefois, cela n\'entraînera &lt;b&gt;pas&lt;/b&gt; la désactivation de la validation en deux étapes. Il est possible que vous ne puissiez pas vous connecter à votre compte. &lt;p&gt; Avant de supprimer ce compte : &lt;ul&gt; &lt;li&gt;Désactivez la validation en deux étapes.&lt;/li&gt; &lt;li&gt;Ou assurez-vous de disposer d\'une autre solution pour générer des codes.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Renommer"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Désolé, ce nom est déjà utilisé."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Copier dans le Presse-papiers"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Le code de validation a bien été copié dans le Presse-papiers."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"Code du mot de passe à usage unique"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Obtenir le code"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"OK"</string>
+    <string name="close" msgid="3805915606074588527">"FERMER"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Type de clé"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Basée sur l\'heure"</item>
+    <item msgid="5212912099902129712">"Basée sur un compteur"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Fonctionnement"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Passer"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Suivant"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"OK"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Se connecter à Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"À chaque fois que vous vous connecterez à Google, vous saisirez votre nom d\'utilisateur et votre mot de passe comme d\'habitude."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Si un code vous est demandé, vous pourrez en obtenir un grâce à cette application."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Contrôlez vos informations en toute sécurité"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Lorsque vous vous connectez avec un appareil de confiance, vous pouvez nous demander de ne plus exiger de code sur cet appareil."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Vous serez toujours protégé, car nous vous demanderons de saisir un code lorsque vous ou un tiers essayerez de vous connecter à votre compte sur un autre appareil."</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Prêt à ajouter le compte ?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"N\'oubliez pas que vous pouvez mettre à jour vos paramètres à tout moment à l\'adresse g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Mettre à jour vos numéros de téléphone"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Créer d\'autres options de sauvegarde"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"Désactiver la validation en deux étapes"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Compte ajouté"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Lorsque vous serez invité à saisir un code de validation, vous pourrez l\'obtenir ici. Il change régulièrement, vous n\'avez donc pas à le mémoriser."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Ajouter un compte"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Après avoir activé la validation en deux étapes pour votre compte Google (ou d\'autres comptes), vous aurez besoin de ce qui suit"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Votre mot de passe"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Un code généré par l\'application"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Échec de la réorganisation des comptes. Veuillez réessayer plus tard."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Pour scanner des codes-barres, nous devons être autorisés à utiliser l\'appareil photo."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Autorisez Google Authenticator à utiliser l\'appareil photo de votre appareil si vous souhaitez scanner des codes-barres."</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Espace insuffisant sur l\'appareil"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Vous devez supprimer certains fichiers avant de pouvoir utiliser le lecteur de code-barres."</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Le lecteur de code-barres n\'est pas disponible pour le moment."</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Votre appareil ne comporte pas d\'appareil photo"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Google Authenticator doit disposer d\'un appareil photo pour scanner les codes-barres."</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Placer le code-barres entre les lignes rouges"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Mettez à jour les &lt;b&gt;services Google Play&lt;/b&gt; pour utiliser le lecteur de code-barres."</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Mettez à jour les &lt;b&gt;services Google Play&lt;/b&gt; pour utiliser la clé de sécurité"</string>
+</resources>

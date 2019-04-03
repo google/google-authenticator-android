@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"ປ້ອນລາຍລະອຽດບັນຊີ"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"ເພີ່ມ"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"ມັນເຮັດວຽກແນວໃດ"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"ຕັ້ງຄ່າ"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"ຕັ້ງຄ່າ"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"ຊ່ວຍເຫຼືອ &amp; ຕິ​ຊົມ"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"ເບິ່ງໃນໂໝດແຈ້ງ"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"ເບິ່ງໃນໂໝດມືດ"</string>
+    <string name="button_next" msgid="2321252361372851972">"ຕໍ່ໄປ"</string>
+    <string name="button_back" msgid="414120249698283380">"ກັບຄືນ"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"ຊື່ບັນຊີ"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"ລະຫັດຂອງທ່ານ"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"ລະຫັດສັ້ນເກີນໄປ"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"ລະຫັດມີອັກສອນທີ່ບໍ່ອະນຸຍາດໃຫ້ໃຊ້"</string>
+    <string name="error_title" msgid="1784361744549854479">"ຜິດພາດ"</string>
+    <string name="error_uri" msgid="8889749448317216536">"ລະຫັດບໍ່ສາມາດຢືນຢັນໄດ້."</string>
+    <string name="error_qr" msgid="1076904454315180481">"ບໍ່ສາມາດແປຄ່າລະຫັດ QR ໄດ້."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"ບໍ່ສາມາດເພີ່ມບັນຊີໄດ້. ກະລຸນາຕິດຕໍ່ TechStop ສຳລັບການຊ່ວຍເຫຼືອ."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"ລະຫັດຖືກບັນທຶກແລ້ວ"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"ບັນທຶກລະຫັດສຳລັບ"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"ບໍ່ສາມາດບັນທຶກຄ່າລະຫັດຫວ່າງເປົ່າ"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"ປ້ອນລະຫັດພິສູດຢືນຢັນນີ້ ເມື່ອຖືກຖາມເອົາໃນລະຫວ່າງການເຂົ້າສູ່ລະບົບ"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"ກວດສອບຄ່າ Integrity"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"ກວດສອບລະຫັດ"</string>
+    <string name="update_button" msgid="288114907177363159">"ອັບເດດ"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"ບໍ່, ຂອບໃຈ"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"ລິຂະສິດໂອເພນຊອດ"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"ເງື່ອນໄຂການໃຫ້ບໍລິການ"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ"</string>
+    <string name="check_code" msgid="8970489904648838257">"ເພື່ອກວດສອບວ່າທ່ານມີລະຫັດສຳລັບບັນຊີ <xliff:g id="ACCOUNT">%1$s</xliff:g> ຖືກຕ້ອງຫຼືບໍ່ ໃຫ້ກວດສອບວ່າ ລະຫັດດ້ານລຸ່ມນີ້ ຖືກຕ້ອງຄືກັບລະຫັດທີ່ເຊີເວີສົ່ງໃຫ້ຫຼືບໍ່:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"ຄວາມປອດໄພທົ່ວໄປຜິດພາດ"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"ການຖອດລະຫັດຜິດພາດ"</string>
+    <string name="submit" msgid="1518558163262431303">"ບັນທຶກ"</string>
+    <string name="cancel" msgid="5705561042616477184">"ຍົກເລີກ"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"ລຶບອອກ"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"ລຶບບັນຊີອອກ"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"ລຶບບັນຊີ <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"ການລຶບບັນຊີນີ້ຈະ &lt;b&gt;ລົບລ້າງຄວາມສາມາດຂອງທ່ານ&lt;/b&gt; ໃນການສ້າງລະຫັດ, ຢ່າງໃດກໍຕາມ, ມັນຈະບໍ່ &lt;b&gt;not&lt;/b&gt; ປິດການເຮັດວຽກຂອງການພິສູດຢືນຢັນແບບ 2 ຂັ້ນຕອນ. ການກະທຳນີ້ອາດເຮັດໃຫ້ທ່ານບໍ່ສາມາດເຂົ້າໃຊ້ບັນຊີຂອງທ່ານໄດ້. &lt;p&gt; ກ່ອນການລຶບບັນຊີ: &lt;ul&gt; &lt;li&gt;ໃຫ້ຍົກເລີກການພິສູດຢືນຢັນແບບ 2 ຂັ້ນຕອນສຳລັບບັນຊີນີ້ກ່ອນ, ຫຼື&lt;/li&gt; &lt;li&gt;ໃຫ້ແນ່ໃຈວ່າທ່ານມີວິທີອື່ນໃນການສ້າງລະຫັດແລ້ວ.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"ການລຶບບັນຊີນີ້ຈະ  &lt;b&gt;ລົບລ້າງຄວາມສາມາດຂອງທ່ານ&lt;/b&gt;ໃນການສ້າງລະຫັດ, ຢ່າງໃດກໍຕາມ, ມັນຈະ &lt;b&gt;not&lt;/b&gt; ປິດການພິສູດຢືນຢັນແບບ 2 ຂັ້ນຕອນ ເຊິ່ງອາດເຮັດໃຫ້ທ່ານບໍ່ສາມາດເຂົ້າໃຊ້ບັນຊີຂອງທ່ານໄດ້. &lt;p&gt; ກ່ອນການລຶບ: &lt;ul&gt; &lt;li&gt;ໃຫ້ຍົກເລີກການພິສູດຢືນຢັນແບບ 2 ຂັ້ນຕອນສຳລັບບັນຊີນີ້ກ່ອນ ຫຼື&lt;/li&gt; &lt;li&gt;ໃຫ້ແນ່ໃຈວ່າທ່ານມີວິທີອື່ນໃນການສ້າງລະຫັດ.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"ປ່ຽນຊື່"</string>
+    <string name="error_exists" msgid="9037595140877350695">"ຂໍອະໄພ, ຊື່ນັ້ນມີຄົນໃຊ້ແລ້ວ."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Copy ໄວ້ຄລິບບອດ"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"ລະຫັດຢັ້ງຢືນຖືກສຳເນົາໄວ້ clipboard ແລ້ວ."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"ລະຫັດ OTP"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"ຂໍລະຫັດ"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"ຕົກລົງ"</string>
+    <string name="close" msgid="3805915606074588527">"ປິດ"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"ປະເພດລະຫັດ"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"ອ້າງອີງຈາກເວລາ"</item>
+    <item msgid="5212912099902129712">"ອ້າງອີງຈາກການນັບເວລາ"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"ມັນເຮັດວຽກແນວໃດ"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"ຂ້າມໄປ"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"ຕໍ່ໄປ"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"ແລ້ວໆ"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"ເຂົ້າລະບົບ Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"ທຸກຄັ້ງທີ່ທ່ານເຂົ້າລະບົບ Google, ທ່ານຈະໃສ່ຊື່ຜູ້ໃຊ້ ແລະ ລະຫັດຜ່ານຂອງທ່ານຕາມປົກກະຕິ."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"ເມື່ອທ່ານຖືກຖາມເອົາລະຫັດ, ທ່ານຈະສາມາດຂໍເອົາລະຫັດຈາກແອັບນີ້ໄດ້."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"ຢູ່ຢ່າງປອດໄພ ແລະ ມີການຄວບຄຸມ"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"ເມື່ອທ່ານເຂົ້າສູ່ລະບົບດ້ວຍອຸປະກອນທີ່ທ່ານເຊື່ອຖື, ທ່ານສາມາດບອກພວກເຮົາໃຫ້ຢຸດຖາມເອົາລະຫັດດັ່ງກ່າວໃນອຸປະກອນນັ້ນໄດ້."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"ທ່ານຍັງຈະໄດ້ຮັບການປົກປ້ອງຢູ່ ເພາະວ່າພວກເຮົາຈະຖາມເອົາລະຫັດໃນເວລາທີ່ທ່ານ (ຫຼືຄົນອື່ນ) ພະຍາຍາມເຂົ້າສູ່ລະບົບບັນຊີຂອງທ່ານຈາກຄອມພິວເຕີອື່ນ."</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"ພ້ອມເພີ່ມບັນຊີແລ້ວບໍ?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"ຈື່ວ່າທ່ານສາມາດອັບເດດການຕັ້ງຄ່າຂອງທ່ານໄດ້ທຸກເວລາຢູ່ g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"ອັບເດດເບີໂທລະສັບຂອງທ່ານ"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"ສ້າງຕົວເລືອກສຳຮອງອື່ນ"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"ປິດການນຳໃຊ້ການພິສູດຢືນຢັນແບບ 2 ຂັ້ນຕອນ"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"ເພີ່ມບັນຊີແລ້ວ"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"ເມື່ອທ່ານຖືກຖາມເອົາລະຫັດພິສູດຢືນຢັນ, ໃຫ້ຂໍເອົາມັນທີ່ນີ້. ລະຫັດປ່ຽນແປງເລື້ອຍໆ, ສະນັ້ນບໍ່ຈຳເປັນຕ້ອງຈື່ມັນ."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"ເພີ່ມບັນຊີ"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"ຫຼັງຈາກທີ່ທ່ານເປີດການພິສູດຢືນຢັນແບບ 2 ຂັ້ນຕອນສຳລັບບັນຊີ Google ຂອງທ່ານ (ຫຼື ບັນຊີອື່ນ) ແລ້ວ, ທ່ານຈະຈຳເປັນຕ້ອງ"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"ລະຫັດຜ່ານຂອງທ່ານ"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"ລະຫັດທີ່ແອັບນີ້ຈະສ້າງໃຫ້ທ່ານ"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"ຈັດລໍາດັບບັນຊີຄືນໃໝ່ບໍ່ສຳເລັດ. ກະລຸນາລອງໃໝ່ໃນພາຍຫຼັງ."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"ເພື່ອສະແກນບາໂຄດ, ພວກເຮົາຕ້ອງການການອະນຸຍາດກ້ອງຖ່າຍຮູບ."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"ອະນຸຍາດໃຫ້ໂປຣແກຣມຮັບຮອງຄວາມຖືກຕ້ອງໃຊ້ກ້ອງຖ່າຍຮູບຂອງອຸປະກອນຂອງທ່ານ ຖ້າທ່ານຕ້ອງການສະແກນບາໂຄດ"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"ບໍ່ມີພື້ນທີ່ຫວ່າງພຽງພໍໃນອຸປະກອນຂອງທ່ານ"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"ທ່ານຈະຈຳເປັນຕ້ອງລຶບບາງໄຟລ໌ກ່ອນທີ່ທ່ານຈະສາມາດໃຊ້ເຄື່ອງສະແກນບາໂຄດ"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"ເຄື່ອງສະແກນບາໂຄດບໍ່ສາມາດໃຊ້ໄດ້ໃນຕອນນີ້"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"ອຸ​ປະ​ກອນຂອງທ່ານ​ບໍ່​ມີ​ກ້ອງຖ່າຍຮູບ"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"ໂປຣແກຣມຮັບຮອງຄວາມຖືກຕ້ອງຕ້ອງການໃຊ້ກ້ອງຖ່າຍຮູບເພື່ອສະແກນບາໂຄດ"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"ວາງບາໂຄດໃສ່ພາຍໃນແຖວສີແດງ"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"ອັບເດດ &lt;b&gt;Google Play Services&lt;/b&gt; ເພື່ອໃຊ້ເຄື່ອງສະແກນບາໂຄດ"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"ອັບເດດ &lt;b&gt;Google Play Services&lt;/b&gt; ເພື່ອໃຊ້ກະແຈຄວາມປອດໄພ"</string>
+</resources>

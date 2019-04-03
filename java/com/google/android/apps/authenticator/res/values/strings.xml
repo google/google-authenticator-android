@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <!-- Name of the application -->
+  <string name="app_name">Google Authenticator</string>
+
+  <!-- Shortened version of the application name, without Google branding -->
+  <string name="app_name_short">Authenticator</string>
+
+  <!-- Title displayed at the top when adding new OTP account manually -->
+  <string name="enter_key_title">Enter account details</string>
+
+  <!-- Button on the Manual Account Entry page to add the account the details of which the user
+       is entering on the page. -->
+  <string name="enter_key_page_add_button">Add</string>
+
+  <!-- Label for menu option: display an set of help pages explaining how 2-step verification
+       works. -->
+  <string name="how_it_works_menu_item">How it works</string>
+
+  <!-- Title of the main (top-level) preference/settings screen. -->
+  <string name="main_preference_screen_title">Settings</string>
+
+  <!-- Application settings menu item in the main screen's menu. -->
+  <string name="settings_menu_item">Settings</string>
+
+  <!-- Title of the preference in the main preference screen that displays the About settings screen
+       which displays information about this application and links to Terms and Conditions, and the
+       Privacy Policy. -->
+  <string name="about_preference_title">About</string>
+
+  <!--  Menu item for help and feedback about this app. -->
+  <string name="help_and_feedback_menu_item">Help &amp; feedback</string>
+
+  <!-- Menu item for switch ui mode to light mode -->
+  <string name="switch_ui_mode_light">View in light mode</string>
+
+  <!-- Menu item for switch ui mode to dark mode -->
+  <string name="switch_ui_mode_dark">View in dark mode</string>
+
+  <!-- Text of the button to advance to the Next page of a wizard.
+       [CHAR LIMIT=12] -->
+  <string name="button_next">Next</string>
+
+  <!-- Text of the button to return to the previous page of a wizard [CHAR LIMIT=12] -->
+  <string name="button_back">Back</string>
+
+  <!-- Form field to enter account name (part of the form used for manually adding account) -->
+  <string name="enter_account_label">Account name</string>
+
+  <!-- Example displayed in the secret key field before user starts typing there -->
+  <string name="enter_key_hint">Your key</string>
+
+  <!-- Error message displayed if user enters a key that is shorter than allowed minimum -->
+  <string name="enter_key_too_short">Key value is too short</string>
+
+  <!-- Error message displayed if user enters a key with an illegal character -->
+  <string name="enter_key_illegal_char">Key value has illegal character</string>
+
+  <!-- Title for the error message dialog displayed after scanning invalid QR code -->
+  <string name="error_title">Error</string>
+
+  <!-- Error message displayed when scanned QR code is not recognized as valid format -->
+  <string name="error_uri">Key not recognized.</string>
+
+  <!-- Alternative message displayed when scanned QR code is not recognized as valid key -->
+  <string name="error_qr">Cannot interpret QR code.</string>
+
+  <!-- Error message displayed when the user attempts to add a Google corp OTP account
+       to an unsupported Android device. -->
+  <string name="error_invalid_device">
+    Cannot add account. Please contact the TechStop for assistance.
+  </string>
+
+  <!-- Confirmation message displayed in a toast after adding new account -->
+  <string name="secret_saved">Secret saved</string>
+
+  <!-- Question asking user to confirm adding a new account, the details of which were obtained
+       by scanning a QR code or provided by the web browser. -->
+  <string name="save_key_message">Save key for</string>
+
+  <!-- Error message displayed if the scanned QR code contains an empty key -->
+  <string name="error_empty_secret">Cannot save empty secret</string>
+
+  <!-- Instruction message displayed on the main screen when there is at least one account
+       (verification code generator) configured in the app. Accounts (and their respective
+       verification codes) are listed below this notice. -->
+  <string name="enter_pin">
+    Enter this verification code when asked during sign-in
+  </string>
+
+  <!-- Label displayed before the integrity check, used to verify key was entered correctly -->
+  <string name="check_code_title">Integrity check value</string>
+
+  <!-- Menu item user selects to view the key integrity check for a particular account -->
+  <string name="check_code_menu_item">Check key value</string>
+
+  <!-- Text on button user clicks to update the Google Play Services -->
+  <string name="update_button">UPDATE</string>
+
+  <!-- Text on button user clicks to deny updating the Google Play Services -->
+  <string name="not_update_button">NO THANKS</string>
+
+  <!-- Preference screen title that displays information about the application. -->
+  <string name="about_preference_screen_title">About</string>
+
+  <!-- Preference title for displaying the version of this app -->
+  <string name="version_preference_title">Version</string>
+
+  <!-- Title of the preference that lists all the notices/licenses of open-source projects
+       used by this app. -->
+  <string name="opensource_licenses_preference_title">Open-source licenses</string>
+
+  <!-- Preference title, used to view the terms of service from Google web page -->
+  <string name="terms_preference_title">Terms of service</string>
+  <!-- DO NOT TRANSLATE. URL of the Terms of Service page. -->
+  <string name="terms_page_url" translatable="false">http://www.google.com/policies/terms/</string>
+
+  <!-- Preference title, used to view the privacy policy from Google web page -->
+  <string name="privacy_preference_title">Privacy policy</string>
+
+  <!-- DO NOT TRANSLATE. URL of the Privacy Policy page. -->
+  <string name="privacy_page_url" translatable="false">http://www.google.com/policies/privacy/</string>
+
+  <!-- Information displayed on the check-key screen, explaining use of the integrity check -->
+  <string name="check_code">
+  To check that you have the correct key value for <xliff:g example="mallory@gmail.com" id="account">%1$s</xliff:g>
+  verify that the value here matches the integrity check value provided
+  by the server:&lt;br/>
+  </string>
+
+  <!-- Error message displayed on check-integrity code page,
+       if there is an error computing the integrity code for the key. -->
+  <string name="general_security_exception">General security exception</string>
+
+  <!-- Error message displayed on check-integrity code page, if key is corrupted. -->
+  <string name="decoding_exception">Decoding exception</string>
+
+  <!-- Button on manual account entry page, adds the account -->
+  <string name="submit">Save</string>
+
+  <!-- Button on manual account entry page, cancels adding account, returns to main page -->
+  <string name="cancel">Cancel</string>
+
+  <!-- Menu item when long-pressing on account, used to remove the account -->
+  <string name="context_menu_remove_account">Remove</string>
+
+  <!-- Remove/Delete button in the dialog displayed when the user attempts to remove an account.
+       -->
+  <string name="remove_account_dialog_button_remove">Remove account</string>
+
+  <!-- Title of the dialog displayed when the user attempts to remove an account. -->
+  <string name="remove_account_dialog_title">
+    Remove <xliff:g example="mallory@gmail.com" id="account">%1$s</xliff:g>?
+  </string>
+
+  <!-- Text (HTML) of the dialog displayed when the user attempts to delete an account.
+       The dialog offers two buttons: Remove (remove_account_dialog_button_remove) and Cancel. -->
+  <string name="remove_account_dialog_message">
+    <![CDATA[
+      Removing this account will <b>remove your ability</b> to generate codes, however, it will
+      <b>not</b> turn off 2-factor authentication. This may prevent you from signing into your
+      account.
+      <p>
+      Before removing:
+      <ul>
+        <li>Turn off 2-factor authentication for this account, or</li>
+        <li>Ensure you have an alternate mechanism for generating codes.</li>
+      </ul>
+    ]]>
+  </string>
+
+  <!-- Text (HTML) of the dialog displayed when the user attempts to remove a Google account.
+       The text differs slightly from remove_account_dialog_button_remove which is displayed
+       for non-Google accounts for which we don't know the exact effects of removing the account.
+       The dialog offers two buttons: Remove (remove_account_dialog_button_remove) and Cancel. -->
+  <string name="remove_google_account_dialog_message">
+    <![CDATA[
+      Removing this account will <b>remove your ability</b> to generate codes, however, it will
+      <b>not</b> turn off 2-step verification. This may prevent you from signing into your account.
+      <p>
+      Before removing:
+      <ul>
+        <li>Turn off 2-step verification for this account, or</li>
+        <li>Ensure you have an alternate mechanism for generating codes.</li>
+      </ul>
+    ]]>
+  </string>
+
+  <!-- Long-press menu item for an account, used to rename that account. Also serves as the title
+       for the dialog for renaming the account. -->
+  <string name="rename">Rename</string>
+
+  <!-- Error message displayed when user tries to rename one account to the same
+       name as another existing account -->
+  <string name="error_exists">Sorry, that name is already in use.</string>
+
+  <!-- Contextual action/menu item for an account to copy current verification code for the account
+       to the clipboard -->
+  <string name="copy_to_clipboard">Copy to clipboard</string>
+
+  <!--  Text displayed in a toast (small status window overlaying the screen) after a verification
+        code has been copied to the clipboard due to the user selecting the code and choosing
+        the Copy action. -->
+  <string name="copied_to_clipboard_toast">Verification code copied to clipboard.</string>
+
+  <!--  Label used for storing pin in clipboard. -->
+  <string name="clipboard_label">OTP Code</string>
+
+  <!-- Text reported to the accessibility system (e.g., on screen reader)
+       when the user selects a counter-based account (from the account list)
+       for which no code is currently displayed/generated.
+       Pressing on the account row will generate the next verification
+       code. -->
+  <string name="counter_pin">Get code</string>
+
+  <!-- Placeholder value displayed for OTP before any codes have been generated -->
+  <string name="empty_pin">_ _ _ _ _ _</string>
+
+  <!-- Text on OK button for confirmation dialogs -->
+  <string name="ok">OK</string>
+
+  <!-- Text on CLOSE button for confirmation dialogs -->
+  <string name="close">CLOSE</string>
+
+  <!-- Label for the dropdown menu when adding new account manually.
+       Asking user to specify one of the two key types (counter vs. time) -->
+  <string name="type_prompt">Type of key</string>
+
+  <!-- NOTE: order matters here and must be the same as AccountDb.TYPE_*
+       TODO: make order not matter by using something like enums -->
+  <!-- Different type of OTP accounts, displayed in drop-down menu when manually adding accounts.
+       Codes can be generated either based on time or based on an incrementing counter. -->
+  <string-array name="type">
+    <item>Time based</item>
+    <item>Counter based</item>
+  </string-array>
+
+  <!-- Title of the "How it works" pages which explains how to sign in when 2-step verification is
+       enabled. -->
+  <string name="howitworks_page_title">How it works</string>
+
+  <!-- Skip button at the bottom navigation bar -->
+  <string name="howitworks_page_button_skip">Skip</string>
+
+  <!-- Description content for the "Next" button at the bottom navigation bar, when the current page
+    is not the last page -->
+  <string name="howitworks_page_button_next">Next</string>
+
+  <!-- Description content for the "Done" button at the bottom navigation bar, when the current page
+    is last page -->
+  <string name="howitworks_page_button_done">Done</string>
+
+  <string name="howitworks_page_layout_1_title">
+    Signing in to Google
+  </string>
+
+  <string name="howitworks_page_layout_1_description_1">
+    Whenever you sign in to Google, you\'ll enter your username and password as usual.
+  </string>
+
+  <string name="howitworks_page_layout_1_description_2">
+    When you\'re asked for a code you\'ll be able to get one from this app.
+  </string>
+
+  <string name="howitworks_page_layout_2_title">
+    Stay safe &amp; in control
+  </string>
+
+  <string name="howitworks_page_layout_2_description_1">
+    When you sign in with a device you trust, you can tell us to stop asking for codes on that
+      device.
+  </string>
+
+  <string name="howitworks_page_layout_2_description_2">
+    You\'ll still be covered because we\'ll ask for codes
+      when you (or anyone else) tries to sign in to your account from other devices
+  </string>
+
+  <string name="howitworks_page_layout_3_title">
+    Ready to add account?
+  </string>
+
+  <string name="howitworks_page_layout_3_description">
+    Remember, you can update your settings any time at g.co/2sv
+  </string>
+
+  <string name="howitworks_page_layout_3_description_option_1">
+    Update your phone numbers
+  </string>
+
+  <string name="howitworks_page_layout_3_description_option_2">
+    Create other backup options
+  </string>
+
+  <string name="howitworks_page_layout_3_description_option_3">
+    Turn off 2-Step Verification
+  </string>
+
+  <!-- Header for the message showed when the user adds the first account. -->
+  <string name="account_list_page_first_account_message_header">
+    Account added
+  </string>
+
+  <!-- First detail for the message showed when the user adds the first account. -->
+  <string name="account_list_page_first_account_message_detail">
+    When you\'re asked for a verification code, get it here.
+    The code changes frequently, so no need to memorize it.
+  </string>
+
+  <!-- Add account button at the bottom of the message showed when the user adds the first
+       account -->
+  <string name="account_list_page_first_account_button_done">Add account</string>
+
+  <!-- Text in the main screen of the app when there are no accounts configured (yet). -->
+  <string name="welcome_page_details">
+    After you turn on 2-Step Verification for your Google Account (or other accounts), you’ll need
+  </string>
+
+  <!-- First entry of the list started by welcome_page_details. The list mentions
+       what's required for signing in using 2-step verification. -->
+  <string name="welcome_page_details_list_entry1">Your password</string>
+
+  <!-- Second entry of the list started by welcome_page_details. The list mentions
+       what's required for signing in using 2-step verification. -->
+  <string name="welcome_page_details_list_entry2">
+    A code this app will generate for you
+  </string>
+
+  <string name="accounts_reorder_failed">
+    Failed to reorder accounts. Please try again later.
+  </string>
+
+  <string name="permission_camera_rationale">
+    To scan barcodes, we need the camera permission.
+  </string>
+
+  <string name="no_camera_permission">
+    Let Authenticator use your device\'s camera if you want to scan barcodes
+  </string>
+
+  <string name="low_storage_error_title">
+    Not enough space on your device
+  </string>
+
+  <string name="low_storage_error_detail">
+    You\'ll need to delete some files before you can use the barcode scanner
+  </string>
+
+  <string name="barcode_scanner_not_available">
+    Barcode scanner is not available now
+  </string>
+
+  <string name="camera_not_found_on_device_title">
+    Your device doesn\'t have a camera
+  </string>
+
+  <string name="camera_not_found_on_device_detail">
+    Authenticator needs a camera to scan barcodes
+  </string>
+
+  <string name="barcode_instruction_text">
+    Place barcode within red lines
+  </string>
+
+  <!-- Error message displayed when user attempts to scan a barcode without
+       the latest Google Play Services version installed. -->
+  <string name="update_google_play_services">
+    <![CDATA[
+      Update <b>Google Play Services</b> to use the barcode scanner
+    ]]>
+  </string>
+
+  <!-- Error message displayed when user attempts to use security keys without v9+ Google Play
+       Services version installed. -->
+  <string name="update_google_play_services_for_security_key">
+    <![CDATA[
+      Update <b>Google Play Services</b> to use Security Key
+    ]]>
+  </string>
+</resources>

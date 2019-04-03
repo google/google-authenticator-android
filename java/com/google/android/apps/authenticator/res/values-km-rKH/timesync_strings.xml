@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"ការ​កែ​ពេលវេលា​សម្រាប់​លេខ​កូដ"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"ធ្វើ​សមកាលកម្ម​ឥឡូវ"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"អំពី​លក្ខណៈ​នេះ"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"ធ្វើ​សមកាលកម្ម​ឥឡូវ"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"ធ្វើ​សមកាលកម្ម​ឥឡូវ"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"កំពុង​តភ្ជាប់​ទៅ​កាន់​ម៉ាស៊ីន​បម្រើ…"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"ពេលវេលា​បាន​កែ"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"ម៉ោង​ក្នុង​ស្រុក​​នៃ​កម្មវិធី​ផ្ទៀងផ្ទាត់​បាន​កែតម្រូវ​ឲ្យ​ត្រូវ​គ្នា​នឹង​ពេលវេលា​ដែល​ផ្ដល់​ដោយ​ម៉ាស៊ីន​បម្រើ Google ។ \n\nការ​កំណត់​កាលបរិច្ឆេទ &amp; ពេលវេលា​លើ​ឧបករណ៍​មិន​អាច​ផ្លាស់ប្ដូរ​បាន​ទេ ។"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"ពេលវេលា​បាន​កែ​រួច​រាល់"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"ម៉ោង​ក្នុង​ស្រុក​​​​នៃ​កម្មវិធី​ផ្ទៀងផ្ទាត់​​ត្រូវ​បាន​កែតម្រូវ ពី​ព្រោះ​​វា​លេចឡើង​​ស្រាប់​នៅ​ក្នុង​ពេល​ធ្វើ​សមកាលកម្ម​ជាមួយ​ម៉ាស៊ីន​បម្រើ​របស់ Google ។"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"ធ្វើ​​សមកាលកម្ម​ឥឡូវ"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"មាន​បញ្ហា​​ក្នុង​ការ​ទាក់ទង​ទៅ​ម៉ាស៊ីន​បម្រើ​របស់ Google ។ សូម​ពិនិត្យ​ការ​កំណត់​បណ្ដាញ​របស់​អ្នក និង​ព្យាយាម​ម្ដង​​ទៀត ។"</string>
+</resources>

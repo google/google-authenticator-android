@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"המאמת של Google"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"המאמת"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"הזן את פרטי החשבון"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"הוסף"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"איך זה עובד"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"הגדרות"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"הגדרות"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"עזרה ומשוב"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"הצג במצב מואר"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"הצג במצב חשוך"</string>
+    <string name="button_next" msgid="2321252361372851972">"הבא"</string>
+    <string name="button_back" msgid="414120249698283380">"הקודם"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"שם החשבון"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"המפתח שלך"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"ערך המפתח קצר מדי"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"ערך מרכזי כולל תו לא חוקי"</string>
+    <string name="error_title" msgid="1784361744549854479">"שגיאה"</string>
+    <string name="error_uri" msgid="8889749448317216536">"המפתח לא מזוהה."</string>
+    <string name="error_qr" msgid="1076904454315180481">"לא ניתן לפרש את קוד ה-QR."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"לא ניתן להוסיף חשבון. צור קשר עם התמיכה הטכנית לקבלת סיוע."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"הסוד נשמר"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"שמור מפתח ל-"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"לא ניתן לשמור סוד ריק"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"כשתתבקש, הזן את קוד האימות הזה בכניסה לחשבון"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"ערך בדיקת תקינות"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"בדוק ערך מפתח"</string>
+    <string name="update_button" msgid="288114907177363159">"עדכן"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"לא תודה"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"רישיונות קוד פתוח"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"תנאים והגבלות"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"מדיניות פרטיות"</string>
+    <string name="check_code" msgid="8970489904648838257">"כדי לבדוק אם נמצא ברשותך ערך המפתח הנכון עבור <xliff:g id="ACCOUNT">%1$s</xliff:g>, ודא שהערך המופיע כאן תואם לערך בדיקת התקינות שסופק על ידי השרת:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"חריגת אבטחה כללית"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"חריגת פענוח"</string>
+    <string name="submit" msgid="1518558163262431303">"שמור"</string>
+    <string name="cancel" msgid="5705561042616477184">"ביטול"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"הסרה"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"הסרת חשבון"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"האם להסיר את <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"הסרת חשבון זה &lt;b&gt;תמנע ממך את היכולת&lt;/b&gt; ליצור קודים. עם זאת, היא &lt;b&gt;לא&lt;/b&gt; תכבה את האימות הדו-גורמי. ייתכן שמצב זה ימנע ממך כניסה לחשבון. &lt;p&gt; לפני ההסרה: &lt;ul&gt; &lt;li&gt;יש לכבות את האימות הדו-גורמי בחשבון זה, או&lt;/li&gt; &lt;li&gt;חשוב לוודא שיש לך מנגנון חלופי ליצירת קודים.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"הסרת חשבון זה &lt;b&gt;תמנע ממך את היכולת&lt;/b&gt; ליצור קודים. עם זאת, היא &lt;b&gt;לא&lt;/b&gt; תכבה את האימות הדו-שלבי. ייתכן שמצב זה ימנע ממך כניסה לחשבון. &lt;p&gt; לפני ההסרה: &lt;ul&gt; &lt;li&gt;יש לכבות את האימות הדו-שלבי בחשבון זה, או&lt;/li&gt; &lt;li&gt;חשוב לוודא שיש לך מנגנון חלופי ליצירת קודים.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"שנה שם"</string>
+    <string name="error_exists" msgid="9037595140877350695">"מצטערים, שם זה כבר נמצא בשימוש."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"העתק ללוח"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"קוד האימות הועתק ללוח"</string>
+    <string name="clipboard_label" msgid="923872764435699920">"קוד OTP"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"קבל קוד"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"אישור"</string>
+    <string name="close" msgid="3805915606074588527">"סגור"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"סוג מפתח"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"מבוסס זמן"</item>
+    <item msgid="5212912099902129712">"מבוסס ספירה"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"כיצד זה עובד"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"דילוג"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"הבא"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"בוצע"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"כניסה ל-Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"בכל פעם שתיכנס ל-Google, תזין את שם המשתמש והסיסמה שלך כרגיל."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"כשתתבקש להזין קוד, תוכל לקבל קוד מהיישום הזה."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"איך להגן על החשבון ותמיד להיות בשליטה"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"כשתיכנס לחשבון עם מכשיר שאתה בוטח בו, תוכל לבקש מאיתנו להפסיק לבקש קודי אימות באותו מכשיר."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"החשבון שלך ימשיך להיות מוגן מפני שנבקש ממך (ומכל משתמש אחר) להזין את קודי האימות בכניסה לחשבון ממכשירים אחרים"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"מוכן להוסיף חשבון?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"זכור, תמיד תוכל לעדכן את ההגדרות שלך בכתובת g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"עדכון מספרי הטלפון"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"יצירת אפשרויות גיבוי אחרות"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"כבה אימות דו-שלבי"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"החשבון נוסף"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"כשתתבקש להזין קוד אימות, קבל אותו כאן. הקוד משתנה לעתים קרובות, לכן אין צורך לשנן אותו."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"הוסף חשבון"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"לאחר שתפעיל את האימות הדו-שלבי בחשבון Google שלך (או בחשבונות אחרים), תצטרך"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"את הסיסמה שלך"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"קוד שאפליקציה זו תיצור עבורך"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"נכשל הניסיון לסידור מחדש של החשבונות. נסה שוב מאוחר יותר."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"כדי לסרוק ברקודים אנחנו זקוקים להרשאת המצלמה."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"אפשר למאמת להשתמש במצלמה שבמכשיר אם אתה רוצה לסרוק ברקודים"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"אין מספיק שטח פנוי במכשיר"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"כדי להשתמש בסורק הברקוד תצטרך למחוק כמה קבצים"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"סורק הברקוד אינו זמין עכשיו"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"אין במכשיר זה מצלמה"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"המאמת זקוק למצלמה כדי לסרוק ברקודים"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"מקם את הברקוד בתוך הקווים האדומים"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"עדכן את &lt;b&gt;שירותי Google Play‏&lt;/b&gt; כדי להשתמש בסורק הברקוד"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"עדכן את &lt;b&gt;שירותי Google Play‏&lt;/b&gt; כדי להשתמש במפתח אבטחה"</string>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.google.android.apps.authenticator2"
+          android:versionCode="5000000" android:versionName="5.00">
+
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28" />
+
+  <!-- Permissions required by all builds -->
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+  <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+  <uses-permission android:name="android.permission.NFC" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <application android:label="@string/app_name_short"
+               android:icon="@mipmap/product_logo_authenticator_launcher_color_48"
+               android:theme="@style/AuthenticatorTheme"
+               android:name="com.google.android.apps.authenticator.AuthenticatorApplication"
+               android:allowBackup="false">
+
+    <!--  Main activity -->
+    <activity android:name="com.google.android.apps.authenticator.AuthenticatorActivity"
+              android:label="@string/app_name_short"
+              android:launchMode="singleTask"
+              android:theme="@style/AuthenticatorTheme.NoActionBar">
+              <meta-data android:name="android.support.UI_OPTIONS"
+                         android:value="splitActionBarWhenNarrow" />
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="otpauth" />
+      </intent-filter>
+    </activity>
+
+    <!-- Settings -->
+    <activity android:name="com.google.android.apps.authenticator.settings.SettingsActivity"
+              android:label="@string/main_preference_screen_title"
+              android:parentActivityName="com.google.android.apps.authenticator.AuthenticatorActivity" >
+    </activity>
+
+    <activity android:name="com.google.android.apps.authenticator.settings.SettingsAboutActivity"
+              android:label="@string/about_preference_screen_title"
+              android:parentActivityName="com.google.android.apps.authenticator.settings.SettingsActivity"
+              android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.apps.authenticator.settings.ABOUT" />
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+
+    <!-- Open Source Licenses -->
+    <activity android:name="com.google.android.apps.authenticator.license.LicenseMenuActivity"
+              android:label="@string/opensource_licenses_preference_title"
+              android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.apps.authenticator.settings.OPEN_SOURCE_NOTICES" />
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+
+    <activity android:name="com.google.android.apps.authenticator.license.LicenseActivity"
+              android:label="@string/opensource_licenses_preference_title"
+              android:exported="false">
+    </activity>
+
+    <!-- OTP -->
+    <activity android:name="com.google.android.apps.authenticator.otp.EnterKeyActivity"
+              android:label="@string/enter_key_title"
+              android:parentActivityName="com.google.android.apps.authenticator.enroll2sv.wizard.AddAccountActivity"
+              android:theme="@style/AuthenticatorTheme.NoActionBar">
+    </activity>
+
+    <activity android:name="com.google.android.apps.authenticator.otp.CheckCodeActivity"
+              android:label="@string/check_code_title"
+              android:parentActivityName="com.google.android.apps.authenticator.AuthenticatorActivity"
+              android:theme="@style/AuthenticatorTheme.NoActionBar">
+    </activity>
+
+    <!-- Time synchronization -->
+    <activity android:name="com.google.android.apps.authenticator.timesync.SettingsTimeCorrectionActivity"
+              android:label="@string/timesync_preference_screen_title"
+              android:parentActivityName="com.google.android.apps.authenticator.settings.SettingsActivity"
+              android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.apps.authenticator.timesync.TIME_CORRECTION_SETTINGS" />
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+
+    <activity android:name="com.google.android.apps.authenticator.timesync.SyncNowActivity"
+              android:theme="@style/AuthenticatorTheme.Translucent.NoTitleBar"
+              android:label="@string/timesync_sync_now_screen_title"
+              android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.android.apps.authenticator.timesync.SYNC_NOW" />
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+
+    <!-- Setup wizard -->
+    <activity android:name="com.google.android.apps.authenticator.enroll2sv.wizard.AddAccountActivity"
+              android:label="@string/enroll2sv_choose_account_page_title"
+              android:parentActivityName="com.google.android.apps.authenticator.AuthenticatorActivity"
+              android:theme="@style/AuthenticatorTheme.NoActionBar">
+    </activity>
+
+    <!-- How it works -->
+    <activity android:name="com.google.android.apps.authenticator.howitworks.HowItWorksActivity"
+              android:label="@string/howitworks_page_title"
+              android:theme="@style/AuthenticatorTheme.NoActionBar"/>
+
+    <!--Barcode scanner-->
+    <activity android:name="com.google.android.apps.authenticator.barcode.BarcodeCaptureActivity"
+              android:label="@string/enroll2sv_choose_account_page_scan_barcode_label"
+              android:configChanges="orientation|screenSize"
+              android:theme="@style/AuthenticatorTheme.NoActionBar"/>
+  </application>
+
+</manifest>

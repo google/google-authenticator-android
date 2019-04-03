@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"အကောင့်အသေးစိတ် အချက်အလက်များကို ထည့်ပါ"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"ထည့်ရန်"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"အလုပ်လုပ်ပုံ"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"ဆက်တင်များ"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"ဆက်တင်များ"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"အကူအညီနှင့် အကြံပြုချက်"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"အဖြူရောင်မုဒ်တွင် ကြည့်ရန်"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"အမဲရောင်မုဒ်တွင် ကြည့်ရန်"</string>
+    <string name="button_next" msgid="2321252361372851972">"ရှေ့သို့"</string>
+    <string name="button_back" msgid="414120249698283380">"နောက်သို့"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"အကောင့်အမည်"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"သင်၏ကီး"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"ကီးအချက်အလက် အလွန်တိုနေပါသည်"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"ကီးအချက်အလက်ထဲတွင် မှန်ကန်မှုမရှိသည့် စာလုံးများပါဝင်နေသည်"</string>
+    <string name="error_title" msgid="1784361744549854479">"ချွတ်ယွင်းချက်"</string>
+    <string name="error_uri" msgid="8889749448317216536">"ကီးကို အသိအမှတ်မပြုပါ။"</string>
+    <string name="error_qr" msgid="1076904454315180481">"QR ကုဒ်ကို ဖတ်၍မရပါ။"</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"အကောင့်ကို ထည့်သွင်း၍မရပါ။ ပံ့ပိုးမှုရယူရန် TechStop ကို ဆက်သွယ်ပါ။"</string>
+    <string name="secret_saved" msgid="2201025202465443226">"လျှို့ဝှက်ချက်ကို သိမ်းဆည်းပြီးပါပြီ"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"ဤအရာအတွက် ကီးကို သိမ်းဆည်းပါ"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"ဗလာကီးကို သိမ်း၍မရပါ"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"လက်မှတ်ထိုးဝင်သည့်အခါ မေးမြန်းလာလျှင် ဤအတည်ပြုကုဒ်ကို ထည့်ပါ"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"မှန်ကန်မှုရှိမရှိ စစ်ဆေးသည့်အချက်အလက်"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"ကီးအချက်အလက်ကို စစ်ဆေးပါ"</string>
+    <string name="update_button" msgid="288114907177363159">"အပ်ဒိတ်လုပ်ရန်"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"မလိုပါ"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"အခမဲ့အရင်းအမြစ်လိုင်စင်များ"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"ဝန်ဆောင်မှု စည်းမျဉ်းများ"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"ပုဂ္ဂိုလ်ရေးဆိုင်ရာ မူဝါဒ"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g> အတွက် မှန်ကန်သည့် ကီးအချက်အလက် သင့်ထံတွင်ရှိမရှိ စစ်ဆေးရန် ဆာဗာမှ ပေးထားသည့် မှန်ကန်မှုရှိမရှိစစ်ဆေးသည့်အချက်အလက်နှင့် တိုက်၍ အတည်ပြုပါ −&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"အထွေအထွေလုံခြုံရေး ခြွင်းချက်"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"ကုဒ်ဖြေခြင်း ခြွင်းချက်"</string>
+    <string name="submit" msgid="1518558163262431303">"သိမ်းဆည်းရန်"</string>
+    <string name="cancel" msgid="5705561042616477184">"မလုပ်တော့"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"ဖယ်ရှားပါ"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"အကောင့်ဖယ်ရှားရန်"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> ကို ဖယ်ရှားလိုပါသလား။"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"ဤအကောင့်ကို ဖယ်ရှားခြင်းအားဖြင့် ကုဒ်များ &lt;b&gt;ထုတ်လုပ်နိုင်မှုကို ဖယ်ရှားလိုက်မည်&lt;/b&gt; ဖြစ်သော်လည်း ၎င်းသည် အချက်နှစ်ချက်ဖြင့် အထောက်အထားစိစစ်ခြင်းကို ပိတ်လိုက်မည် &lt;b&gt;မဟုတ်ပါ&lt;/b&gt;။ ၎င်းသည် သင့်အကောင့်သို့ လက်မှတ်ထိုးဝင်ရောက်ခြင်းကို ပိတ်ပင်နိုင်ပါသည်။ &lt;p&gt; မဖယ်ရှားမီ − &lt;ul&gt; &lt;li&gt;ဤအကောင့်အတွက် အချက်နှစ်ချက်ဖြင့် အထောက်အထားစိစစ်ခြင်းကို ပိတ်ပါ သို့မဟုတ်&lt;/li&gt; &lt;li&gt;ကုဒ်ထုတ်လုပ်နိုင်ရန် အခြားနည်းလမ်းများ သတ်မှတ်ထားပါ။&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"ဤအကောင့်ကို ဖယ်ရှားခြင်းအားဖြင့် ကုဒ်များ &lt;b&gt;ထုတ်လုပ်နိုင်မှုကို ဖယ်ရှားလိုက်မည်&lt;/b&gt; ဖြစ်သော်လည်း ၎င်းသည် အချက်နှစ်ချက်ဖြင့် အထောက်အထားစိစစ်ခြင်းကို ပိတ်လိုက်မည် &lt;b&gt;မဟုတ်ပါ&lt;/b&gt;။ ၎င်းသည် သင့်အကောင့်သို့ လက်မှတ်ထိုးဝင်ရောက်ခြင်းကို ပိတ်ပင်နိုင်ပါသည်။ &lt;p&gt; မဖယ်ရှားမီ − &lt;ul&gt; &lt;li&gt;ဤအကောင့်အတွက် အချက်နှစ်ချက်ဖြင့် အထောက်အထားစိစစ်ခြင်းကို ပိတ်ပါ သို့မဟုတ်&lt;/li&gt; &lt;li&gt;ကုဒ်ထုတ်လုပ်နိုင်ရန် အခြားနည်းလမ်းများ သတ်မှတ်ထားပါ။&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"အမည်ပြောင်းပါ"</string>
+    <string name="error_exists" msgid="9037595140877350695">"ဝမ်းနည်းပါသည်။ ၎င်းအမည်ကို အသုံးပြုပြီးသားဖြစ်သည်။"</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"ကလစ်ဘုတ်သို့ကူးရန်"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"အတည်ပြုကုဒ်ကို ကလစ်ဘုတ်သို့ ကူးပြီးပါပြီ။"</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP ကုဒ်"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"ကုဒ်ရယူပါ"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"OK"</string>
+    <string name="close" msgid="3805915606074588527">"ပိတ်ရန်"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"ကီးအမျိုးအစား"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"အချိန်အခြေပြုစနစ်"</item>
+    <item msgid="5212912099902129712">"တွက်ချက်မှုအခြေပြုစနစ်"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"အလုပ်လုပ်ပုံ"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"ကျော်ရန်"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"ရှေ့သို့"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"ပြီးပါပြီ"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google သို့ လက်မှတ်ထိုးဝင်ခြင်း"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Google သို့ သင်လက်မှတ်ထိုးဝင်သည့်အခါတိုင်း အသုံးပြုသူအမည်နှင့် စကားဝှက်ကို ပုံမှန်အတိုင်းထည့်သွင်းရပါမည်။"</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"သင့်အား ကုဒ်တောင်းဆိုလာလျှင် ဤအက်ပ်မှ ကုဒ်ရယူနိုင်မည် ဖြစ်သည်။"</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"စိတ်ချလုံခြုံရပြီး အမြဲထိန်းချုပ်မှု ရှိနေပါ"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"သင်ယုံကြည်စိတ်ချရသည့် စက်ပစ္စည်းဖြင့် လက်မှတ်ထိုးဝင်သည့်အခါ ၎င်းစက်ပစ္စည်းပေါ်တွင် ကုဒ်တောင်းခံခြင်းမပြုလုပ်ရန်အတွက် ကျွန်ုပ်တို့ကို အကြောင်းကြားနိုင်သည်။"</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"သင်၏အကောင့်ကို အခြားကွန်ပျူတာများပေါ်တွင် သင် (သို့မဟုတ် တစ်စုံတစ်ယောက်) လက်မှတ်ထိုးဝင်သည့်အခါ ကုဒ်ထည့်သွင်းရန် တောင်းဆိုမည်ဖြစ်သောကြောင့် သင့်အကောင့်ကို အမြဲတမ်းလုံခြုံမှုရှိစေမည်ဖြစ်သည်"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"အကောင့်ထည့်ရန် အဆင်သင့် ဖြစ်ပြီလား။"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"g.co/2sv သို့ သွား၍ သင်၏ ဆက်တင်များကို အချိန်မရွေး အပ်ဒိတ်လုပ်နိုင်ကြောင်း မမေ့ပါနှင့်"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"သင့်ဖုန်းနံပါတ်များကို အပ်ဒိတ်လုပ်ပါ"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"အခြားမိတ္တူကူးရန် နည်းလမ်းများသတ်မှတ်ပါ"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"နှစ်ဆင့်အတည်ပြုခြင်းကို ပိတ်ပါ"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"အကောင့်ကို ထည့်သွင်းပြီးပါပြီ"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"သင့်ကို အတည်ပြုကုဒ်ဖြည့်ရန် တောင်းဆိုသောအခါ ၎င်းကို ဤနေရာတွင် ရယူပါ။ ကုဒ်မှာ မကြာခဏပြောင်းလဲတတ်သောကြောင့် ၎င်းကို အလွတ်မှတ်ထားရန် မလိုပါ။"</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"အကောင့်ထည့်ရန်"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"သင်၏ Google အကောင့် (သို့မဟုတ် အခြား အကောင့်များ) အတွက် နှစ်ဆင့်အတည်ပြုခြင်းကို ဖွင့်ပြီးသည့်နောက် သင်လိုအပ်မည်မှာ"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"သင့်စကားဝှက်"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"ဤအက်ပ်မှ ထုတ်ပေးမည့်ကုဒ်"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"အကောင့်များကို ပြန်စီခြင်းမအောင်မြင်ပါ။ နောက်မှထပ်စမ်းကြည့်ပါ။"</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"ဘားကုဒ်များဖတ်နိုင်ရန် ကင်မရာအသုံးပြုခွင့် လိုအပ်သည်။"</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"ဘားကုဒ်များဖတ်လိုလျှင် Authenticator ကို စက်ပစ္စည်း၏ ကင်မရာအား အသုံးပြုခွင့်ပေးပါ"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"သင့်စက်ပစ္စည်းပေါ်တွင် နေရာမလောက်ပါ"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"ဘားကုဒ်ဖတ်စနစ်ကို အသုံးပြု၍မရမီ အချို့ဖိုင်များအား ဖျက်ရန်လိုအပ်ပါသည်"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"ဘားကုဒ်ဖတ်စနစ်ကို လောလောဆယ် မရနိုင်သေးပါ"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"သင့်စက်ပစ္စည်းတွင် ကင်မရာမရှိပါ"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Authenticator သည် ဘားကုဒ်များကို ဖတ်ရန် ကင်မရာတစ်ခု လိုအပ်ပါသည်"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"ဘားကုဒ်ကို အနီရောင်မျဉ်းများအတွင်း ထားပါ"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"ဘားကုဒ်ဖတ်စနစ်ကို အသုံးပြုရန် &lt;b&gt;Google Play ဝန်ဆောင်မှုများ&lt;/b&gt; ကို အပ်ဒိတ်လုပ်ပါ"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Security Key ကို အသုံးပြုရန် &lt;b&gt;Google Play ဝန်ဆောင်မှုများ&lt;/b&gt; ကို အပ်ဒိတ်လုပ်ပါ"</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Hitelesítő"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Hitelesítő"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Írja be fiók adatait"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Hozzáadás"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Így működik"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Beállítások"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Beállítások"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Súgó és visszajelzés"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Megtekintés világos módban"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Megtekintés sötét módban"</string>
+    <string name="button_next" msgid="2321252361372851972">"Tovább"</string>
+    <string name="button_back" msgid="414120249698283380">"Vissza"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Fiók neve"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Az Ön kulcsa"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"A kulcs túl rövid"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"A kulcsban érvénytelen karakter szerepel"</string>
+    <string name="error_title" msgid="1784361744549854479">"Hiba"</string>
+    <string name="error_uri" msgid="8889749448317216536">"A kulcs nem volt felismerve."</string>
+    <string name="error_qr" msgid="1076904454315180481">"A QR-kód nem értelmezhető."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Nem lehet fiókot hozzáadni. Kérjük, segítségért lépjen kapcsolatba a TechStop csapatával."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Jelszó mentve"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Kulcs mentése a következőhöz:"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Üres titkos kulcs nem menthető"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Ezt az ellenőrző kódot írja be, ha a bejelentkezés során kérik"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Integritás-ellenőrző érték"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Kulcs értékének ellenőrzése"</string>
+    <string name="update_button" msgid="288114907177363159">"FRISSÍTÉS"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"NEM, KÖSZÖNÖM"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Nyílt forráskódú szoftverek licencei"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Általános Szerződési Feltételek"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Adatvédelmi irányelvek"</string>
+    <string name="check_code" msgid="8970489904648838257">"Ha szeretné megtudni hogy az érték megfelelő-e a <xliff:g id="ACCOUNT">%1$s</xliff:g> fiókhoz, ellenőrizze, hogy az itt látható érték egyezik-e a szerver által adott integritás-ellenőrző értékkel:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Általános biztonsági kivétel"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Kivétel dekódolása"</string>
+    <string name="submit" msgid="1518558163262431303">"Mentés"</string>
+    <string name="cancel" msgid="5705561042616477184">"Mégse"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Eltávolítás"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Fiók eltávolítása"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> eltávolítása?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"A fiók eltávolítása &lt;b&gt;megszünteti a kódgenerálás lehetőségét&lt;/b&gt;, de &lt;b&gt;nem&lt;/b&gt; kapcsolja ki a kétlépcsős azonosítást. Ez meggátolhatja abban, hogy bejelentkezzen a fiókjába. &lt;p&gt; Eltávolítás előtt: &lt;li&gt; kapcsolja ki a kétlépcsős azonosítást erre a fiókra, vagy &lt;/li&gt; &lt;li&gt; bizonyosodjon meg arról, hogy van egy másik mód a kódgenerálásra. &lt;/li&gt; &lt;;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"A fiók eltávolítása &lt;b&gt;megszünteti a kódgenerálás lehetőségét&lt;/b&gt;, de &lt;b&gt;nem&lt;/b&gt; kapcsolja ki a kétlépcsős azonosítást. Ez meggátolhatja abban, hogy bejelentkezzen a fiókjába. &lt;p&gt; Eltávolítás előtt: &lt;li&gt; kapcsolja ki a kétlépcsős azonosítást erre a fiókra, vagy &lt;/li&gt; &lt;li&gt; bizonyosodjon meg arról, hogy van egy másik mód a kódgenerálásra. &lt;/li&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Átnevezés"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Sajnáljuk, de a név már használatban van."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Másolás a vágólapra"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Az ellenőrző kód a vágólapra másolva."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"Az egyszer használatos jelszó kódja"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Kód lekérése"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"OK"</string>
+    <string name="close" msgid="3805915606074588527">"BEZÁRÁS"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Kulcs típusa"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Időalapú"</item>
+    <item msgid="5212912099902129712">"Számlálóalapú"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"A szolgáltatás működése"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Kihagyás"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Tovább"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Kész"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Bejelentkezés a Google-ba"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Minden alkalommal, amikor bejelentkezik a Google rendszerébe, a megszokott módon megadja a felhasználónevét és jelszavát."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Ha a rendszer kódot kér Öntől, az alkalmazás segítségével hozzájuthat egyhez."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Legyen óvatos, és tartsa kézben az irányítást"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Ha olyan eszközzel jelentkezik be, amelyben megbízik, jelezheti nekünk, hogy ne kérjünk több kódot arról a készülékről."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Továbbra is biztosítva lesz, mert kódot kérünk, ha Ön (vagy bárki más) másik eszközről próbál bejelentkezni a fiókjába."</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Kész hozzáadni a fiókját?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Ne feledje, hogy beállításait bármikor frissítheti a következő címen: g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Telefonszámok frissítése"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Egyéb biztonsági mentési lehetőségek létrehozása"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"A kétlépcsős azonosítás kikapcsolása"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Fiók hozzáadva"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Ha a rendszer ellenőrző kódot kér Öntől, akkor azt itt szerezheti be. A kód gyakran változik, így nem kell megjegyeznie."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Fiók hozzáadása"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Miután aktiválja a kétlépcsős azonosítást a Google-fiókjához (vagy egyéb fiókjaihoz), a következőkre lesz szükség:"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Az Ön jelszava"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Egy kód, amelyet ez az alkalmazás hoz létre"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Nem sikerült a fiókok átrendezése. Próbálja újra később."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"A vonalkódok leolvasásához az alkalmazásnak szüksége van a kamerahasználat engedélyezésére."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Engedélyezze a Hitelesítőnek az eszköz kamerájának használatát, ha vonalkódot szeretne leolvasni"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Nincs elég hely az eszközön"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"A vonalkód-leolvasó használata előtt törölnie kell néhány fájlt"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"A vonalkód-leolvasó jelenleg nem áll rendelkezésre"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Nincs kamera az eszközön"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"A Hitelesítőnek szüksége van kamerára a vonalkódok leolvasásához"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Helyezze a vonalkódot a piros vonalak közé"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Frissítse a &lt;b&gt;Google Play-szolgáltatásokat&lt;/b&gt;, hogy használhassa a vonalkód-leolvasót"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Biztonsági hardverkulcs használatához frissítse a &lt;b&gt;Google Play-szolgáltatásokat&lt;/b&gt;"</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!-- With the exception of UserRowView, this file should be kept in sync with user_row_legacy.xml -->
+<com.google.android.apps.authenticator.UserRowView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:paddingTop="12dp"
+                                                   android:paddingBottom="12dp">
+  <RelativeLayout android:id="@+id/user_row_layout"
+                  style="?attr/accountListWithVerificationCodesRow"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+    <ImageView android:id="@+id/user_row_drag_handle_image"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:layout_marginLeft="-8dp"
+               android:layout_centerVertical="true"
+               android:scaleType="fitXY"
+               android:src="@drawable/ic_menu_grey400_24dp"
+               android:visibility="gone"/>
+    <LinearLayout android:id="@+id/user_row_drag_handle"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="24dp"
+                  android:orientation="vertical">
+      <LinearLayout android:id="@+id/pin_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="24dp"
+                    android:minHeight="32dp"
+                    android:orientation="horizontal">
+        <TextView android:id="@+id/pin_value"
+                  style="?attr/accountListWithVerificationCodesRowVerificationCode"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:includeFontPadding="false"/>
+      </LinearLayout>
+
+      <RelativeLayout android:id="@+id/current_user_area"
+                      android:layout_width="match_parent"
+                      android:layout_height="24dp"
+                      android:layout_marginBottom="16dp"
+                      android:layout_marginRight="24dp">
+        <TextView android:id="@+id/current_user"
+                  style="?attr/accountListWithVerificationCodesRowAccountName"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="16dp"
+                  android:layout_marginRight="16dp"
+                  android:layout_centerVertical="true"
+                  android:layout_toLeftOf="@+id/indicator_area"
+                  android:layout_toStartOf="@+id/indicator_area"/>
+        <!-- Extra LinearLayout to force gravity="right" to work. -->
+        <LinearLayout android:id="@+id/indicator_area"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentEnd="true"
+                      android:layout_alignParentRight="true"
+                      android:layout_gravity="center_vertical"
+                      android:orientation="horizontal">
+          <android.support.v7.widget.AppCompatImageButton android:id="@+id/next_otp"
+                                                          style="?attr/accountListWithVerificationCodesRowRefreshButton"
+                                                          android:layout_width="24dp"
+                                                          android:layout_height="24dp"
+                                                          android:contentDescription="@string/counter_pin"/>
+          <com.google.android.apps.authenticator.CountdownIndicator android:id="@+id/countdown_icon"
+                                                                    style="?attr/accountListWithVerificationCodesRowCountdownIndicator"
+                                                                    android:layout_width="16dp"
+                                                                    android:layout_height="16dp"
+                                                                    android:layout_margin="4dp"/>
+        </LinearLayout>
+
+      </RelativeLayout>
+    </LinearLayout>
+  </RelativeLayout>
+</com.google.android.apps.authenticator.UserRowView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"குறியீடுகளுக்கான நேரத் திருத்தம்"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"இப்போது ஒத்திசை"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"இந்த அம்சத்தைப் பற்றி"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"இப்போது ஒத்திசை"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"இப்போது ஒத்திசை"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"சேவையகத்துடன் இணைக்கிறது..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"நேரம் சரிசெய்யப்பட்டது"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Google சேவையகங்களால் வழங்கப்பட்ட நேரத்தை அமைப்பதற்கு, அங்கீகரிப்பு உட்புற கடிகாரம் சரிசெய்யப்பட்டது. \n\nஇந்தச் சாதனத்தில் உள்ள தேதி &amp; நேர அமைப்புகள்  மாற்றப்படவில்லை."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"ஏற்கனவே சரியான நேரம்"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"ஏற்கனவே Google சேவையகங்களுடன் ஒத்திசைவில் இருப்பதாக தோன்றுவதால், அங்கீகரிப்பு உட்புற கடிகாரம் சரிசெய்யப்படவில்லை."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"இப்போது ஒத்திசை"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Google சேவையகத்தைத் தொடர்புகொள்ளும்போது சிக்கல் ஏற்பட்டது. உங்கள் நெட்வொர்க் அமைப்புகளைச் சரிபார்த்து, மீண்டும் முயலவும்."</string>
+</resources>

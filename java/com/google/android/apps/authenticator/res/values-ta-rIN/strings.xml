@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google அங்கீகரிப்பு"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"அங்கீகரிப்பு"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"கணக்கு விவரங்களை உள்ளிடவும்"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"சேர்"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"இது எப்படி இயங்குகிறது"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"காட்சியமைப்பு"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"காட்சியமைப்பு"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"உதவி &amp; கருத்து"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"லைட் பயன்முறையில் காட்டு"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"டார்க் பயன்முறையில் காட்டு"</string>
+    <string name="button_next" msgid="2321252361372851972">"அடுத்தது"</string>
+    <string name="button_back" msgid="414120249698283380">"செல்"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"கணக்கின் பெயர்"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"உங்கள் குறியீடு"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"விசை மதிப்பு மிகச்சிறியதாக உள்ளது"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"விசை மதிப்பில் முறையற்ற எழுத்து"</string>
+    <string name="error_title" msgid="1784361744549854479">"பிழை"</string>
+    <string name="error_uri" msgid="8889749448317216536">"விசை அறியப்படவில்லை."</string>
+    <string name="error_qr" msgid="1076904454315180481">"QR குறியீட்டை விவரிக்க முடியவில்லை."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"கணக்கைச் சேர்க்க முடியவில்லை. உதவிக்கு TechStop ஐத் தொடர்புகொள்ளவும்."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"இரகசியம் சேமிக்கப்பட்டது"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"விசையை இதற்காகச் சேமி"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"வெற்று இரகசியத்தை சேமிக்க முடியவில்லை"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"உள்நுழையும் போது சரிபார்ப்புக் குறியீடு கேட்கப்படும். அப்போது இதை உள்ளிடவும்"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"துல்லிய சரிபார்ப்பு மதிப்பு"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"விசை மதிப்பைச் சரிபார்"</string>
+    <string name="update_button" msgid="288114907177363159">"புதுப்பி"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"வேண்டாம்"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"ஓப்பன் சோர்ஸ் உரிமங்கள்"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"சேவை விதிமுறைகள்"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"தனியுரிமை கொள்கை"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g> க்கான சரியான விசையை உள்ளதா என்பதைச் சரிபார்க்க, இங்குள்ள மதிப்பு, சேவையகத்தால் வழங்கப்பட்ட துல்லிய சரிபார்ப்பு மதிப்புடன் பொருந்துகிறதா என்று சரிபார்க்கவும்:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"பொது பாதுகாப்பு விதிவிலக்கு"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"விதிவிலக்கை குறிநீக்கம் செய்கிறது"</string>
+    <string name="submit" msgid="1518558163262431303">"சேமி"</string>
+    <string name="cancel" msgid="5705561042616477184">"ரத்துசெய்"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"நீக்கு"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"கணக்கை அகற்று"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> ஐ அகற்ற வேண்டுமா?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"இந்தக் கணக்கை அகற்றுதல் என்பது குறியீடுகளை &lt;b&gt;உருவாக்கும் செயல்திறனை அகற்றிவிடும்&lt;b&gt;, இருப்பினும், அது 2-காரணி அங்கீகரிப்பை &lt;b&gt;நிறுத்தாது&lt;/b&gt;. உங்கள் கணக்கில் உள்நுழைவதை இது தடுக்கலாம். &lt;p&gt; அகற்றுவதற்கு முன்பாக: &lt;ul&gt; &lt;li&gt;இந்தக் கணக்கிற்கான 2-காரணி அங்கீகரிப்பை நிறுத்துக அல்லது&lt;/li&gt; &lt;li&gt;குறியீடுகளை உருவாக்குவதற்கான மாற்று நுட்பம் உங்களிடம் உள்ளதா என்பதை உறுதி செய்க.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"இந்தக் கணக்கை அகற்றுதல் என்பது குறியீடுகளை &lt;b&gt;உருவாக்கும் செயல்திறனை அகற்றிவிடும்&lt;/b&gt;, இருப்பினும், அது 2-காரணி சரிபார்ப்பை &lt;b&gt;நிறுத்தாது&lt;/b&gt;. உங்கள் கணக்கில் உள்நுழைவதை இது தடுக்கலாம். &lt;p&gt; அகற்றுவதற்கு முன்பாக: &lt;ul&gt; &lt;li&gt;இந்தக் கணக்கிற்கான 2-காரணி சரிபார்ப்பை நிறுத்துக அல்லது &lt;/li&gt; &lt;li&gt;குறியீடுகளை உருவாக்குவதற்கான மாற்று நுட்பம் உங்களிடம் உள்ளதா என்பதை உறுதி செய்க.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"மறுபெயரிடு"</string>
+    <string name="error_exists" msgid="9037595140877350695">"மன்னிக்கவும், பெயர் ஏற்கனவே பயன்பாட்டில் உள்ளது."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"கிளிப்போர்டில் நகலெடு"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"சரிபார்ப்புக் குறியீடு கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP குறியீடு"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"குறியீட்டைப் பெறு"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"சரி"</string>
+    <string name="close" msgid="3805915606074588527">"மூடு"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"விசையின் வகை"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"நேர அடிப்படையில்"</item>
+    <item msgid="5212912099902129712">"எண்ணிக்கை அடிப்படையில்"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"இது வேலை செய்யும் விதம்"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"தவிர்"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"அடுத்து"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"முடிந்தது"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google இல் உள்நுழைதல்"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Google இல் உள்நுழையும் போதெல்லாம், வழக்கம்போல் உங்கள் பயனர்பெயரையும் கடவுச்சொல்லையும் உள்ளிடுவீர்கள்."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"உங்களிடம் குறியீடு கேட்கப்பட்டால், இந்தப் பயன்பாட்டிலிருந்து பெற முடியும்."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"பாதுகாப்பாகவும் உங்கள் கட்டுப்பாட்டிலும் வைத்திருக்கவும்"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"நம்பகமான சாதனத்தின் மூலம் உள்நுழையும் போது, குறியீடுகளைக் கேட்பதை நிறுத்தும்படி எங்களிடம் தெரிவிக்கலாம்."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"இருப்பினும், நீங்கள் (அல்லது வேறொருவர்) வேறு சாதனங்களிலிருந்து உங்கள் கணக்கில் உள்நுழையும் போது, குறியீடுகளை உள்ளிடும்படி கேட்போம் என்பதால், கணக்கு தொடர்ந்து பாதுகாப்புடன் இருக்கும்"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"கணக்கைச் சேர்க்கத் தயாரா?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"g.co/2sv எனும் இணைப்பிற்குச் சென்று, எப்போது வேண்டுமானாலும் அமைப்புகளை மாற்றிக்கொள்ளலாம் என்பதை நினைவில்கொள்ளவும்"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"ஃபோன் எண்களைப் புதுப்பித்தல்"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"மாற்று விருப்பங்களை உருவாக்குதல்"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"இருபடி சரிபார்ப்பை முடக்கு"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"கணக்கு சேர்க்கப்பட்டது"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"சரிபார்ப்புக் குறியீடு கேட்கப்படும் போது, அதை இங்கே பெறவும். குறியீடு அடிக்கடி மாறும் என்பதால், அதை நினைவில் வைத்துக்கொள்ளத் தேவையில்லை."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"கணக்கைச் சேர்"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"உங்கள் Google கணக்கிற்கு (அல்லது பிற கணக்குகளுக்கு) இருபடிச் சரிபார்ப்பை இயக்கியதும், நீங்கள் பின்வருவனவற்றைச் செய்ய வேண்டும்:"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"உங்கள் கடவுச்சொல்"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"இந்தப் பயன்பாடு உங்களுக்காக உருவாக்கும் குறியீடு"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"கணக்குகளை வரிசைப்படுத்த முடியவில்லை. பிறகு முயலவும்."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"பார்குறியீடுகளை ஸ்கேன் செய்ய, கேமரா அனுமதி அவசியம்."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"பார்குறியீடுகளை ஸ்கேன் செய்ய விரும்பினால், உங்கள் சாதனத்தின் கேமராவைப் பயன்படுத்த Authenticatorஐ அனுமதிக்கவும்"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"சாதனத்தில் போதுமான இடமில்லை"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"பார்குறியீடு ஸ்கேனரைப் பயன்படுத்தும் முன், நீங்கள் சில கோப்புகளை நீக்க வேண்டும்"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"இப்போது பார்குறியீடு ஸ்கேனர் இல்லை"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"உங்கள் சாதனத்தில் கேமரா இல்லை"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"பார்குறியீடுகளை ஸ்கேன் செய்ய, Authenticatorக்குக் கேமரா தேவை"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"பார்குறியீடுகளைச் சிவப்புக் கோடுகளுக்குள் வைக்கவும்"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"பார்குறியீடு ஸ்கேனரைப் பயன்படுத்த, &lt;b&gt;Google Play சேவைகளைப்&lt;/b&gt; புதுப்பிக்கவும்"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"பாதுகாப்புச் சாவியைப் பயன்படுத்த, &lt;b&gt;Google Play சேவைகளைப்&lt;/b&gt; புதுப்பிக்கவும்"</string>
+</resources>

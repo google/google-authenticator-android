@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Kithibitishaji cha Google"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Kithibitishaji"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Weka maelezo ya akaunti"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Ongeza"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Jinsi inavyofanya kazi"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Mipangilio"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Mipangilio"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Usaidizi na maoni"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Angalia katika hali ya mwangaza"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Angalia katika hali ya giza"</string>
+    <string name="button_next" msgid="2321252361372851972">"Inayofuata"</string>
+    <string name="button_back" msgid="414120249698283380">"Nyuma"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Jina la akaunti"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Weka ufunguo wako"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Msimbo msingi ni mfupi mno"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Msimbo msingi una herufi zisizo halali"</string>
+    <string name="error_title" msgid="1784361744549854479">"Hitilafu"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Msimbo hautambuliwi."</string>
+    <string name="error_qr" msgid="1076904454315180481">"Hawezi kutafsiri msimbo wa QR."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Huwezi kuongeza akaunti. Tafadhali wasiliana na TechStop kwa usaidizi."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Siri Imeokolewa"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Hifadhi ufunguo wa"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Haiwezi kuhifadhi siri tupu"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Weka nambari hii ya kuthibitisha unapoombwa wakati wa kuingia kwenye akaunti yako"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Nambari ya ukaguzi uadilifu"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Angalia thamani muhimu"</string>
+    <string name="update_button" msgid="288114907177363159">"SASISHA"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"HAPANA"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Leseni za programu huria"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Masharti ya huduma"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Sera ya faragha"</string>
+    <string name="check_code" msgid="8970489904648838257">"Ili kukagua ikiwa una thamani muhimu sahihi ya <xliff:g id="ACCOUNT">%1$s</xliff:g> thibitisha kuwa thamani iliyo hapa inalingana na thamani ya ukaguzi uadilifu iliyotolewa na seva: &lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Kwa kawaida isipokuwa usalama"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Isipokuwa usimbuaji"</string>
+    <string name="submit" msgid="1518558163262431303">"Hifadhi"</string>
+    <string name="cancel" msgid="5705561042616477184">"Ghairi"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Ondoa"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Ondoa akaunti"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"Ondoa <xliff:g id="ACCOUNT">%1$s</xliff:g>?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Kuondoa akaunti hii &lt;b&gt;kutaondoa uwezo wako wa&lt;/b&gt;kuzalisha misimbo, hata hivyo, hakutazima&lt;b&gt;&lt;/b&gt; uthibitishaji wa hatua mbili. Huenda hii ikakuzuia kuingia katika akaunti yako. &lt;p&gt; Kabla ya kuondoa:&lt;ul&gt;Zima uthibitishaji wa hatua mbili wa akaunti hii, au&lt;/li&gt; &lt;li&gt;Hakikisha kuwa una utaratibu mbadala wa kuzalisha misimbo.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Kuondoa akaunti hii &lt;b&gt;kutaondoa uwezo wako wa&lt;/b&gt;kuzalisha misimbo, hata hivyo, hakutazima&lt;b&gt;&lt;/b&gt; uthibitishaji wa hatua mbili. Huenda hii ikakuzuia kuingia katika akaunti yako. &lt;p&gt; Kabla ya kuondoa:&lt;ul&gt;Zima uthibitishaji wa hatua mbili wa akaunti hii, au&lt;/li&gt; &lt;li&gt;Hakikisha kuwa una utaratibu mbadala wa kuzalisha misimbo.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Badili jina"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Samahani, jina hilo tayari liko katika matumizi."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Nakili kwenye ubao wa kunakili"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Msimbo wa uthibitishaji umenakiliwa kwenye ubao wa kunakili."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"Nenosiri la Wakati Mmoja"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Pata msimbo"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"Sawa"</string>
+    <string name="close" msgid="3805915606074588527">"FUNGA"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Aina ya msimbo"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Inategemea wakati"</item>
+    <item msgid="5212912099902129712">"Yenye mfululizo"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Jinsi inavyofanya kazi"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Ruka"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Endelea"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Imekamilika"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Inaingia katika Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Wakati wowote unapoingia kwenye Google, utaandika jina la mtumiaji na nenosiri lako kama kawaida."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Unapoombwa kuweka nambari ya kuthibitisha utapata moja kutoka kwenye programu hii."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Endelea kuwa salama na udhibiti"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Unapoingia katika akaunti yako kwa kutumia kifaa unachokiamini, tuarifu ili tuache kuomba nambari za kuthibitisha kwenye kifaa hicho."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"Bado utakuwa umelindwa kwa sababu tutaomba nambari za kuthibitisha wakati wewe (au mtu mwingine yeyote) atakapojaribu kuingia katika akaunti yako kutoka kwenye vifaa vingine"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Je, uko tayari kuongeza akaunti?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Kumbuka, unaweza kusasisha mipangilio yako wakati wowote kwenye g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Sasisha nambari zako za simu"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Unda chaguo nyingine mbadala"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"Zima Uthibitishaji wa Hatua Mbili"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Akaunti imeongezwa"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Unapoombwa nambari ya kuthibitisha, utaipata hapa. Nambari ya kuthibitisha hubadilika mara kwa mara, kwa hivyo hakuna haja ya kuikariri."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Ongeza akaunti"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Baada ya kuwasha Uthibitishaji wa Hatua Mbili wa Akaunti yako ya Google (au akaunti nyingine), utahitaji"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Nenosiri lako"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Nambari ya kuthibitisha itakayotolewa na programu hii kwa ajili yako"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Haijaweza kupanga akaunti upya. Tafadhali jaribu tena baadaye."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Ili kuchanganua misimbo pau, tunahitaji ruhusa ya kutumia kamera."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Ruhusu Kithibitishaji kitumie kamera ya kifaa chako ikiwa unataka kuchanganua misimbopau"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Hakuna nafasi ya kutosha kwenye kifaa chako"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"Utahitaji kufuta baadhi ya faili kabla ya kutumia kichanganuzi cha msimbopau"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"Kichanganuzi cha msimbopau hakipatikani sasa"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Kifaa chako hakina kamera"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Kithibitishaji kinahitaji kutumia kamera kuchanganua misimbopau"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Weka msimbo pau ndani ya mistari miekundu"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Sasisha Huduma za Google Play ili utumie kichanganuzi cha misimbopau"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Sasisha &lt;b&gt;Huduma za Google Play&lt;/b&gt; ili utumie Ufunguo wa Usalama"</string>
+</resources>

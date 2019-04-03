@@ -1,0 +1,21 @@
+# Configurations for testing with Bazel
+# Select a configuration by running
+# `bazel test //my:target --config={headless, gui, local_device}`
+
+# Headless instrumentation tests (No GUI)
+test:headless --test_arg=--enable_display=false
+# Graphical instrumentation tests. Ensure that $DISPLAY is set.
+test:gui --test_env=DISPLAY
+test:gui --test_arg=--enable_display=true
+
+# Testing with a local emulator or device. Ensure that `adb devices` lists the
+# device.
+# WARNING: Running tests may delete existing seeds on the target device. Only
+# use test devices when running the test suite on a real device.
+#
+# Run tests serially.
+test:local_device --test_strategy=exclusive
+# Use the local device broker type, as opposed to WRAPPED_EMULATOR.
+test:local_device --test_arg=--device_broker_type=LOCAL_ADB_SERVER
+# Uncomment and set $device_id if there is more than one connected device.
+# test:local_device --test_arg=--device_serial_number=$device_id

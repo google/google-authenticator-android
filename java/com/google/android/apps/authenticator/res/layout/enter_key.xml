@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:app2="http://schemas.android.com/apk/lib/com.google.android.apps.authenticator2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+  <android.support.v7.widget.Toolbar android:id="@+id/enter_key_toolbar"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:minHeight="@dimen/toolbar_height"/>
+  <ScrollView android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@id/enter_key_toolbar"
+              android:paddingTop="24dp">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout android:id="@+id/account_name_input_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:accessibilityLiveRegion="polite"
+                                                     android:hint="@string/enter_account_label"
+                                                     android:labelFor="@+id/account_name"
+                                                     android:minHeight="66dp">
+      <EditText android:id="@+id/account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:fontFamily="sans-serif"
+                android:hint="@string/enter_account_label"
+                android:singleLine="true"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="14sp"/>
+      </android.support.design.widget.TextInputLayout>
+
+      <android.support.design.widget.TextInputLayout android:id="@+id/key_value_input_layout"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_marginTop="12dp"
+                                                     android:accessibilityLiveRegion="polite"
+                                                     android:hint="@string/enter_key_hint"
+                                                     android:labelFor="@+id/key_value"
+                                                     android:minHeight="66dp"
+                                                     app2:hintTextAppearance="@style/HintTextAppearance">
+        <EditText android:id="@+id/key_value"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dip"
+                  android:fontFamily="sans-serif"
+                  android:hint="@string/enter_key_hint"
+                  android:inputType="textNoSuggestions"
+                  android:singleLine="true"
+                  android:textColor="@color/primaryTextColor"
+                  android:textSize="14sp"/>
+      </android.support.design.widget.TextInputLayout>
+
+      <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+        <RadioGroup android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/first"
+                    android:orientation="vertical">
+          <RadioButton android:id="@+id/type_choice_totp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:checked="true"
+                       android:text="Time based"/>
+          <RadioButton android:id="@+id/type_choice_hotp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Counter based"/>
+        </RadioGroup>
+
+        <View android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="1" />
+
+        <Button android:id="@+id/add_account_button_enter_key"
+                style="@style/AddAccountButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:minHeight="48dp"
+                android:minWidth="96dp"
+                android:text="@string/enter_key_page_add_button"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</RelativeLayout>

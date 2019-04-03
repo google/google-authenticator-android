@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"Виправлення часу для кодів"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"Синхронізувати зараз"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"Про цю функцію"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"Синхронізувати зараз"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"Синхронізувати зараз"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"З’єднання із сервером..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"Час виправлено"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"У внутрішньому годиннику Генератора кодів налаштовано час, наданий серверами Google. \n\nНалаштування дати й часу на цьому пристрої не змінено."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"Час уже правильний"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Внутрішній годинник Генератора кодів не налаштовано, оскільки він, схоже, уже синхронізований із серверами Google."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"Синхронізувати зараз"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Під час з’єднання із сервером Google виникла проблема. Перевірте налаштування мережі та повторіть спробу."</string>
+</resources>

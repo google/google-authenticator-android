@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"কোডের জন্য সময় সংশোধন করুন"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"এখনই সিঙ্ক করুন"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"এই বৈশিষ্ট্যটি সম্বন্ধে"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"এখনই সিঙ্ক করুন"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"এখনই সিঙ্ক করুন"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"সার্ভারে সংযোগ করা হচ্ছে..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"সময় সংশোধন করা হয়েছে"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Google সার্ভার দ্বারা পরিচালিত সময়ের সঙ্গে মিলিয়ে প্রমাণীকরণকারীর অভ্যন্তরীণ ঘড়ির সামঞ্জস্য করা হয়েছে৷\n\nতারিখ &amp; এই ডিভাইসটিতে সময়ের সেটিংস পরিবর্তন করা হয়নি৷"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"সময় আগে থেকেই ঠিক আছে"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"প্রমাণীকরণকারীর অভ্যন্তরীণ ঘড়ির সামঞ্জস্য করা হয়নি কারণ এটিকে ইতিমধ্যেই Google সার্ভারের সঙ্গে সিঙ্ক করা অবস্থায় দেখা যাচ্ছে৷"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"এখনই সিঙ্ক করুন"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Google এর সার্ভারে যোগাযোগ করার ক্ষেত্রে কোনো সমস্যা হয়েছে৷ দয়া করে আপনার নেটওয়ার্ক সেটিংস চেক করুন এবং আবার চেষ্টা করুন৷"</string>
+</resources>

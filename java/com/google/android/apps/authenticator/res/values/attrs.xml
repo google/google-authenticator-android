@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources>
+  <declare-styleable name="Theme">
+    <attr name="pinCodeListBackground" format="reference"/>
+    <attr name="accountListWithVerificationCodes" format="reference" />
+    <attr name="accountListWithVerificationCodesRow" format="reference" />
+    <attr name="accountListWithVerificationCodesRowIssuer" format="reference" />
+    <attr name="accountListWithVerificationCodesRowVerificationCode" format="reference" />
+    <attr name="accountListWithVerificationCodesRowCountdownIndicator" format="reference" />
+    <attr name="accountListWithVerificationCodesRowRefreshButton" format="reference"/>
+    <attr name="accountListWithVerificationCodesRowAccountName" format="reference" />
+    <attr name="accountListWithFirstAccountHeader" format="reference"/>
+    <attr name="accountListWithFirstAccountDetail" format="reference"/>
+    <attr name="fabButtonAddAccount" format="reference"/>
+    <attr name="firstAccountMessageDoneButtonStyle" format="reference"/>
+    <attr name="userRowDraggedItemShadowTop" format="reference"/>
+    <attr name="userRowDraggedItemShadowBottom" format="reference"/>
+  </declare-styleable>
+
+  <declare-styleable name="CountdownIndicator">
+    <!-- Color. -->
+    <attr name="countdownIndicatorColor" format="reference|color" />
+  </declare-styleable>
+
+  <declare-styleable name="PagingIndicator">
+    <attr name="dotDiameter" format="dimension" />
+    <attr name="dotGap" format="dimension" />
+    <attr name="animationDuration" format="integer" />
+    <attr name="pageIndicatorColor" format="color" />
+    <attr name="currentPageIndicatorColor" format="color" />
+  </declare-styleable>
+</resources>

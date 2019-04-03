@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"కోడ్‌ల కోసం సమయాన్ని సరిచేయడం"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"ఇప్పుడే సమకాలీకరించండి"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"ఈ లక్షణం గురించి"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"ఇప్పుడే సమకాలీకరించండి"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"ఇప్పుడే సమకాలీకరించండి"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"సర్వర్‌కు కనెక్ట్ చేస్తోంది…"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"సమయం సరిచేయబడింది"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"Authenticator యొక్క అంతర్గత గడియారం Google సర్వర్‌ల ద్వారా అందించబడిన సమయానికి అనుగుణంగా సర్దుబాటు చేయబడింది. \n\nఈ పరికరంలోని తేదీ &amp; సమయం సెట్టింగ్‌లు మార్చబడలేదు."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"సమయం ఇప్పటికే సరిగా ఉంది"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"Authenticator ఇప్పటికే Google సర్వర్‌లతో సమకాలీకరణలో ఉన్నందున దీని యొక్క అంతర్గత గడియారం సర్దుబాటు చేయబడలేదు."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"ఇప్పుడే సమకాలీకరించండి"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"Google యొక్క సర్వర్‌ను సంప్రదించడంలో సమస్య ఉంది. దయచేసి మీ నెట్‌వర్క్ సెట్టింగ్‌లను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."</string>
+</resources>

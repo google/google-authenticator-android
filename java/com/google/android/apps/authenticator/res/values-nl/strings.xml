@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google Authenticator"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"Authenticator"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"Accountgegevens opgeven"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"Toevoegen"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"Hoe het werkt"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"Instellingen"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"Instellingen"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"Help en feedback"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"Weergeven in lichte modus"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"Weergeven in donkere modus"</string>
+    <string name="button_next" msgid="2321252361372851972">"Volgende"</string>
+    <string name="button_back" msgid="414120249698283380">"Terug"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"Accountnaam"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"Uw sleutel"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"Sleutelwaarde is te kort"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"Sleutelwaarde bevat een ongeldig teken"</string>
+    <string name="error_title" msgid="1784361744549854479">"Fout"</string>
+    <string name="error_uri" msgid="8889749448317216536">"Sleutel wordt niet herkend."</string>
+    <string name="error_qr" msgid="1076904454315180481">"Kan QR-code niet interpreteren."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"Kan account niet toevoegen. Neem voor ondersteuning contact op met TechStop."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"Geheim opgeslagen"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"Sleutel opslaan voor"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"Kan geen leeg geheim opslaan"</string>
+    <string name="enter_pin" msgid="7652218068475671082">"Voer deze verificatiecode in wanneer hierom wordt gevraagd bij het inloggen"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"Integriteitscontrolewaarde"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"Sleutelwaarde controleren"</string>
+    <string name="update_button" msgid="288114907177363159">"UPDATEN"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"NEE, BEDANKT"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"Open source-licenties"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"Servicevoorwaarden"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"Privacybeleid"</string>
+    <string name="check_code" msgid="8970489904648838257">"Als u zeker wilt weten of u de juiste sleutelwaarde voor <xliff:g id="ACCOUNT">%1$s</xliff:g> gebruikt, controleert u of de waarde hier overeenkomt met de integriteitscontrolewaarde die de server levert:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"Algemene beveiligingsuitzondering"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"Uitzondering bij decoderen"</string>
+    <string name="submit" msgid="1518558163262431303">"Opslaan"</string>
+    <string name="cancel" msgid="5705561042616477184">"Annuleren"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"Verwijderen"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"Account verwijderen"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> verwijderen?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"Als u dit account verwijdert, kunt u &lt;b&gt;geen codes meer genereren&lt;/b&gt;, maar wordt authenticatie in twee factoren &lt;b&gt;niet&lt;/b&gt; uitgeschakeld. Hierdoor kunt u zich mogelijk niet aanmelden bij uw account. &lt;p&gt; Voordat u verwijdert: &lt;ul&gt; &lt;li&gt;Schakel authenticatie in twee factoren uit voor dit account, of&lt;/li&gt; &lt;li&gt;Zorg ervoor dat u een alternatieve methode voor het genereren van codes heeft.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"Als u dit account verwijdert, kunt u &lt;b&gt;geen codes meer genereren&lt;/b&gt;, maar wordt authenticatie in twee stappen niet uitgeschakeld. Hierdoor kunt u zich mogelijk niet aanmelden bij uw account. &lt;p&gt; Voordat u verwijdert: &lt;ul&gt; &lt;li&gt;Schakel authenticatie in twee stappen uit voor dit account, of&lt;/li&gt; &lt;li&gt;Zorg ervoor dat u een alternatieve methode voor het genereren van codes heeft.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"Naam wijzigen"</string>
+    <string name="error_exists" msgid="9037595140877350695">"Deze naam is al in gebruik."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"Kopiëren naar klembord"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"Verificatiecode gekopieerd naar klembord."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP-code"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"Code ophalen"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"OK"</string>
+    <string name="close" msgid="3805915606074588527">"SLUITEN"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"Type sleutel"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"Tijdgebonden"</item>
+    <item msgid="5212912099902129712">"Op basis van telling"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"Hoe het werkt"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"Overslaan"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"Volgende"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"Gereed"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Inloggen bij Google"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"Bij het inloggen bij Google geeft u zoals gewoonlijk uw gebruikersnaam en wachtwoord op."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"Wanneer u om een code wordt gevraagd, kunt u er een genereren met deze app."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"Veilig blijven en de controle houden"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"Als u inlogt op een vertrouwd apparaat, kunt u aangeven dat er op dat apparaat niet meer om codes moet worden gevraagd."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"U bent nog steeds beschermd omdat er om codes wordt gevraagd wanneer u (of iemand anders) inlogt op uw account vanaf andere apparaten"</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"Klaar om een account toe te voegen?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"Vergeet niet dat u uw instellingen altijd kunt updaten op g.co/2sv"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"Uw telefoonnummers updaten"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"Andere back-upopties maken"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"Authenticatie in twee stappen uitschakelen"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"Account toegevoegd"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"Wanneer u om een verificatiecode wordt gevraagd, kunt u deze hier verkrijgen. De code verandert regelmatig, dus u hoeft deze niet te onthouden."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"Account toevoegen"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"Nadat u authenticatie in twee stappen heeft ingeschakeld voor uw Google-account (of andere accounts), heeft u het volgende nodig"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"Uw wachtwoord"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"Een code die in deze app voor u wordt gegenereerd"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"Kan accounts niet opnieuw ordenen. Probeer het later opnieuw."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"Voor het scannen van streepjescodes hebben we rechten voor de camera nodig."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"Laat Authenticator de camera van uw apparaat gebruiken als u streepjescodes wilt scannen"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"Onvoldoende ruimte op uw apparaat"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"U moet enkele bestanden verwijderen voordat u de streepjescodescanner kunt gebruiken"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"De streepjescodescanner is nu niet beschikbaar"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"Uw apparaat bevat geen camera."</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Authenticator heeft een camera nodig om streepjescodes te scannen"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"Plaats de streepjescode tussen de rode lijnen"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"Update &lt;b&gt;Google Play-services&lt;/b&gt; om de streepjescodescanner te gebruiken"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"Update &lt;b&gt;Google Play-services&lt;/b&gt; om de beveiligingssleutel te gebruiken"</string>
+</resources>

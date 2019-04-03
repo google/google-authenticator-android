@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="timesync_preference_screen_title" msgid="3022961447302189451">"اصلاح زمان برای کدها"</string>
+    <string name="timesync_sync_now_preference_title" msgid="3082679345742875442">"اکنون همگام‌سازی شود"</string>
+    <string name="timesync_about_feature_preference_title" msgid="8398618989030576453">"دربارهٔ این ویژگی"</string>
+    <string name="timesync_sync_now_screen_title" msgid="3545642903720968544">"اکنون همگام‌سازی شود"</string>
+    <string name="timesync_sync_now_progress_dialog_title" msgid="7008645503609657769">"اکنون همگام‌سازی شود"</string>
+    <string name="timesync_sync_now_progress_dialog_details" msgid="307085676112612197">"اتصال به سرور..."</string>
+    <string name="timesync_sync_now_time_corrected_dialog_title" msgid="556836185362910715">"زمان اصلاح شد"</string>
+    <string name="timesync_sync_now_time_corrected_dialog_details" msgid="8542304823376488491">"ساعت داخلی Authenticator تنظیم شده است تا با زمان ارائه شده توسط سرورهای Google هماهنگ شود.\n\n تنظیمات تاریخ و زمان این دستگاه تغییر نکرده است."</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_title" msgid="4771431037030124374">"زمان در حال حاضر درست است"</string>
+    <string name="timesync_sync_now_time_already_correct_dialog_details" msgid="1783578393804196806">"ساعت داخلی Authenticator تنظیم نشد چون به نظر می‌رسد از قبل با سرورهای Google همگامسازی می‌شود."</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_title" msgid="3173165623567050563">"اکنون همگام‌سازی شود"</string>
+    <string name="timesync_sync_now_connectivity_error_dialog_details" msgid="7427576990969917093">"در تماس با سرور Google مشکلی وجود داشت. لطفاً تنظیمات شبکه خود را بررسی کنید و دوباره امتحان کنید."</string>
+</resources>

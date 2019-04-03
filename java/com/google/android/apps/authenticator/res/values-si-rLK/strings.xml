@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2019 Google LLC
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="5078996080612406301">"Google සත්‍යාපකය"</string>
+    <string name="app_name_short" msgid="6268465073167241020">"සත්‍යාපකය"</string>
+    <string name="enter_key_title" msgid="8976162455513807119">"ගිණුමේ විස්තර ඇතුළු කරන්න"</string>
+    <string name="enter_key_page_add_button" msgid="7145413404890383746">"එකතු කරන්න"</string>
+    <string name="how_it_works_menu_item" msgid="7162080619184257276">"මෙය වැඩකරන්නේ කෙසේද"</string>
+    <string name="main_preference_screen_title" msgid="5971154576421128196">"සිටුවම්"</string>
+    <string name="settings_menu_item" msgid="3175383868365284896">"සිටුවම්"</string>
+    <string name="help_and_feedback_menu_item" msgid="3660063786152605299">"උදව් සහ ප්‍රතිපෝෂණ"</string>
+    <string name="switch_ui_mode_light" msgid="6790394314424677622">"ආලෝක ප්‍රකාරයෙන් බලන්න"</string>
+    <string name="switch_ui_mode_dark" msgid="3303530514122875948">"අඳුරු ප්‍රකාරයෙන් බලන්න"</string>
+    <string name="button_next" msgid="2321252361372851972">"මීළඟ"</string>
+    <string name="button_back" msgid="414120249698283380">"ආපසු"</string>
+    <string name="enter_account_label" msgid="2527627143468171551">"ගිණුමේ නම"</string>
+    <string name="enter_key_hint" msgid="9163008478675357148">"ඔබේ යතුර"</string>
+    <string name="enter_key_too_short" msgid="1883571748860519725">"යතුරු අගය කෙටි වැඩියි"</string>
+    <string name="enter_key_illegal_char" msgid="5667180343359002748">"යතුරු අගයේ නීති විරෝධී අනුලක්ෂණයක් ඇත"</string>
+    <string name="error_title" msgid="1784361744549854479">"දෝෂයක්"</string>
+    <string name="error_uri" msgid="8889749448317216536">"යතුර හඳුනා ගත නොහැක."</string>
+    <string name="error_qr" msgid="1076904454315180481">"QR කේතය තේරුම් ගත නොහැක."</string>
+    <string name="error_invalid_device" msgid="2075249068399220841">"ගිණුම එක් කල නොහැක. කරුණාකර සහාය සඳහා TechStop සමඟ සම්බන්ධ වන්න."</string>
+    <string name="secret_saved" msgid="2201025202465443226">"රහස සුරැකිනු ලදි"</string>
+    <string name="save_key_message" msgid="4427138629791380096">"වෙනුවෙන් යතුර සුරකින්න"</string>
+    <string name="error_empty_secret" msgid="1889970426144134666">"හිස් රහසක් සුරැකිය නොහැක."</string>
+    <string name="enter_pin" msgid="7652218068475671082">"ගිණුමට පුරන අතරතුර ඉල්ලූ විට මෙම සත්‍යාපන කේතය ඇතුළු කරන්න"</string>
+    <string name="check_code_title" msgid="6308604727562833139">"පූර්ණත්ව පරික්ෂා අගය"</string>
+    <string name="check_code_menu_item" msgid="6851230890695316742">"යතුරු අගය පරික්ෂා කිරීම"</string>
+    <string name="update_button" msgid="288114907177363159">"යාවත්කාලීන කරන්න"</string>
+    <string name="not_update_button" msgid="3150965732790873263">"එපා ස්තුතියි"</string>
+    <string name="opensource_licenses_preference_title" msgid="1280708208408992618">"නිදහස් මුලාශ්‍ර අවසර"</string>
+    <string name="terms_preference_title" msgid="2016562579825643136">"සේවා කොන්දේසි"</string>
+    <string name="privacy_preference_title" msgid="5170441521661957179">"පෞද්ගලිකත්ව ප්‍රතිපත්තිය"</string>
+    <string name="check_code" msgid="8970489904648838257">"<xliff:g id="ACCOUNT">%1$s</xliff:g> සඳහා නිවැරදි යතුරු අගය තිබේදැයි පරික්ෂා කිරීමට මෙහි තිබෙන අගය සේවාදායකය ලබා දුන් පූර්ණත්ව පරික්ෂණ අගය සමඟ ගැලපේ දැයි බලන්න:&lt;br/&gt;"</string>
+    <string name="general_security_exception" msgid="2356961798953009046">"පොදු ආරක්ෂක ගැටලුවක්"</string>
+    <string name="decoding_exception" msgid="7778970130063776199">"විකේතකනය කළ නොහැක"</string>
+    <string name="submit" msgid="1518558163262431303">"සුරකින්න"</string>
+    <string name="cancel" msgid="5705561042616477184">"අවලංගු කරන්න"</string>
+    <string name="context_menu_remove_account" msgid="2776049374428247354">"ඉවත් කරන්න"</string>
+    <string name="remove_account_dialog_button_remove" msgid="1115752492175745669">"ගිණුම ඉවත් කරන්න"</string>
+    <string name="remove_account_dialog_title" msgid="3627142692332624397">"<xliff:g id="ACCOUNT">%1$s</xliff:g> ඉවත් කරන්නද?"</string>
+    <string name="remove_account_dialog_message" msgid="5152134907192755352">"මෙම ගිණුම ඉවත් කිරීමෙන් ඔබට කේත ජනනය කිරීමේ &lt;b&gt;හැකියාව ඉවත්වනු ඇත&lt;/b&gt;. කෙසේ වෙතත් එය දෙසාධක සත්‍යාපනය ඉවත් &lt;b&gt;නො&lt;/b&gt;කරනු ඇත. මෙය ඔබ ඔබගේ ගිණුමට ප්‍රවේශ වීම නවත්වනු ඇත. &lt;p&gt; ඉවත් කිරීමට පෙර: &lt;ul&gt; &lt;li&gt;මෙම ගිණුම සඳහා දෙසාධක සත්‍යාපනය ඉවත් කරන්න, නැතිනම්&lt;/li&gt; &lt;li&gt;ඔබ හට කේත ජනනය කිරීමේ වෙනත් ක්‍රමයක් තිබෙන බව තහවුරු කර ගන්න.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="remove_google_account_dialog_message" msgid="5734774722876234898">"මෙම ගිණුම ඉවත් කිරීමෙන් ඔබට කේත ජනනය කිරීමේ &lt;b&gt;හැකියාව ඉවත්වනු ඇත&lt;/b&gt;. කෙසේ වෙතත් එය දෙපියවර සත්‍යාපනය ඉවත් &lt;b&gt;නො&lt;/b&gt;කරනු ඇත. මෙය ඔබ ඔබගේ ගිණුමට ප්‍රවේශ වීම නවත්වනු ඇත. &lt;p&gt; ඉවත් කිරීමට පෙර: &lt;ul&gt; &lt;li&gt;මෙම ගිණුම සඳහා දෙපියවර සත්‍යාපනය ඉවත් කරන්න, නැතිනම්&lt;/li&gt; &lt;li&gt;ඔබ හට කේත ජනනය කිරීමේ වෙනත් ක්‍රමයක් තිබෙන බව තහවුරු කර ගන්න.&lt;/li&gt; &lt;/ul&gt;"</string>
+    <string name="rename" msgid="4407492613148938173">"නැවත නම් කරන්න"</string>
+    <string name="error_exists" msgid="9037595140877350695">"සමාවන්න, එම නම භාවිතයේ ඇත."</string>
+    <string name="copy_to_clipboard" msgid="9220543434521756454">"පසුරු පුවරුවට පිටපත් කරන්න"</string>
+    <string name="copied_to_clipboard_toast" msgid="9154293054771620599">"සත්‍යාපන කේතය පැසුරු පුවරුවට පිටපත් කෙරිණි."</string>
+    <string name="clipboard_label" msgid="923872764435699920">"OTP කේතය"</string>
+    <string name="counter_pin" msgid="6520222181829297474">"කේතය ලබා ගන්න"</string>
+    <string name="empty_pin" msgid="2123950169339395812">"_ _ _ _ _ _"</string>
+    <string name="ok" msgid="6406800116409689723">"හරි"</string>
+    <string name="close" msgid="3805915606074588527">"වසන්න"</string>
+    <string name="type_prompt" msgid="5595994960218859859">"යතුරු වර්ගය"</string>
+  <string-array name="type">
+    <item msgid="7456778849112065121">"වේලාව පදනම් කරගෙන"</item>
+    <item msgid="5212912099902129712">"ගණකය පදනම් කරගෙන"</item>
+  </string-array>
+    <string name="howitworks_page_title" msgid="3000061641097434092">"එය ක්‍රියා කරන ආකාරය"</string>
+    <string name="howitworks_page_button_skip" msgid="3858138531538510482">"මඟහරින්න"</string>
+    <string name="howitworks_page_button_next" msgid="3307879358955295110">"ඊළඟ"</string>
+    <string name="howitworks_page_button_done" msgid="7944196872034544859">"නිමයි"</string>
+    <string name="howitworks_page_layout_1_title" msgid="1259273585863292448">"Google වෙත පුරනය වීම"</string>
+    <string name="howitworks_page_layout_1_description_1" msgid="2177407085931714002">"ඔබ Google වෙත පුරන විට, සාමාන්‍ය පරිදි ඔබ පරිශීලක සහ මුරපදයක් ඇතුළු කරනු ඇත."</string>
+    <string name="howitworks_page_layout_1_description_2" msgid="9200590372924851531">"ඔබෙන් කේතයක් ඉල්ලූ විට මෙම යෙදුමෙන් ඔබට එකක් ලබාගත හැක."</string>
+    <string name="howitworks_page_layout_2_title" msgid="4365516305906693939">"ආරක්ෂාකාරීව සහ පාලනය යටතේ ඉන්න"</string>
+    <string name="howitworks_page_layout_2_description_1" msgid="1553394183156973378">"ඔබ විශ්වාස කරන උපාංගයකින් පිරූ විට, ඔබට එම උපාංගය මතදී කේත ඇසීම නවත්වන ලෙස අපෙන් ඉල්ලිය හැකිය."</string>
+    <string name="howitworks_page_layout_2_description_2" msgid="5388470967970599804">"ඔබ තවම ආවරණය වේ, එයට හේතුව ඔබ (හෝ වෙනත් යම් කෙනෙක්) වෙනත් පරිගණකවලින් ඔබේ ගිණුමට පිරීමට උත්සාහ කරන විට අප කේත ඉල්ලා සිටීමයි."</string>
+    <string name="howitworks_page_layout_3_title" msgid="7423925577449421605">"ගිණුම එක් කිරීමට සූදානම්ද?"</string>
+    <string name="howitworks_page_layout_3_description" msgid="7405817875371019657">"ඔබට g.co/2sv හිදී ඕනෑම අවස්ථාවක ඔබේ සැකසීම් යාවත්කාලීන කළ හැකි බව මතක තබා ගන්න"</string>
+    <string name="howitworks_page_layout_3_description_option_1" msgid="2745066692490302533">"ඔබේ දුරකථන අංක යාවත්කාලීන කරන්න"</string>
+    <string name="howitworks_page_layout_3_description_option_2" msgid="2315939288563370142">"වෙනත් උපස්ථ විකල්ප සාදන්න"</string>
+    <string name="howitworks_page_layout_3_description_option_3" msgid="4291158905290175413">"පියවර-2 සත්‍යාපනය ක්‍රියාවිරහිත කරන්න"</string>
+    <string name="account_list_page_first_account_message_header" msgid="1457137822229282579">"ගිණුම එක් කරන ලදී"</string>
+    <string name="account_list_page_first_account_message_detail" msgid="4166512720777942427">"ඔබගෙන් සත්‍යාපන කේතයක් ඉල්ලූ විට, එය මෙතැනින් ගන්න. කේතය නිතර වෙනස් වේ, එබැවින් එය මතක තබා ගැනීමට අවශ්‍ය නොවේ."</string>
+    <string name="account_list_page_first_account_button_done" msgid="8761901335907939250">"ගිණුම එක් කරන්න"</string>
+    <string name="welcome_page_details" msgid="6084199278021800719">"ඔබ ඔබගේ Google ගිණුම (හෝ වෙනත් ගිණුම්) සඳහා පියවර-2 සත්‍යාපනය සත්‍යාපනය කළ විට, ඔබට මේවා අවශ්‍ය වනු ඇත"</string>
+    <string name="welcome_page_details_list_entry1" msgid="8564449302373656735">"ඔබගේ මුරපදය"</string>
+    <string name="welcome_page_details_list_entry2" msgid="2215996514927316694">"ඔබ වෙනුවෙන් මෙම යෙදුම ජනනය කරනු ලබන කේතය"</string>
+    <string name="accounts_reorder_failed" msgid="3892276759252342820">"ගිණුම් පිළි ඇණවුම් කිරීමට අසමත් විය. පසුව නැවත උත්සාහ කරන්න."</string>
+    <string name="permission_camera_rationale" msgid="3624631906795969003">"තීරු කේත ස්කෑන් කිරීමට, අපට කැමරා අවසරය අවශ්‍යයි."</string>
+    <string name="no_camera_permission" msgid="6085674287625794134">"ඔබට තීරුකේත ස්කෑන් කිරීමට අවශ්‍ය නම් Authenticator හට ඔබගේ උපාංගයෙහි කැමරාව භාවිත කිරීමට ඉඩ දෙන්න"</string>
+    <string name="low_storage_error_title" msgid="5502801835924858943">"ඔබගේ උපාංගය මත ප්‍රමාණවත් තරම් ඉඩ නැත"</string>
+    <string name="low_storage_error_detail" msgid="4989512793304981675">"ඔබට තීරුකේත ස්කෑනරය භාවිත කිරීමට හැකි වීමට පෙර ඔබ සමහර ගොනු මැකීම අවශ්‍ය වනු ඇත"</string>
+    <string name="barcode_scanner_not_available" msgid="3601551946113920067">"තීරුකේත ස්කෑනරයක් දැන් ලබා ගත නොහැකිය"</string>
+    <string name="camera_not_found_on_device_title" msgid="8366330158573157252">"ඔබගේ උපාංගයෙහි කැමරාවක් නැත"</string>
+    <string name="camera_not_found_on_device_detail" msgid="4180601806515865466">"Authenticator හට තීරුකේත ස්කෑන් කිරීමට කැමරාවක් අවශ්‍යයි"</string>
+    <string name="barcode_instruction_text" msgid="3451789229658751944">"තීරු කේතය රතු රේඛා තුළ ස්ථානගත කරන්න"</string>
+    <string name="update_google_play_services" msgid="3263661938549056901">"තීරුකේත ස්කෑනරය භාවිත කිරීමට &lt;b&gt;Google Play සේවා&lt;/b&gt; යාවත්කාලීන කරන්න"</string>
+    <string name="update_google_play_services_for_security_key" msgid="7101017934064357153">"ආරක්ෂක යතුර භාවිත කිරීමට &lt;b&gt;Google Play සේවා&lt;/b&gt; යාවත්කාලීන කරන්න"</string>
+</resources>
