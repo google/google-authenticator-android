@@ -66,7 +66,7 @@
                   android:layout_marginTop="5dip"
                   android:fontFamily="sans-serif"
                   android:hint="@string/enter_key_hint"
-                  android:inputType="textNoSuggestions"
+                  android:inputType="textNoSuggestions|textVisiblePassword"
                   android:singleLine="true"
                   android:textColor="@color/primaryTextColor"
                   android:textSize="14sp"/>
