@@ -28,9 +28,9 @@ officially supported Google product.
 
 The Google Authenticator project includes implementations of one-time passcode
 generators for several mobile platforms, as well as a Pluggable Authentication
-Module [(PAM)][PAM]. One-time passcodes are generated using open standards developed by
-the [Initiative for Open Authentication (OATH)][OATH] (which is unrelated to
-[OAuth][]).
+Module [(PAM)][PAM]. One-time passcodes are generated using open standards
+developed by the [Initiative for Open Authentication (OATH)][OATH] (which is
+unrelated to [OAuth][]).
 
 * This project contains the Android app. [All other apps][iOS] and the
   [PAM module][libpam] are hosted in separate projects.
