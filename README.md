@@ -27,10 +27,10 @@ officially supported Google product.
 ## Description
 
 The Google Authenticator project includes implementations of one-time passcode
-generators for several mobile platforms, as well as a pluggable authentication
-module (PAM). One-time passcodes are generated using open standards developed by
-the [Initiative for Open Authentication (OATH)][OATH] (which is unrelated to
-[OAuth][]).
+generators for several mobile platforms, as well as a Pluggable Authentication
+Module [(PAM)][PAM]. One-time passcodes are generated using open standards
+developed by the [Initiative for Open Authentication (OATH)][OATH] (which is
+unrelated to [OAuth][]).
 
 * This project contains the Android app. [All other apps][iOS] and the
   [PAM module][libpam] are hosted in separate projects.
@@ -176,6 +176,7 @@ limitations under the License.
 
 [playstore]: https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2
 
+[PAM]: http://www.opengroup.org/rfc/rfc86.0.html
 [OATH]: http://www.openauthentication.org/
 [OAuth]: http://oauth.net/
 [RFC 4226]: https://tools.ietf.org/html/rfc4226
