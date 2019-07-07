@@ -637,6 +637,7 @@ public class AccountDb {
 
   public void delete(AccountIndex index) {
     mDatabase.delete(TABLE_NAME, whereClause(index), null);
+    mDatabase.execSQL("VACUUM");
   }
 
   /**
