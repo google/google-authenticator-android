@@ -1,0 +1,7 @@
+---
+tasks:
+  ubuntu1804:
+    build_targets:
+    - "//java/com/google/android/apps/authenticator"
+    test_targets:
+    - "//javatests/..."
