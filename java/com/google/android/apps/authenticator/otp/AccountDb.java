@@ -456,11 +456,10 @@ public class AccountDb {
           return mac.doFinal(data);
         }
       };
-    } catch (DecodingException error) {
-      Log.e(LOCAL_TAG, error.getMessage());
-    } catch (NoSuchAlgorithmException error) {
-      Log.e(LOCAL_TAG, error.getMessage());
-    } catch (InvalidKeyException error) {
+    } catch (DecodingException
+        | NoSuchAlgorithmException
+        | InvalidKeyException
+        | IllegalArgumentException error) {
       Log.e(LOCAL_TAG, error.getMessage());
     }
 
