@@ -15,16 +15,16 @@
 # Set the path to your local SDK installation, or use the ANDROID_HOME environment variable.
 android_sdk_repository(
     name = "androidsdk",
-    api_level = 28,
+    api_level = 29,
     # path = "/path/to/sdk",
-    build_tools_version = "28.0.3"
+    build_tools_version = "29.0.3"
 )
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 # Load external Maven Rules
-RULES_JVM_EXTERNAL_TAG = "1.1"
-RULES_JVM_EXTERNAL_SHA = "ade316ec98ba0769bb1189b345d9877de99dd1b1e82f5a649d6ccbcb8da51c1f"
+RULES_JVM_EXTERNAL_TAG = "3.0"
+RULES_JVM_EXTERNAL_SHA = "62133c125bf4109dfd9d2af64830208356ce4ef8b165a6ef15bbff7460b35c3a"
 
 http_archive(
     name = "rules_jvm_external",
