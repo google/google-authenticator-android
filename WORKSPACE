@@ -17,7 +17,6 @@ android_sdk_repository(
     name = "androidsdk",
     api_level = 29,
     # path = "/path/to/sdk",
-    build_tools_version = "29.0.3"
 )
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
